@@ -3,6 +3,8 @@
     <h1 class="entry-title">
       {!! $title !!}
     
+      @thumbnail
+
     </h1>
     @include('partials/entry-meta')
   </header>
