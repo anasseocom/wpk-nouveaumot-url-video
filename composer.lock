@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f32491e1ab7eb74d79d1d8e58c5c6993",
+    "content-hash": "9bff1d0cb830617c19252b085ece1a4e",
     "packages": [
         {
             "name": "composer/installers",
@@ -653,6 +653,43 @@
             "time": "2016-03-01T16:27:06+00:00"
         },
         {
+            "name": "studionuuk/advanced-custom-fields-pro",
+            "version": "5.9.5",
+            "dist": {
+                "type": "zip",
+                "url": "https://dev.nuuk.fr/satispress/advanced-custom-fields-pro/5.9.5",
+                "shasum": "89fe97cf6e087a3eef5485db6e83a83f63e5edbf"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": {
+                "name": "Elliot Condon",
+                "homepage": "https://www.advancedcustomfields.com"
+            },
+            "description": "Customize WordPress with powerful, professional and intuitive fields.",
+            "homepage": "https://www.advancedcustomfields.com"
+        },
+        {
+            "name": "studionuuk/facetwp",
+            "version": "3.8.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://dev.nuuk.fr/satispress/facetwp/3.8.2",
+                "shasum": "cd266da26bf1b9fd32602cf1dd96618e592f8de7"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": {
+                "name": "FacetWP, LLC",
+                "homepage": "https://facetwp.com/"
+            },
+            "description": "Advanced Filtering for WordPress"
+        },
+        {
             "name": "symfony/polyfill-ctype",
             "version": "v1.22.1",
             "source": {
@@ -973,6 +1010,150 @@
                 }
             ],
             "time": "2021-01-20T15:23:13+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/advanced-nocaptcha-recaptcha",
+            "version": "6.1.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/advanced-nocaptcha-recaptcha/",
+                "reference": "tags/6.1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/advanced-nocaptcha-recaptcha.6.1.5.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/advanced-nocaptcha-recaptcha/"
+        },
+        {
+            "name": "wpackagist-plugin/amp",
+            "version": "2.0.11",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/amp/",
+                "reference": "tags/2.0.11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/amp.2.0.11.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/amp/"
+        },
+        {
+            "name": "wpackagist-plugin/crop-thumbnails",
+            "version": "1.3.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/crop-thumbnails/",
+                "reference": "tags/1.3.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/crop-thumbnails.1.3.1.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/crop-thumbnails/"
+        },
+        {
+            "name": "wpackagist-plugin/ninja-forms",
+            "version": "3.5.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/ninja-forms/",
+                "reference": "tags/3.5.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.5.3.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/ninja-forms/"
+        },
+        {
+            "name": "wpackagist-plugin/no-category-base-wpml",
+            "version": "1.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/no-category-base-wpml/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/no-category-base-wpml.zip?timestamp=1609327966"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/no-category-base-wpml/"
+        },
+        {
+            "name": "wpackagist-plugin/safe-svg",
+            "version": "1.9.9",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/safe-svg/",
+                "reference": "tags/1.9.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/safe-svg.1.9.9.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/safe-svg/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-postratings",
+            "version": "1.89",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-postratings/",
+                "reference": "tags/1.89"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-postratings.1.89.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-postratings/"
+        },
+        {
+            "name": "wpackagist-plugin/xml-sitemap-feed",
+            "version": "5.2.7",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/xml-sitemap-feed/",
+                "reference": "tags/5.2.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/xml-sitemap-feed.5.2.7.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/xml-sitemap-feed/"
         }
     ],
     "packages-dev": [
@@ -982,12 +1163,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "07d2f0c0e6553fd7433f2eb7d043260d3bfd351d"
+                "reference": "aa48fe959b0236eede9c51a38f47df2bb81ef137"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/07d2f0c0e6553fd7433f2eb7d043260d3bfd351d",
-                "reference": "07d2f0c0e6553fd7433f2eb7d043260d3bfd351d",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/aa48fe959b0236eede9c51a38f47df2bb81ef137",
+                "reference": "aa48fe959b0236eede9c51a38f47df2bb81ef137",
                 "shasum": ""
             },
             "conflict": {
@@ -1244,6 +1425,7 @@
                 "verot/class.upload.php": "<=1.0.3|>=2,<=2.0.4",
                 "vrana/adminer": "<4.7.9",
                 "wallabag/tcpdf": "<6.2.22",
+                "wikimedia/parsoid": "<0.12.2",
                 "willdurand/js-translation-bundle": "<2.1.1",
                 "yii2mod/yii2-cms": "<1.9.2",
                 "yiisoft/yii": ">=1.1.14,<1.1.15",
@@ -1313,20 +1495,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-04-07T21:01:39+00:00"
+            "time": "2021-04-09T08:01:23+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.5.8",
+            "version": "3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "9d583721a7157ee997f235f327de038e7ea6dac4"
+                "reference": "ffced0d2c8fa8e6cdc4d695a743271fab6c38625"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/9d583721a7157ee997f235f327de038e7ea6dac4",
-                "reference": "9d583721a7157ee997f235f327de038e7ea6dac4",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/ffced0d2c8fa8e6cdc4d695a743271fab6c38625",
+                "reference": "ffced0d2c8fa8e6cdc4d695a743271fab6c38625",
                 "shasum": ""
             },
             "require": {
@@ -1369,7 +1551,7 @@
                 "source": "https://github.com/squizlabs/PHP_CodeSniffer",
                 "wiki": "https://github.com/squizlabs/PHP_CodeSniffer/wiki"
             },
-            "time": "2020-10-23T02:01:07+00:00"
+            "time": "2021-04-09T00:54:41+00:00"
         }
     ],
     "aliases": [],
