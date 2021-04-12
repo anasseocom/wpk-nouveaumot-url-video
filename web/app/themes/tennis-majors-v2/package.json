@@ -7,10 +7,10 @@
     "node": ">=12.14.0"
   },
   "scripts": {
-    "build": "mix",
-    "build:production": "mix --production",
-    "start": "mix watch",
-    "hot": "mix watch --hot",
+    "build": "TAILWIND_MODE=build mix",
+    "build:production": "TAILWIND_MODE=build mix --production",
+    "start": "TAILWIND_MODE=watch mix watch",
+    "hot": "TAILWIND_MODE=watch mix watch --hot",
     "clear": "wp acorn optimize:clear",
     "test": "npm run lint",
     "lint": "npm run lint:js && npm run lint:css",
