@@ -6,4 +6,9 @@
     @include('partials/entry-meta')
   </header>
 
+  <div class="entry-content">
+    @php(the_content())
+  </div>
+
+
 </article>
