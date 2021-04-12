@@ -24,4 +24,3 @@ function has_video($post){
 	}
 	return false;
 }
-
