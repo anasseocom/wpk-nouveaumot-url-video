@@ -41,7 +41,7 @@ function custom_post_type_videos() {
 		'public'              => true,
 		'has_archive'         => true,
         'rewrite'			  => array( 'slug' => 'videos'),
-        'menu_icon'           => 'dashicons-id-alt',
+        'menu_icon'           => 'dashicons-video-alt3 ',
         'menu_position'       => 4,
         'taxonomies' => array( 'category', 'post_tag' ),
 
