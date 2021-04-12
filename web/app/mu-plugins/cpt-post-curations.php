@@ -47,7 +47,7 @@ function custom_post_type_curations() {
 	);
 	
 	// On enregistre notre custom post type qu'on nomme ici "press" et ses arguments
-	register_post_type( 'magazines', $args );
+	register_post_type( 'partners', $args );
 
 }
 
