@@ -2,7 +2,7 @@
 
 add_action( 'init', 'create_players_taxonomy', 0 );
  
-function create_tournaments_taxonomy() {
+function create_players_taxonomy() {
   $labels = array(
     'name' => _x( 'Players', 'Players' ),
     'singular_name' => _x( 'Player', 'Player' ),
