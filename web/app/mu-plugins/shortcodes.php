@@ -1,16 +1,11 @@
-
 <?php
-
-/**
- * Theme shortcodes.
- */
-
-namespace App;
-
 function mot_player($atts){
 	global $post;
 	if($post->post_type == 'videos' && is_single()){
 	  $autoplay = 1;
+	}
+	else {
+		$autoplay = 0;
 	}
 	$allow_autoplay = $autoplay ? 'autoplay' : '';
   
@@ -25,5 +20,4 @@ function mot_player($atts){
 	}
 	return $short_code;
   }
-
-  add_shortcode('mot_video','mot_player');
+  add_shortcode( 'mot_video', __NAMESPACE__ . '\mot_player' );
