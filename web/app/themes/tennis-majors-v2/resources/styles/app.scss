@@ -18,10 +18,12 @@
     fill: black;
 }
 
-.slick-slide .card {
-    @apply rounded-md bg-gray-100 p-5 max-w-xs h-screen max-h-96;
-}
-
-.slick-slide .card--first {
-    @apply rounded-md bg-gray-100 p-5 max-w-xl h-screen max-h-96;
+#top-shows::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 8.5rem);
+    bottom: 0;
+    background-color: black;
+    z-index: -1;
 }
