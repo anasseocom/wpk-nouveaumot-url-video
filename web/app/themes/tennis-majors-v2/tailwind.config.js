@@ -17,6 +17,7 @@ module.exports = {
       },
       boxShadow: {
         header: '0px -5px 15px rgba(0, 0, 0, 0.1)',
+        arrow: '0px 4px 15px #0000004f',
       },
       zIndex: {
         '100': 100,

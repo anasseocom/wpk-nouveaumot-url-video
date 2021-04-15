@@ -4,7 +4,24 @@
 
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import  'slick-carousel/slick/slick.css';
+
+.slick-list > div {
+        margin-left:0;
+}
+
+.slick-slide {
+    margin: 0.5rem;
+}
 
 #logo svg {
-    fill: white;
+    fill: black;
+}
+
+.slick-slide .card {
+    @apply rounded-md bg-gray-100 p-5 max-w-xs h-screen max-h-96;
+}
+
+.slick-slide .card--first {
+    @apply rounded-md bg-gray-100 p-5 max-w-xl h-screen max-h-96;
 }
