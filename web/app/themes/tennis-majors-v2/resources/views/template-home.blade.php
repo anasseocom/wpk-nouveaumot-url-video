@@ -10,5 +10,6 @@
     @include('partials.home.top-content')
     @include('partials.home.shows')
     @include('partials.home.stories')
+    @include('partials.home.partners')
   @endwhile
 @endsection

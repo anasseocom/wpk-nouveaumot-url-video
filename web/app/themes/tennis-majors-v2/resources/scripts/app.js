@@ -103,30 +103,26 @@ $(document).ready(() => {
     $("#top-stories-slider").slick({
       infinite: false,
       speed: 300,
-      slidesToShow: 5.5,
       centerMode: false,
+      variableWidth: true,
       prevArrow: null,
       nextArrow: null,
     });
 
     if (window.innerWidth > 1310) {
       var leftMarginTopStories = ((window.innerWidth / 2) - 655);
-      var rightArrowTopStories = ((window.innerWidth / 2) - 680);
-      document.getElementById('top-stories').style.marginLeft = leftMarginTopStories+ "px";
-      document.getElementById('top-stories-arrow').style.right = rightArrowTopStories + "px";
+      document.getElementById('top-stories-slider').style.marginLeft = leftMarginTopStories+ "px";
     }  else {
-      document.getElementById('top-stories').style.marginLeft = "auto";
+      document.getElementById('top-stories-slider').style.marginLeft = "auto";
     }
 
     window.addEventListener('resize', function () {
       if (window.innerWidth > 1310) {
         var leftMarginTopStories = ((window.innerWidth / 2) - 655);
-        var rightArrowTopStories = ((window.innerWidth / 2) - 680);
         console.log(leftMarginTopNews + "px")
-        document.getElementById('top-stories').style.marginLeft = leftMarginTopStories+ "px";
-        document.getElementById('top-stories-arrow').style.right = rightArrowTopStories + "px";
+        document.getElementById('top-stories-slider').style.marginLeft = leftMarginTopStories+ "px";
       }  else {
-        document.getElementById('top-stories').style.marginLeft = "auto";
+        document.getElementById('top-stories-slider').style.marginLeft = "auto";
       }
     });
   }

@@ -16,6 +16,7 @@ module.exports = {
         'lastnews': '12rem',
         'card': '20rem',
         'cardfirst': '35rem',
+        'stories': '15.3rem',
       },
       maxHeight: {
         'card': '28rem',

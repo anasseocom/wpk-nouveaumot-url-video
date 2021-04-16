@@ -68,6 +68,13 @@ class Home extends Field
                 'post_type' => [0 => 'post', 1 => 'curations'],
                 'multiple' => 1,
                 'max' => 10,
+            ])
+
+            ->addPostObject('partners_on_top', [
+                'label' => 'Partners on top',
+                'post_type' => [0 => 'partners'],
+                'multiple' => 1,
+                'max' => 10,
             ]);
 
         return $home->build();
