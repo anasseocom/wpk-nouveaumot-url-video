@@ -1,5 +1,6 @@
 @if (! post_password_required())
   <section id="comments" class="comments">
+  
     @if (have_comments())
       <h2>
         {!! sprintf(_nx('One response to &ldquo;%2$s&rdquo;', '%1$s responses to &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'sage'), number_format_i18n(get_comments_number()), '<span>' . get_the_title() . '</span>') !!}
@@ -34,6 +35,15 @@
       </x-alert>
     @endif
 
-    @php(comment_form())
+    @php(comment_form(array(
+      'class_submit'          => 'btn btn-secondary',
+      'fields' => array(
+        //Author field
+        'author' => '<p class="comment-form-author"><br /><input id="author" name="author" aria-required="true" placeholder="Author"></input></p>',
+      //Email Field
+        'email' => '<p class="comment-form-email"><br /><input id="email" name="email" placeholder="Email"></input></p>',
+      ),
+    ))
+    )
   </section>
 @endif

@@ -62,6 +62,7 @@
         "wpackagist-plugin/xml-sitemap-feed": "^5.2",
         "studionuuk/facetwp": "^3.8",
         "yoast/wordpress-seo": "^16.1",
+        "studionuuk/sitepress-multilingual-cms": "^4.4",
         "log1x/acf-composer": "^2.0"
     },
     "require-dev": {
