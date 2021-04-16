@@ -5,6 +5,36 @@ import 'jquery';
 import 'slick-carousel/slick/slick';
 
 $(document).ready(() => {
+
+  if ($('#live-last-news').length) {
+    $("#live-last-news-slider").slick({
+      infinite: false,
+      speed: 300,
+      slidesToShow: 3.5,
+      centerMode: false,
+      prevArrow: null,
+      nextArrow: sliderNextArrow,
+    });
+
+    if (window.innerWidth > 1310) {
+      var leftMarginTopLive = ((window.innerWidth / 2) - 655);
+      console.log(leftMarginTopLive + "px")
+      document.getElementById('live-last-news').style.marginLeft = leftMarginTopLive + "px";
+    }  else {
+      document.getElementById('live-last-news').style.marginLeft = "auto";
+    }
+
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 1310) {
+        var leftMarginTopLive = ((window.innerWidth / 2) - 655);
+        console.log(leftMarginTopLive + "px")
+        document.getElementById('live-last-news').style.marginLeft = leftMarginTopLive + "px";
+      }  else {
+        document.getElementById('live-last-news').style.marginLeft = "auto";
+      }
+    });
+  }
+
   if ($('#top-content-slider').length) {
 
     var sliderNextArrow = document.getElementById('top-content-arrow');
@@ -39,6 +69,9 @@ $(document).ready(() => {
         document.getElementById('top-content').style.marginLeft = "auto";
       }
     });
+  }
+
+  if ($(".top-shows-slider").length) {
 
     $(".top-shows-slider").slick({
       infinite: false,
@@ -65,33 +98,6 @@ $(document).ready(() => {
       }  else {
         document.getElementById('top-shows-list').style.marginLeft = "auto";
       }
-    });
-
-    if (window.innerWidth > 1310) {
-      var leftMarginTopLive = ((window.innerWidth / 2) - 655);
-      console.log(leftMarginTopLive + "px")
-      document.getElementById('live-last-news').style.marginLeft = leftMarginTopLive + "px";
-    }  else {
-      document.getElementById('live-last-news').style.marginLeft = "auto";
-    }
-
-    window.addEventListener('resize', function () {
-      if (window.innerWidth > 1310) {
-        var leftMarginTopLive = ((window.innerWidth / 2) - 655);
-        console.log(leftMarginTopLive + "px")
-        document.getElementById('live-last-news').style.marginLeft = leftMarginTopLive + "px";
-      }  else {
-        document.getElementById('live-last-news').style.marginLeft = "auto";
-      }
-    });
-
-    $("#live-last-news-slider").slick({
-      infinite: false,
-      speed: 300,
-      slidesToShow: 3.5,
-      centerMode: false,
-      prevArrow: null,
-      nextArrow: sliderNextArrow,
     });
   }
 });

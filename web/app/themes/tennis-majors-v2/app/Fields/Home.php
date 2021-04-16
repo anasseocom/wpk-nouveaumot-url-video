@@ -20,6 +20,10 @@ class Home extends Field
             ->setLocation('post_template', '==', 'template-home.blade.php');
 
         $home
+            ->addUrl('live_video_url', [
+                'label' => 'Video live URL',
+            ])
+
             ->addPostObject('news_on_top', [
                 'label' => 'News on top',
                 'post_type' => [0 => 'post'],
