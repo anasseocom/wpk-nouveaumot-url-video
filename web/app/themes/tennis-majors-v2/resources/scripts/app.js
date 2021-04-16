@@ -13,7 +13,8 @@ $(document).ready(() => {
       slidesToShow: 3.5,
       centerMode: false,
       prevArrow: null,
-      nextArrow: sliderNextArrow,
+      nextArrow: null,
+      variableWidth: true,
     });
 
     if (window.innerWidth > 1310) {
@@ -79,7 +80,7 @@ $(document).ready(() => {
       slidesToShow: 3.5,
       centerMode: false,
       prevArrow: null,
-      nextArrow: sliderNextArrow,
+      nextArrow: null,
     });
 
     if (window.innerWidth > 1024) {

@@ -27,3 +27,24 @@
     background-color: black;
     z-index: -1;
 }
+
+#live-last-news-slider .slick-list  {
+    margin: 0 -2rem;
+}
+
+#live-last-news-slider .slick-slide  {
+    padding: 0 2rem;
+    margin: 0;
+}
+
+#live-last-news-slider {
+    overflow: hidden;
+}
+
+.slick-slide {
+    margin: 0.35rem;
+}
+
+.btn {
+    @apply uppercase text-sm mt-4 py-2 px-4 border-2 border-white
+}

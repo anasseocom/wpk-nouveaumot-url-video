@@ -12,6 +12,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {},
+      maxWidth: {
+        'lastnews': '12rem',
+        'card': '20rem',
+        'cardfirst': '35rem',
+      },
+      maxHeight: {
+        'card': '28rem',
+      },
       fontSize: {
         'z': '0',
       },
