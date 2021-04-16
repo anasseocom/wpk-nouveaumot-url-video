@@ -61,6 +61,13 @@ class Home extends Field
                 'save_terms' => 0,
                 'load_terms' => 0,
                 'return_format' => 'object',
+            ])
+
+            ->addPostObject('stories_on_top', [
+                'label' => 'Stories on top',
+                'post_type' => [0 => 'post', 1 => 'curations'],
+                'multiple' => 1,
+                'max' => 10,
             ]);
 
         return $home->build();

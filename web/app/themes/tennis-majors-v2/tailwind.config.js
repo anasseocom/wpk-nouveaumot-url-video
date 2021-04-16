@@ -32,7 +32,11 @@ module.exports = {
       },
       spacing: {
         '16/9': '56.25%',
+        'stories': '120%',
       },
+      lineHeight: {
+        'number-stories': '6rem',
+       },
     },
   },
   variants: {

@@ -9,5 +9,6 @@
     @include('partials.home.live-last-news')
     @include('partials.home.top-content')
     @include('partials.home.shows')
+    @include('partials.home.stories')
   @endwhile
 @endsection
