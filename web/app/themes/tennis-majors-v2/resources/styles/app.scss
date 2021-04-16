@@ -5,3 +5,26 @@
 
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import  'slick-carousel/slick/slick.css';
+
+.slick-list > div {
+        margin-left:0;
+}
+
+.slick-slide {
+    margin: 0.5rem;
+}
+
+#logo svg {
+    fill: black;
+}
+
+#top-shows::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 8.5rem);
+    bottom: 0;
+    background-color: black;
+    z-index: -1;
+}

@@ -53,4 +53,10 @@ module.exports = window["wp"]["editPost"];
 /***/ })
 
 },
-0,[["./resources/scripts/editor.js","/scripts/manifest"]]]);
+/******/ function(__webpack_require__) { // webpackRuntimeModules
+/******/ "use strict";
+/******/ 
+/******/ var __webpack_exec__ = function(moduleId) { return __webpack_require__(__webpack_require__.s = moduleId); }
+/******/ var __webpack_exports__ = (__webpack_exec__("./resources/scripts/editor.js"));
+/******/ }
+]);
