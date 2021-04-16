@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d94799c81129b614d41c114eb7f74429",
+    "content-hash": "5dfd33f5e10b828961a41ccd57fb527a",
     "packages": [
         {
             "name": "composer/installers",
@@ -688,6 +688,25 @@
                 "homepage": "https://facetwp.com/"
             },
             "description": "Advanced Filtering for WordPress"
+        },
+        {
+            "name": "studionuuk/sitepress-multilingual-cms",
+            "version": "4.4.10",
+            "dist": {
+                "type": "zip",
+                "url": "https://dev.nuuk.fr/satispress/sitepress-multilingual-cms/4.4.10",
+                "shasum": "299e357ae7995bccf488fdbf6eae56ad001f4a09"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": {
+                "name": "OnTheGoSystems",
+                "homepage": "http://www.onthegosystems.com/"
+            },
+            "description": "WPML Multilingual CMS | <a href=\"https://wpml.org\">Documentation</a> | <a href=\"https://wpml.org/version/wpml-4-4-10/\">WPML 4.4.10 release notes</a>",
+            "homepage": "https://wpml.org/"
         },
         {
             "name": "symfony/polyfill-ctype",

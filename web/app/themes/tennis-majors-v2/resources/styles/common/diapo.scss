@@ -1,0 +1,7 @@
+.block_diapo .lists_legend li {
+    display: none;
+}
+
+.block_diapo .lists_legend li.active {
+    @apply block;
+  }

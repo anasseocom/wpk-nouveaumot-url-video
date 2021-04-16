@@ -61,7 +61,8 @@
         "wpackagist-plugin/wp-postratings": "^1.89",
         "wpackagist-plugin/xml-sitemap-feed": "^5.2",
         "studionuuk/facetwp": "^3.8",
-        "yoast/wordpress-seo": "^16.1"
+        "yoast/wordpress-seo": "^16.1",
+        "studionuuk/sitepress-multilingual-cms": "^4.4"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.5.8",
