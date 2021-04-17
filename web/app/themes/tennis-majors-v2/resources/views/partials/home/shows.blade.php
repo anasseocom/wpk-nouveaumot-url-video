@@ -19,7 +19,7 @@
                     <div class="col-span-3">
                         <div class="pb-16/9 bg-gray-100 relative">
                             <img src="{{ the_post_thumbnail_url() }}" class="absolute w-full h-full object-cover top-0 left-0">
-                            <div class="absolute w-full h-full object-cover top-0 left-0 bg-gradient-to-t from-gray-900 to-transparent opacity-80"></div>
+                            <div class="absolute w-full h-full object-cover top-0 left-0 bg-gradient-to-t from-black to-transparent opacity-80"></div>
                             <div class="absolute top-1/2 left-1/2 transform -translate-x-2/4 -translate-y-2/4 w-24">
                                 @include('partials.images.play')
                             </div>
@@ -70,7 +70,7 @@
                                     setup_postdata($post);
                                 @endphp
                                 <img src="{{ the_post_thumbnail_url() }}" class="absolute w-full h-full object-cover top-0 left-0">
-                                <div class="absolute w-full h-full object-cover top-0 left-0 bg-gradient-to-t from-gray-900 to-transparent opacity-80"></div>
+                                <div class="absolute w-full h-full object-cover top-0 left-0 bg-gradient-to-t from-black to-transparent opacity-80"></div>
                                 <div class="relative w-10 mt-6 mb-2">
                                     @include('partials.images.play')
                                 </div>
@@ -83,7 +83,7 @@
                         <div>
                             <div class="flex flex-col items-center">
                                 <div class="uppercase font-bold text-center pt-8">Wanna see more</br> {{ $show->name }} episodes ?</div>
-                                <div class="uppercase text-sm mt-4 py-2 px-4 border-2 border-white">Discover all</div>
+                                <a href="" class="btn">Discover all</a>
                             </div>
                         </div>
                     </div>
@@ -91,4 +91,8 @@
             @endforeach
         </div>
     @endif
+
+    <div class="flex flex-col items-center">
+        <a href="" class="btn">Discover all</a>
+    </div>
 </div>
