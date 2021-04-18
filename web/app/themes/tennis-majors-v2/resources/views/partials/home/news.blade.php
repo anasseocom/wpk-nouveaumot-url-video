@@ -1,11 +1,12 @@
 @php
-$posts = new WP_Query(
-  array(
-    'post_type' => 'post',
-    'posts_per_page' => 9,
-    'facetwp' => true,
-  )
-);
+    global $post;
+    $posts = new WP_Query(
+    array(
+        'post_type' => 'post',
+        'posts_per_page' => 9,
+        'facetwp' => true,
+    )
+    );
 @endphp
 <div id="partners" class="py-12 px-4 relative bg-black text-white">
     <div class="max-w-screen-lg m-auto">
@@ -32,5 +33,6 @@ $posts = new WP_Query(
                 </div>
             </div>
         @endwhile
+        @php wp_reset_postdata() @endphp
     </div>
 </div>

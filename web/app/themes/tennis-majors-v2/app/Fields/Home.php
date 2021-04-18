@@ -75,6 +75,14 @@ class Home extends Field
                 'post_type' => [0 => 'partners'],
                 'multiple' => 1,
                 'max' => 10,
+            ])
+
+            ->addPostObject('major_team_on_top', [
+                'label' => 'Major Team on top',
+                'type' => 'user',
+                'multiple' => 1,
+                'max' => 10,
+                'return_format' => 'id',
             ]);
 
         return $home->build();

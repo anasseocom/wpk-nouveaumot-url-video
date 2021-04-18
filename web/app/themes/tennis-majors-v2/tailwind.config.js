@@ -12,6 +12,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {},
+      height: {
+        'bgmajorcard': '85%',
+      },
+      width: {
+        'majoruser': '85%',
+      },
       maxWidth: {
         'lastnews': '12rem',
         'card': '20rem',
@@ -34,10 +40,14 @@ module.exports = {
       spacing: {
         '16/9': '56.25%',
         'stories': '120%',
+        'majoruser': '120%',
       },
       lineHeight: {
         'number-stories': '6rem',
        },
+      zIndex: {
+        '-1': '-1',
+      },
     },
   },
   variants: {

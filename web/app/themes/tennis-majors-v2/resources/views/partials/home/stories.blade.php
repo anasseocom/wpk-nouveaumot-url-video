@@ -3,6 +3,7 @@
     $stories_on_top = get_field('stories_on_top');
     $i = 0;
 @endphp
+@if( $stories_on_top )
     <div id="top-stories" class="pt-20 pb-8 pl-4 relative">
         <div class="max-w-screen-lg m-auto">
             <h2 class="text-4xl uppercase pl-4 text-black pb-8">10 Stories to read now</h2>
@@ -22,10 +23,11 @@
                     </div>     
                     <h3 class="font-bold capitalize">{{ the_title() }}</h3>
                 </a>
-                @php wp_reset_postdata() @endphp
                 @php
                     $i++ 
                 @endphp
             @endforeach
+            @php wp_reset_postdata() @endphp
         </div>
     </div>
+@endif

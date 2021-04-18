@@ -54,10 +54,10 @@
                         </div>
                     </div>
                 @endif
-                @php wp_reset_postdata() @endphp
                 @php
                     $i++ 
                 @endphp
             @endforeach
+            @php wp_reset_postdata() @endphp
         </div>
     </div>

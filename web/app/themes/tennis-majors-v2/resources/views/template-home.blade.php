@@ -12,5 +12,6 @@
     @include('partials.home.stories')
     @include('partials.home.partners')
     @include('partials.home.news')
+    @include('partials.home.major-team')
   @endwhile
 @endsection

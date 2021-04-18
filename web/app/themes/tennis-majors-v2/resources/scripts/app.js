@@ -126,4 +126,17 @@ $(document).ready(() => {
       }
     });
   }
+
+  if ($('#major-team').length) {
+    $("#major-team-slider").slick({
+      infinite: false,
+      speed: 300,
+      infinite: true,
+      slidesToShow: 3,
+      centerPadding: '10%',
+      centerMode: true,
+      prevArrow: null,
+      nextArrow: null,
+    });
+  }
 });
