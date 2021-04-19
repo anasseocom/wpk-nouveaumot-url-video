@@ -95,3 +95,15 @@
         }
     }
 }
+
+.article-container {
+    article {
+        max-width: calc(100% - 6rem);
+    }
+
+    .content {
+        p {
+            @apply mb-6;
+        }
+    }
+}
