@@ -13,5 +13,6 @@
     @include('partials.home.partners')
     @include('partials.home.news')
     @include('partials.home.major-team')
+    @include('partials.home.newsletter')
   @endwhile
 @endsection
