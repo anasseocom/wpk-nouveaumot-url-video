@@ -32,7 +32,7 @@ function custom_post_type_videos() {
 		'description'         => __( 'Our videos'),
 		'labels'              => $labels,
 		// On définit les options disponibles dans l'éditeur de notre custom post type ( un titre, un auteur...)
-		'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+		'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields'),
 		/* 
 		* Différentes options supplémentaires
 		*/
@@ -43,6 +43,7 @@ function custom_post_type_videos() {
         'rewrite'			  => array( 'slug' => 'videos'),
         'menu_icon'           => 'dashicons-video-alt3 ',
         'menu_position'       => 4,
+		'taxonomies'  => array( 'category', 'tags'),
 
 	);
 	

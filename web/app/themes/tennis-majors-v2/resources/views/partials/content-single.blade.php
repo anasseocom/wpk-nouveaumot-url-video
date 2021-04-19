@@ -2,10 +2,8 @@
   <header>
     <h1 class="entry-title">
       {!! $title !!}
-    
-      @thumbnail
-
-    </h1>
+   </h1>
+   <figure>@php(the_post_thumbnail('full', array('class' => 'img-responsive')))</figure
     @include('partials/entry-meta')
   </header>
 
