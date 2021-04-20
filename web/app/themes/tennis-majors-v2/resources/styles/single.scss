@@ -4,8 +4,44 @@
     }
 
     .content {
-        p {
+        h2, h3, h4, h5, h6, p {
             @apply mb-6;
+        }
+
+        h2 {
+            @apply font-bold uppercase text-2xl mt-10;
+        }
+    }
+}
+
+.feature {
+    .content {
+        h1, h2, h3, h4, h5, h6, p {
+            @apply max-w-screen-sm ml-auto mr-auto;
+        }
+
+        blockquote {
+            @apply mt-40 mb-20 relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 4rem;
+                height: 4rem;
+                background-image: url(../images/quote.png);
+                top: -1rem;
+                transform: translateY(-100%);
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            p {
+                @apply max-w-screen-xl uppercase font-bold text-5xl not-italic;
+            }
+
+            cite {
+                @apply not-italic
+            }
         }
     }
 }
