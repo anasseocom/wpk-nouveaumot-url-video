@@ -1,12 +1,12 @@
 @import 'tailwindcss/base';
-
-@import 'common/global';
 @import 'common/diapo';
 @import 'common/slick';
 @import 'common/buttons';
 @import 'common/facet';
 @import 'common/preview';
 @import 'common/comments';
+@import 'common/user';
+@import 'common/newsletter';
 
 @import 'header';
 @import 'footer';
@@ -19,4 +19,12 @@
 
 #reply-title {
     display: none;
+}
+
+.newsletter-form {
+    @apply bg-black text-white px-4 mt-8;
+
+    &__container {
+        @apply grid grid-cols-12 max-w-screen-xl gap-x-8 m-auto py-8;
+    }
 }

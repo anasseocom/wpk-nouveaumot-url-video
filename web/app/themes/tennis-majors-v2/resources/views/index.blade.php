@@ -1,21 +1,33 @@
 @extends('layouts.app')
 
 @section('content')
-  @if (! have_posts())
-    <x-alert type="warning">
-      {!! __('Sorry, no results were found.', 'sage') !!}
-    </x-alert>
+@php
+    $i = 0;
+    $j = 0;
+@endphp
 
-    {!! get_search_form(false) !!}
-  @endif
+<div>
+  <div class="max-w-screen-lg m-auto">
+    <h2 class="text-5xl uppercase text-black text-center my-20 pb-2">Our <span class="font-bold">{{ single_cat_title() }}</span></h2>
+  </div>
+</div>
+  @while(have_posts()) @php the_post() @endphp
+    @if($i < 5)
+      hihi
+    @endif
+    @php
+        $i++;
+    @endphp
+  @endwhile
 
-  @while(have_posts()) @php(the_post())
-    @includeFirst(['partials.content-' . get_post_type(), 'partials.content'])
+  @while(have_posts()) @php the_post() @endphp
+    @if($j > 5)
+      coucou
+    @endif
+    @php
+        $j++;
+    @endphp
   @endwhile
 
   {!! get_the_posts_navigation() !!}
-@endsection
-
-@section('sidebar')
-  @include('partials.sidebar')
 @endsection

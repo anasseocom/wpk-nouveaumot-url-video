@@ -15,19 +15,10 @@
     <div class="px-4 grid grid-cols-3 gap-4">
         @posts
             <a  href="@authorurl" class="p-4">
-                @php
-                    $author_avatar_url = get_avatar_url(get_the_author_meta('email'));
-                    $author_name = get_the_author_meta( 'first_name' )." ".get_the_author_meta( 'last_name' );
-                @endphp
                 <div class="text-xs mb-4">{{ the_time('j F Y') }}</div>
                 <h3 class="font-bold text-xl mb-2">{{ the_title() }}</h3>
                 <div>{{ the_excerpt() }}</div>
-                <div class="flex flex-row items-center mt-4">
-                    <div>
-                        <img class="rounded-full w-6 flex" loading="lazy" src="{{ $author_avatar_url }}">
-                    </div>
-                    <div class="ml-2 uppercase text-xs">{{ $author_name }}</div>
-                </div>
+                @include('partials.common.author')
             </a>
         @endposts
     </div>
