@@ -43,7 +43,7 @@ function custom_post_type_videos() {
         'rewrite'			  => array( 'slug' => 'videos'),
         'menu_icon'           => 'dashicons-video-alt3 ',
         'menu_position'       => 4,
-
+		'taxonomies'  => array( 'category' ),
 	);
 	
 	// On enregistre notre custom post type qu'on nomme ici "press" et ses arguments
