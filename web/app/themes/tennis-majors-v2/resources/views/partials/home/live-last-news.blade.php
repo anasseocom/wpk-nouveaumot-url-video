@@ -12,28 +12,21 @@
                 <div class="inline-block text-4xl uppercase text-black mr-4 font-bold">Last news</div>
                 <a href="{{ get_post_type_archive_link('post')}}" class="inline-block text-xs uppercase">see all</a>
             </div>
-            
-            @php
-                global $post;
-                $last_posts = get_posts( array(
-                    'posts_per_page' => 10,
-                    'orderby'        => 'ASC',
-                    'post_type'      => 'post',
-                    'post_status'    => 'publish'
-                ) );
-            @endphp
-            <div id="live-last-news-slider">
-                @foreach( $last_posts as $post)
-                <a href="{{ the_permalink() }}" class="max-w-lastnews">
-                    @php
-                        setup_postdata($post);
-                    @endphp
-                    <div class="relative uppercase font-bold text-black opacity-30 text-xs mb-1">{{ get_time_since_posted() }}</div>
-                    <h4 class="relative font-bold text-sm">{{ the_title()}}</h4>
-                </a>
 
-                @endforeach
-                @php wp_reset_postdata() @endphp
+            @query([
+                'posts_per_page' => 10,
+                'orderby'        => 'ASC',
+                'post_type'      => 'post',
+                'post_status'    => 'publish',
+            ])
+            
+            <div id="live-last-news-slider">
+                @posts
+                    <a href="{{ the_permalink() }}" class="max-w-lastnews">
+                        <div class="relative uppercase font-bold text-black opacity-30 text-xs mb-1">{{ get_time_since_posted() }}</div>
+                        <h4 class="relative font-bold text-sm">{{ the_title()}}</h4>
+                    </a>
+                @endposts
             </div>
         </div>
     </div>

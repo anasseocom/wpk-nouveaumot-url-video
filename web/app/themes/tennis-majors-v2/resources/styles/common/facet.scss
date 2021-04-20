@@ -1,0 +1,23 @@
+.facetwp-facet {
+    display: flex;
+}
+
+.facetwp-radio {
+    background-image: none !important;
+    margin: 0 1rem;
+    padding: 0.75rem 1.75rem !important;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
+.facetwp-radio.checked {
+    background-image: none !important;
+    background-color: white;
+    color: black;
+}
+
+.facetwp-counter {
+    display: none;
+}

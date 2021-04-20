@@ -1,0 +1,17 @@
+
+#footer {
+    svg {
+        fill: black;
+        width: 100%;
+    }
+
+    nav {
+        ul {
+            @apply flex -mx-4;
+        }
+
+        li {
+            @apply mx-4 underline;
+        }
+    }
+}

@@ -27,6 +27,9 @@ module.exports = {
       maxHeight: {
         'card': '28rem',
       },
+      minHeight: {
+        '16': '4rem',
+      },
       fontSize: {
         'z': '0',
       },

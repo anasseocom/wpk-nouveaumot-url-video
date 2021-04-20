@@ -1,0 +1,33 @@
+.preview {
+    &--news-more {
+        &:first-child {
+            @apply row-span-2 col-span-1 rounded-md bg-gray-100 p-5 relative overflow-hidden text-white block flex items-end;
+
+            .content {
+                @apply relative z-10;
+
+                .title {
+                    @apply uppercase text-2xl;
+                }
+            }
+
+            .thumbnail {
+                @apply absolute w-full h-full object-cover top-0 left-0;
+
+                img {
+                    @apply object-cover h-full w-full;
+                }
+            }
+        }
+
+        @apply row-span-1 col-span-1 grid grid-cols-12 gap-4;
+
+        .content {
+            @apply relative col-span-7;
+        }
+
+        .thumbnail {
+            @apply relative col-span-5;
+        }
+    }
+}

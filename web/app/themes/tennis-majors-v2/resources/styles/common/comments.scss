@@ -1,0 +1,31 @@
+.comment-form {
+    @apply grid grid-cols-2  gap-8;
+
+    .form-submit, .comment-notes, .comment-form-comment, .comment-form-cookies-consent {
+        @apply col-span-2;
+    }
+    
+    input[type='text'], textarea {
+        @apply bg-gray-100 w-full rounded-md;
+    }
+    
+    input[type='text'], textarea {
+        @apply bg-gray-100 w-full rounded-md;
+    }
+    
+    input[type='text'] {
+        @apply px-8 min-h-16;
+    }
+    
+    textarea {
+        @apply p-8;
+    }
+
+    .form-submit {
+        @apply flex flex-col items-end;
+    }
+
+    .comment-notes {
+        @apply mt-3;
+    }
+}

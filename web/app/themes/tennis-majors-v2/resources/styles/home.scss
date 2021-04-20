@@ -1,0 +1,22 @@
+#live-last-news-slider .slick-list  {
+    margin: 0 -2rem;
+}
+
+#live-last-news-slider .slick-slide  {
+    padding: 0 2rem;
+    margin: 0;
+}
+
+#live-last-news-slider {
+    overflow: hidden;
+}
+
+#top-shows::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 8.5rem);
+    bottom: 0;
+    background-color: black;
+    z-index: -1;
+}

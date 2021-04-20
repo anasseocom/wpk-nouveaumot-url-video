@@ -2,108 +2,21 @@
 
 @import 'common/global';
 @import 'common/diapo';
+@import 'common/slick';
+@import 'common/buttons';
+@import 'common/facet';
+@import 'common/preview';
+@import 'common/comments';
+
+@import 'header';
+@import 'footer';
+@import 'home';
+@import 'single';
 
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @import  'slick-carousel/slick/slick.css';
 
-.slick-list > div {
-        margin-left:0;
-}
-
-.slick-slide {
-    margin: 0.5rem;
-}
-
-#logo svg {
-    fill: black;
-    width: 164px;
-}
-
-#top-shows::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: calc(100% - 8.5rem);
-    bottom: 0;
-    background-color: black;
-    z-index: -1;
-}
-
-#live-last-news-slider .slick-list  {
-    margin: 0 -2rem;
-}
-
-#live-last-news-slider .slick-slide  {
-    padding: 0 2rem;
-    margin: 0;
-}
-
-#live-last-news-slider {
-    overflow: hidden;
-}
-
-.slick-slide {
-    margin: 0.35rem;
-}
-
-.btn {
-    @apply uppercase text-sm mt-4 py-2 px-4 border-2 border-white
-}
-
-.btn--black {
-    @apply uppercase text-sm mt-4 py-2 px-4 border-2 border-black text-black
-}
-
-.facetwp-facet {
-    display: flex;
-}
-
-.facetwp-radio {
-    background-image: none !important;
-    margin: 0 1rem;
-    padding: 0.75rem 1.75rem !important;
-    border-radius: 2rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 0.75rem;
-}
-
-.facetwp-radio.checked {
-    background-image: none !important;
-    background-color: white;
-    color: black;
-}
-
-.facetwp-counter {
+#reply-title {
     display: none;
-}
-
-#footer {
-    svg {
-        fill: black;
-        width: 100%;
-    }
-
-    nav {
-        ul {
-            @apply flex -mx-4;
-        }
-
-        li {
-            @apply mx-4 underline;
-        }
-    }
-}
-
-.article-container {
-    article {
-        max-width: calc(100% - 6rem);
-    }
-
-    .content {
-        p {
-            @apply mb-6;
-        }
-    }
 }

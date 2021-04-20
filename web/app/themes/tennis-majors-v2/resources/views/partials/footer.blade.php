@@ -1,6 +1,6 @@
 <footer id="footer">
   <div class="max-w-screen-xl m-auto mt-8 mb-16">
-    <div class="grid grid-cols-12 gap-x-8 -mx-8">
+    <div class="grid grid-cols-12 gap-x-8">
       <div class="col-span-2 flex items-center h-20">
         @include('partials.footer.logo')
       </div>
