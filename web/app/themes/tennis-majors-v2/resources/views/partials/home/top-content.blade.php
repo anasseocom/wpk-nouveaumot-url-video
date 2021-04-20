@@ -10,7 +10,7 @@
         <div id="top-content-slider">
             @foreach( $posts_on_top as $post)
                 @if($i < 1)
-                    <div class="rounded-md bg-gray-100 p-5 max-w-cardfirst h-screen max-h-card relative overflow-hidden text-white">
+                    <a href="{{ the_permalink() }}" class="rounded-md bg-gray-100 p-5 max-w-cardfirst h-screen max-h-card relative overflow-hidden text-white">
                         @php
                             setup_postdata($post);
                             $author_avatar_url = get_avatar_url(get_the_author_meta('email'));
@@ -30,7 +30,7 @@
                                 <div class="ml-2 uppercase text-xs">{{ $author_name }}</div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 @else
                     <div class="rounded-md bg-gray-100 p-5 max-w-card h-screen max-h-card relative overflow-hidden text-white">
                         @php
