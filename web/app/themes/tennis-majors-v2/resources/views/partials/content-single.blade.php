@@ -1,5 +1,5 @@
 @php
-    $is_feature = has_category('feature');
+    $is_feature = has_term('feature', 'editorial-types');
 @endphp
 
 @if($is_feature)
