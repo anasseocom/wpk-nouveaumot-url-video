@@ -65,15 +65,7 @@
                     @endphp
                     <div class="top-shows-slider">
                         @posts($episodes)
-                            <a href="{{ the_permalink() }}" class="rounded-md bg-gray-100 p-5 h-screen max-h-48 relative overflow-hidden text-white">
-                                <img src="{{ the_post_thumbnail_url() }}" class="absolute w-full h-full object-cover top-0 left-0">
-                                <div class="absolute w-full h-full object-cover top-0 left-0 bg-gradient-to-t from-black to-transparent opacity-80"></div>
-                                <div class="relative w-10 mt-6 mb-2">
-                                    @include('partials.images.play')
-                                </div>
-                                <h4 class="relative uppercase font-bold text-sm">{{ the_title()}}</h4>
-                                <div class="relative">{{ the_time('j F Y') }}</div>
-                            </a>
+                            @include('partials.common.preview-video')
                         @endposts
                         <div>
                             <div class="flex flex-col items-center">

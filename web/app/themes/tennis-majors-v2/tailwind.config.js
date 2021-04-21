@@ -44,7 +44,7 @@ module.exports = {
         '16/9': '56.25%',
         'stories': '120%',
         'majoruser': '120%',
-        'newsletter-phone': '100%',
+        '100-100': '100%',
       },
       lineHeight: {
         'number-stories': '6rem',

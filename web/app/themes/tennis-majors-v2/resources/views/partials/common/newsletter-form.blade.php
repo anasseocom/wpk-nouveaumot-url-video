@@ -2,7 +2,7 @@
     <div class="grid grid-cols-12 max-w-screen-xl gap-x-8 m-auto py-8">
         <div class="col-span-3 relative">
                <img src="@asset('/images/phone-newsletter-home.png')" class="w-full absolute bottom-0">
-               <div class="w-full pb-newsletter-phone">
+               <div class="w-full pb-100-100">
                </div>
         </div>
         <div class="col-span-4 flex items-center">
