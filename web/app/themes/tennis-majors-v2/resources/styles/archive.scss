@@ -1,0 +1,9 @@
+#archive {
+    .background  {
+        @apply absolute max-h-96 overflow-hidden;
+
+        img {
+            @apply object-cover w-full h-full -z-1 ;
+        }
+    }
+}
