@@ -22,7 +22,8 @@ function create_shows_taxonomy() {
     'show_admin_column' => true,
     'show_in_rest' => true,
     'query_var' => true,
-    'public' => false,
-    'rewrite' => array( 'slug' => 'videos' ),
+    'public' => true,
+    'has_archive' => true,
+    'rewrite' => array( 'slug' => 'shows' ),
   ));
 }

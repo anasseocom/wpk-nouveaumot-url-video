@@ -17,6 +17,7 @@ module.exports = {
       },
       width: {
         'majoruser': '85%',
+        'screen': "1280px",
       },
       maxWidth: {
         'lastnews': '12rem',
@@ -45,6 +46,7 @@ module.exports = {
         'stories': '120%',
         'majoruser': '120%',
         '100-100': '100%',
+        '10-100':  '10%'
       },
       lineHeight: {
         'number-stories': '6rem',
