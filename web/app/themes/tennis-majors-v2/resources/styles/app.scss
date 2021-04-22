@@ -29,3 +29,18 @@
         @apply grid grid-cols-12 max-w-screen-xl gap-x-8 m-auto py-8;
     }
 }
+
+#shows-slider {
+    .content {
+        transform: translateX(5rem);
+        opacity: 0;
+        transition: 0.4s ease-out;
+    }
+    
+    .slick-current {
+        .content {
+            transform: translateX(0%);
+            opacity: 1;
+        }
+    }
+}

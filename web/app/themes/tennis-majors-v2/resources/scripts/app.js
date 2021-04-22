@@ -174,4 +174,14 @@ $(document).ready(() => {
       nextArrow: null,
     });
   }
+
+  $("#shows-slider").slick({
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    centerMode: true,
+    prevArrow: null,
+    nextArrow: null,
+    variableWidth: true,
+  });
 });

@@ -14,7 +14,7 @@
     </div>
     <div class="px-4 grid grid-cols-3 gap-4">
         @posts
-            <a  href="@authorurl" class="p-4">
+            <a href="@authorurl" class="p-4">
                 <div>
                     <div class="text-xs mb-4">{{ the_time('j F Y') }}</div>
                     <h3 class="font-bold text-xl mb-2">{{ the_title() }}</h3>
