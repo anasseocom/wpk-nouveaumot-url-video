@@ -1,5 +1,9 @@
 <a href="{{ the_permalink() }}" class="preview preview--basic">
-    {{ the_post_thumbnail('full', array('class' => 'thumbnail')) }}
+    @if(has_post_thumbnail())
+        <div class="thumbnail">
+            {{ the_post_thumbnail('full') }}
+        </div>
+    @endif
     <div class="content mt-4">
         <div class="text-xs mb-3 font-bold">{{ the_time('j F Y') }}</div>
         <h1 class="title">{{ the_title() }}</h1>

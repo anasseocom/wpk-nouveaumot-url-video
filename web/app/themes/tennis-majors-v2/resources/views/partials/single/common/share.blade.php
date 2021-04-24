@@ -19,7 +19,7 @@
         Whatsapp
         @include('partials.images.socials.share-whatsapp')
         </a>
-        <a href="mailto:?subject=Tennis Majors : {!! $title !!}&body=Cet article vous est recommandé :%0D%0A%0D%0A{!! $title !!}%0D%0A{{ get_permalink() }}" class="text-z w-14 border-2 border-black mx-1">
+        <a href="mailto:?subject=Tennis Majors : {!! the_title() !!}&body=Cet article vous est recommandé :%0D%0A%0D%0A{{ the_title() }}%0D%0A{{ get_permalink() }}" class="text-z w-14 border-2 border-black mx-1">
         Email
         @include('partials.images.socials.share-email')
         </a>

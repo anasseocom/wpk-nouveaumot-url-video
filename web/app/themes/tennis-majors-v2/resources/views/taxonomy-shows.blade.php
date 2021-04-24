@@ -18,9 +18,9 @@
         <div class="max-w-screen-lg m-auto">
             <div class="grid grid-cols-6 gap-x-8 py-12 mx-4">
                 <div class="col-span-3">
-                    <div class="mb-8 uppercase text-xs">
+                    <a class="mb-8 uppercase text-xs"  href="{{ get_permalink( get_page_by_path( 'shows' ) )}}">
                         Back to all the shows
-                    </div>
+                    </a>
                     <div class="mb-5">
                         <h1 class="uppercase text-5xl">{{ single_cat_title() }}</h1>
                     </div>

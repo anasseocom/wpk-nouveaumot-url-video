@@ -2,6 +2,14 @@
 
 @section('content')
   @while(have_posts()) @php(the_post())
-    @includeFirst(['partials.content-single-' . get_post_type(), 'partials.content-single'])
+    @php
+      $is_feature = has_term('feature', 'editorial-types');
+    @endphp
+
+    @if($is_feature)
+      @include('partials.single.feature')
+    @else
+      @include('partials.single.default')
+    @endif
   @endwhile
 @endsection

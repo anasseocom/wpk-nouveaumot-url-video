@@ -80,6 +80,6 @@
     @endif
 
     <div class="flex flex-col items-center">
-        <a href="" class="btn">Discover all</a>
+        <a href="{{ get_permalink( get_page_by_path( 'shows' ) )}}" class="btn">Discover all</a>
     </div>
 </div>

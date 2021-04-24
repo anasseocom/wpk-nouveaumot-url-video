@@ -1,7 +1,7 @@
 
 @query([
     'post_type' => 'post',
-    'posts_per_page' => 9,
+    'posts_per_page' => 6,
     'facetwp' => true,
     ])
 
@@ -12,19 +12,16 @@
     <div class="max-w-screen-lg m-auto">
         @shortcode('[facetwp facet="category"]')
     </div>
-    <div class="px-4 grid grid-cols-3 gap-4">
+    <div class="py-12 px-4 grid grid-cols-3 gap-y-20 gap-x-24">
         @posts
-            <a href="@authorurl" class="p-4">
-                <div>
-                    <div class="text-xs mb-4">{{ the_time('j F Y') }}</div>
-                    <h3 class="font-bold text-xl mb-2">{{ the_title() }}</h3>
-                    <div>{{ the_excerpt() }}</div>
-                    @include('partials.common.author')
-                </div>
-                @if(has_post_thumbnail())
-                    {{ the_post_thumbnail('full', array('class' => 'thumbnail')) }}
-                @endif
-            </a>
+            @if(has_post_thumbnail())
+                @include('partials.common.preview-default-home')
+            @else
+                @include('partials.common.preview-flash-home')
+            @endif
         @endposts
+    </div>
+    <div class="flex flex-col items-center my-8">
+        <a href="{{ get_permalink( get_page_by_path( 'news' ) )}}" class="btn">Read more</a>
     </div>
 </div>
