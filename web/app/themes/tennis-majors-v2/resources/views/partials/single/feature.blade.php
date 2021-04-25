@@ -3,10 +3,10 @@
       <article @php post_class() @endphp >
         <div class="max-w-screen-lg m-auto">
             <h1 class="font-bold text-5xl text-center">
-                {!! $title !!}
+            @title
             </h1>
             <div class="font-bold mt-8 mb-4 text-lg max-w-screen-md m-auto text-center">
-                {{ the_excerpt() }}
+            @excerpt
             </div>
             <div class="mb-4">
                 {{ the_post_thumbnail('full', array('class' => 'thumbnail')) }}
@@ -16,7 +16,7 @@
             @include('partials.single.common.author-date')
         </div>
         <div class="content">
-            {{ the_content() }}
+        @content
         </div>
         <div class="max-w-screen-sm m-auto">
             @include('partials.single.common.share')

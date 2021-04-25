@@ -2,7 +2,7 @@
   <header>
     <h2 class="entry-title">
       <a href="{{ get_permalink() }}">
-        {!! $title !!}
+      @title
       </a>
     </h2>
 
@@ -10,6 +10,6 @@
   </header>
 
   <div class="entry-summary">
-    @php(the_excerpt())
+  @excerpt
   </div>
 </article>
