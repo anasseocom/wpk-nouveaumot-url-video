@@ -1,7 +1,6 @@
 @php 
     global $post;
     $posts_on_top = get_field('posts_on_top');
-    $i = 0;
 @endphp
     <div id="top-content" class="py-8 pl-4 relative">
         <div id="top-content-arrow" class="absolute z-10 shadow-lg rounded-full cursor-pointer transform -translate-y-1/2 -translate-x-1/2 top-1/2">
