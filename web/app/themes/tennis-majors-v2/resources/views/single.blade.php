@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-  @while(have_posts()) @php the_post() @endphp
+  @posts
     @php
       $is_feature = has_term('feature', 'editorial-types');
     @endphp
@@ -11,5 +11,5 @@
     @else
       @include('partials.single.default')
     @endif
-  @endwhile
+  @endposts
 @endsection
