@@ -9,9 +9,9 @@
     $i = 0;
     $j = 0;
 
-    $features = new WP_Query(
+    $features = query_posts(
         array(
-            'posts_per_page' => -1,
+            'posts_per_page' => 9,
             'tax_query' => array(
                 array(
                     'taxonomy' => 'editorial-types',
@@ -52,10 +52,12 @@
             @php
                 $j++;
             @endphp
+
         @endposts
         </div>
     </div>
 </div>
-
-  {!! get_the_posts_navigation() !!}
+<div class="max-w-screen-xl m-auto">
+    <?php pagination(); ?>
+<div>
 @endsection

@@ -32,7 +32,7 @@
     }
 
     &--slider {
-        @apply rounded-md bg-gray-100 p-5 h-screen max-h-card relative overflow-hidden text-white max-w-card;
+        @apply rounded-md bg-gray-100 py-7 px-5 h-screen max-h-card relative overflow-hidden text-white max-w-card;
 
         .thumbnail {
             @apply absolute w-full h-full object-cover top-0 left-0;
@@ -157,7 +157,7 @@
 .slider-preview-mode {
     .slick-slide:first-child{
         .preview--slider {
-            @apply max-w-cardfirst;
+            @apply max-w-cardfirst px-10 py-7;
 
             .title {
                 @apply uppercase font-bold text-2xl mb-5

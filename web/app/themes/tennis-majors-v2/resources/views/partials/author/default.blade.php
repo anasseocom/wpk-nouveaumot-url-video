@@ -68,6 +68,9 @@
                     @include('partials.common.preview-basic')
                 @endposts
             </div>
+            <div class="max-w-screen-xl m-auto">
+                <?php pagination(); ?>
+            <div>
         </div>
     </div>
 </div>

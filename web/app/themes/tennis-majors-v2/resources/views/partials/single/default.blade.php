@@ -22,7 +22,9 @@
           </div>
           @include('partials.single.common.share')
         </div>
-        <div class="col-span-4">Sidebar</div>
+        <div class="col-span-4">
+          @include('partials.common.newsletter-form')
+        </div>
       </div>
     </article>
   </div>

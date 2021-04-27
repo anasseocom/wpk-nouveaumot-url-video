@@ -13,6 +13,6 @@
             @endforeach
         </div>
         <div class="flex flex-col items-center my-8">
-            <a href="{{ get_permalink( get_page_by_path( 'major-team' ) )}}" class="btn btn--black">Meet the team</a>
+            <a href="{{ get_permalink( get_page_by_path( 'major-team' ) )}}" class="btn btn--black"><span class="btn--text-arrow-right">Meet the team</span></a>
         </div>
     </div>

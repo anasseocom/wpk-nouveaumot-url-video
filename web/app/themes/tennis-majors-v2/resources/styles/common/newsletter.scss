@@ -1,7 +1,63 @@
-.newsletter-form {
-    .container {
-        @apply max-w-screen-xl m-auto py-8  grid grid-cols-12 gap-x-8;
+.home {
+    .newsletter-form {
+        @apply  bg-black text-white px-4 mt-8;
+    }
+    
+    .newsletter-form-container {
+        @apply grid grid-cols-12 max-w-screen-xl gap-x-8 m-auto py-8;
+    }
+    
+    .newsletter-form-image-box {
+        @apply col-span-3 relative;
+
+        img {
+            @apply w-full;
+        }
+
+        .padding {
+            @apply w-full pb-100-100;
+        }
+    }
+    
+    .newsletter-form-baseline {
+        @apply col-span-4 flex items-center;
+    }
+    
+    .newsletter-form-form {
+        @apply col-span-5 flex items-center;
+    }
+}
+
+.single-post {
+    .newsletter-form {
+        @apply  bg-black text-white px-4;
+    }
+    
+    .newsletter-form-container {
+        @apply grid py-8;
+    }
+    
+    .newsletter-form-image-box {
+        @apply relative;
+
+        img {
+            @apply w-28;
+        }
+
+        .padding {
+            @apply w-full pb-16;
+        }
+    }
+    
+    .newsletter-form-baseline {
+        @apply flex items-center;
     }
 
-    @apply bg-black text-white px-4 mt-8;
+    .little-baseline {
+        @apply mt-2;
+    }
+    
+    .newsletter-form-form {
+        @apply flex items-center mt-4;
+    }
 }
