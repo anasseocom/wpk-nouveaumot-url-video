@@ -6,7 +6,7 @@
 
 <div id="top-shows" class="mt-20 pb-16 relative text-white">
     <div class="max-w-screen-lg m-auto">
-        <h2 class="text-4xl uppercase pl-4 text-black">Latests episodes</h2>
+        <h2 class="text-4xl uppercase pl-4 text-black">Latests <span class="font-bold">episodes</span></h2>
     </div>
     @if( $video_on_top )
         @php

@@ -54,4 +54,7 @@
         @endposts
         </div>
     </div>
+    <div class="max-w-screen-xl m-auto">
+        <?php pagination(); ?>
+    <div>
 @endsection
