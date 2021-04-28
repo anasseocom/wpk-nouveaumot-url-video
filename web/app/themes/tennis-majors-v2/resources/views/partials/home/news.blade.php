@@ -12,7 +12,7 @@
     <div class="max-w-screen-lg m-auto">
         @shortcode('[facetwp facet="category"]')
     </div>
-    <div class="py-12 px-4 grid grid-cols-3 gap-y-20 gap-x-24">
+    <div class="py-12 px-4 grid grid-cols-3 gap-y-20 gap-x-24 mx-24">
         @posts
             @if(has_post_thumbnail())
                 @include('partials.common.preview-default-home')
@@ -22,6 +22,6 @@
         @endposts
     </div>
     <div class="flex flex-col items-center my-8">
-        <a href="{{ get_permalink( get_page_by_path( 'news' ) )}}" class="btn">Read more</a>
+        <a href="{{ get_permalink( get_page_by_path( 'news' ) )}}" class="btn btn--white btn--arrow-right">Discover all</a>
     </div>
 </div>

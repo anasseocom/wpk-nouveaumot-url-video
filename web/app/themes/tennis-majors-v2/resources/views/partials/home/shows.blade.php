@@ -45,7 +45,7 @@
                 <div class="mb-8">
                     <div>
                         <h3 class="ml-2 mb-2 uppercase inline-block mr-4">{{ $show->name }}</h3>
-                        <a href="" class="inline-block text-xs">View All</a>
+                        <a href="{{ get_term_link($show) }}" class="inline-block text-xs link--arrow link--arrow-white link--arrow-right">View All</a>
                     </div>
                     
                     @php
@@ -70,7 +70,7 @@
                         <div>
                             <div class="flex flex-col items-center">
                                 <div class="uppercase font-bold text-center pt-8">Wanna see more</br> {{ $show->name }} episodes ?</div>
-                                <a href="" class="btn">Discover all</a>
+                                <a href="{{ get_term_link($show) }}" class="btn btn--white btn--arrow-right">Discover all</a>
                             </div>
                         </div>
                     </div>
@@ -80,6 +80,6 @@
     @endif
 
     <div class="flex flex-col items-center">
-        <a href="{{ get_permalink( get_page_by_path( 'shows' ) )}}" class="btn">Discover all</a>
+        <a href="{{ get_permalink( get_page_by_path( 'shows' ) )}}" class="btn btn--white btn--arrow-right">Discover all</a>
     </div>
 </div>

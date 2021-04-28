@@ -5,23 +5,30 @@
 @php
     $term = get_queried_object();
     $image = get_field('image', $term);
+
     $args = array(
-        'post_type' => 'videos',
-        'post_status' => 'published',
-        'taxonomy-name' => $term->slug,
-        'numberposts' => -1,
+    'post_type' => 'videos',
+    'tax_query' => array(
+            array(
+                'taxonomy' => 'shows',
+                'field'    => 'slug',
+                'terms'    => $term->slug,
+            ),
+        ),
     );
-    $count_episodes = count( get_posts( $args ) );
+    $query = new WP_Query( $args );
+    $count_episodes = $query->post_count;
+
 @endphp
 
     <div id="show" class="relative bg-black text-white">
         <div class="max-w-screen-lg m-auto">
             <div class="grid grid-cols-6 gap-x-8 py-12 mx-4">
                 <div class="col-span-3">
-                    <a class="mb-8 uppercase text-xs"  href="{{ get_permalink( get_page_by_path( 'shows' ) )}}">
+                    <a class="uppercase text-xs link--arrow link--arrow-white link--arrow-left"  href="{{ get_permalink( get_page_by_path( 'shows' ) )}}">
                         Back to all the shows
                     </a>
-                    <div class="mb-5">
+                    <div class="mt-4 mb-5">
                         <h1 class="uppercase text-5xl">{{ single_cat_title() }}</h1>
                     </div>
                     <div class="uppercase text-xl font-bold mb-5">

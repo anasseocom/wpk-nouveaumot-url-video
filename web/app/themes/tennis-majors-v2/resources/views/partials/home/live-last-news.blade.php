@@ -10,7 +10,7 @@
         <div class="col-span-8 col-start-5 pl-12">
             <div class="mt-14 mb-6">
                 <div class="inline-block text-4xl uppercase text-black mr-4 font-bold">Last news</div>
-                <a href="{{ get_post_type_archive_link('post')}}" class="inline-block text-xs uppercase  btn--text-arrow-right">see all</a>
+                <a href="{{ get_post_type_archive_link('post')}}" class="inline-block text-xs uppercase link--arrow link--arrow-right">see all</a>
             </div>
 
             @query([

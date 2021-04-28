@@ -1,5 +1,5 @@
 {{--
-  Title: readalso
+  Title: Read also
   Category: formatting
   Icon: admin-post
   Keywords: read  also

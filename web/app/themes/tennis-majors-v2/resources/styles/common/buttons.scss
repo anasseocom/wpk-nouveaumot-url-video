@@ -1,21 +1,61 @@
 .btn {
-    @apply uppercase mt-4 py-3 text-sm px-10 border-2 border-white;
+    @apply uppercase text-sm mt-4 py-3 px-10 border-2 border-black text-black;
 
-    &--black {
-        @apply uppercase text-sm mt-4 py-3 px-10 border-2 border-black text-black;
+    &--white {
+        @apply border-white text-white;
+
+        &.btn--arrow-right::after {
+            background-image: url(../images/little-arrow-right-white.svg);
+        }
     }
 
     &--submit {
         @apply rounded-full font-bold text-white bg-black;
     }
 
-    &--text-arrow-right {
-        @apply relative;
+    &--arrow-right {
+        @apply relative pl-5 pr-10 ;
 
         &::after {
             content: "";
-            @apply absolute top-1/2 -right-4 w-2 h-3 bg-no-repeat transform -translate-y-1/2;
+            @apply absolute top-1/2 right-4 w-2 h-3 bg-no-repeat transform -translate-y-1/2;
             background-image: url(../images/little-arrow-right.svg);
+        }
+    }
+}
+
+.link--arrow {
+    @apply relative px-5;
+
+    &::after {
+        content: "";
+    }
+
+    &.link--arrow-right {
+        &::after {
+            @apply absolute top-1/2 right-1 w-2 h-2 bg-no-repeat bg-contain bg-center transform -translate-y-1/2;
+            background-image: url(../images/little-arrow-right.svg);
+        }
+    }
+
+    &.link--arrow-left {
+        &::after {
+            @apply absolute top-1/2 left-1 w-2 h-2 bg-no-repeat bg-contain bg-center transform -translate-y-1/2;
+            background-image: url(../images/little-arrow-left.svg);
+        }
+    }
+
+    &-white {
+        &.link--arrow-right {
+            &::after {
+                background-image: url(../images/little-arrow-right-white.svg);
+            }
+        }
+    
+        &.link--arrow-left {
+            &::after {
+                background-image: url(../images/little-arrow-left-white.svg);
+            }
         }
     }
 }
