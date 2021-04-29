@@ -165,34 +165,29 @@ $(document).ready(() => {
 });
 
 var isHidden = false;
-var timeToHide = false;
 var prevnexts = document.getElementsByClassName('prev-next');
 
 if($('.prev-next').length) {
   let observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if(!isHidden) {
-        if(entry.isIntersecting) {
+        if(!entry.isIntersecting) {
           isHidden = true;
-          if(timeToHide) {
-            for (var i = 0; i < prevnexts.length; i++) {
-              prevnexts[i].classList.add('prev-next--hidden');
-            }
+          for (var i = 0; i < prevnexts.length; i++) {
+            prevnexts[i].classList.add('prev-next--hidden');
+          }
+        }
+      } else {
+        if(entry.isIntersecting) {
+          isHidden = false;
+          for (var i = 0; i < prevnexts.length; i++) {
+            prevnexts[i].classList.remove('prev-next--hidden');
           }
         }
       }
     });
   });
-
-  setTimeout(function(){
-    timeToHide = true;
-    if(isHidden) {
-      for (var i = 0; i < prevnexts.length; i++) {
-        prevnexts[i].classList.add('prev-next--hidden');
-      }
-    }
-  }, 5000);
   
-  let target = document.querySelector('.share');
-    observer.observe(target);
+  let target = document.getElementById('player');
+  observer.observe(target);
 }
