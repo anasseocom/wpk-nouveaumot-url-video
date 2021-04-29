@@ -1,4 +1,4 @@
-<div class="my-20">
+<div class="my-20 share">
     <div class="uppercase text-2xl">
       <span class="font-bold">Share</span> this story
     </div>

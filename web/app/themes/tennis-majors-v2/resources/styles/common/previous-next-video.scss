@@ -1,0 +1,53 @@
+.prev-next {
+    @apply fixed top-1/2 transform -translate-y-1/2 z-50;
+
+    &--container {
+        @apply relative;
+    }
+
+    &--arrow {
+        @apply w-14 h-14 bg-black bg-center bg-no-repeat;
+    }
+
+    &--prev {
+        @apply left-0;
+
+        .prev-next--arrow {
+            background-image: url(../images/arrow-left-white.svg);
+        }
+
+        .prev-next--content {
+            @apply pl-14;
+            background: no-repeat 1rem center/auto url(../images/arrow-left-white.svg) black;
+        }
+
+        &.prev-next--hidden {
+            .prev-next--content {
+                @apply -translate-x-full;
+            }
+        }
+    }
+
+    &--next {
+        @apply right-0;
+
+        .prev-next--arrow {
+            background-image: url(../images/arrow-right-white.svg);
+        }
+
+        .prev-next--content {
+            @apply pr-14 right-0;
+            background: no-repeat 17rem center/auto url(../images/arrow-right-white.svg) black;
+        }
+
+        &.prev-next--hidden {
+            .prev-next--content {
+                @apply translate-x-full;
+            }
+        }
+    }
+
+    &--content {
+        @apply absolute w-80 p-4 py-8 bg-black text-white top-1/2 transform -translate-y-1/2 transition ease-in-out duration-300;
+    }
+}
