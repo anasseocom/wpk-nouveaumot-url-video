@@ -15,7 +15,7 @@
         @endphp
         <div class="px-4">
             <div class="max-w-screen-xl m-auto">
-                <div class="grid grid-cols-5 gap-x-8 my-12">
+                <a href="{{ the_permalink() }}" class="grid grid-cols-5 gap-x-8 my-12">
                     <div class="col-span-3">
                         <div class="pb-16/9 bg-gray-100 relative">
                             <img src="{{ the_post_thumbnail_url() }}" class="absolute w-full h-full object-cover top-0 left-0">
@@ -32,7 +32,7 @@
                             <div class="uppercase font-bold text-4xl">{{ the_title() }}</div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     @php

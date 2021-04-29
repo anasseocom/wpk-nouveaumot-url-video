@@ -7,7 +7,7 @@
   @php $shortcode = $matches[0] @endphp
 @endif
 
-<div class="video px-4 mt-12">
+<div class="video px-4">
     <div class="max-w-screen-xl m-auto">
       <article @php post_class() @endphp >
         <div class="relative">

@@ -21,7 +21,7 @@ class Curations extends Field
 
         $curations
             ->addUrl('post_url', [
-                'label' => 'URL de la  publication',
+                'label' => 'Post URL',
                 'required' => 1,
             ]);
 
