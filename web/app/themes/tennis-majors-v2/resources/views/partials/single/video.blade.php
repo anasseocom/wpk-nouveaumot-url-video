@@ -20,7 +20,11 @@
           <div class="text-white text-sm text-center mb-8">@published('j F Y')</div>
         </div>
         @if(!empty($shortcode))
-          {{ do_shortcode( $shortcode ) }}
+        <div class="max-w-screen-lg m-auto">
+        <div id='player' style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+        @php echo do_shortcode( $shortcode ); @endphp
+          </div>
+          </div>
         @else
           @if(get_field('video_url'))
             <div class="max-w-screen-lg m-auto">
