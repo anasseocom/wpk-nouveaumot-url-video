@@ -17,7 +17,7 @@ class Home extends Field
         $home = new FieldsBuilder('home');
 
         $home
-            ->setLocation('post_template', '==', 'template-home.blade.php');
+            ->setLocation('options_page', '==', 'home-edition');
 
         $home
             ->addUrl('live_video_url', [

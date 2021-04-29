@@ -11,3 +11,4 @@
     </div>
   </div>
 </header>
+@include('partials.header.live-last-news')

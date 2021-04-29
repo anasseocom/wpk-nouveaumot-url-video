@@ -1,6 +1,6 @@
 @php 
     global $post;
-    $stories_on_top = get_field('stories_on_top');
+    $stories_on_top = get_field('stories_on_top', 'option');
     $i = 0;
 @endphp
 @if( $stories_on_top )

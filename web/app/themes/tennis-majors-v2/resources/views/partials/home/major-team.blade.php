@@ -1,7 +1,8 @@
 @php
     global $post;
-    $major_team_on_top = get_field('major_team_on_top');
+    $major_team_on_top = get_field('major_team_on_top', 'option');
 @endphp
+@if($major_team_on_top)
     <div id="major-team" class="max-w-screen-xl m-auto pt-20 pb-8 relative">
         <div class="m-auto">
             <h2 class="text-4xl uppercase text-black text-center pb-2">A major team</h2>
@@ -16,3 +17,4 @@
             <a href="{{ get_permalink( get_page_by_path( 'major-team' ) )}}" class="btn btn--arrow-right">Discover all</a>
         </div>
     </div>
+@endif

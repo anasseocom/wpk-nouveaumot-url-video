@@ -1,6 +1,6 @@
 @php 
     global $post;
-    $partners = get_field('partners_on_top');
+    $partners = get_field('partners_on_top', 'option');
     $i = 0;
 @endphp
 @if( $partners )

@@ -1,7 +1,7 @@
 @php
     global $post;
-    $video_on_top = get_field('video_on_top');
-    $shows_on_top = get_field('shows_on_top');
+    $video_on_top = get_field('video_on_top', 'option');
+    $shows_on_top = get_field('shows_on_top', 'option');
 @endphp
 
 <div id="top-shows" class="mt-20 pb-16 relative text-white">

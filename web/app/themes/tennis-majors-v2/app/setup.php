@@ -196,3 +196,21 @@ add_action('widgets_init', function () {
         'id' => 'sidebar-footer'
     ] + $config);
 });
+
+add_action('init', function () {
+    
+    if (!function_exists('acf_add_options_page')) {
+        return;
+    }
+    
+    acf_add_options_page([
+        'page_title'    => 'Home edition',
+        'menu_title'    => 'Home edition',
+        'menu_slug'     => 'home-edition',
+        'capability'    => 'edit_posts',
+        'parent_slug'   => '',
+        'position'      => 1, 
+        'icon_url'      => 'dashicons-admin-generic'
+    ]);
+});
+
