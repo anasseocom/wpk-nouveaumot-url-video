@@ -40,8 +40,26 @@
             }
 
             cite {
-                @apply not-italic
+                @apply not-italic;
             }
+        }
+    }
+}
+
+.video {
+    &-header {
+        @apply relative;
+
+        &::before {
+            content: '';
+            @apply absolute top-0 w-full bg-black -z-1;
+            height: calc(100% - 4rem);
+        }
+
+        &::after {
+            content: '';
+            @apply absolute w-full bottom-0 bg-gray-200 -z-1;
+            height: 4rem;
         }
     }
 }
