@@ -12,7 +12,7 @@
     <div class="max-w-screen-lg m-auto">
         @shortcode('[facetwp facet="category"]')
     </div>
-    <div class="py-12 px-4 grid grid-cols-3 gap-y-20 gap-x-24 mx-24">
+    <div class="py-12 px-4 grid grid-cols-3 gap-y-20 gap-x-24 max-w-screen-xxl m-auto">
         @posts
             @if(has_post_thumbnail())
                 @include('partials.common.preview-default-home')

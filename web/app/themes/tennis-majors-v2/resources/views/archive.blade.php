@@ -21,11 +21,11 @@
                 <h2 class="text-5xl uppercase text-black text-center my-20 pb-2"><span class="font-bold">{{ single_cat_title() }}</span></h2>
             </div>
         @endif
-        <div id="archive-slider" class="relative">
-            <div id="archive-slider-arrow" class="absolute z-10 shadow-lg rounded-full cursor-pointer transform -translate-y-1/2 -translate-x-1/2 top-1/2">
+        <div id="slider-cards" class="max-w-screen-xl m-auto py-8 relative">
+            <div id="slider-cards--arrow" class="absolute z-10 shadow-lg rounded-full cursor-pointer transform -translate-y-1/2 -translate-x-1/2 top-1/2 right-0">
                 @include('partials.images.slider-arrow-right')
             </div>
-            <div id="archive-slider-slider" class="slider-preview-mode">
+            <div id="slider-cards--slider" class="slider-preview-mode">
                 @posts
                     @if($i < 5)
                         @include('partials.common.preview-slider')

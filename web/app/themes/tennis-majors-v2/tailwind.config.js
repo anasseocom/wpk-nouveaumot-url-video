@@ -21,9 +21,10 @@ module.exports = {
       },
       maxWidth: {
         'lastnews': '12rem',
-        'card': '20rem',
-        'cardfirst': '35rem',
+        'card': '18.25rem',
+        'cardfirst': '36.5rem',
         'stories': '15.3rem',
+        'screen-xxl': '1640px',
       },
       maxHeight: {
         'card': '28rem',
@@ -38,21 +39,20 @@ module.exports = {
         header: '0px -5px 15px rgba(0, 0, 0, 0.1)',
         arrow: '0px 4px 15px #0000004f',
       },
-      zIndex: {
-        '100': 100,
-      },
       spacing: {
         '16/9': '56.25%',
         'stories': '120%',
         'majoruser': '120%',
         '100-100': '100%',
-        '10-100':  '10%'
+        '10-100':  '10%',
       },
       lineHeight: {
         'number-stories': '6rem',
        },
       zIndex: {
+        '100': 100,
         '-1': '-1',
+        'infinite': 999999999,
       },
     },
   },
