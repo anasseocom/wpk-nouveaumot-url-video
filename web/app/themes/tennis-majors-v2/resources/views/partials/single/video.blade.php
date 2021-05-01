@@ -35,7 +35,7 @@
           @endif
         @endif
       </div>
-      <div class="content max-w-screen-lg m-auto">
+      <div class="content max-w-screen-lg m-auto prose">
         @php
           $content = strip_shortcodes(get_the_content());
           echo $content;
