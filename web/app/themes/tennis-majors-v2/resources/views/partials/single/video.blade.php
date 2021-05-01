@@ -16,7 +16,7 @@
       <div class="video-header">
         <div class="max-w-screen-lg m-auto pt-12">
           <h1 class="font-bold text-5xl text-center text-white">@title</h1>
-          <div class="font-bold mt-8 mb-4 text-lg max-w-screen-md m-auto text-center">@excerpt</div>
+          <div class="font-bold mt-8 mb-4 text-lg max-w-screen-md m-auto text-center text-white">@excerpt</div>
           <div class="text-white text-sm text-center mb-8">@published('j F Y')</div>
         </div>
         @if(!empty($shortcode))
@@ -35,7 +35,7 @@
           @endif
         @endif
       </div>
-      <div class="content">
+      <div class="content max-w-screen-lg m-auto prose">
         @php
           $content = strip_shortcodes(get_the_content());
           echo $content;

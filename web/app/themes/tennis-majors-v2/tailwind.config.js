@@ -12,6 +12,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {},
+      fontFamily: {
+        'sans': ['futura-pt', 'ui-sans-serif', 'system-ui']
+              },
       height: {
         'bgmajorcard': '85%',
       },

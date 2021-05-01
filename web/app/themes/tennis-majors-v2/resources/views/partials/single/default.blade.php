@@ -17,7 +17,7 @@
           <div>
             @include('partials.single.common.author-date')
           </div>
-          <div class="content">
+          <div class="content prose m-auto">
           @content
           </div>
           @include('partials.single.common.share')
