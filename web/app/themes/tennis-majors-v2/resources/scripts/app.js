@@ -214,5 +214,27 @@ $(document).ready(() => {
       }
     });
   }
+
+  if($('#menu')) {
+    $( "#menu-menu-principal > .menu-item > a" ).hover(function() {
+      $('#menu-menu-principal > .menu-item > a').parent().addClass("menu-item--not-active");
+      $('#menu-menu-principal > .menu-item > a').parent().removeClass("menu-item--active");
+      $(this).parent().addClass("menu-item--active");
+      $(this).parent().removeClass("menu-item--not-active");
+    });
+
+    $( "#menu-menu-principal" ).hover(function() {
+      $( "#menu-menu-principal" ).toggleClass('menu--hovered');
+      if(!$( "#menu-menu-principal" ).hasClass('menu--hovered')) {
+        $('#menu-menu-principal > .menu-item > a').parent().removeClass("menu-item--not-active");
+        $('#menu-menu-principal > .menu-item > a').parent().removeClass("menu-item--active");
+      }
+    });
+  }
+
+  document.getElementById("burger").addEventListener("click", function(){
+    $("#menu").toggleClass("menu--active");
+    $("body").toggleClass("menu-is-active");
+  });
 });
 

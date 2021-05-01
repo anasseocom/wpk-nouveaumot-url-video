@@ -1,0 +1,95 @@
+#menu {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    z-index: 999999999;
+    color: white;
+    left: 0;
+}
+
+.menu-is-active {
+    header {
+        .logo-container {
+            z-index: 99999999999;
+            #logo {
+                svg {
+                    path {
+                        fill: white;
+                    }
+                }
+            }
+        }
+
+        #burger {
+            z-index: 9999999999;
+
+            .burger-bar {
+                background-color: white;
+
+                &:first-child {
+                    transform: rotate(45deg) translate(0px, 7px);
+                    width: 80%;
+                }
+
+                &:last-child {
+                    transform: rotate(-45deg) translate(1px, -8px);
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+
+header {
+    .menu {
+        display: none;
+    
+        &-container {
+            height: calc(100vh - 160px);
+        }
+    
+        &--active {
+            display: block;
+        }
+    
+        &__list {
+            @apply flex flex-col;
+    
+            & > .menu-item {
+                @apply text-5xl font-bold my-3 uppercase transition-opacity duration-200 ease-in-out;
+                max-width: 50%;
+                width: max-content;
+    
+                &.menu-item--active {
+                    @apply opacity-100;
+
+                    & > .sub-menu {
+                        @apply opacity-100 z-100;
+                    }
+                }
+
+                &.menu-item--not-active {
+                    @apply opacity-10;
+
+                    & > .sub-menu {
+                        @apply opacity-0;
+                    }
+                }
+            }
+    
+            ul.sub-menu {
+                @apply absolute left-1/2 top-0 pl-40 opacity-0;
+    
+                li {
+                    @apply text-3xl capitalize;
+                }
+            }
+        }
+    }
+}
+
+.burger-bar {
+    transition: ease 0.2s;
+}
