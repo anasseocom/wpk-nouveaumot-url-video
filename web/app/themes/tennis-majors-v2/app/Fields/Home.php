@@ -33,7 +33,7 @@ class Home extends Field
 
             ->addPostObject('posts_on_top', [
                 'label' => 'Content on top',
-                'post_type' => [0 => 'post'],
+                'post_type' => [0 => 'post', 1 => 'videos'],
                 'multiple' => 1,
                 'max' => 10,
             ])
@@ -65,7 +65,7 @@ class Home extends Field
 
             ->addPostObject('stories_on_top', [
                 'label' => 'Stories on top',
-                'post_type' => [0 => 'post', 1 => 'curations'],
+                'post_type' => [0 => 'post', 1 => 'curations', 2 => 'videos'],
                 'multiple' => 1,
                 'max' => 10,
             ])
