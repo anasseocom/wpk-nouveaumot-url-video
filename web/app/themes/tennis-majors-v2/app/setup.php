@@ -22,7 +22,7 @@ add_action('wp_enqueue_scripts', function () {
     if (is_single() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
     }
-
+    wp_enqueue_style('adobe fonts', 'https://use.typekit.net/yvr8obr.css', false, null);
     wp_enqueue_style('sage/app.css', asset('styles/app.css')->uri(), false, null);
 }, 100);
 
