@@ -34,6 +34,7 @@ module.exports = {
         'logo-large': "164px",
         'logo': "150px",
         '1/2': '50%',
+        'article-default': 'calc(100% - 6rem)',
       },
       maxHeight: {
         'card': '28rem',

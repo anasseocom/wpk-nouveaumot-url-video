@@ -2,7 +2,7 @@
   $current_post_id = get_the_ID();
   $i = 0;
 @endphp
-<div class="bg-black text-white py-20">
+<div class="bg-black text-white py-20 px-4">
     @query([
           'post_type' => 'post',
           'posts_per_page' => 6,

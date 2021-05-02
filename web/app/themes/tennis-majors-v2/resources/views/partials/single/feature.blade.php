@@ -1,5 +1,5 @@
 <div class="feature px-4 mt-12">
-    <div class="article-container max-w-screen-xl m-auto">
+    <div class="article-container article-container--feature max-w-screen-xl m-auto">
       <article @php post_class() @endphp >
         <div class="max-w-screen-lg m-auto">
             <h1 class="font-bold text-5xl text-center">

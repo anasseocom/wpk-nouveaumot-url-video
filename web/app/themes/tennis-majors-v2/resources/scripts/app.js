@@ -271,7 +271,7 @@ $(document).ready(() => {
   document.getElementById("burger").addEventListener("click", function(){
     $("#menu").toggleClass("menu--active");
     $("body").toggleClass("menu-is-active");
-    $('#menu-menu-principal > .menu-item > a').parent().addClass("menu-item--not-active");
+    $('#menu-menu-principal > .menu-item > a').parent().removeClass("menu-item--not-active");
     $('#menu-menu-principal > .menu-item > a').parent().removeClass("menu-item--active");
   });
 });
