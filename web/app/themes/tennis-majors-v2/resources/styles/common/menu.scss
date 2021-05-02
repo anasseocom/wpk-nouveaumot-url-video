@@ -58,32 +58,31 @@ header {
             @apply flex flex-col;
     
             & > .menu-item {
-                @apply text-5xl font-bold my-3 uppercase transition-opacity duration-200 ease-in-out;
-                max-width: 50%;
+                @apply text-2xl sm:text-5xl font-bold my-3 uppercase transition-opacity duration-200 ease-in-out max-w-full sm:max-w-1/2;
                 width: max-content;
     
                 &.menu-item--active {
                     @apply opacity-100;
 
                     & > .sub-menu {
-                        @apply opacity-100 z-100;
+                        @apply sm:opacity-100 sm:z-100 block;
                     }
                 }
 
                 &.menu-item--not-active {
-                    @apply opacity-10;
+                    @apply sm:opacity-10;
 
                     & > .sub-menu {
-                        @apply opacity-0;
+                        @apply sm:opacity-0;
                     }
                 }
             }
     
             ul.sub-menu {
-                @apply absolute left-1/2 top-0 pl-40 opacity-0;
+                @apply pl-6 pt-2 hidden sm:absolute sm:left-1/2 sm:top-0 sm:pl-40 sm:opacity-0;
     
                 li {
-                    @apply text-3xl capitalize;
+                    @apply text-xl sm:text-3xl capitalize;
                 }
             }
         }

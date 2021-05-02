@@ -33,6 +33,7 @@ module.exports = {
         'screen-xxl': '1640px',
         'logo-large': "164px",
         'logo': "150px",
+        '1/2': '50%',
       },
       maxHeight: {
         'card': '28rem',
