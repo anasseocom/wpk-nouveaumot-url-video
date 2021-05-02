@@ -20,9 +20,9 @@
                         'post_status'    => 'publish',
                     ])
                     
-                    <div id="live-last-news-slider" class="grid gap-y-8">
+                    <div id="live-last-news-slider" class="grid gap-y-8 pb-36">
                         @posts
-                            <a href="{{ the_permalink() }}" class="md:max-w-lastnews pb-12">
+                            <a href="{{ the_permalink() }}" class="md:max-w-lastnews">
                                 <div class="grid grid-cols-12 gap-x-4">
                                     <div class="thumbnail col-span-4">
                                         {{ the_post_thumbnail('full') }}

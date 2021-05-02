@@ -1,11 +1,11 @@
-<div class="px-4 mt-12">
+<div class="mt-12">
   <div class="article-container article-container--default max-w-screen-xl m-auto flex flex-col items-end">
     <article @php post_class() @endphp >
-      <h1 class="font-bold text-3xl md:text-5xl max-w-screen-lg">
-      @title
+      <h1 class="font-bold text-3xl md:text-5xl max-w-screen-lg px-4">
+        @title
       </h1>
       <div class="grid grid-cols-12">
-        <div class="font-bold mt-4 md:mt-8 mb-4 text-lg col-span-12  md:col-span-8">
+        <div class="font-bold mt-4 md:mt-8 mb-4 text-lg col-span-12  md:col-span-8 px-4">
           @excerpt
         </div>
       </div>
