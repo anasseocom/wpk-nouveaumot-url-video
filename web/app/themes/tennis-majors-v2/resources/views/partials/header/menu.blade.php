@@ -1,6 +1,6 @@
 <div id="menu" class="menu">
     <div class="w-full top-0 z-infinite bg-black">
-        <div class="px-4 h-20 relative">
+        <div class="px-4 h-16 lg:h-20 relative">
         </div>
     </div>
     <div class="menu-container px-4 flex flex-row items-center">

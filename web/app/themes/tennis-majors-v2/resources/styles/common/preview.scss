@@ -32,7 +32,7 @@
     }
 
     &--slider {
-        @apply rounded-md bg-gray-100 py-7 px-5 h-screen max-h-card relative overflow-hidden text-white max-w-card;
+        @apply rounded-md bg-gray-100 py-7 px-5 h-screen max-h-card relative overflow-hidden text-white max-w-little-card lg:max-w-card;
 
         .thumbnail {
             @apply absolute w-full h-full object-cover top-0 left-0;
@@ -52,18 +52,18 @@
     }
 
     &--video {
-        @apply rounded-md bg-gray-100 p-5 h-screen max-h-48 relative overflow-hidden text-white;
+        @apply rounded-md bg-gray-100 h-0 pb-12/10 sm:pb-16/9 max-w-little-video-show sm:max-w-video-show relative overflow-hidden text-white;
 
         .thumbnail {
             @apply absolute w-full h-full object-cover top-0 left-0;
         }
 
         .gradient {
-            @apply absolute w-full h-full object-cover top-0 left-0 bg-gradient-to-t from-black to-transparent opacity-80;
+            @apply absolute w-full h-full object-cover top-0 left-0 bg-gradient-to-t from-black to-transparent opacity-100;
         }
 
         .title {
-            @apply relative uppercase font-bold text-sm;
+            @apply absolute top-16 sm:relative sm:top-auto uppercase font-bold text-sm;
         }
     }
 
@@ -85,7 +85,7 @@
         @apply grid grid-cols-12 gap-x-8;
 
         .thumbnail {
-            @apply relative w-full pb-100-100 col-span-4 h-0;
+            @apply relative w-full pb-1/1 col-span-4 h-0;
 
             img {
                 @apply absolute object-cover w-full h-full;
@@ -102,10 +102,10 @@
     }
 
     &--default-home {
-        @apply grid grid-cols-12 gap-x-8;
+        @apply grid grid-cols-12 gap-x-4 sm:gap-x-8;
 
         .thumbnail {
-            @apply relative w-full pb-100-100 col-span-5 h-0;
+            @apply relative w-full pb-1/1 col-span-4 sm:col-span-5 h-0;
 
             img {
                 @apply absolute object-cover w-full h-full;
@@ -113,7 +113,7 @@
         }
 
         .content {
-            @apply col-span-7;
+            @apply col-span-8 sm:col-span-7;
         }
 
         .title {
@@ -157,7 +157,7 @@
 .slider-preview-mode {
     .slick-slide:first-child{
         .preview--slider {
-            @apply max-w-cardfirst px-10 py-7;
+            @apply max-w-little-card lg:max-w-cardfirst py-7 px-5 lg:px-10 lg:py-7;
 
             .title {
                 @apply uppercase font-bold text-2xl mb-5

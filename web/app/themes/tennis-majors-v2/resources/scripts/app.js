@@ -52,8 +52,8 @@ $(document).ready(() => {
     $(".top-shows-slider").slick({
       infinite: false,
       speed: 300,
-      slidesToShow: 3.5,
       centerMode: false,
+      variableWidth: true,
       prevArrow: null,
       nextArrow: null,
     });
@@ -113,6 +113,24 @@ $(document).ready(() => {
       centerMode: true,
       prevArrow: null,
       nextArrow: null,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            infinite: true,
+            centerPadding: '10vw',
+          },
+        },
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 1,
+            infinite: true,
+            centerPadding: '20vw',
+          },
+        },
+      ],
     });
   }
 

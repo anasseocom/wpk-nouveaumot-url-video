@@ -29,7 +29,7 @@
             @if($user_is_major)
                 <div class="user user--major">
                     <img src="{{ $image['url'] }}" class="absolute bottom-0 w-majoruser left-1/2 transform -translate-x-1/2">
-                    <div class="w-full pb-majoruser">
+                    <div class="w-full pb-12/10">
                     </div>
                     <div class="bg-black rounded-lg absolute w-full h-bgmajorcard bottom-0 -z-1">
                     </div>

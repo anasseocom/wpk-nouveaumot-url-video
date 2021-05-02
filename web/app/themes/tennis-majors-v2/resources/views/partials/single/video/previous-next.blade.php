@@ -24,7 +24,7 @@
                         </div>
                     </div>
                     <div class="flex items-center col-span-2">
-                        <div class="relative pb-100-100 w-full h-0 rounded-xl overflow-hidden">
+                        <div class="relative pb-1/1 w-full h-0 rounded-xl overflow-hidden">
                             {{ the_post_thumbnail('full', array('class' => 'thumbnail absolute object-cover w-full h-full')) }}
                         </div>
                     </div>
@@ -51,7 +51,7 @@
                 <div class="grid grid-cols-6 gap-2 pb-3">
                     <div class="font-bold col-span-4 text-sm flex items-center">
                         <div class="flex items-center col-span-2">
-                            <div class="relative pb-100-100 w-full h-0 rounded-xl overflow-hidden">
+                            <div class="relative pb-1/1 w-full h-0 rounded-xl overflow-hidden">
                                 {{ the_post_thumbnail('full', array('class' => 'thumbnail absolute object-cover w-full h-full')) }}
                             </div>
                         </div>
