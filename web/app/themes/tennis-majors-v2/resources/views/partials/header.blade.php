@@ -14,4 +14,5 @@
   </div>
   @include('partials.header.menu')
   @include('partials.header.live-last-news')
+  @include('partials.header.menu-thumbs')
 </header>

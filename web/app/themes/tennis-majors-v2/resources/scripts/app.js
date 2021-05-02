@@ -254,17 +254,20 @@ $(document).ready(() => {
       }
     });
 
-    $( "#menu-menu-principal > .menu-item > a" ).click(function() {
-      if($(this).parent().hasClass('menu-item--active')) {
-        $('#menu-menu-principal > .menu-item > a').parent().addClass("menu-item--not-active");
-        $('#menu-menu-principal > .menu-item > a').parent().removeClass("menu-item--active");
-      } else {
-        $('#menu-menu-principal > .menu-item > a').parent().addClass("menu-item--not-active");
-        $('#menu-menu-principal > .menu-item > a').parent().removeClass("menu-item--active");
-        $(this).parent().toggleClass("menu-item--active");
-        $(this).parent().removeClass("menu-item--not-active");
-      }
-    });
+    var vw = (Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0));
+    if( vw < 640){
+      $( "#menu-menu-principal > .menu-item > a" ).click(function() {
+        if($(this).parent().hasClass('menu-item--active')) {
+          $('#menu-menu-principal > .menu-item > a').parent().addClass("menu-item--not-active");
+          $('#menu-menu-principal > .menu-item > a').parent().removeClass("menu-item--active");
+        } else {
+          $('#menu-menu-principal > .menu-item > a').parent().addClass("menu-item--not-active");
+          $('#menu-menu-principal > .menu-item > a').parent().removeClass("menu-item--active");
+          $(this).parent().toggleClass("menu-item--active");
+          $(this).parent().removeClass("menu-item--not-active");
+        }
+      });
+    }
 
     $( "#menu-menu-principal" ).hover(function() {
       var vw = (Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0));
@@ -278,11 +281,11 @@ $(document).ready(() => {
     });
   }
 
-  document.getElementById("burger").addEventListener("click", function(){
-    $("#menu").toggleClass("menu--active");
-    $("body").toggleClass("menu-is-active");
-    $('#menu-menu-principal > .menu-item > a').parent().removeClass("menu-item--not-active");
-    $('#menu-menu-principal > .menu-item > a').parent().removeClass("menu-item--active");
-  });
+    document.getElementById("burger").addEventListener("click", function(){
+      $("#menu").toggleClass("menu--active");
+      $("body").toggleClass("menu-is-active");
+      $('#menu-menu-principal > .menu-item > a').parent().removeClass("menu-item--not-active");
+      $('#menu-menu-principal > .menu-item > a').parent().removeClass("menu-item--active");
+    });
 });
 
