@@ -1,13 +1,3 @@
-.block-editor-block-list__layout {
+.block-editor-block-list__layout{font-family:futura-pt,ui-sans-serif,system-ui}.wp-block{max-width:768px}.wp-block.editor-post-title__block .editor-post-title__input{font-family:futura-pt,ui-sans-serif,system-ui!important}
 
-    font-family: futura-pt, ui-sans-serif, system-ui
-}
-
-.wp-block {
-
-    max-width: 768px
-}
-.wp-block.editor-post-title__block .editor-post-title__input {
-
-    font-family: futura-pt, ui-sans-serif, system-ui !important
-}
+/*# sourceMappingURL=editor.css.map*/
