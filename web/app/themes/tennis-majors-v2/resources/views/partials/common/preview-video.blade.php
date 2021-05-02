@@ -1,5 +1,5 @@
 <a href="{{ the_permalink() }}" class="preview preview--video">
-    {{ the_post_thumbnail('full', array('class' => 'thumbnail')) }}
+    {{ the_post_thumbnail('16-9_xs', array('class' => 'thumbnail')) }}
     <div class="gradient"></div>
     <div>
         <div class="w-screen h-full"></div>

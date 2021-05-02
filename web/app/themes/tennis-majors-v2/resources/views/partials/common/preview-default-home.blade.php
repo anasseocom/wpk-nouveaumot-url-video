@@ -8,6 +8,6 @@
         @include('partials.common.author')
     </div>
     <div class="thumbnail">
-        {{ the_post_thumbnail('full') }}
+        {{ the_post_thumbnail('1-1_sm') }}
     </div>
 </a>

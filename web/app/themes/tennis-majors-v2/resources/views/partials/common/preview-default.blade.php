@@ -1,6 +1,6 @@
 <a href="{{ the_permalink() }}" class="preview preview--default">
     <div class="thumbnail">
-        {{ the_post_thumbnail('full') }}
+        {{ the_post_thumbnail('1-1_sm') }}
     </div>
     <div class="content">
         <div class="text-xs mb-3">{{ get_time_since_posted() }}</div>
