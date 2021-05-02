@@ -7,11 +7,15 @@
 
     .content {
         h2, h3, h4, h5, h6, p {
-            @apply mb-6;
+            @apply mb-6 px-4;
         }
 
         h2 {
             @apply font-bold uppercase text-2xl mt-10;
+        }
+
+        p {
+            @apply px-4 pb-4;
         }
     }
 }
@@ -19,26 +23,20 @@
 .feature {
     .content {
         h1, h2, h3, h4, h5, h6, p {
-            @apply max-w-screen-sm ml-auto mr-auto;
+            @apply max-w-screen-sm m-auto pb-4;
         }
 
         blockquote {
-            @apply mt-40 mb-20 relative;
+            @apply mt-36 mb-10 relative px-4;
 
             &::before {
+                @apply absolute w-20 h-20 -top-4 left-4  transform -translate-y-full bg-contain bg-no-repeat;
                 content: "";
-                position: absolute;
-                width: 4rem;
-                height: 4rem;
                 background-image: url(../images/quote.png);
-                top: -1rem;
-                transform: translateY(-100%);
-                background-size: contain;
-                background-repeat: no-repeat;
             }
 
             p {
-                @apply max-w-screen-xl uppercase font-bold text-5xl not-italic;
+                @apply max-w-screen-xl uppercase font-bold text-2xl lg:text-5xl not-italic px-0;
             }
 
             cite {
