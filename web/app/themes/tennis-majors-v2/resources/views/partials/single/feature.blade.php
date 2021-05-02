@@ -6,7 +6,7 @@
             <h1 class="font-bold text-3xl lg:text-5xl text-center">
               @title
             </h1>
-            <div class="font-bold mt-8 mb-4 text-lg max-w-screen-md m-auto text-center">
+            <div class="font-bold mt-8 mb-4 text-xl max-w-screen-md m-auto text-center">
               @excerpt
             </div>
           </div>
