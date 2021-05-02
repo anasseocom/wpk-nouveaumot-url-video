@@ -15,6 +15,12 @@ $(document).ready(() => {
       prevArrow: null,
       nextArrow: null,
       variableWidth: true,
+      responsive: [
+        {
+          breakpoint: 764,
+          settings: "unslick",
+        },
+      ],
     });
 
     if (window.innerWidth > 1310) {
@@ -197,6 +203,10 @@ $(document).ready(() => {
       if(liveLastNewsActive == "on" || liveLastNewsActive == null) {
         activeLiveLastNews()
         localStorage.setItem('liveLastNewsActive', 'on');
+        var vw = (Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0));
+        if( vw > 640){
+          hideLiveLastNews()
+        }
       }
 
       if(liveLastNewsActive == "off") {
@@ -209,7 +219,7 @@ $(document).ready(() => {
       }
 
       if(liveLastNewsActive == "on") {
-        hideLiveLastNews()
+        hideLiveLastNews();
       }
 
       if(liveLastNewsActive == "off") {

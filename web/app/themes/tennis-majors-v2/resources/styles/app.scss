@@ -42,7 +42,8 @@
 
 .live-last-news {
     transition: all ease-in 500ms;
-    max-height: 800px;
+    max-height: calc(100vh - 4rem);
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -67,5 +68,17 @@
         .live-last-news--toggle-border {
             @apply w-full;
         }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .live-last-news {
+        max-height: 800px;
+        height: auto;
+    }
+
+    .live-last-news--hidden {
+        max-height: 0;
+        overflow: hidden;
     }
 }
