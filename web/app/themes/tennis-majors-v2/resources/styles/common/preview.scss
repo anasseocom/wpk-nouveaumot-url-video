@@ -86,7 +86,7 @@
     }
 
     &--default {
-        @apply grid grid-cols-12 gap-x-8;
+        @apply grid grid-cols-12 gap-x-4 sm:gap-x-8;
 
         .thumbnail {
             @apply relative w-full pb-1/1 col-span-4 h-0;
@@ -167,5 +167,11 @@
                 @apply uppercase font-bold text-2xl mb-5
             }
         }
+    }
+}
+
+.list-show {
+    .preview--video {
+        @apply max-w-full pb-16/9
     }
 }

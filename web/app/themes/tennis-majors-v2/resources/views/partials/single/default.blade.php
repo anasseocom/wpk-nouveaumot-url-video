@@ -11,10 +11,10 @@
       </div>
       <div class="grid grid-cols-12 gap-x-8">
         <div class="col-span-12 md:col-span-8">
-          <div class="mb-4">
+          <div class="mb-4 mx-4">
             {{ the_post_thumbnail('full', array('class' => 'thumbnail')) }}
           </div>
-          <div>
+          <div class="mx-4">
             @include('partials.single.common.author-date')
           </div>
           <div class="content max-w-none">

@@ -1,9 +1,15 @@
 #archive {
-    .background  {
-        @apply absolute max-h-96 overflow-hidden;
+    .background-container {
+        position: absolute;
+        z-index: -1;
+        width: 100vw;
 
-        img {
-            @apply object-cover w-full h-full -z-1 ;
+        .background  {
+            @apply relative h-96 overflow-hidden;
+    
+            img {
+                @apply object-cover w-full h-full -z-1 ;
+            }
         }
     }
 }

@@ -23,12 +23,17 @@
 
     <div id="show" class="relative bg-black text-white">
         <div class="max-w-screen-lg m-auto">
-            <div class="grid grid-cols-6 gap-x-8 py-12 mx-4">
-                <div class="col-span-3">
-                    <a class="uppercase text-xs link--arrow link--arrow-white link--arrow-left"  href="{{ get_permalink( get_page_by_path( 'shows' ) )}}">
-                        Back to all the shows
-                    </a>
-                    <div class="mt-4 mb-5">
+            <div class="grid grid-cols-6 gap-x-8 py-8 sm:py-12 mx-4">
+                <div class="col-span-6 md:col-span-3">
+                    <div class="mb-4">
+                        <a class="uppercase text-xs link--arrow link--arrow-white link--arrow-left"  href="{{ get_permalink( get_page_by_path( 'shows' ) )}}">
+                            Back to all the shows
+                        </a>
+                    </div>
+                    <div class="block md:hidden">
+                        <img src="{{ $image['url'] }}">
+                    </div>
+                    <div class="mt-12 mb-5">
                         <h1 class="uppercase text-5xl">{{ single_cat_title() }}</h1>
                     </div>
                     <div class="uppercase text-xl font-bold mb-5">
@@ -42,14 +47,14 @@
                         @php echo term_description() @endphp
                     </div>
                 </div>
-                <div class="col-span-3">
+                <div class="col-span-6 md:col-span-3 hidden md:block">
                     <img src="{{ $image['url'] }}">
                 </div>
             </div>
         </div>
         <div class="max-w-screen-lg m-auto">
-            <div class="grid grid-cols-12 gap-x-8 py-12 mx-4">
-                <div class="col-span-9">
+            <div class="grid grid-cols-12 md:gap-x-8 py-12 mx-4">
+                <div class="col-span-12 md:col-span-9">
                     <div class="flex justify-between items-center mb-4">
                         <div class="uppercase text-xl font-bold">
                             The
@@ -62,7 +67,7 @@
                         @shortcode('[facetwp facet="video_types"]')
                     </div>
                     <div>
-                    <div class="grid grid-cols-2 gap-3">
+                    <div class="list-show col-span-12 grid grid-cols-1 md:grid-cols-2 gap-3">
                         @posts
                             @include('partials.common.preview-video')
                         @endposts
