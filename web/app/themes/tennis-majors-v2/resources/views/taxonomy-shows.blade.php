@@ -27,7 +27,7 @@
                 <div class="col-span-6 md:col-span-3">
                     <div class="mb-4">
                         <a class="uppercase text-xs link--arrow link--arrow-white link--arrow-left"  href="{{ get_permalink( get_page_by_path( 'shows' ) )}}">
-                            Back to all the shows
+                            {{ __('Back to all the shows', 'sage') }}
                         </a>
                     </div>
                     <div class="block md:hidden">
@@ -38,9 +38,9 @@
                     </div>
                     <div class="uppercase text-xl font-bold mb-5">
                         @if($count_episodes == 1)
-                            {{ $count_episodes }} épisode
+                            {{ $count_episodes }} {{ __('episode', 'sage') }}
                         @else
-                            {{ $count_episodes }} épisodes
+                            {{ $count_episodes }} {{ __('episodes', 'sage') }}
                         @endif
                     </div>
                     <div>
@@ -59,9 +59,9 @@
                         <div class="uppercase text-xl font-bold">
                             The
                             @if($count_episodes == 1)
-                                episode
+                            {{ __('episode', 'sage') }}
                             @else
-                                episodes
+                            {{ __('episodes', 'sage') }}
                             @endif
                         </div>
                         @shortcode('[facetwp facet="video_types"]')

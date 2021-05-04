@@ -3,7 +3,7 @@
 </time>
 
 <p class="byline author vcard">
-  <span>{{ __('By', 'sage') }}</span>
+  <span>{{ __('By', 'sage') </span>
   <a href="@authorurl" rel="author" class="fn">
   @author
   </a>

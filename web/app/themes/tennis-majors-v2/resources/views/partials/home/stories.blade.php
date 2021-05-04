@@ -6,7 +6,7 @@
 @if( $stories_on_top )
     <div id="top-stories" class="pt-20 pb-8 pl-4 relative">
         <div class="max-w-screen-lg m-auto">
-            <h2 class="text-4xl uppercase pl-4 text-black pb-8">10 Stories to read now</h2>
+            <h2 class="text-4xl uppercase pl-4 text-black pb-8">{{ __('10 stories to read now', 'sage')</h2>
         </div>
         <div id="top-stories-slider">
             @foreach( $stories_on_top as $post)
