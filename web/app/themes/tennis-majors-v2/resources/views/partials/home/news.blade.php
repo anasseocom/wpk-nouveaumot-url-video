@@ -7,7 +7,7 @@
 
 <div id="partners" class="py-12 px-4 relative bg-black text-white">
     <div class="max-w-screen-lg m-auto">
-        <h2 class="text-4xl uppercase pl-4 text-white pb-8">{{ __('Tennis news', 'sage')</h2>
+        <h2 class="text-4xl uppercase pl-4 text-white pb-8">{{ __('Tennis news', 'sage') }}</h2>
     </div>
     <div class="max-w-screen-lg m-auto">
         @shortcode('[facetwp facet="category"]')
@@ -22,6 +22,6 @@
         @endposts
     </div>
     <div class="flex flex-col items-center my-8">
-        <a href="{{ get_permalink( get_page_by_path( 'news' ) )}}" class="btn btn--white btn--arrow-right">{{ __('Discover all', 'sage')</a>
+        <a href="{{ get_permalink( get_page_by_path( 'news' ) )}}" class="btn btn--white btn--arrow-right">{{ __('Discover all', 'sage')}}</a>
     </div>
 </div>

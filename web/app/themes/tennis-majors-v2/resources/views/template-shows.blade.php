@@ -16,7 +16,7 @@
 @endphp
 <div class="bg-black">
     <div class="max-w-screen-lg m-auto">
-        <h2 class="text-5xl uppercase text-white text-center pt-20 pb-10">Our <span class="font-bold">{{ __('Shows', 'sage')</span></h2>
+        <h2 class="text-5xl uppercase text-white text-center pt-20 pb-10">Our <span class="font-bold">{{ __('Shows', 'sage') }}</span></h2>
     </div>
     <div>
         <div id="shows-slider">
@@ -33,7 +33,7 @@
                             <div class="grid grid-cols-6 gap-12">
                                 <div class="col-span-5 flex items-end">
                                     <div class="content">
-                                        <span class="bg-white px-4 py-2 rounded-full text-black uppercase font-bold text-xs">{{ __('must see', 'sage')</span>
+                                        <span class="bg-white px-4 py-2 rounded-full text-black uppercase font-bold text-xs">{{ __('must see', 'sage')}}</span>
                                         <div class="text-xs mt-8 mb-5">{{ the_time('j F Y') }}</div>
                                         <h1 class="font-bold uppercase text-3xl text-white">{{ the_title() }}</h1>
                                     </div>

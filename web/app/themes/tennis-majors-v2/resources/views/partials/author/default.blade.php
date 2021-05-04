@@ -13,7 +13,7 @@
 @endphp
 <div>
     <div class="max-w-screen-xl m-auto pt-20">
-        <a href="{{ get_permalink( get_page_by_path( 'major-team' ) )}}" class="uppercase text-xs">{{ __('Back to major team', 'sage')</a>
+        <a href="{{ get_permalink( get_page_by_path( 'major-team' ) )}}" class="uppercase text-xs">{{ __('Back to major team', 'sage')}}</a>
     </div>
     <div class="">
         <div class="text-center flex-col flex items-center">
