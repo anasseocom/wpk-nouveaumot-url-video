@@ -6,7 +6,7 @@
 
 <div id="top-shows" class="mt-8 lg:mt-20 pb-16 relative text-white">
     <div class="max-w-screen-lg m-auto">
-        <h2 class="text-3xl lg:text-4xl uppercase pl-4 text-black">Latest <span class="font-bold">videos</span></h2>
+        <h2 class="text-3xl lg:text-4xl uppercase pl-4 text-black">('Latest', 'sage') <span class="font-bold">('videos', 'sage')</span></h2>
     </div>
     @if( $video_on_top )
         @php
@@ -27,7 +27,7 @@
                     </div>
                     <div class="col-span-5 mt-6 lg:mt-0 lg:col-span-2 flex items-center">
                         <div>
-                            <span class="bg-white px-4 py-2 rounded-full text-black uppercase font-bold text-xs">must see</span>
+                            <span class="bg-white px-4 py-2 rounded-full text-black uppercase font-bold text-xs">('must see', 'sage')</span>
                             <h3 class="mt-4 mb-3 lg:mt-8 lg:mb-6">{{ the_time('j F Y') }}</h3>
                             <div class="uppercase font-bold text-2xl lg:text-4xl">{{ the_title() }}</div>
                         </div>
@@ -45,7 +45,7 @@
                 <div class="mb-8">
                     <div class="flex justify-between sm:justify-start mb-2">
                         <h3 class="ml-2 uppercase inline-block mr-4">{{ $show->name }}</h3>
-                        <a href="{{ get_term_link($show) }}" class="inline-block text-xs link--arrow link--arrow-white link--arrow-right flex items-center mr-2"><span>View All</span></a>
+                        <a href="{{ get_term_link($show) }}" class="inline-block text-xs link--arrow link--arrow-white link--arrow-right flex items-center mr-2"><span>('View all', 'sage')</span></a>
                     </div>
                     
                     @php
@@ -69,8 +69,8 @@
                         @endposts
                         <div>
                             <div class="flex flex-col items-center">
-                                <div class="uppercase font-bold text-center pt-8">Wanna see more</br> {{ $show->name }} episodes ?</div>
-                                <a href="{{ get_term_link($show) }}" class="btn btn--white btn--arrow-right">Discover all</a>
+                                <div class="uppercase font-bold text-center pt-8">('Wanna see more', 'sage')</br> {{ $show->name }} ('episodes', 'sage')?</div>
+                                <a href="{{ get_term_link($show) }}" class="btn btn--white btn--arrow-right">('Discover all', 'sage')</a>
                             </div>
                         </div>
                     </div>
@@ -80,6 +80,6 @@
     @endif
 
     <div class="flex flex-col items-center">
-        <a href="{{ get_permalink( get_page_by_path( 'shows' ) )}}" class="btn btn--white btn--arrow-right">Discover all</a>
+        <a href="{{ get_permalink( get_page_by_path( 'shows' ) )}}" class="btn btn--white btn--arrow-right">('Discover all', 'sage')</a>
     </div>
 </div>

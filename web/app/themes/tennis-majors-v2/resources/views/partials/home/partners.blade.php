@@ -6,7 +6,7 @@
 @if( $partners )
     <div id="partners" class="py-12 px-4 relative">
         <div class="max-w-screen-lg m-auto">
-            <h2 class="text-4xl uppercase pl-4 text-black pb-8">Our partners</h2>
+            <h2 class="text-4xl uppercase pl-4 text-black pb-8">('Our partners', 'sage')</h2>
         </div>
         <div id="top-stories-slider" class="max-w-screen-xl m-auto">
             <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
