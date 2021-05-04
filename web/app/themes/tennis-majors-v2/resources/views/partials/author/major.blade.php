@@ -12,7 +12,7 @@
 @endphp
 <div class="bg-black text-white px-20">
     <div class="max-w-screen-xl m-auto pt-20">
-        <a href="{{ get_permalink( get_page_by_path( 'major-team' ) )}}" class="uppercase text-xs">{{ __('Back to the team', 'sage')</a>
+        <a href="{{ get_permalink( get_page_by_path( 'major-team' ) )}}" class="uppercase text-xs">('Back to the team', 'sage')</a>
     </div>
     <div class="max-w-screen-xl m-auto">
         <div class="grid grid-cols-12 gap-x-8">

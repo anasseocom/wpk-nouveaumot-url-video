@@ -13,7 +13,7 @@
 @endphp
 <div>
     <div class="max-w-screen-xl m-auto pt-20">
-        <a href="{{ get_permalink( get_page_by_path( 'major-team' ) )}}" class="uppercase text-xs">{{ __('Back to major team', 'sage')</a>
+        <a href="{{ get_permalink( get_page_by_path( 'major-team' ) )}}" class="uppercase text-xs">('Back to major team', 'sage')</a>
     </div>
     <div class="">
         <div class="text-center flex-col flex items-center">
@@ -40,7 +40,7 @@
         </div>
         @if($post_on_top)
             <div class="mt-10 max-w-screen-lg m-auto">
-                <h2 class="uppercase">{{ __('recommended', 'sage') <span class="font-bold">{{ __('by the writer', 'sage')</span></h2>
+                <h2 class="uppercase">('recommended', 'sage') <span class="font-bold">('by the writer', 'sage')</span></h2>
                 <div class="grid grid-cols-12 gap-8 mt-6">
                     @php
                         setup_postdata($post_on_top);
@@ -62,7 +62,7 @@
         @endif
 
         <div class="mt-20 max-w-screen-lg m-auto">
-            <h2 class="uppercase">{{ __('Last', 'sage') <span class="font-bold">{{ __('articles', 'sage')</span></h2>
+            <h2 class="uppercase">('Last', 'sage') <span class="font-bold">('articles', 'sage')</span></h2>
             <div class="grid grid-cols-3 gap-x-8 gap-y-16 mt-6 mb-28">
                 @posts
                     @include('partials.common.preview-basic')

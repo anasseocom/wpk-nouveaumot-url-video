@@ -10,11 +10,11 @@
 @endphp
 <div id="major-team" class="pt-20 pb-8 pl-4 relative">
     <div class="max-w-screen-xl m-auto">
-        <h2 class="text-4xl uppercase text-black text-center pb-2">{{ __('A major team', 'sage')</h2>
-        <p class="font-bold text-center pb-8">{{ __('The best tennis writer and experts are there', 'sage')</p>
+        <h2 class="text-4xl uppercase text-black text-center pb-2">('A major team', 'sage')</h2>
+        <p class="font-bold text-center pb-8">('The best tennis writer and experts are there', 'sage')</p>
     </div>
     <div class="max-w-screen-xl m-auto border-b-2 border-black mt-12 pb-4 mb-8">
-        <div class="uppercase">Meet <span class="font-bold">{{ __('The figures', 'sage')</span></div>
+        <div class="uppercase">Meet <span class="font-bold">('The figures', 'sage')</span></div>
     </div>
     <div id="major-team-slider">
         @foreach( $users as $user)
@@ -34,14 +34,14 @@
                     <div class="bg-black rounded-lg absolute w-full h-bgmajorcard bottom-0 -z-1">
                     </div>
                     <h3 class="uppercase text-white text-xl text-center absolute bottom-8 left-1/2 transform -translate-x-1/2">{{ $first_name }} </br><span class="font-bold text-2xl">{{ $last_name }}</span></h3>
-                    <a href="{{ get_author_posts_url($id) }}" class="text-xs uppercase underline text-white">{{ __('See content', 'sage') </a>
+                    <a href="{{ get_author_posts_url($id) }}" class="text-xs uppercase underline text-white">('See content', 'sage')</a>
                 </div>
             @endif
         @endforeach
     </div>
     <div class="max-w-screen-xl m-auto">
         <div class="border-b-2 border-black mt-20 pb-4">
-            <div class="uppercase">Meet <span class="font-bold">{{ __('the figures', 'sage')</span></div>
+            <div class="uppercase">Meet <span class="font-bold">('the figures', 'sage')</span></div>
         </div>
         @foreach( $users as $user)
             @php
@@ -63,7 +63,7 @@
                       <div class="ml-4">
                         <div class="uppercase">{{ $first_name}} <span class="font-bold">{{$last_name }}</span></div>
                         <div class="uppercase font-bold text-xs mt-1">{{ $user_function }}</div>
-                        <a href="{{ get_author_posts_url($id) }}" class="text-xs uppercase underline">{{ __('read articles', 'sage')</a>
+                        <a href="{{ get_author_posts_url($id) }}" class="text-xs uppercase underline">('read articles', 'sage')</a>
                       </div>
                     </div>
                 </div>
