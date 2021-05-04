@@ -24,7 +24,7 @@
 @endphp
 <div>
     <div class="max-w-screen-lg m-auto">
-        <h2 class="text-5xl uppercase text-black text-center my-10 lg:my-20">('Our', 'sage') <span class="font-bold">('Features', 'sage')</span></h2>
+        <h2 class="text-5xl uppercase text-black text-center my-10 lg:my-20">Our <span class="font-bold">Features</span></h2>
     </div>
     <div id="slider-cards" class="max-w-screen-xl ml-4 xl:m-auto py-5 lg:py-8 relative">
         <div id="slider-cards--arrow" class="absolute z-10 shadow-lg rounded-full cursor-pointer transform -translate-y-1/2 -translate-x-1/2 top-1/2 right-0">

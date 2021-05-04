@@ -15,7 +15,7 @@
             <div class="prev-next--arrow"></div>
             <div class="prev-next--content group-hover:translate-x-0">
                 <div class="uppercase text-xs mb-2">
-                ('Previous', 'sage')
+                    Previous
                 </div>
                 <div class="grid grid-cols-6 gap-2 pb-3">
                     <div class="font-bold col-span-4 text-sm flex items-center">
@@ -46,7 +46,7 @@
             <div class="prev-next--arrow"></div>
             <div class="prev-next--content group-hover:translate-x-0">
                 <div class="uppercase text-xs mb-2">
-                ('Next', 'sage')
+                    Next
                 </div>
                 <div class="grid grid-cols-6 gap-2 pb-3">
                     <div class="font-bold col-span-4 text-sm flex items-center">

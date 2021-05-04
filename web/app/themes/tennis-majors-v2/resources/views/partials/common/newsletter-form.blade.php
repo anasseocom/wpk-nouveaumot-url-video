@@ -7,8 +7,8 @@
         </div>
         <div class="newsletter-form-baseline">
             <div>
-                <h2 class="uppercase"><span class="font-bold text-4xl">('Subscribe', 'sage')</span> </br><span class="text-2xl">('to our newsletter', 'sage')</span></h2>
-                <div class="little-baseline">('Stay in touch with the latest news, right into your inbox!', 'sage')</div>
+                <h2 class="uppercase"><span class="font-bold text-4xl">Subscribe</span> </br><span class="text-2xl">to our newsletter</span></h2>
+                <div class="little-baseline">Stay in touch with the latest news, right into your inbox!</div>
             </div>
         </div>
         <div class="newsletter-form-form">

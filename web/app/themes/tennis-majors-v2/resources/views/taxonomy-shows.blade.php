@@ -26,16 +26,16 @@
             <div class="grid grid-cols-6 gap-x-8 py-12 mx-4">
                 <div class="col-span-3">
                     <a class="uppercase text-xs link--arrow link--arrow-white link--arrow-left"  href="{{ get_permalink( get_page_by_path( 'shows' ) )}}">
-                    ('Back to all the shows', 'sage')
+                        Back to all the shows
                     </a>
                     <div class="mt-4 mb-5">
                         <h1 class="uppercase text-5xl">{{ single_cat_title() }}</h1>
                     </div>
                     <div class="uppercase text-xl font-bold mb-5">
                         @if($count_episodes == 1)
-                            {{ $count_episodes }} ('episode', 'sage')
+                            {{ $count_episodes }} épisode
                         @else
-                            {{ $count_episodes }} ('episodes', 'sage')
+                            {{ $count_episodes }} épisodes
                         @endif
                     </div>
                     <div>
@@ -54,9 +54,9 @@
                         <div class="uppercase text-xl font-bold">
                             The
                             @if($count_episodes == 1)
-                            ('episode', 'sage')
+                                episode
                             @else
-                            ('episodes', 'sage')
+                                episodes
                             @endif
                         </div>
                         @shortcode('[facetwp facet="video_types"]')
