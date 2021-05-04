@@ -112,7 +112,6 @@ $(document).ready(() => {
 
   if ($('#major-team').length) {
     $("#major-team-slider").slick({
-      infinite: false,
       speed: 300,
       infinite: true,
       slidesToShow: 5,
@@ -137,6 +136,33 @@ $(document).ready(() => {
           },
         },
       ],
+    });
+  }
+
+  if ($('#major-page').length) {
+    $("#major-team-slider").slick({
+      infinite: false,
+      speed: 300,
+      variableWidth: true,
+      centerMode: false,
+      prevArrow: null,
+      nextArrow: null,
+    });
+
+    if (window.innerWidth > 1310) {
+      var leftMarginTopMajor = ((window.innerWidth / 2) - 655);
+      document.getElementById('major-team-slider').style.marginLeft = leftMarginTopMajor + "px";
+    }  else {
+      document.getElementById('major-team-slider').style.marginLeft = "auto";
+    }
+
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 1310) {
+        var leftMarginTopMajor = ((window.innerWidth / 2) - 655);
+        document.getElementById('major-team-slider').style.marginLeft = leftMarginTopMajor + "px";
+      }  else {
+        document.getElementById('major-team-slider').style.marginLeft = "auto";
+      }
     });
   }
 

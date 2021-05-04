@@ -3,3 +3,11 @@
         @apply relative;
     }
 }
+
+#major-page {
+    .user {
+        &--major {
+            @apply w-full max-w-85vw sm:max-w-majoruserpage;
+        }
+    }
+}

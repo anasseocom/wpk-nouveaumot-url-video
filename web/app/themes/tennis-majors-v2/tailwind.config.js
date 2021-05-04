@@ -35,6 +35,8 @@ module.exports = {
         'logo': "150px",
         '1/2': '50%',
         'article-default': 'calc(100% - 6rem)',
+        'majoruserpage': '23rem',
+        '85vw' : '85vw',
       },
       maxHeight: {
         'card': '28rem',
@@ -52,8 +54,10 @@ module.exports = {
       spacing: {
         '16/9': '56.25%',
         '12/10': '120%',
+        '1/2': '50%',
         '1/1': '100%',
         '1/10':  '10%',
+        '55/100':  '55%',
       },
       lineHeight: {
         'number-stories': '6rem',

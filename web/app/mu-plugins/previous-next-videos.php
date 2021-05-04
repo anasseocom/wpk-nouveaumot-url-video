@@ -28,73 +28,80 @@ function get_next_video($post) {
 function get_prev_video_id($post) {
     global $post;
     $post_id = $post->ID;
+    $current_term_id = null;
     $terms = get_the_terms( $post->ID, 'shows' ); 
-    foreach($terms as $term) {
-      $current_term = $term;
-    }
-    $current_term_id = $current_term->term_id;
+    if($terms != null) {
+        foreach($terms as $term) {
+            $current_term = $term;
+          }
+          $current_term_id = $current_term->term_id;
 
-    $args = array( 
-        'post_type' => 'videos',
-        'tax_query' => array(
-            array(
-                'taxonomy' => 'shows',
-                'field' => 'slug',
-                'terms' => $current_term->slug,
+          $args = array( 
+            'post_type' => 'videos',
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'shows',
+                    'field' => 'slug',
+                    'terms' => $current_term->slug,
+                )
             )
-        )
-    );
+        );
 
-    $posts = get_posts( $args );
+        $posts = get_posts( $args );
 
-    $ids = array();
-    foreach ( $posts as $thepost ) {
-        $ids[] = $thepost->ID;
-    }
+        $ids = array();
+        foreach ( $posts as $thepost ) {
+            $ids[] = $thepost->ID;
+        }
 
-    $thisindex = array_search( $post_id, $ids );
-    $previd    = isset( $ids[ $thisindex - 1 ] ) ? $ids[ $thisindex - 1 ] : false;
-    
-    if (false !== $previd ) {
-        return $previd;
-    } else {
-        return end($ids);
+        $thisindex = array_search( $post_id, $ids );
+        $previd    = isset( $ids[ $thisindex - 1 ] ) ? $ids[ $thisindex - 1 ] : false;
+        
+        if (false !== $previd ) {
+            return $previd;
+        } else {
+            return end($ids);
+        }
     }
 }
 
 function get_next_video_id($post) {
     global $post;
     $post_id = $post->ID;
+    $current_term_id = null;
     $terms = get_the_terms( $post->ID, 'shows' ); 
-    foreach($terms as $term) {
-      $current_term = $term;
-    }
-    $current_term_id = $current_term->term_id;
+    if($terms != null) {
+        $terms = get_the_terms( $post->ID, 'shows' ); 
+        foreach($terms as $term) {
+        $current_term = $term;
+        }
+        $current_term_id = $current_term->term_id;
 
-    $args = array( 
-        'post_type' => 'videos',
-        'tax_query' => array(
-            array(
-                'taxonomy' => 'shows',
-                'field' => 'slug',
-                'terms' => $current_term->slug,
+        $args = array( 
+            'post_type' => 'videos',
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'shows',
+                    'field' => 'slug',
+                    'terms' => $current_term->slug,
+                )
             )
-        )
-    );
+        );
 
-    $posts = get_posts( $args );
+        $posts = get_posts( $args );
 
-    $ids = array();
-    foreach ( $posts as $thepost ) {
-        $ids[] = $thepost->ID;
-    }
+        $ids = array();
+        foreach ( $posts as $thepost ) {
+            $ids[] = $thepost->ID;
+        }
 
-    $thisindex = array_search( $post_id, $ids );
-    $nextid    = isset( $ids[ $thisindex + 1 ] ) ? $ids[ $thisindex + 1 ] : false;
-    
-    if (false !== $nextid ) {
-        return $nextid;
-    } else {
-        return reset($ids);
+        $thisindex = array_search( $post_id, $ids );
+        $nextid    = isset( $ids[ $thisindex + 1 ] ) ? $ids[ $thisindex + 1 ] : false;
+        
+        if (false !== $nextid ) {
+            return $nextid;
+        } else {
+            return reset($ids);
+        }
     }
 }
