@@ -65,7 +65,8 @@
         "studionuuk/sitepress-multilingual-cms": "^4.4",
         "log1x/acf-composer": "^2.0",
         "roots/soil": "^4.0.4",
-        "studionuuk/acfml": "1.8.2"
+        "studionuuk/acfml": "1.8.2",
+        "wpackagist-plugin/posts-to-posts": "^1.6"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.5.8",
