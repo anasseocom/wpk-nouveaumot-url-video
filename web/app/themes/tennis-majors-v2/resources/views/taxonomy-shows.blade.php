@@ -23,6 +23,7 @@
 
     <div id="show" class="relative bg-black text-white">
         <div class="max-w-screen-lg m-auto">
+<<<<<<< HEAD
             <div class="grid grid-cols-6 gap-x-8 py-8 sm:py-12 mx-4">
                 <div class="col-span-6 md:col-span-3">
                     <div class="mb-4">
@@ -34,13 +35,21 @@
                         <img src="{{ $image['url'] }}">
                     </div>
                     <div class="mt-12 mb-5">
+=======
+            <div class="grid grid-cols-6 gap-x-8 py-12 mx-4">
+                <div class="col-span-3">
+                    <a class="uppercase text-xs link--arrow link--arrow-white link--arrow-left"  href="{{ get_permalink( get_page_by_path( 'shows' ) )}}">
+                        Back to all the shows
+                    </a>
+                    <div class="mt-4 mb-5">
+>>>>>>> c279d078a9aa101942aa4ea500a1728ad6aa3bfe
                         <h1 class="uppercase text-5xl">{{ single_cat_title() }}</h1>
                     </div>
                     <div class="uppercase text-xl font-bold mb-5">
                         @if($count_episodes == 1)
-                            {{ $count_episodes }} {{ __('episode', 'sage') }}
+                            {{ $count_episodes }} épisode
                         @else
-                            {{ $count_episodes }} {{ __('episodes', 'sage') }}
+                            {{ $count_episodes }} épisodes
                         @endif
                     </div>
                     <div>
@@ -59,9 +68,9 @@
                         <div class="uppercase text-xl font-bold">
                             The
                             @if($count_episodes == 1)
-                            {{ __('episode', 'sage') }}
+                                episode
                             @else
-                            {{ __('episodes', 'sage') }}
+                                episodes
                             @endif
                         </div>
                         @shortcode('[facetwp facet="video_types"]')

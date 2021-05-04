@@ -7,6 +7,6 @@
         </div>
     @endif
     <div class="text-black opacity-40 mt-2 text-xs">
-    {{ __('©Tennis Majors 2021 | All  right reserved', 'sage')
+        ©Tennis Majors 2021 | All  right reserved
     </div>
 </div>
