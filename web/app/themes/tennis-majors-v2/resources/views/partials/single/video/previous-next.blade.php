@@ -13,7 +13,7 @@
     <a href="{{ the_permalink() }}" class="prev-next prev-next--prev group">
         <div class="prev-next--container">
             <div class="prev-next--arrow"></div>
-            <div class="prev-next--content group-hover:translate-x-0 max-w-sm m-auto">
+            <div class="prev-next--content group-hover:translate-x-0 max-w-lg m-auto">
                 <div class="uppercase text-xs mb-2">
                     Previous
                 </div>
@@ -44,7 +44,7 @@
     <a href="{{ the_permalink() }}" class="prev-next prev-next--next group">
         <div class="prev-next--container">
             <div class="prev-next--arrow"></div>
-            <div class="prev-next--content group-hover:translate-x-0 max-w-sm m-auto">
+            <div class="prev-next--content group-hover:translate-x-0 max-w-lg m-auto">
                 <div class="uppercase text-xs mb-2">
                     Next
                 </div>

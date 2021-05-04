@@ -1,18 +1,19 @@
+@php
+    $users = get_users([
+        'connected_type' => 'multiple_authors',
+        'connected_items' => $post
+        ] );
+@endphp
+@if($users)
 <div class="px-4 bg-gray-200">
-    <div class="max-w-screen-lg m-auto">
-      <div class="grid grid-cols-12 py-2">
-        <div class="col-span-2">
-          <div class="uppercase mt-5">
-            The <span class="font-bold">figures</span>
-          </div>
+  <div class="max-w-screen-lg m-auto">
+    <div class="grid grid-cols-12 py-2">
+      <div class="col-span-2">
+        <div class="uppercase mt-5">
+          The <span class="font-bold">figures</span>
         </div>
-        <div class="col-span-10 grid grid-cols-3 gap-y-4 gap-x-10">
-        @php
-          $users = get_users([
-              'connected_type' => 'multiple_authors',
-              'connected_items' => $post
-              ] );
-        @endphp
+      </div>
+      <div class="col-span-10 grid grid-cols-3 gap-y-4 gap-x-10">
         @foreach( $users as $user)
           @php
             $user_id = $user->ID;
@@ -63,3 +64,4 @@
       </div>
     </div>
   </div>
+@endif
