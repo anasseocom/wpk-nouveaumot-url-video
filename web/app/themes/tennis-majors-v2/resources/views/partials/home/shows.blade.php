@@ -53,6 +53,7 @@
                             array(
                                 'posts_per_page' => 8,
                                 'post_type' => 'videos',
+                                'facetwp' => false,
                                 'tax_query' => array(
                                     array(
                                         'taxonomy' => 'shows',

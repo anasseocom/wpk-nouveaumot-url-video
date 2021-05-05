@@ -10,7 +10,7 @@
     <div class="grid grid-cols-12 py-2">
       <div class="col-span-2">
         <div class="uppercase mt-5">
-          The <span class="font-bold">figures</span>
+        {{ __('The', 'sage') }} <span class="font-bold">{{ __('figures', 'sage') }}</span>
         </div>
       </div>
       <div class="col-span-10 grid grid-cols-3 gap-y-4 gap-x-10">

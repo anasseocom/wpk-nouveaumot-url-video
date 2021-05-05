@@ -3,7 +3,7 @@
 @section('content')
 <div>
     <div class="max-w-screen-lg m-auto">
-        <h2 class="text-3xl  md:text-5xl uppercase text-black text-center my-10 md:my-20">Tennis <span class="font-bold">News</span></h2>
+        <h2 class="text-3xl  md:text-5xl uppercase text-black text-center my-10 md:my-20">{{ __('Tennis', 'sage') }} <span class="font-bold">{{ __('News', 'sage') }}</span></h2>
     </div>
     <div class="max-w-screen-sm m-auto">
         <div class="grid gap-x-8 gap-y-16 my-10 md:my-20 mx-4">

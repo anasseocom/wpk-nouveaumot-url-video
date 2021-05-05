@@ -42,12 +42,12 @@
       @php(comment_form(array(
         'class_submit'          => ' btn btn--submit col-span-2',
         'title_reply' => null,
-        'comment_field' => '<p class="comment-form-comment col-span-2"><label for="comment" class="uppercase text-xs">Comment</label></br><textarea id="comment" class="mt-2" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p>',
+        'comment_field' => '<p class="comment-form-comment col-span-2"><label for="comment" class="uppercase text-xs">Comment </label></br><textarea id="comment" class="mt-2" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p>',
         'fields' => array(
           //Author field
-          'author' => '<p class="comment-form-author col-span-1"><label for="author" class="uppercase text-xs">Author <span class="required">*</span></label><br /><input id="author" class="mt-2" name="author" aria-required="true" class="input" type="text"></input></p>',
+          'author' => '<p class="comment-form-author col-span-1"><label for="author" class="uppercase text-xs">Author<span class="required">*</span></label><br /><input id="author" class="mt-2" name="author" aria-required="true" class="input" type="text"></input></p>',
         //Email Field
-          'email' => '<p class="comment-form-email col-span-1"><label for="email" class="uppercase text-xs">Email <span class="required">*</span></label><br /><input id="email" class="mt-2" name="email"  class="input" type="text"></input></p>',
+          'email' => '<p class="comment-form-email col-span-1"><label for="email" class="uppercase text-xs">Email<span class="required">*</span></label><br /><input id="email" class="mt-2" name="email"  class="input" type="text"></input></p>',
         ),
       ))
       )
