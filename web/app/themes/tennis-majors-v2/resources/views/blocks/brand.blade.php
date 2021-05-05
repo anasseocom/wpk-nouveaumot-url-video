@@ -24,7 +24,7 @@
         </div>
         <div>@field('brand_description')</div>
         <div class="mt-8 mb-4">
-            <a href="@field('brand_url')" class="btn btn--cta btn--arrow-right">
+            <a href="@field('brand_url')" target="_blank" class="btn btn--cta btn--arrow-right">
             Visit brand website
             </a>
         </div>

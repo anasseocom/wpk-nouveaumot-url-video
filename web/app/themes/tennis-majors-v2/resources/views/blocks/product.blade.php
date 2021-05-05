@@ -24,7 +24,7 @@
                 <div class="uppercase text-lg"><span class="italic">Get the</span> <span class="font-bold">@field('product_name')</span></div>
                 <div class="uppercase"><span class="font-bold">@field('product_price')</span> <span class="text-xs">(suggested price)</span></div>
                 <div class="my-6">
-                  <a href="@field('product_url')" class="btn btn--cta btn--cta-shop">
+                  <a href="@field('product_url')" target="_blank" class="btn btn--cta btn--cta-shop">
                     Shop now
                   </a>
                 </div>
