@@ -9,8 +9,18 @@
         }
     }
 
-    &--submit {
+    &--cta {
         @apply rounded-full font-bold text-white bg-black;
+    }
+
+    &--cta-shop-shop {
+        position: relative;
+    }
+
+    &--cta-shop-shop::after {
+        content: "";
+        @apply absolute top-1/2 right-4 w-2 h-3 bg-no-repeat transform -translate-y-1/2;
+        background-image: url(../images/cart.svg);
     }
 
     &--arrow-right {

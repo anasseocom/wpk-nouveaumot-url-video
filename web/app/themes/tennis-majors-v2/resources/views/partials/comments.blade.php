@@ -40,7 +40,7 @@
       @endif
 
       @php(comment_form(array(
-        'class_submit'          => ' btn btn--submit col-span-2',
+        'class_submit'          => ' btn btn--cta col-span-2',
         'title_reply' => null,
         'comment_field' => '<p class="comment-form-comment col-span-2"><label for="comment" class="uppercase text-xs">Comment</label></br><textarea id="comment" class="mt-2" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p>',
         'fields' => array(
