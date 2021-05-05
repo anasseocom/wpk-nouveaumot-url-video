@@ -22,7 +22,7 @@
   </div>
   <div class="grid grid-cols-1 gap-y-6 mb-6">
     @foreach( $posts as $post)
-        <a href="{{ the_permalink() }}" class="grid grid-cols-12 gap-x-6">
+        <a href="{{ the_permalink() }}" class="grid grid-cols-12 gap-x-6 text-black">
           <div class="h-0 relative pb-1/1 rounded-xl overflow-hidden col-span-4 md:col-span-2">
             {{ the_post_thumbnail('full', array('class' => 'absolute object-cover w-full h-full')) }}
             @if( get_post_type($post) == "videos")
