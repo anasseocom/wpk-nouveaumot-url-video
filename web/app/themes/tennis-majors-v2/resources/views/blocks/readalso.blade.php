@@ -32,7 +32,7 @@
             @endif
           </div>
           <div class="col-span-8 md:col-span-10 relative">
-            <div class="md:absolute top-0 font-bold md:mt-4 md:text-xl">@title</div>
+            <div class="md:absolute top-0 font-bold md:mt-4 md:text-xl text-black">@title</div>
             <div class="md:absolute bottom-0 uppercase text-xs mt-2 md:mt-6">tennis majors</div>
           </div>
         </a>
