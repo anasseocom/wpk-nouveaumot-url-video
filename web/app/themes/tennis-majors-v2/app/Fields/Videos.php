@@ -23,6 +23,7 @@ class Videos extends Field
             ->addUrl('video_url', [
                 'label' => 'Video URL',
                 'required' => 1,
+                'placeholder' => 'Exemple : https://www.dailymotion.com/embed/video/x806y40',
             ])
 
             ->addPostObject('video_previous', [
@@ -35,6 +36,10 @@ class Videos extends Field
                 'label' => 'Next',
                 'post_type' => [0 => 'videos'],
                 'multiple' => 0,
+            ])
+
+            ->addTrueFalse('video_has_figures', [
+                'label' => 'Section "The figures" ?',
             ]);
 
         return $videos->build();

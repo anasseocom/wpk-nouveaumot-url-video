@@ -313,5 +313,6 @@ $(document).ready(() => {
       $('#menu-menu-principal > .menu-item > a').parent().removeClass("menu-item--not-active");
       $('#menu-menu-principal > .menu-item > a').parent().removeClass("menu-item--active");
     });
+    
 });
 

@@ -1,9 +1,11 @@
 @php
+    $has_figures = get_field('video_has_figures');
     $users = get_users([
         'connected_type' => 'multiple_authors',
         'connected_items' => $post
         ] );
 @endphp
+@if($has_figures)
 @if($users)
 <div class="px-4 bg-gray-200">
   <div class="max-w-screen-lg m-auto">
@@ -64,4 +66,5 @@
       </div>
     </div>
   </div>
+@endif
 @endif

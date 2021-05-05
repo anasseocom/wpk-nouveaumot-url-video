@@ -20,7 +20,7 @@
         @include('partials.single.video.player')
         @include('partials.single.video.previous-next')
       </div>
-      @include('partials.single.video.host-guest')
+      @include('partials.single.video.figures')
       <div class="content max-w-screen-lg m-auto">
         @php
           $content = strip_shortcodes(get_the_content());

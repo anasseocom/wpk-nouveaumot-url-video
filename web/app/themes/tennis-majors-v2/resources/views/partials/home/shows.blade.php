@@ -53,6 +53,7 @@
                             array(
                                 'posts_per_page' => 8,
                                 'post_type' => 'videos',
+                                'facetwp' => false,
                                 'tax_query' => array(
                                     array(
                                         'taxonomy' => 'shows',
@@ -78,6 +79,9 @@
             @endforeach
         </div>
     @endif
+    @php
+        wp_reset_postdata()
+    @endphp
 
     <div class="flex flex-col items-center">
         <a href="{{ get_permalink( get_page_by_path( 'shows' ) )}}" class="btn btn--white btn--arrow-right">{{ __('Discover all', 'sage') }}</a>
