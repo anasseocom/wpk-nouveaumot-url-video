@@ -22,11 +22,7 @@
       </div>
       @include('partials.single.video.host-guest')
       <div class="content max-w-screen-lg m-auto">
-        @php
-          $content = strip_shortcodes(get_the_content());
-          echo $content;
-        @endphp
-      </div>
+        @content
       <div class="max-w-screen-sm m-auto">
           @include('partials.single.common.share')
       </div>
