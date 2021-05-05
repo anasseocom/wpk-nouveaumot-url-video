@@ -21,6 +21,9 @@
             @content
           </div>
           @include('partials.single.common.share')
+          <div>
+            @include('partials.single.common.ours')
+          </div>
         </div>
         <div class="hidden md:block md:col-span-4">
           @include('partials.common.newsletter-form')

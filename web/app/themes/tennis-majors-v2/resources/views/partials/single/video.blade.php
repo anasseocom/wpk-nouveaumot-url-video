@@ -27,7 +27,7 @@
           @include('partials.single.common.share')
       </div>
       <div>
-        @include('partials.single.video.ours')
+        @include('partials.single.common.ours')
       </div>
     </div>
   </article>

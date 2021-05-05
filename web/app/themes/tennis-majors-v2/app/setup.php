@@ -229,3 +229,19 @@ add_action('init', function () {
         )
     ) );
 });
+
+add_action('init', function () {
+    p2p_register_connection_type( array(
+        'name' => 'multiple_authors',
+        'title' => 'Multiple author',
+        'from' => 'user',
+        'to' => 'post',
+        'fields' => array(
+            'role' => array( 
+                'title' => 'Role',
+                'type' => 'select',
+                'values' => array( 'Writer', 'Co-writer', 'Editor', 'Translator', 'Curator', 'Author', 'Video operator', 'Sound operator', 'Host', 'Guest', 'Columnist', 'Expert')
+            ),
+        )
+    ) );
+});
