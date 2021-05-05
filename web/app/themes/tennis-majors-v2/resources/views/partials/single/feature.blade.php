@@ -25,6 +25,9 @@
         <div class="max-w-screen-sm m-auto">
             @include('partials.single.common.share')
         </div>
+        <div>
+          @include('partials.single.common.ours')
+        </div>
       </article>
     </div>
   </div>
