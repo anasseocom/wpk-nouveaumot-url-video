@@ -15,7 +15,7 @@
             <div class="prev-next--arrow"></div>
             <div class="prev-next--content group-hover:translate-x-0 max-w-lg m-auto">
                 <div class="uppercase text-xs mb-2">
-                    Previous
+                {{ __('Previous', 'sage') }}
                 </div>
                 <div class="grid grid-cols-12 gap-4 xl:pb-3">
                     <div class="flex items-center col-span-2 xl:col-span-4">
@@ -46,7 +46,7 @@
             <div class="prev-next--arrow"></div>
             <div class="prev-next--content group-hover:translate-x-0 max-w-lg m-auto">
                 <div class="uppercase text-xs mb-2">
-                    Next
+                {{ __('Next', 'sage') }}
                 </div>
                 <div class="grid grid-cols-12 gap-4 xl:pb-3">
                     <div class="flex items-center col-span-2 xl:col-span-4 xl:col-start-9 row-start-1">

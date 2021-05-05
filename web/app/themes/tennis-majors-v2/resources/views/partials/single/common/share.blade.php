@@ -1,6 +1,6 @@
 <div class="my-20 share mx-4">
     <div class="uppercase text-2xl">
-      <span class="font-bold">Share</span> this story
+      <span class="font-bold">{{ __('Share ', 'sage') }}</span>{{ __('this story', 'sage') }}
     </div>
     <div class="flex -mx-1 mt-4">
         <a href="https://www.facebook.com/sharer/sharer.php?u={{ get_permalink() }}" class="text-z w-14 border-2 border-black mx-1">

@@ -40,7 +40,7 @@
         </div>
         @if($post_on_top)
             <div class="mt-10 max-w-screen-lg m-auto">
-                <h2 class="uppercase">Recommanded <span class="font-bold">by the writer</span></h2>
+                <h2 class="uppercase">{{ __('Recommended ', 'sage') }} <span class="font-bold">{{ __('by the writer', 'sage') }}</span></h2>
                 <div class="grid grid-cols-12 gap-8 mt-6">
                     @php
                         setup_postdata($post_on_top);
@@ -62,7 +62,7 @@
         @endif
 
         <div class="mt-20 max-w-screen-lg m-auto">
-            <h2 class="uppercase">Last <span class="font-bold">articles</span></h2>
+            <h2 class="uppercase">{{ __('Last', 'sage') }} <span class="font-bold">articles</span></h2>
             <div class="grid grid-cols-3 gap-x-8 gap-y-16 mt-6 mb-28">
                 @posts
                     @include('partials.common.preview-basic')
