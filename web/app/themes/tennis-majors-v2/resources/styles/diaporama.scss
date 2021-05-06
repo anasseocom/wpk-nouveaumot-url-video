@@ -10,6 +10,8 @@
         left: 0;
         background-color: black;
         background-image: url(../images/arrow-left-white.svg);
+        background-repeat: no-repeat;
+        background-position: center;
         top: 50%;
         transform: translateY(-50%);
         width: 3rem;
@@ -18,9 +20,11 @@
 
     .btn-navs._right {
         position: absolute;
-        left: 0;
+        right: 0;
         background-color: black;
         background-image: url(../images/arrow-right-white.svg);
+        background-repeat: no-repeat;
+        background-position: center;
         top: 50%;
         transform: translateY(-50%);
         width: 3rem;
