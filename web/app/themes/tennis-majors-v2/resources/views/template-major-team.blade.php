@@ -55,7 +55,7 @@
             @foreach( $author_users as $user)
                 @php
                     $user_is_major = get_field('user_is_major', 'user_'. $user);
-                    $author_avatar_url = get_avatar_url(get_the_author_meta('email'));
+                    $author_avatar_url = get_field('user_avatar', 'user_'. $user);
                     $first_name = get_user_meta( $user, 'first_name', true );
                     $last_name = get_user_meta( $user, 'last_name', true );
                     $user_function = get_field('user_function', 'user_'. $user);

@@ -24,13 +24,6 @@ class Home extends Field
                 'label' => 'Video live URL',
             ])
 
-            ->addPostObject('news_on_top', [
-                'label' => 'News on top',
-                'post_type' => [0 => 'post'],
-                'multiple' => 1,
-                'max' => 10,
-            ])
-
             ->addPostObject('posts_on_top', [
                 'label' => 'Content on top',
                 'post_type' => [0 => 'post', 1 => 'videos'],
