@@ -30,8 +30,16 @@
         a {
             @apply underline text-gray-700 hover:text-black;
 
-            .btn--cta {
+            &.btn--cta {
                 @apply no-underline text-white;
+            }
+        }
+
+        .video-container {
+            @apply  relative h-0 pb-16/9 mb-6;
+
+            .video {
+                @apply absolute w-full h-full;
             }
         }
     }

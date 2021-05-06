@@ -313,6 +313,27 @@ $(document).ready(() => {
       $('.menu__primary .menu__list > .menu-item > a').parent().removeClass("menu-item--not-active");
       $('.menu__primary .menu__list > .menu-item > a').parent().removeClass("menu-item--active");
     });
-    
+
+  if($('.single')) {
+    if($('.content')) {
+      var content = document.getElementsByClassName('content')[0]
+      var iframes = content.getElementsByTagName('iframe');
+
+      for (var i = 0; i < iframes.length; i++) {
+        var source = iframes[i].getAttribute('src');
+        source = source.substring(0,19);
+        var dailymotion = "https://www.dailymo";
+        var youtube = "https://www.youtube";
+        if(source == youtube || source == dailymotion) {
+          var div = document.createElement("div");
+          var parent = iframes[i].parentNode;
+          parent.insertBefore(div, iframes[i]);
+          div.appendChild(iframes[i]);
+          iframes[i].parentNode.classList.add('video-container');
+          iframes[i].classList.add('video');
+        }
+      }
+    }
+  }
 });
 
