@@ -22,6 +22,10 @@ class Show extends Field
         $show
             ->addImage('image', [
                 'label' => 'Image',
+            ])
+
+            ->addImage('image_with_title', [
+                'label' => 'Image with title',
             ]);
 
         return $show->build();

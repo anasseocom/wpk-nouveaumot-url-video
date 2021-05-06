@@ -4,7 +4,7 @@
 
 @php
     $term = get_queried_object();
-    $image = get_field('image', $term);
+    $image = get_field('image_with_title', $term);
 
     $args = array(
     'post_type' => 'videos',
