@@ -36,6 +36,10 @@ class Users extends Field
                 'label' => 'Major user ?',
             ])
 
+            ->addImage('user_avatar', [
+                'label' => 'Avatar',
+            ])
+
             ->addImage('user_image', [
                 'label' => 'Major user image',
             ])
