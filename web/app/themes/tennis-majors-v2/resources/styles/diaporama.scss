@@ -1,0 +1,59 @@
+.block_diapo {
+    padding: 0 1rem;
+
+    .visu_block {
+        position: relative;
+    }
+
+    .btn-navs._left {
+        position: absolute;
+        left: 0;
+        background-color: black;
+        background-image: url(../images/arrow-left-white.svg);
+        top: 50%;
+        transform: translateY(-50%);
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .btn-navs._right {
+        position: absolute;
+        left: 0;
+        background-color: black;
+        background-image: url(../images/arrow-right-white.svg);
+        top: 50%;
+        transform: translateY(-50%);
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .list_thumbs {
+        display: none;
+    }
+
+    .lists_legend {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+
+        li.active {
+            margin-left:  0;
+
+            .slide_nb {
+                margin: 0.5rem 0;
+                text-align: center;
+            }
+
+            .legend_title {
+                font-weight: bold;
+                margin-bottom: 0.5rem;
+            }
+
+            .legend_excerpt {
+                p {
+                    padding-left: 0 !important;
+                    padding-right: 0 !important;
+                }
+            }
+        }
+    }
+}
