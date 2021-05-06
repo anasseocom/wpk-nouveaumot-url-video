@@ -27,11 +27,9 @@
             @apply ml-16;
         }
 
-        a {
-            @apply underline text-gray-700 hover:text-black;
-
-            &.btn--cta {
-                @apply no-underline text-white;
+        p {
+            a {
+                @apply underline text-gray-700 hover:text-black;
             }
         }
 

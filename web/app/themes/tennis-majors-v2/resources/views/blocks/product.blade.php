@@ -14,12 +14,12 @@
 <div class="px-4 my-10">
   <div class="grid grid-cols-1 gap-y-6 max-w-screen-sm rounded-xl shadow-lg">
         <div class="grid grid-cols-2 gap-x-6">
-            <div class="col-span-1 relative">
+            <div class="col-span-2 sm:col-span-1 relative">
                 <div class="relative w-full pb-16/9">
                   <img src="@field('product_image', 'url')" class="absolute object-cover w-full h-full">
                 </div>
             </div>
-            <div class="col-span-1 flex items-center">
+            <div class="col-span-2 sm:col-span-1 flex items-center">
               <div class="p-4">
                 <div class="uppercase text-lg"><span class="italic">Get the</span> <span class="font-bold">@field('product_name')</span></div>
                 <div class="uppercase"><span class="font-bold">@field('product_price')</span> <span class="text-xs">(suggested price)</span></div>

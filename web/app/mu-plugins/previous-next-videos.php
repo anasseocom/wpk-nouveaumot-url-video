@@ -7,7 +7,7 @@ function get_previous_video($post) {
         $prev_post = get_adjacent_post( true, '', true, 'shows' );
         $previous_video = $prev_post;
     }
-
+    
     return $previous_video;
 }
 

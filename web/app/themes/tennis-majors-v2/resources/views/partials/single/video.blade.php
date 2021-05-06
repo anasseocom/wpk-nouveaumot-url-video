@@ -21,7 +21,7 @@
         @include('partials.single.video.previous-next')
       </div>
       @include('partials.single.video.figures')
-      <div class="content max-w-screen-lg m-auto">
+      <div class="content">
         @content
       <div class="max-w-screen-sm m-auto">
           @include('partials.single.common.share')
