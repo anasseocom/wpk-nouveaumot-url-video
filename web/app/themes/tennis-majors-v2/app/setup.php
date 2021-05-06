@@ -72,7 +72,33 @@ add_action('after_setup_theme', function () {
      * Register the editor color palette.
      * @link https://developer.wordpress.org/block-editor/developers/themes/theme-support/#block-color-palettes
      */
-    add_theme_support('editor-color-palette', []);
+    add_theme_support( 'editor-color-palette', array(
+        array(
+            'name' => esc_attr__( 'Roland-Garros', 'themeLangDomain' ),
+            'slug' => 'roland-garros',
+            'color' => '#EE4400',
+        ),
+        array(
+            'name' => esc_attr__( 'Classic Black', 'themeLangDomain' ),
+            'slug' => 'classic-black',
+            'color' => '#000',
+        ),
+        array(
+            'name' => esc_attr__( 'Australian Open', 'themeLangDomain' ),
+            'slug' => 'australian-open',
+            'color' => '#0088D1',
+        ),
+        array(
+            'name' => esc_attr__( 'US Open', 'themeLangDomain' ),
+            'slug' => 'us-open',
+            'color' => '#0C1F86',
+        ),
+        array(
+            'name' => esc_attr__( 'Wimbledon', 'themeLangDomain' ),
+            'slug' => 'wimbledon',
+            'color' => '#00632A',
+        ),
+    ) );
 
     /**
      * Register the editor color gradient presets.
