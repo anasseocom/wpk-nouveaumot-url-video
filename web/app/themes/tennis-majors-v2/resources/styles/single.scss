@@ -98,24 +98,6 @@
         img  {
             @apply mt-4 mb-8 md:mt-12 md:mb-14;
         }
-
-        blockquote {
-            @apply mt-36 mb-10 md:mb-20 relative px-4;
-
-            &::before {
-                @apply absolute w-20 h-20 -top-4 left-4  transform -translate-y-full bg-contain bg-no-repeat;
-                content: "";
-                background-image: url(../images/quote.png);
-            }
-
-            p {
-                @apply max-w-screen-lg uppercase font-bold text-2xl lg:text-5xl not-italic px-0;
-            }
-
-            cite {
-                @apply not-italic;
-            }
-        }
     }
 }
 
