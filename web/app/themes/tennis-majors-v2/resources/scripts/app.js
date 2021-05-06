@@ -41,14 +41,15 @@ $(document).ready(() => {
   }
 
   if ($('#slider-cards').length) {
-    var sliderNextArrow = document.getElementById('slider-cards--arrow');
+    var sliderPreviousArrow = document.getElementById('slider-cards--arrow-left');
+    var sliderNextArrow = document.getElementById('slider-cards--arrow-right');
     $("#slider-cards--slider").slick({
       infinite: false,
       speed: 300,
       slidesToShow: 1,
       centerMode: false,
       variableWidth: true,
-      prevArrow: null,
+      prevArrow: sliderPreviousArrow,
       nextArrow: sliderNextArrow,
     });
   }

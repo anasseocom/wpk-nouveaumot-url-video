@@ -22,6 +22,10 @@
 @import 'tailwindcss/utilities';
 @import  'slick-carousel/slick/slick.css';
 
+.slick-disabled {
+    display: none !important;
+}
+
 #reply-title {
     display: none;
 }
