@@ -972,11 +972,11 @@
         },
         {
             "name": "studionuuk/facetwp",
-            "version": "3.8.3",
+            "version": "3.8.4",
             "dist": {
                 "type": "zip",
-                "url": "https://dev.nuuk.fr/satispress/facetwp/3.8.3",
-                "shasum": "4a50944c2bdc20155cba5d9526a32dd0a756ab99"
+                "url": "https://dev.nuuk.fr/satispress/facetwp/3.8.4",
+                "shasum": "194fa95158af7498a77ac1003820cafa0d371c9d"
             },
             "require": {
                 "composer/installers": "^1.0"
