@@ -1,25 +1,17 @@
 .facetwp-facet {
-    display: flex;
-    margin-bottom: 0 !important;
+    @apply flex-wrap flex mb-0;
 }
 
 .facetwp-radio {
     background-image: none !important;
-    margin: 0 0.25rem;
-    padding: 0.5rem 1.5rem !important;
-    border-radius: 2rem;
-    border: 1px solid white;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 0.75rem;
+    @apply mx-1 my-0 px-6 py-2 border-white border uppercase font-bold text-xs rounded-3xl;
 }
 
 .facetwp-radio.checked {
     background-image: none !important;
-    background-color: white;
-    color: black;
+    @apply text-black bg-white;
 }
 
 .facetwp-counter {
-    display: none;
+    @apply hidden;
 }
