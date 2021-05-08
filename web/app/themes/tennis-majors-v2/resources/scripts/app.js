@@ -317,7 +317,7 @@ $(document).ready(() => {
 
     if($('.single')) {
       if($('.video-header')) {
-    const bgv = $('.inherited-shortcode-video');
+    const bgv = $('.inherited-shortcode');
 
     if (bgv.is(':visible')) {
       $('source', bgv).each(
