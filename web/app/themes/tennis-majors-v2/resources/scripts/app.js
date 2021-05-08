@@ -315,6 +315,23 @@ $(document).ready(() => {
       $('.menu__primary .menu__list > .menu-item > a').parent().removeClass("menu-item--active");
     });
 
+    if($('.single')) {
+      if($('.video-header')) {
+    const bgv = $('.inherited-shortcode-video');
+
+    if (bgv.is(':visible')) {
+      $('source', bgv).each(
+        function() {
+          const el = $(this);
+          el.attr('src', el.data('src'));
+        }
+      );
+
+      bgv[0].load();
+    }
+  }
+}
+
   if($('.single')) {
     if($('.content')) {
       var content = document.getElementsByClassName('content')[0]
