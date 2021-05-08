@@ -14,9 +14,9 @@ function mot_player($atts){
 	  $url = "https://www.dailymotion.com/embed/video/".end($url);
 	  $url = add_query_arg('autoplay',$autoplay,$url );
 	  
-	  $short_code =   '<iframe class="iframe-container inherited-shortcode" width="100%" controls allow="'.$allow_autoplay.'" loading="lazy" src="'.$url.'" style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden"></iframe>';
+	  $short_code =   '<iframe class="iframe-container inherited-shortcode-iframe" width="100%" controls allow="'.$allow_autoplay.'" loading="lazy" data-src="'.$url.'" style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden"></iframe>';
 	}else{
-	  $short_code =  '<video class="video-container inherited-shortcode" width="100%" controls  '.$allow_autoplay.' > <source loading="lazy" data-src="'.$atts["url"].'" type="video/mp4"> </video>';
+	  $short_code =  '<video class="video-container inherited-shortcode-video" width="100%" controls  '.$allow_autoplay.' > <source loading="lazy" data-src="'.$atts["url"].'" type="video/mp4"> </video>';
 	}
 	return $short_code;
   }
