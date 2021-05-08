@@ -58,6 +58,10 @@
     &--video {
         @apply rounded-md bg-gray-100 h-0 pb-12/10 sm:pb-16/9 max-w-little-video-show sm:max-w-video-show relative overflow-hidden text-white;
 
+        &-major {
+            @apply pb-16/9 max-w-full;
+        }
+
         .thumbnail {
             @apply absolute w-full h-full object-cover top-0 left-0;
         }

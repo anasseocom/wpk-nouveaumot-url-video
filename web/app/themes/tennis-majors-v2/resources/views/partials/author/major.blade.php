@@ -10,34 +10,35 @@
     $instagram = get_field('user_instagram', 'user_'. $id);
     $image = get_field('user_image', 'user_'. $id);
 @endphp
-<div class="bg-black text-white px-20">
-    <div class="max-w-screen-xl m-auto pt-20">
-        <a href="{{ get_permalink( get_page_by_path( 'major-team' ) )}}" class="uppercase text-xs">{{ __('Back to the team', 'sage') }}</a>
-    </div>
-    <div class="max-w-screen-xl m-auto">
+<div class="bg-black text-white px-4">
+    <div class="max-w-screen-xl m-auto pt-14 md:pt-20 relative">
         <div class="grid grid-cols-12 gap-x-8">
-            <div class="col-span-6 flex-col flex items-end">
+            <div class="col-span-12 md:col-span-6 flex-col flex items-center md:items-end relative">
+                <div class="absolute left-0 -top-10">
+                    <a href="{{ get_permalink( get_page_by_path( 'major-team' ) )}}" class="uppercase text-xs link--arrow link--arrow-white link--arrow-left">{{ __('Back to the team', 'sage') }}</a>
+                </div>
                 <img src="{{ $image['url'] }}" class="w-80">
+                <div class="h-44 w-full absolute bottom-0 bg-gradient-to-t from-black to-transparent opacity-100"></div>
             </div>
-            <div class="col-span-6">
-                <div>
+            <div class="col-span-12 -mt-32 md:mt-0 md:col-span-6 relative">
+                <div class="flex -mx-1">
                     @if ($twitter)
-                        <div class="mx-0.5 w-14">
+                        <div class="mx-0.5">
                             <a href="{{ $twitter }}" target="_blank">
-                                @include('partials.images.socials.share-twitter')
+                                @include('partials.images.socials.twitter')
                             </a>
                         </div>
                     @endif
                     @if ($instagram)
-                        <div class="mx-0.5 w-14">
+                        <div class="mx-0.5">
                             <a href="{{ $instagram }}" target="_blank">
-                                @include('partials.images.socials.share-instagram')
+                                @include('partials.images.socials.instagram')
                             </a>
                         </div>
                     @endif
                 </div>
                 <div>
-                    <h1 class="uppercase text-6xl">
+                    <h1 class="uppercase text-4xl lg:text-6xl">
                         <span class="block">{{ $first_name }}</span>
                         <span class="font-bold block">{{ $last_name }}</span>
                     </h1>
@@ -45,6 +46,43 @@
                 <div class="mt-7">
                     {{ $description }} 
                 </div>
+            </div>
+        </div>
+        <div>
+            @php
+                $videos = get_posts( array(
+                    'connected_type' => 'multiple_authors_videos',
+                    'from' => 'videos',
+                    'connected_items' => $wp_query->get_queried_object(),
+                    'connected_meta' => array(
+                        'role' => array( 'Guest', 'Host')
+                    ),
+                    'nopaging' => true
+                    ) );
+
+
+            @endphp
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 py-14">
+                @foreach( $videos as $video)
+                    @php
+                        global $post;
+                        $post = $video;
+                    @endphp
+                    <a href="{{ the_permalink() }}" class="preview preview--video preview--video-major">
+                        {{ the_post_thumbnail('16-9_xs', array('class' => 'thumbnail')) }}
+                        <div class="gradient"></div>
+                        <div>
+                            <div class="w-screen h-full"></div>
+                            <div class="p-4">
+                                <div class="absolute bottom-4 right-4 w-14 sm:w-10 sm:relative sm:right-auto sm:bottom-auto sm:mt-2 sm:mb-2">
+                                    @include('partials.images.play')
+                                </div>
+                                <h4 class="title">{{ the_title()}}</h4>
+                                <div class="absolute top-4 text-xs sm:relative sm:top-auto sm:mt-2">{{ the_time('j F Y') }}</div>
+                            </div>
+                        </div>
+                    </a>
+                @endforeach
             </div>
         </div>
     </div>

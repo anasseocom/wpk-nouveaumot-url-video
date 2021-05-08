@@ -242,10 +242,26 @@ add_action('init', function () {
 
 add_action('init', function () {
     p2p_register_connection_type( array(
-        'name' => 'multiple_authors',
+        'name' => 'multiple_authors_post',
         'title' => 'Multiple author',
         'from' => 'user',
-        'to' => [0 => 'videos', 1 => 'post'],
+        'to' => [0 => 'post'],
+        'fields' => array(
+            'role' => array( 
+                'title' => 'Role',
+                'type' => 'select',
+                'values' => array( 'Writer', 'Co-writer', 'Editor', 'Translator', 'Curator', 'Author', 'Video operator', 'Sound operator', 'Host', 'Guest', 'Columnist', 'Expert')
+            ),
+        )
+    ) );
+});
+
+add_action('init', function () {
+    p2p_register_connection_type( array(
+        'name' => 'multiple_authors_videos',
+        'title' => 'Multiple author',
+        'from' => 'user',
+        'to' => [0 => 'videos'],
         'fields' => array(
             'role' => array( 
                 'title' => 'Role',
