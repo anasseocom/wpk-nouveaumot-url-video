@@ -6,23 +6,76 @@
         ] );
 @endphp
 @if($has_figures)
-@if($users)
+  @if($users)
+    <div class="px-4 bg-gray-200">
+      <div class="max-w-screen-lg m-auto">
+        <div class="grid grid-cols-12 py-2">
+          <div class="col-span-2">
+            <div class="uppercase mt-5">
+            {{ __('The', 'sage') }} <span class="font-bold">{{ __('figures', 'sage') }}</span>
+            </div>
+          </div>
+          <div class="col-span-10 grid grid-cols-3 gap-y-4 gap-x-10">
+            @foreach( $users as $user)
+              @php
+                $user_id = $user->ID;
+                $avatar_url = get_field('user_avatar', 'user_'. $user_id);
+                $first_name = get_user_meta( $user_id, 'first_name', true );
+                $last_name = get_user_meta( $user_id, 'last_name', true );
+                $role = p2p_get_meta( $user->p2p_id, 'role', true );
+              @endphp
+              @if($role == 'Host')
+                <div class="grid gap-4 grid-cols-12 p-2">
+                  <div class="col-span-3 relative">
+                    <div class="w-full pb-1/1"></div>
+                    <img class="rounded-full w-full h-full object-cover absolute top-0" loading="lazy" src="{{ $avatar_url }}">
+                  </div>
+                  <div class="col-span-9 flex items-center">
+                    <div>
+                      <div class="uppercase">{{ $first_name }} <span class="font-bold">{{ $last_name }}</span></div>
+                      <div class="uppercase text-xs">{{ $role }}</div>
+                    </div>
+                  </div>
+                </div>
+              @endif
+            @endforeach
+            @foreach( $users as $user)
+              @php
+                $user_id = $user->ID;
+                $avatar_url = get_field('user_avatar', 'user_'. $user_id);
+                $first_name = get_user_meta( $user_id, 'first_name', true );
+                $last_name = get_user_meta( $user_id, 'last_name', true );
+                $role = p2p_get_meta( $user->p2p_id, 'role', true );
+              @endphp
+              @if($role == 'Guest')
+                <div class="grid gap-4 grid-cols-12 p-2">
+                  <div class="col-span-3 relative">
+                    <div class="w-full pb-1/1"></div>
+                    <img class="rounded-full w-full h-full object-cover absolute top-0" loading="lazy" src="{{ $avatar_url }}">
+                  </div>
+                  <div class="col-span-9 flex items-center">
+                    <div>
+                      <div class="uppercase">{{ $first_name }} <span class="font-bold">{{ $last_name }}</span></div>
+                      <div class="uppercase text-xs">{{ $role }}</div>
+                    </div>
+                  </div>
+                </div>
+              @endif
+            @endforeach
+            </div>
+          </div>
+        </div>
+      </div>
+  @endif
+@else
 <div class="px-4 bg-gray-200">
   <div class="max-w-screen-lg m-auto">
     <div class="grid grid-cols-12 py-2">
-      <div class="col-span-2">
-        <div class="uppercase mt-5">
-        {{ __('The', 'sage') }} <span class="font-bold">{{ __('figures', 'sage') }}</span>
-        </div>
-      </div>
-      <div class="col-span-10 grid grid-cols-3 gap-y-4 gap-x-10">
-        @foreach( $users as $user)
+      <div class="col-span-12 grid grid-cols-3 gap-y-4 gap-x-10">
           @php
-            $user_id = $user->ID;
-            $avatar_url = get_field('user_avatar', 'user_'. $user_id);
-            $first_name = get_user_meta( $user_id, 'first_name', true );
-            $last_name = get_user_meta( $user_id, 'last_name', true );
-            $role = p2p_get_meta( $user->p2p_id, 'role', true );
+            $avatar_url = get_field('user_avatar', 'user_'.get_the_author_meta('ID'));
+            $first_name = get_the_author_meta( 'first_name' )
+            $last_name = get_the_author_meta( 'last_name' )
           @endphp
           @if($role == 'Host')
             <div class="grid gap-4 grid-cols-12 p-2">
@@ -33,38 +86,12 @@
               <div class="col-span-9 flex items-center">
                 <div>
                   <div class="uppercase">{{ $first_name }} <span class="font-bold">{{ $last_name }}</span></div>
-                  <div class="uppercase text-xs">{{ $role }}</div>
                 </div>
               </div>
             </div>
           @endif
-        @endforeach
-        @foreach( $users as $user)
-          @php
-            $user_id = $user->ID;
-            $avatar_url = get_field('user_avatar', 'user_'. $user_id);
-            $first_name = get_user_meta( $user_id, 'first_name', true );
-            $last_name = get_user_meta( $user_id, 'last_name', true );
-            $role = p2p_get_meta( $user->p2p_id, 'role', true );
-          @endphp
-          @if($role == 'Guest')
-            <div class="grid gap-4 grid-cols-12 p-2">
-              <div class="col-span-3 relative">
-                <div class="w-full pb-1/1"></div>
-                <img class="rounded-full w-full h-full object-cover absolute top-0" loading="lazy" src="{{ $avatar_url }}">
-              </div>
-              <div class="col-span-9 flex items-center">
-                <div>
-                  <div class="uppercase">{{ $first_name }} <span class="font-bold">{{ $last_name }}</span></div>
-                  <div class="uppercase text-xs">{{ $role }}</div>
-                </div>
-              </div>
-            </div>
-          @endif
-        @endforeach
         </div>
       </div>
     </div>
   </div>
-@endif
 @endif
