@@ -1,7 +1,7 @@
 @php
     $has_figures = get_field('video_has_figures');
     $users = get_users([
-        'connected_type' => 'multiple_authors',
+        'connected_type' => 'multiple_authors_videos',
         'connected_items' => $post
         ] );
 @endphp
