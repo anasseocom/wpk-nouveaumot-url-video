@@ -16,7 +16,7 @@
 @endphp
 <div class="bg-black">
     <div class="max-w-screen-lg m-auto">
-        <h2 class="text-5xl uppercase text-white text-center pt-20 pb-10">Our <span class="font-bold">{{ __('Shows', 'sage') }}</span></h2>
+        <h2 class="text-3xl md:text-5xl uppercase text-white text-center pt-14 md:pt-20 pb-10">Our <span class="font-bold">{{ __('Shows', 'sage') }}</span></h2>
     </div>
     <div>
         <div id="shows-slider">
@@ -24,22 +24,22 @@
                 @php
                     setup_postdata($post);
                 @endphp
-                <a href="{{ the_permalink() }}" class="rounded-lg bg-gray-100 h-96 relative overflow-hidden max-w-full text-white">
-                    <div class="max-w-screen-xl">
+                <a href="{{ the_permalink() }}" class="rounded-lg bg-gray-100 h-52 md:h-96 relative overflow-hidden max-w-full text-white">
+                    <div class="max-w-100vw sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl">
                         {{ the_post_thumbnail('full', array('class' => 'absolute w-full h-full object-cover top-0 left-0')) }}
                         <div class="absolute w-full h-full object-cover top-0 left-0 bg-gradient-to-t from-black to-transparent opacity-80"></div>
                         <div class="w-screen"></div>
-                        <div class="absolute w-4/5 z-10 top-1/2  transform -translate-y-1/2 left-10-100">
-                            <div class="grid grid-cols-6 gap-12">
+                        <div class="absolute p-4 w-full md:w-4/5 z-10 top-1/2  transform -translate-y-1/2 left-0 md:left-1/10">
+                            <div class="grid grid-cols-6 md:gap-12">
                                 <div class="col-span-5 flex items-end">
                                     <div class="content">
                                         <span class="bg-white px-4 py-2 rounded-full text-black uppercase font-bold text-xs">{{ __('must see', 'sage')}}</span>
                                         <div class="text-xs mt-8 mb-5">{{ the_time('j F Y') }}</div>
-                                        <h1 class="font-bold uppercase text-3xl text-white">{{ the_title() }}</h1>
+                                        <h1 class="font-bold uppercase md:text-3xl text-white">{{ the_title() }}</h1>
                                     </div>
                                 </div>
                                 <div class="col-span-1 flex items-end">
-                                    <div class="w-26">
+                                    <div class="w-20">
                                         @include('partials.images.play')
                                     </div>
                                 </div>
@@ -51,9 +51,9 @@
             @php wp_reset_postdata() @endphp
         </div>
     </div>
-    <div>
+    <div class="px-4">
         <div class="max-w-screen-xl m-auto">
-            <div class="grid grid-cols-4 gap-4 py-20">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 py-20">
                 @foreach($shows as $show)
                     @php
                         $image = get_field('image', $show);

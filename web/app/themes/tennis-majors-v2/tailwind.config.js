@@ -37,6 +37,7 @@ module.exports = {
         'article-default': 'calc(100% - 6rem)',
         'majoruserpage': '23rem',
         '85vw' : '85vw',
+        '100vw' : 'calc(100vw - 2rem)',
       },
       maxHeight: {
         'card': '28rem',
