@@ -36,7 +36,7 @@
     }
 
     &--slider {
-        @apply rounded-md bg-gray-100 py-7 px-5 h-screen max-h-card relative overflow-hidden text-white max-w-little-card lg:max-w-card;
+        @apply rounded-md bg-gray-100 py-7 px-5 h-screen max-h-card relative overflow-hidden text-white max-w-little-card lg:max-w-card block mx-2;
 
         .thumbnail {
             @apply absolute w-full h-full object-cover top-0 left-0;
@@ -174,8 +174,8 @@
     }
 }
 
-.slider-preview-mode {
-    .slick-slide:first-child{
+#slider-cards--slider {
+    .snap-align-start:first-child{
         .preview--slider {
             @apply max-w-little-card lg:max-w-cardfirst py-7 px-5 lg:px-10 lg:py-7;
 

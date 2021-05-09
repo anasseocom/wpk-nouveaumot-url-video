@@ -40,20 +40,6 @@ $(document).ready(() => {
     });
   }
 
-  if ($('#slider-cards').length) {
-    var sliderPreviousArrow = document.getElementById('slider-cards--arrow-left');
-    var sliderNextArrow = document.getElementById('slider-cards--arrow-right');
-    $("#slider-cards--slider").slick({
-      infinite: false,
-      speed: 300,
-      slidesToShow: 1,
-      centerMode: false,
-      variableWidth: true,
-      prevArrow: sliderPreviousArrow,
-      nextArrow: sliderNextArrow,
-    });
-  }
-
   if ($(".top-shows-slider").length) {
 
     if (window.innerWidth > 1024) {

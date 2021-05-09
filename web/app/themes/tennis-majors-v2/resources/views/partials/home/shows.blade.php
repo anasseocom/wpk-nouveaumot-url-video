@@ -14,13 +14,13 @@
             setup_postdata($post);
         @endphp
         <div class="px-4">
-            <div class="max-w-screen-xl m-auto">
+            <div class="max-w-screen-xl m-auto group">
                 <a href="{{ the_permalink() }}" class="grid grid-cols-5 gap-x-8 my-12">
                     <div class="col-span-5 lg:col-span-3">
                         <div class="pb-16/9 bg-gray-100 relative">
                            {{ the_post_thumbnail('16-9_md', array('class' => 'absolute w-full h-full object-cover top-0 left-0')) }}
                             <div class="absolute w-full h-full object-cover top-0 left-0 bg-gradient-to-t from-black to-transparent opacity-80"></div>
-                            <div class="absolute top-1/2 left-1/2 transform -translate-x-2/4 -translate-y-2/4 w-24">
+                            <div class="absolute top-1/2 left-1/2 transform -translate-x-2/4 -translate-y-2/4 w-24 group-hover:w-28 transition-all ease">
                                 @include('partials.images.play')
                             </div>
                         </div>
