@@ -74,8 +74,8 @@
       <div class="col-span-12 grid grid-cols-3 gap-y-4 gap-x-10">
           @php
             $avatar_url = get_field('user_avatar', 'user_'.get_the_author_meta('ID'));
-            $first_name = get_the_author_meta( 'first_name' )
-            $last_name = get_the_author_meta( 'last_name' )
+            $first_name = get_the_author_meta( 'first_name' );
+            $last_name = get_the_author_meta( 'last_name' );
           @endphp
           @if($role == 'Host')
             <div class="grid gap-4 grid-cols-12 p-2">
