@@ -1,5 +1,5 @@
 <div class="feature mt-12">
-    <div class="article-container article-container--feature max-w-screen-xl m-auto">
+    <div class="article-container article-container--feature">
       <article @php post_class() @endphp >
         <div class="max-w-screen-lg m-auto">
           <div class="mx-4">
