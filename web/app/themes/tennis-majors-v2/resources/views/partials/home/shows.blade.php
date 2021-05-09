@@ -42,9 +42,13 @@
     @if( $shows_on_top )
         <div id="top-shows-list"  class="pl-4 sm:pl-2">
             @foreach( $shows_on_top as $show)
+                @php
+                    $first_line = get_field('first_line_title', $show);
+                    $second_line = get_field('second_line_title', $show);
+                @endphp
                 <div class="mb-8">
                     <div class="flex justify-between sm:justify-start mb-2">
-                        <h3 class="ml-2 uppercase inline-block mr-4">{{ $show->name }}</h3>
+                        <h3 class="ml-2 uppercase inline-block mr-4">{{ $first_line }} @if($second_line)<span class="font-bold">{{ $second_line }}</span>@endif</h3>
                         <a href="{{ get_term_link($show) }}" class="inline-block text-xs link--arrow link--arrow-white link--arrow-right flex items-center mr-2"><span>{{ __('View all', 'sage') }}</span></a>
                     </div>
                     

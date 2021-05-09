@@ -7,7 +7,7 @@
 
 <div id="partners" class="py-12 px-4 relative bg-black text-white">
     <div class="max-w-screen-lg m-auto">
-        <h2 class="text-4xl uppercase pl-4 text-white pb-8">{{ __('Tennis news', 'sage') }}</h2>
+        <h2 class="text-4xl uppercase pl-4 text-white pb-8">{{ __('Tennis', 'sage') }} <span class="font-bold">{{ __('news', 'sage') }}</span></h2>
     </div>
     <div class="max-w-screen-lg m-auto">
         @shortcode('[facetwp facet="category"]')

@@ -68,7 +68,7 @@
                             </div>
                             <div class="title-container">
                                 @if($first_line)
-                                    <h4 class="title">{{ $first_line }} </br><span class="font-bold">{{ $second_line }}</span></h4>
+                                    <h4 class="title">{{ $first_line }}@if($second_line) </br><span class="font-bold">{{ $second_line }}</span>@endif</h4>
                                 @else
                                     <h4 class="title">{{ $show->name }}</h4>
                                 @endif

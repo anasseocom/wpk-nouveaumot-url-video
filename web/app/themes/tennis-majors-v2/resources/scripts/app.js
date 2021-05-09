@@ -61,15 +61,6 @@ $(document).ready(() => {
   }
 
   if ($('#top-stories').length) {
-    $("#top-stories-slider").slick({
-      infinite: false,
-      speed: 300,
-      centerMode: false,
-      variableWidth: true,
-      prevArrow: null,
-      nextArrow: null,
-    });
-
     if (window.innerWidth > 1310) {
       var leftMarginTopStories = ((window.innerWidth / 2) - 655);
       document.getElementById('top-stories-slider').style.marginLeft = leftMarginTopStories+ "px";
