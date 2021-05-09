@@ -56,10 +56,10 @@
     }
 
     &--video {
-        @apply rounded-md bg-gray-100 h-0 pb-12/10 sm:pb-16/9 max-w-little-video-show sm:max-w-video-show relative overflow-hidden text-white;
+        @apply rounded-md bg-gray-100 h-0 pb-12/10 sm:pb-16/9 block max-w-little-video-show sm:max-w-video-show relative overflow-hidden text-white mx-2;
 
         &-major {
-            @apply pb-16/9 max-w-full;
+            @apply max-w-full;
         }
 
         .thumbnail {

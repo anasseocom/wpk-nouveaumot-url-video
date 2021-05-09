@@ -64,14 +64,19 @@
                             )
                         );
                     @endphp
-                    <div class="top-shows-slider">
+                    <div class="top-shows-slider flex overflow-x-auto scrolling-touch snap-type-mandatory">
                         @posts($episodes)
-                            @include('partials.common.preview-video')
+                            <div class="snap-align-start">
+                                @include('partials.common.preview-video')
+                            </div>
                         @endposts
                         <div>
-                            <div class="flex flex-col items-center">
-                                <div class="uppercase font-bold text-center pt-8">{{ __('Wanna see more', 'sage') }}</br> {{ $show->name }} {{ __('episodes', 'sage')}} ?</div>
-                                <a href="{{ get_term_link($show) }}" class="btn btn--white btn--arrow-right">{{ __('Discover all', 'sage') }}</a>
+                            <div class="relative items-center max-w-little-video-show sm:max-w-video-show pb-12/10 sm:pb-16/9">
+                                <div class="w-screen h-full"></div>
+                                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full flex flex-col pb-10 sm:pb-0 items-center">
+                                    <div class="uppercase font-bold text-center">{{ __('Wanna see more', 'sage') }}</br> {{ $show->name }} {{ __('episodes', 'sage')}} ?</div>
+                                    <a href="{{ get_term_link($show) }}" class="btn btn--white btn--arrow-right w-max">{{ __('Discover all', 'sage') }}</a>
+                                </div>
                             </div>
                         </div>
                     </div>

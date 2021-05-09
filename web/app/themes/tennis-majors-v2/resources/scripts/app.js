@@ -56,15 +56,6 @@ $(document).ready(() => {
 
   if ($(".top-shows-slider").length) {
 
-    $(".top-shows-slider").slick({
-      infinite: false,
-      speed: 300,
-      centerMode: false,
-      variableWidth: true,
-      prevArrow: null,
-      nextArrow: null,
-    });
-
     if (window.innerWidth > 1024) {
       var leftMarginTopShow = ((window.innerWidth / 2) - 510);
       document.getElementById('top-shows-list').style.marginLeft = leftMarginTopShow + "px";

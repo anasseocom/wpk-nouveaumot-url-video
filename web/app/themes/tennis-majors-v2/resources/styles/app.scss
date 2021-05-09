@@ -76,6 +76,17 @@
     }
 }
 
+.scrolling-touch { -webkit-overflow-scrolling: touch; }
+.scrolling-auto { -webkit-overflow-scrolling: auto; }
+
+.snap-type-mandatory  {
+    scroll-snap-type: x mandatory;  
+}
+
+.snap-align-start {
+    scroll-snap-align: start;
+}
+
 @media only screen and (min-width: 768px) {
     .live-last-news {
         max-height: 800px;
