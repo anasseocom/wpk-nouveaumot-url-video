@@ -21,9 +21,10 @@ module.exports = {
       width: {
         'majoruser': '85%',
         'screen': "1280px",
+        '100vw': "100vw",
       },
       maxWidth: {
-        'lastnews': '12rem',
+        'lastnews': '15rem',
         'little-card': '75vw',
         'card': '18.2rem',
         'video-show': '22rem',
