@@ -20,10 +20,15 @@ class Show extends Field
             ->setLocation('taxonomy', '==', 'shows');
 
         $show
+            ->addText('first_line_title', [
+                'label' => 'First line title',
+            ])
+            ->addText('second_line_title', [
+                'label' => 'Second line title',
+            ])
             ->addImage('image', [
                 'label' => 'Image',
             ])
-
             ->addImage('image_with_title', [
                 'label' => 'Image with title',
             ]);

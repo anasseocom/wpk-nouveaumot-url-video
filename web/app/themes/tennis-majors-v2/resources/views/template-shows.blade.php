@@ -53,15 +53,27 @@
     </div>
     <div class="px-4">
         <div class="max-w-screen-xl m-auto">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 py-20">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 py-6 md:py-20">
                 @foreach($shows as $show)
                     @php
                         $image = get_field('image', $show);
+                        $first_line = get_field('first_line_title', $show);
+                        $second_line = get_field('second_line_title', $show);
                     @endphp
                     <a href="{{ get_term_link($show) }}" class="preview preview--show">
-                        <img src="<?php echo $image['url']; ?>" class="thumbnail">
-                        <div class="gradient"></div>
-                        <h4 class="title">{{ $show->name }}</h4>
+                        <div class="container">
+                            <div class="thumbnail-container">
+                                <img src="<?php echo $image['url']; ?>" class="thumbnail">
+                                <div class="gradient"></div>
+                            </div>
+                            <div class="title-container">
+                                @if($first_line)
+                                    <h4 class="title">{{ $first_line }} </br><span class="font-bold">{{ $second_line }}</span></h4>
+                                @else
+                                    <h4 class="title">{{ $show->name }}</h4>
+                                @endif
+                            </div>
+                        </div>
                     </a>
                 @endforeach
             </div>

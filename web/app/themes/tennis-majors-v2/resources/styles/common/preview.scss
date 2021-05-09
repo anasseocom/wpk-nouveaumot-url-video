@@ -146,7 +146,15 @@
     }
 
     &--show {
-        @apply rounded-lg bg-gray-100 h-screen max-h-48 relative overflow-hidden text-white text-center;
+        @apply block sm:pb-16/9 sm:relative text-white md:rounded-lg overflow-hidden;
+
+        .container {
+            @apply grid grid-cols-12;
+        }
+
+        .thumbnail-container {
+            @apply col-span-7 relative md:absolute top-0 w-full h-full pb-16/9 md:pb-0 rounded-md md:rounded-none overflow-hidden md:overflow-auto;
+        }
 
         .thumbnail {
             @apply absolute w-full h-full object-cover top-0 left-0;
@@ -156,8 +164,12 @@
             @apply w-full h-full object-cover top-0 left-0 bg-gradient-to-t from-black to-transparent opacity-80;
         }
 
+        .title-container {
+            @apply col-span-5 relative md:absolute w-full h-full top-0;
+        }
+
         .title {
-            @apply absolute w-full px-4 font-bold uppercase text-xl text-white top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+            @apply absolute w-full px-4 uppercase text-xl text-white top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:text-center;
         }
     }
 }
