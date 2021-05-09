@@ -315,6 +315,39 @@ $(document).ready(() => {
       $('.menu__primary .menu__list > .menu-item > a').parent().removeClass("menu-item--active");
     });
 
+    /* avoid old iframe and perform video to play in content */
+    if($('.single')) {
+      if($('.video-header')) {
+    const bgv = $('.inherited-shortcode-video');
+
+    if (bgv.is(':visible')) {
+      $('source', bgv).each(
+        function() {
+          const el = $(this);
+          el.attr('src', el.data('src'));
+        }
+      );
+
+      bgv[0].load();
+    }
+  }
+}
+if($('.single')) {
+  if($('.video-header')) {
+const bgv = $('#player');
+
+if (bgv.is(':visible')) {
+  $('iframe', bgv).each(
+    function() {
+      const el = $(this);
+      el.attr('src', el.data('src'));
+    }
+  );
+
+  bgv[0].load();
+}
+}
+}
   if($('.single')) {
     if($('.content')) {
       var content = document.getElementsByClassName('content')[0]

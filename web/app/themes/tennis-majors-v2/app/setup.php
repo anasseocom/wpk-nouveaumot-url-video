@@ -242,8 +242,8 @@ add_action('init', function () {
 
 add_action('init', function () {
     p2p_register_connection_type( array(
-        'name' => 'multiple_authors_post',
-        'title' => 'Multiple author',
+        'name' => 'multiple_authors',
+        'title' => 'Author role',
         'from' => 'user',
         'to' => [0 => 'post'],
         'fields' => array(

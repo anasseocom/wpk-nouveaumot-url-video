@@ -1,5 +1,5 @@
 <a href="{{ the_permalink() }}" class="preview preview--slider">
-    {{ the_post_thumbnail('16-9_md', array('class' => 'thumbnail')) }}
+    {{ the_post_thumbnail('16-9_sm', array('class' => 'thumbnail')) }}
     <div class="gradient"></div>
     <div class="content h-full">
         <div class="absolute top-20 text-xs">{{ the_time('j F Y') }}</div>
