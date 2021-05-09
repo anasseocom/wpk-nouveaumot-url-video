@@ -15,9 +15,7 @@
           </div>
         </div>
         <div class="mx-4">
-          <div class="max-w-screen-sm m-auto">
-            @include('partials.single.common.author-date')
-          </div>
+          @include('partials.single.common.author-date')
         </div>
         <div class="content m-auto">
         @content
@@ -25,9 +23,7 @@
         <div class="max-w-screen-sm m-auto">
             @include('partials.single.common.share')
         </div>
-        <div>
-          @include('partials.single.common.ours')
-        </div>
+        @include('partials.single.common.ours')
       </article>
     </div>
   </div>
