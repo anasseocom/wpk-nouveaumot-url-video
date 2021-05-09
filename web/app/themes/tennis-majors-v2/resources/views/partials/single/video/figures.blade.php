@@ -77,7 +77,6 @@
             $first_name = get_the_author_meta( 'first_name' );
             $last_name = get_the_author_meta( 'last_name' );
           @endphp
-          @if($role == 'Host')
             <div class="grid gap-4 grid-cols-12 p-2">
               <div class="col-span-3 relative">
                 <div class="w-full pb-1/1"></div>
@@ -89,7 +88,6 @@
                 </div>
               </div>
             </div>
-          @endif
         </div>
       </div>
     </div>
