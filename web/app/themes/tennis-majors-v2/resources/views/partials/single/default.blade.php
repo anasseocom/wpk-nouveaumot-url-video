@@ -35,4 +35,10 @@
   </div>
 </article>
 @include('partials.single.common.more')
-@include('partials.comments')
+
+       // If comments are open or there is at least one comment, load up the comment template.
+      @php
+               if ( comments_open() || get_comments_number() ) {
+               comments_template();
+       }
+       @endphp
