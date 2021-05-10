@@ -72,6 +72,7 @@
                             @include('partials.common.preview-video')
                         @endposts
                     </div>
+                    <?php pagination(); ?>
                 </div>
                 <div class="col-span-3">
                     
