@@ -6,6 +6,7 @@
     <div class="menu-container px-4 sm:flex sm:flex-row sm:items-center">
         <div class="max-w-screen-xl m-auto py-16 w-full">
             <div class="relative">
+                <h2 class="uppercase text-xs text-white absolute left-1 -top-2 sm:-top-4 transform -translate-y-full">Menu</h2>
                 @if (has_nav_menu('primary_navigation'))
                     <nav class="menu__primary" role="navigation" aria-label="Menu principal">
                         {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'menu__list']) !!}
