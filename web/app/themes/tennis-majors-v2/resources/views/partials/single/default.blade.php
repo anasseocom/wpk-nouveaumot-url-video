@@ -36,9 +36,4 @@
 </article>
 @include('partials.single.common.more')
 
-       // If comments are open or there is at least one comment, load up the comment template.
-      @php
-               if ( comments_open() || get_comments_number() ) {
-               comments_template();
-       }
-       @endphp
+<?php comments_template(); ?> 
