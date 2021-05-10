@@ -18,7 +18,7 @@
 @endphp
 
 @if($posts_count > 1)
-<div class="read-also mx-4 pb-2 pt-4">
+<div class="read-also pb-2 pt-4">
   <div class="uppercase text-xs mb-6">
     You might also like this
   </div>

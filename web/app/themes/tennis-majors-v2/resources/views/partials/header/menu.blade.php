@@ -1,7 +1,6 @@
 <div id="menu" class="menu">
     <div class="w-full top-0 z-infinite bg-black">
-        <div class="px-4 h-16 lg:h-20 relative">
-        </div>
+        <div class="px-4 h-16 lg:h-20 relative"></div>
     </div>
     <div class="menu-container px-4 sm:flex sm:flex-row sm:items-center">
         <div class="max-w-screen-xl m-auto py-16 w-full">
