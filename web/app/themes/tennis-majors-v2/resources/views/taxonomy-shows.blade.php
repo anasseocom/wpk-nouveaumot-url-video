@@ -33,9 +33,9 @@
                             <a class="uppercase text-xs link--arrow link--arrow-white link--arrow-left"  href="{{ get_permalink( get_page_by_path( 'nos-videos' ) )}}">
                         @endif
                         @if($my_current_lang =='en')
-                            <a class="uppercase text-xs link--arrow link--arrow-white link--arrow-left"  href="{{ get_permalink( get_page_by_path( 'video-collection' ) )}}">
+                            <a class="uppercase text-xs link--arrow link--arrow-white link--arrow-left"  href="{{ get_permalink( get_page_by_path( 'video-series' ) )}}">
                         @endif
-                            {{ __('Back to all the shows', 'sage') }}
+                            {{ __('Back to all the video series', 'sage') }}
                         </a>
                     </div>
                     <div class="block md:hidden">

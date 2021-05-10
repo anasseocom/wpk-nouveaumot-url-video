@@ -230,8 +230,8 @@ add_action('init', function () {
     }
     
     acf_add_options_page([
-        'page_title'    => 'Home edition',
-        'menu_title'    => 'Home edition',
+        'page_title'    => __('Home edition', 'sage'),
+        'menu_title'    => __('Home edition', 'sage'),
         'menu_slug'     => 'home-edition',
         'capability'    => 'edit_posts',
         'parent_slug'   => '',
@@ -250,7 +250,7 @@ add_action('init', function () {
             'role' => array( 
                 'title' => 'Role',
                 'type' => 'select',
-                'values' => array( 'Writer', 'Co-writer', 'Editor', 'Translator', 'Curator', 'Author', 'Video operator', 'Sound operator', 'Host', 'Guest', 'Columnist', 'Expert')
+                'values' => array( __('Writer', 'sage'), __('Co-writer', 'sage'), __('Editor', 'sage'), __('Photo', 'sage'), __('Translator', 'sage'), __('Curator', 'sage'), __('Author', 'sage'), __('Columnist', 'sage'), __('Expert', 'sage'))
             ),
         )
     ) );
@@ -259,14 +259,14 @@ add_action('init', function () {
 add_action('init', function () {
     p2p_register_connection_type( array(
         'name' => 'multiple_authors_videos',
-        'title' => 'Multiple author',
+        'title' => 'Author role on this video',
         'from' => 'user',
         'to' => [0 => 'videos'],
         'fields' => array(
             'role' => array( 
                 'title' => 'Role',
                 'type' => 'select',
-                'values' => array( 'Writer', 'Co-writer', 'Editor', 'Translator', 'Curator', 'Author', 'Video operator', 'Sound operator', 'Host', 'Guest', 'Columnist', 'Expert')
+                'values' => array( __('Writer', 'sage'), __('Co-writer', 'sage'), __('Editor', 'sage'), __('Photo', 'sage'), __('Translator', 'sage'), __('Curator', 'sage'), __('Author', 'sage'), __('Columnist', 'sage'), __('Expert', 'sage'), __('Video operator', 'sage'), __('Sound operator', 'sage'), __('Host', 'sage'), __('Guest', 'sage'))
             ),
         )
     ) );

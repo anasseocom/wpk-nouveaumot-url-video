@@ -1,8 +1,8 @@
 {{--
-  Title: Scoring
+  Title: Results
   Category: formatting
   Icon: admin-post
-  Keywords: scoring
+  Keywords: results
   Mode: edit
   Align: left
   PostTypes: page post videos
