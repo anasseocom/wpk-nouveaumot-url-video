@@ -47,7 +47,7 @@
                             setup_postdata($post_on_top);
                         @endphp
                         <div class="col-span-12 md:col-span-8">
-                            {{ the_post_thumbnail('full') }}
+                            {{ the_post_thumbnail('16-9_md') }}
                         </div>
                         <div class="col-span-12 md:col-span-4">
                             <div class="text-xs">{{ the_time('j F Y') }}</div>

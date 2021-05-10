@@ -23,7 +23,7 @@
                 @endphp
                 <a href="{{ the_permalink() }}" class="rounded-lg bg-gray-100 h-52 md:h-96 relative overflow-hidden max-w-full text-white">
                     <div class="max-w-100vw xl:max-w-screen-xl">
-                        {{ the_post_thumbnail('full', array('class' => 'absolute w-full h-full object-cover top-0 left-0')) }}
+                        {{ the_post_thumbnail('16-9_md', array('class' => 'absolute w-full h-full object-cover top-0 left-0')) }}
                         <div class="absolute w-full h-full object-cover top-0 left-0 bg-gradient-to-t from-black to-transparent opacity-80"></div>
                         <div class="w-screen"></div>
                         <div class="absolute p-4 w-full md:w-4/5 z-10 top-1/2  transform -translate-y-1/2 left-0 md:left-1/10">
@@ -60,7 +60,7 @@
                     <a href="{{ get_term_link($show) }}" class="preview preview--show">
                         <div class="container">
                             <div class="thumbnail-container">
-                                <img src="<?php echo $image['url']; ?>" class="thumbnail">
+                                <img src="<?php echo $image['url']['2-3_md']; ?>" class="thumbnail">
                                 <div class="gradient"></div>
                             </div>
                             <div class="title-container">

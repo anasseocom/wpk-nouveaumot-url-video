@@ -11,7 +11,7 @@
             </div>
           </div>
           <div class="mb-4">
-              {{ the_post_thumbnail('full', array('class' => 'thumbnail')) }}
+              {{ the_post_thumbnail('16-9_md', array('class' => 'thumbnail')) }}
           </div>
         </div>
         <div class="mx-4">

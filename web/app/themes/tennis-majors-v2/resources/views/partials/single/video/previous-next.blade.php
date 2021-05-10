@@ -20,7 +20,8 @@
                     <div class="grid grid-cols-12 gap-4 xl:pb-3">
                         <div class="flex items-center col-span-2 xl:col-span-4">
                             <div class="relative pb-1/1 w-full h-0 rounded-xl overflow-hidden">
-                                {{ the_post_thumbnail('full', array('class' => 'thumbnail absolute object-cover w-full h-full')) }}
+
+                                {{ the_post_thumbnail('1-1_sm', array('class' => 'thumbnail absolute object-cover w-full h-full')) }}
                             </div>
                         </div>
                         <div class="font-bold col-span-10 xl:col-span-8 text-sm flex items-center">
@@ -47,7 +48,7 @@
                     <div class="grid grid-cols-12 gap-4 xl:pb-3">
                         <div class="flex items-center col-span-2 xl:col-span-4 xl:col-start-9 row-start-1">
                             <div class="relative pb-1/1 w-full h-0 rounded-xl overflow-hidden">
-                                {{ the_post_thumbnail('full', array('class' => 'thumbnail absolute object-cover w-full h-full')) }}
+                                {{ the_post_thumbnail('1-1_sm', array('class' => 'thumbnail absolute object-cover w-full h-full')) }}
                             </div>
                         </div>
                         <div class="font-bold col-span-10 xl:col-span-8 xl:col-start-1 text-sm flex items-center row-start-1">

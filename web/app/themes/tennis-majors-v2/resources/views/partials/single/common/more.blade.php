@@ -21,7 +21,7 @@
                     </div>
                     <div class="thumbnail">
                         <div class="absolute w-full h-full object-cover top-0 left-0 bg-gradient-to-t from-black to-transparent opacity-80"></div>
-                        {{the_post_thumbnail('full')}}
+                        {{ the_post_thumbnail('1-1_md', array('class' => 'thumbnail')) }}
                     </div>
                 </a>
                 @php
