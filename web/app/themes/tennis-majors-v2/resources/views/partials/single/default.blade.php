@@ -37,7 +37,7 @@
 @include('partials.single.common.more')
 
 @php
-if ( comments_open() || have_comments() ) :
+
     comments_template();
-endif;
+
        @endphp
