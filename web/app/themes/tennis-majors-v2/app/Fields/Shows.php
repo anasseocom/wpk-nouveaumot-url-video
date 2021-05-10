@@ -25,6 +25,13 @@ class Shows extends Field
                 'post_type' => [0 => 'videos'],
                 'multiple' => 1,
                 'max' => 3,
+            ])
+            ->addTaxonomy('shows_ordered', [
+                'label' => 'Shows ordered',
+                'taxonomy' => 'shows',
+                'field_type' => 'multi_select',
+                'return_format' => 'object',
+                'multiple' => 1,
             ]);
 
         return $shows->build();

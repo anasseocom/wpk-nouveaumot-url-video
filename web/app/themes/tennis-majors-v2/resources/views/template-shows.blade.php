@@ -9,10 +9,7 @@
     global $post;
     $videos_on_top = get_field('videos_on_top');
 
-    $shows = get_terms( array(
-        'taxonomy' => 'shows',
-        'hide_empty' => false,
-    ) );
+    $shows = get_field('shows_ordered');
 @endphp
 <div class="bg-black">
     <div class="max-w-screen-lg m-auto">
@@ -25,7 +22,7 @@
                     setup_postdata($post);
                 @endphp
                 <a href="{{ the_permalink() }}" class="rounded-lg bg-gray-100 h-52 md:h-96 relative overflow-hidden max-w-full text-white">
-                    <div class="max-w-100vw sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl">
+                    <div class="max-w-100vw xl:max-w-screen-xl">
                         {{ the_post_thumbnail('full', array('class' => 'absolute w-full h-full object-cover top-0 left-0')) }}
                         <div class="absolute w-full h-full object-cover top-0 left-0 bg-gradient-to-t from-black to-transparent opacity-80"></div>
                         <div class="w-screen"></div>
