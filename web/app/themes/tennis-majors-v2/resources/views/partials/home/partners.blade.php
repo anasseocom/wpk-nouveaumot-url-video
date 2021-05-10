@@ -4,7 +4,7 @@
     $i = 0;
 @endphp
 @if( $partners )
-    <div id="partners" class="py-12 px-4 relative">
+    <div id="partners" class="pt-12 pb-40 px-4 relative overflow-hidden">
         <div class="max-w-screen-lg m-auto">
             <h2 class="text-4xl uppercase pl-4 text-black pb-8">{{ __('Our', 'sage') }} <span class="font-bold">{{ __('partners', 'sage') }}</span></h2>
         </div>

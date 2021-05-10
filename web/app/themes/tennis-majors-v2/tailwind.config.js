@@ -20,6 +20,7 @@ module.exports = {
       },
       width: {
         'majoruser': '85%',
+        'title-video': '80%',
         'screen': "1280px",
         '100vw': "100vw",
       },
