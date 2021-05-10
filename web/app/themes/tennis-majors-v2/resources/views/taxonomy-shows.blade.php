@@ -20,6 +20,7 @@
     );
     $query = new WP_Query( $args );
     $count_episodes = $query->post_count;
+    $my_current_lang = apply_filters( 'wpml_current_language', NULL );
 
 @endphp
 
@@ -28,7 +29,12 @@
             <div class="grid grid-cols-6 gap-x-8 py-8 sm:py-12 mx-4">
                 <div class="col-span-6 md:col-span-3">
                     <div class="mb-4">
-                        <a class="uppercase text-xs link--arrow link--arrow-white link--arrow-left"  href="{{ get_permalink( get_page_by_path( 'shows' ) )}}">
+                        @if($my_current_lang =='fr')
+                            <a class="uppercase text-xs link--arrow link--arrow-white link--arrow-left"  href="{{ get_permalink( get_page_by_path( 'nos-videos' ) )}}">
+                        @endif
+                        @if($my_current_lang =='en')
+                            <a class="uppercase text-xs link--arrow link--arrow-white link--arrow-left"  href="{{ get_permalink( get_page_by_path( 'video-collection' ) )}}">
+                        @endif
                             {{ __('Back to all the shows', 'sage') }}
                         </a>
                     </div>

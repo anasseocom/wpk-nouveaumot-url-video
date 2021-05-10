@@ -8,7 +8,6 @@
 @php
     global $post;
     $videos_on_top = get_field('videos_on_top');
-
     $shows = get_field('shows_ordered');
 @endphp
 <div class="bg-black">
