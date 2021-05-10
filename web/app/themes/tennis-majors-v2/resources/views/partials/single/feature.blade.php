@@ -28,4 +28,3 @@
     </div>
   </div>
   @include('partials.single.common.more')
-  <?php comments_template(); ?> 
