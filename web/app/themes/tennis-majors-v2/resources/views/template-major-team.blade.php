@@ -21,7 +21,7 @@
         </div>
     </div>
         <div class="ml-4">
-            <div id="major-team-slider">
+            <div id="major-team-slider" class="flex overflow-x-auto scrolling-touch snap-type-mandatory">
                 @foreach( $major_users as $user)
                     @php
                         $user_is_major = get_field('user_is_major', 'user_'. $user);
@@ -31,7 +31,7 @@
                     @endphp
 
                     @if($user_is_major)
-                        <div class="user user--major">
+                        <div class="user user--major snap-align-start">
                             <img src="{{ $image['url'] }}" class="absolute bottom-0 w-32 left-0">
                             <div class="w-screen pb-55/100">
                             </div>

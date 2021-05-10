@@ -5,14 +5,14 @@
     'facetwp' => true,
     ])
 
-<div class="pt-12 pb-12 px-4 lg:px-10 xl:px-20 relative bg-black text-white">
-    <div class="max-w-screen-lg m-auto">
+<div class="pt-12 pb-12 lg:px-10 xl:px-20 relative bg-black text-white">
+    <div class="max-w-screen-lg m-auto px-4">
         <h2 class="text-4xl uppercase pl-4 text-white pb-8">{{ __('Tennis', 'sage') }} <span class="font-bold">{{ __('news', 'sage') }}</span></h2>
     </div>
-    <div class="max-w-screen-lg m-auto">
+    <div class="max-w-screen-lg m-auto pl-4">
         @shortcode('[facetwp facet="category"]')
     </div>
-    <div class="py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:gap-y-6 md:gap-y-10 lg:gap-x-10 xl:gap-x-32 max-w-screen-xxl m-auto">
+    <div class="py-12 px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-14 md:gap-y-20 gap-x-12 lg:gap-x-10 xl:gap-x-32 max-w-screen-xxl m-auto">
         @posts
             @if(has_post_thumbnail())
                 @include('partials.common.preview-default-home')

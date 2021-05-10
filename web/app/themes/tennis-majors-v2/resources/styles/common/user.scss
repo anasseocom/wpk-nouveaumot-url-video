@@ -10,4 +10,16 @@
             @apply w-full max-w-85vw sm:max-w-majoruserpage;
         }
     }
+
+    #major-team-slider {
+        .user {
+            &--major {
+                @apply mx-2;
+            
+                &:first-child {
+                    @apply ml-0
+                }
+            }
+        }
+    }
 }

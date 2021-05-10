@@ -2,3 +2,21 @@
     fill: black;
     width: 100%;
 }
+
+@media only screen and (min-width: 630px) {
+    .live-last-news--item {
+        &:first-child {
+            @apply pl-0;
+        }
+    
+        &::after {
+            content: "";
+            width: 1px;
+            height: 4.5rem;
+            background-color: rgb(235, 235, 235);
+            position: absolute;
+            top: 0;
+            right: 2rem;
+        }
+    }
+}

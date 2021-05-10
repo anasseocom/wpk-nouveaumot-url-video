@@ -1,10 +1,13 @@
 .facetwp-facet {
-    @apply flex-wrap flex mb-0;
+    @apply flex overflow-x-auto;
+    -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: auto;
+    scroll-snap-type: x mandatory;  
 }
 
 .facetwp-radio {
     background-image: none !important;
-    @apply mx-1 my-0 px-6 py-2 border-white border uppercase font-bold text-xs rounded-3xl;
+    @apply mx-1 my-0 px-6 py-2 border-white border uppercase font-bold text-xs rounded-3xl w-full max-w-max;
 }
 
 .facetwp-radio.checked {

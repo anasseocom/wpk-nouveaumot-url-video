@@ -22,11 +22,13 @@
                     
                     <div id="live-last-news-slider" class="grid gap-y-8 pb-36 sm:pb-0 sm:flex sm:overflow-x-auto scrolling-touch snap-type-mandatory">
                         @posts
-                            <div class="snap-align-start">
-                                <a href="{{ the_permalink() }}" class="md:max-w-lastnews block md:mx-4">
+                            <div class="live-last-news--item relative snap-align-start md:pr-16">
+                                <a href="{{ the_permalink() }}" class="md:max-w-lastnews block">
                                     <div class="grid grid-cols-12 gap-x-4 md:w-100vw md:max-w-lastnews">
-                                        <div class="thumbnail col-span-4">
-                                            {{ the_post_thumbnail('1-1_md', array('class' => 'thumbnail')) }}
+                                        <div class="col-span-4">
+                                            <div class="relative pb-1/1 h-0">
+                                                {{ the_post_thumbnail('1-1_md', array('class' => 'absolute top-0 object-cover h-full w-full')) }}
+                                            </div>
                                         </div>
                                         <div class="col-span-8">
                                             <div class="relative uppercase font-bold text-black opacity-30 text-xs mb-1">{{ get_time_since_posted() }}</div>
