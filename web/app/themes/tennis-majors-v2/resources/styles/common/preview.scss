@@ -75,7 +75,7 @@
         }
 
         .title {
-            @apply absolute bottom-8 uppercase font-bold text-sm w-title-video;
+            @apply absolute bottom-4 sm:bottom-8 uppercase font-bold text-sm w-title-video;
         }
     }
 
