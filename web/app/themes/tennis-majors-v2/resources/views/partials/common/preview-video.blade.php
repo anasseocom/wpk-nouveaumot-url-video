@@ -4,7 +4,7 @@
     <div class="h-full">
         <div class="w-screen h-full"></div>
         <div class="p-4 h-full top-0 left-0">
-            <div class="absolute bottom-4 right-4 w-14 sm:w-10 sm:relative sm:right-auto sm:bottom-auto sm:mt-2 sm:mb-2">
+            <div class="absolute top-3 w-6 right-4 sm:top-auto sm:w-10 sm:relative sm:right-auto sm:bottom-auto sm:mt-2 sm:mb-2">
                 @include('partials.images.play')
             </div>
             <h4 class="title">{{ the_title()}}</h4>

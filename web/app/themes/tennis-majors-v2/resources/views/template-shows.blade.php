@@ -60,7 +60,7 @@
                     <a href="{{ get_term_link($show) }}" class="preview preview--show">
                         <div class="container">
                             <div class="thumbnail-container">
-                                <img src="<?php echo $image['url']['2-3_md']; ?>" class="thumbnail">
+                                <img src="<?php echo $image['url']; ?>" class="thumbnail">
                                 <div class="gradient"></div>
                             </div>
                             <div class="title-container">

@@ -11,7 +11,7 @@
 @endphp
 <div id="major-page" class="pt-20 pb-8relative">
     <div class="max-w-screen-xl m-auto">
-        <h2 class="text-4xl uppercase text-black text-center pb-2 mx-4">{{ __('A major team', 'sage')}}</h2>
+        <h2 class="text-4xl uppercase text-black text-center pb-2 mx-4">{{ __('A major', 'sage')}} <span class="font-bold">{{ __('team', 'sage')}}</span></span></h2>
         <p class="font-bold text-center pb-8 mx-4">{{ __('The best tennis writer and experts are there', 'sage')}}</p>
     </div>
     @if($major_users)

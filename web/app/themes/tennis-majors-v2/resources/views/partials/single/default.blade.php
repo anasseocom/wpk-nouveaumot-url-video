@@ -1,5 +1,5 @@
 <article @php post_class() @endphp >
-  <div class="mt-12">
+  <div class="mt-8 sm:mt-12">
     <div class="article-container article-container--default max-w-screen-xl m-auto flex flex-col items-end">
       <div class="md:max-w-article-default">
         <h1 class="font-bold text-3xl md:text-5xl max-w-screen-lg px-4">

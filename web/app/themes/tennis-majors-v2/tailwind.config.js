@@ -39,6 +39,7 @@ module.exports = {
         'majoruserpage': '23rem',
         '85vw' : '85vw',
         '100vw' : 'calc(100vw - 2rem)',
+        'screen-sm' : '720px',
       },
       maxHeight: {
         'card': '28rem',
