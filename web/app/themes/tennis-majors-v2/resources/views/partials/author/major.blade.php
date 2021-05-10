@@ -9,13 +9,19 @@
     $twitter = get_field('user_twitter', 'user_'. $id);
     $instagram = get_field('user_instagram', 'user_'. $id);
     $image = get_field('user_image', 'user_'. $id);
+    $my_current_lang = apply_filters( 'wpml_current_language', NULL );
 @endphp
 <div class="bg-black text-white px-4">
     <div class="max-w-screen-xl m-auto pt-14 md:pt-20 relative">
         <div class="grid grid-cols-12 gap-x-8">
             <div class="col-span-12 md:col-span-6 flex-col flex items-center md:items-end relative">
                 <div class="absolute left-0 -top-10">
-                    <a href="{{ get_permalink( get_page_by_path( 'major-team' ) )}}" class="uppercase text-xs link--arrow link--arrow-white link--arrow-left">{{ __('Back to the team', 'sage') }}</a>
+                @if($my_current_lang =='fr')
+                <a href="{{ get_permalink( get_page_by_path( 'dream-team' ) )}}" class="uppercase text-xs link--arrow link--arrow-white link--arrow-left">{{ __('Back to the team', 'sage') }}</a>
+                        @endif
+                        @if($my_current_lang =='en')
+                        <a href="{{ get_permalink( get_page_by_path( 'major-team' ) )}}" class="uppercase text-xs link--arrow link--arrow-white link--arrow-left">{{ __('Back to the team', 'sage') }}</a>
+                        @endif
                 </div>
                 <img src="{{ $image['url'] }}" class="w-80">
                 <div class="h-44 w-full absolute bottom-0 bg-gradient-to-t from-black to-transparent opacity-100"></div>

@@ -1,6 +1,7 @@
 @php
     global $post;
     $major_team_on_top = get_field('major_team_on_top', 'option');
+    $my_current_lang = apply_filters( 'wpml_current_language', NULL );
 @endphp
 @if($major_team_on_top)
     <div id="major-team" class="max-w-screen-xl m-auto pt-20 pb-8 relative">
@@ -14,7 +15,12 @@
             @endforeach
         </div>
         <div class="flex flex-col items-center my-8">
-            <a href="{{ get_permalink( get_page_by_path( 'major-team' ) )}}" class="btn btn--arrow-right">{{ __('Discover all', 'sage') }}</a>
+        @if($my_current_lang =='fr')
+        <a href="{{ get_permalink( get_page_by_path( 'dream-team' ) )}}" class="btn btn--arrow-right">{{ __('Discover all', 'sage') }}</a>
+                        @endif
+                        @if($my_current_lang =='en')
+                        <a href="{{ get_permalink( get_page_by_path( 'major-team' ) )}}" class="btn btn--arrow-right">{{ __('Discover all', 'sage') }}</a>
+                        @endif
         </div>
     </div>
 @endif

@@ -1,4 +1,6 @@
-
+@php
+$my_current_lang = apply_filters( 'wpml_current_language', NULL );
+@endphp
 @query([
     'post_type' => 'post',
     'posts_per_page' => 6,
@@ -22,6 +24,10 @@
         @endposts
     </div>
     <div class="flex flex-col items-center my-8">
-        <a href="{{ get_permalink( get_page_by_path( 'news' ) )}}" class="btn btn--white btn--arrow-right">{{ __('Discover all', 'sage')}}</a>
-    </div>
+    @if($my_current_lang =='fr')
+    <a href="{{ get_permalink( get_page_by_path( 'dernieres-infos' ) )}}" class="btn btn--white btn--arrow-right">{{ __('Discover all', 'sage')}}</a>
+                        @endif
+                        @if($my_current_lang =='en')
+                        <a href="{{ get_permalink( get_page_by_path( 'news' ) )}}" class="btn btn--white btn--arrow-right">{{ __('Discover all', 'sage')}}</a>
+                        @endif    </div>
 </div>

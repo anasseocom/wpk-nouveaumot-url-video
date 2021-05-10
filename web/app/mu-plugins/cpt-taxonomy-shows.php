@@ -24,6 +24,6 @@ function create_shows_taxonomy() {
     'query_var' => true,
     'public' => true,
     'has_archive' => true,
-    'rewrite' => array( 'slug' => 'shows' ),
+    'rewrite' => array( 'slug' => 'video-series' ),
   ));
 }
