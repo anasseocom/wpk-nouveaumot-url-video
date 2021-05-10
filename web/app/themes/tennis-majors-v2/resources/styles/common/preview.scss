@@ -114,7 +114,7 @@
     }
 
     &--default-home {
-        @apply grid grid-cols-12 gap-x-4 sm:gap-x-8;
+        @apply grid grid-cols-12 gap-x-4 sm:gap-x-5;
 
         .thumbnail {
             @apply relative w-full pb-1/1 col-span-4 sm:col-span-5 h-0;

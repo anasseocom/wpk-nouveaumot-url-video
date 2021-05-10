@@ -5,7 +5,7 @@
 
 @if($posts_on_top)
     <div id="slider-cards" class="max-w-screen-xl ml-4 xl:m-auto py-5 lg:py-8 relative">
-        <div class="-mx-2">
+        <div class="-ml-2 xl:-mx-2">
             <div id="slider-cards--slider" class="slider-preview-mode flex overflow-x-auto scrolling-touch snap-type-mandatory">
                 @foreach( $posts_on_top as $post)
                     @php
