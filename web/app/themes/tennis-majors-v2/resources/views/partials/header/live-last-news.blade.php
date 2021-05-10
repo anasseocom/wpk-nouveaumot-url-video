@@ -1,7 +1,7 @@
 <div class="bg-white">
     <div id="live-last-news" class="live-last-news" style="display:none;">
         <div class="py-8 pl-4 pr-4 md:pr-0 overflow-y-scroll h-full">
-            <div class="grid grid-cols-12 md:gap-x-24">
+            <div class="grid grid-cols-12 md:gap-x-20">
                 <div class="col-span-12 md:col-span-4">
                     <div class="relative w-full h-0 overflow-hidden pb-16/9">
                         <iframe class="w-full h-full absolute left-0 top-0 overflow-hidden" frameborder="0" type="text/html" src="{{ the_field('live_video_url', 'option')}}?mute=1?autoplay=1" width="100%" height="100%" allowfullscreen allow="autoplay"> </iframe>
@@ -20,7 +20,7 @@
                         'post_status'    => 'publish',
                     ])
                     
-                    <div id="live-last-news-slider" class="grid gap-y-8 pb-36 sm:pb-0 sm:flex sm:overflow-x-auto scrolling-touch snap-type-mandatory">
+                    <div id="live-last-news-slider" class="grid gap-y-8 pb-36 sm:pb-0 sm:flex sm:overflow-x-auto sm:overscroll-y-none scrolling-touch snap-type-mandatory">
                         @posts
                             <div class="live-last-news--item relative snap-align-start md:pr-16">
                                 <a href="{{ the_permalink() }}" class="md:max-w-lastnews block">
