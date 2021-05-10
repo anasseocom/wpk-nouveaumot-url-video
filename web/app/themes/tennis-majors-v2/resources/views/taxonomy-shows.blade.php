@@ -15,6 +15,8 @@
                 'terms'    => $term->slug,
             ),
         ),
+    'posts_per_page' => 4,
+    'paged'          => get_query_var( 'paged' ),
     );
     $query = new WP_Query( $args );
     $count_episodes = $query->post_count;
@@ -73,6 +75,7 @@
                         @endposts
                     </div>
                     <?php pagination(); ?>
+                    <?php wp_reset_query(); ?>
                 </div>
                 <div class="col-span-3">
                     

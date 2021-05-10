@@ -192,6 +192,6 @@
 
 .list-show {
     .preview--video {
-        @apply max-w-full pb-16/9
+        @apply max-w-full pb-16/9 mx-0;
     }
 }
