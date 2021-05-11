@@ -1,5 +1,5 @@
 .facetwp-facet {
-    @apply overflow-x-auto;
+    @apply overflow-x-auto flex flex-wrap;
     -webkit-overflow-scrolling: touch;
     -webkit-overflow-scrolling: auto;
     scroll-snap-type: x mandatory; 
@@ -7,7 +7,7 @@
 }
 
 .facetwp-radio {
-    @apply mx-1 my-0 px-6 py-2 border-white border uppercase font-bold text-xs rounded-3xl w-full max-w-max;
+    @apply mx-1 my-0 px-6 py-2 border-white border uppercase font-bold text-xs rounded-3xl w-full max-w-max ;
     display: ruby;
     background-image: none !important;
 }
