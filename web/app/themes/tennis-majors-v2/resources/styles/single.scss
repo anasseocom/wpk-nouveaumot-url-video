@@ -7,10 +7,19 @@
 
         h2 {
             @apply font-bold uppercase text-2xl mt-10;
+
+            &.h2--two-level {
+                padding-bottom: 0 !important;
+            }
         }
+        
 
         p {
             @apply px-4 text-xl;
+
+            &.h2--sub-title {
+                @apply text-2xl;
+            }
         }
 
         ul {
@@ -70,6 +79,16 @@
 
         h2 {
             @apply mt-3;
+
+            &.h2--two-level {
+                padding-bottom: 0 !important;
+            }
+        }
+
+        p {
+            &.h2--sub-title {
+                @apply text-2xl;
+            }
         }
 
         img  {
@@ -128,6 +147,16 @@
 
         h2 {
             @apply mt-3;
+
+            &.h2--two-level {
+                padding-bottom: 0 !important;
+            }
+        }
+
+        p {
+            &.h2--sub-title {
+                @apply text-2xl;
+            }
         }
 
         img  {
