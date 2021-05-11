@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Tennis Majors Nuuk 1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/tennis-majors-v2\n"
 "POT-Creation-Date: 2021-05-11T15:44:44+00:00\n"
-"PO-Revision-Date: 2021-05-11 17:53+0200\n"
+"PO-Revision-Date: 2021-05-11 17:55+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -324,7 +324,7 @@ msgstr " "
 #: storage/framework/views/e8d4f37a6b0d9d572e2101c73956a04ddc94352c.php:28
 #: storage/framework/views/e8d4f37a6b0d9d572e2101c73956a04ddc94352c.php:31
 msgid "Discover all"
-msgstr "C’est par ici"
+msgstr "Voir tout"
 
 #: storage/framework/views/79dc6b10386ffdd64f27110cbc0d4a4353aaff21.php:12
 msgid "Latest news"
