@@ -6,20 +6,33 @@
     $term = get_queried_object();
     $image = get_field('image_with_title', $term);
 
-    $args = array(
-    'post_type' => 'videos',
-    'tax_query' => array(
-            array(
-                'taxonomy' => 'shows',
-                'field'    => 'slug',
-                'terms'    => $term->slug,
+    $args_posts_paged = array(
+        'post_type' => 'videos',
+        'tax_query' => array(
+                array(
+                    'taxonomy' => 'shows',
+                    'field'    => 'slug',
+                    'terms'    => $term->slug,
+                ),
             ),
-        ),
-    'posts_per_page' => 12,
-    'paged'          => get_query_var( 'paged' ),
-    );
-    $query = new WP_Query( $args );
-    $count_episodes = $query->post_count;
+        'posts_per_page' => 12,
+        'paged'          => get_query_var( 'paged' ),
+        );
+
+    $args_all_posts = array(
+        'post_type' => 'videos',
+        'tax_query' => array(
+                array(
+                    'taxonomy' => 'shows',
+                    'field'    => 'slug',
+                    'terms'    => $term->slug,
+                ),
+            ),
+        'posts_per_page' => -1,
+        );
+    $posts_paged = new WP_Query( $args_posts_paged );
+    $all_posts = new WP_Query( $args_all_posts );
+    $count_episodes = $all_posts->post_count;
     $my_current_lang = apply_filters( 'wpml_current_language', NULL );
 
 @endphp
@@ -76,7 +89,7 @@
                     </div>
                     <div>
                     <div class="list-show col-span-12 grid grid-cols-1 md:grid-cols-2 gap-3">
-                        @posts
+                        @posts($posts_paged)
                             @include('partials.common.preview-video')
                         @endposts
                     </div>

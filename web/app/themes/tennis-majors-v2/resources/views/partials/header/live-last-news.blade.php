@@ -20,7 +20,7 @@
                         'post_status'    => 'publish',
                     ])
 
-                    <div id="live-last-news-slider" class="grid gap-y-8 pb-36 sm:pb-0 sm:flex sm:overflow-x-auto sm:overscroll-y-none scrolling-touch snap-type-mandatory">
+                    <div id="live-last-news-slider" class="grid gap-y-8 pb-36 sm:pb-0 sm:flex sm:overflow-x-auto sm:overscroll-y-none scrolling-touch snap-type-mandatory scrollbar-hidden">
                         @posts
                             <div class="live-last-news--item relative snap-align-start md:pr-16">
                                 <a href="{{ the_permalink() }}" class="md:max-w-lastnews block">

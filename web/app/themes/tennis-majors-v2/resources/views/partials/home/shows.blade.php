@@ -69,7 +69,7 @@
                             )
                         );
                     @endphp
-                    <div class="top-shows-slider flex overflow-x-auto scrolling-touch snap-type-mandatory">
+                    <div class="top-shows-slider flex overflow-x-auto scrolling-touch snap-type-mandatory scrollbar-hidden">
                         @posts($episodes)
                             <div class="snap-align-start">
                                 @include('partials.common.preview-video')

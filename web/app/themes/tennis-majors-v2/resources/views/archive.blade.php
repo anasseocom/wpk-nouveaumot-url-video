@@ -25,7 +25,7 @@
         @endif
         <div id="slider-cards" class="max-w-screen-xl ml-4 xl:m-auto py-5 lg:py-8 relative">
             <div class="-mx-2">
-                <div id="slider-cards--slider" class="slider-preview-mode flex overflow-x-auto scrolling-touch snap-type-mandatory">
+                <div id="slider-cards--slider" class="slider-preview-mode flex overflow-x-auto scrolling-touch snap-type-mandatory scrollbar-hidden">
                     @posts
                         @if($i < 5)
                             <div class="snap-align-start">

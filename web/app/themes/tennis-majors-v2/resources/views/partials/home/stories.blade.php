@@ -9,7 +9,7 @@
             <h2 class="text-4xl uppercase pl-4 text-black pb-8"><span class="font-bold">10</span> {{ __('stories', 'sage') }} <span class="font-bold">{{ __('to read now', 'sage') }}</span></h2>
         </div>
         <div class="-ml-2">
-            <div id="top-stories-slider" class="flex overflow-x-auto scrolling-touch snap-type-mandatory">
+            <div id="top-stories-slider" class="flex overflow-x-auto scrolling-touch snap-type-mandatory scrollbar-hidden">
                 @foreach( $stories_on_top as $post)
                     <div class="snap-align-start">
                         @if(get_post_type($post) == "curations")
