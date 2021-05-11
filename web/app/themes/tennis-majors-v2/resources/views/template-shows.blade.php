@@ -30,7 +30,7 @@
                                 <div class="col-span-5 flex items-end">
                                     <div class="content">
                                         <span class="bg-white px-4 py-2 rounded-full text-black uppercase font-bold text-xs">{{ __('must see', 'sage')}}</span>
-                                        <div class="text-xs mt-8 mb-5">{{ the_time('j F Y') }}</div>
+                                        <div class="text-xs mt-8 mb-5">@include('partials.single.common.time-bilingue')</div>
                                         <h1 class="font-bold uppercase md:text-3xl text-white">{{ the_title() }}</h1>
                                     </div>
                                 </div>

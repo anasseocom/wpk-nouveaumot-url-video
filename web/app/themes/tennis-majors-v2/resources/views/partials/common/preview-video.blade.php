@@ -8,7 +8,7 @@
                 @include('partials.images.play')
             </div>
             <h4 class="title">{{ the_title()}}</h4>
-            <div class="absolute top-4 text-xs sm:mt-2">{{ the_time('j F Y') }}</div>
+            <div class="absolute top-4 text-xs sm:mt-2">@include('partials.single.common.time-bilingue')</div>
         </div>
     </div>
 </a>

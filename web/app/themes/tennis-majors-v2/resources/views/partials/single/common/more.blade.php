@@ -14,7 +14,7 @@
             @if(get_the_ID() != $current_post_id && $i < 5)
                 <a href="{{ the_permalink() }}" class="preview--news-more">
                     <div class="content-more">
-                        <div class="text-xs mb-4">{{ the_time('j F Y') }}</div>
+                        <div class="text-xs mb-4">@include('partials.single.common.time-bilingue')</div>
                         <h3 class="font-bold mb-2 title">{{ the_title() }}</h3>
                         <div>{{ wp_trim_words( get_the_excerpt(), 13, '...' ) }}</div>
                         @include('partials.common.author')
