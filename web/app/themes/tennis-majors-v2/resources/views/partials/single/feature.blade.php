@@ -10,9 +10,6 @@
               @excerpt
             </div>
           </div>
-          <div class="text-center w-full">
-            <div class="text-black opacity-60 text-sm">@published('j F Y')</div>
-          </div>
           @php
           $users = get_users([
             'connected_type' => 'multiple_authors',
