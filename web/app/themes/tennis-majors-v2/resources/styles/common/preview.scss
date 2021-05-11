@@ -3,6 +3,11 @@
         &:first-child {
             @apply row-span-1 col-span-3 grid grid-cols-12 gap-4 md:row-span-2 md:col-span-1 md:rounded-md md:bg-gray-100 md:p-5 md:relative md:overflow-hidden text-white;
 
+            &::before {
+                @apply md:absolute md:w-full md:h-full md:top-0 md:left-0 md:bg-black opacity-50;
+                content: "";
+            }
+
             .content-more {
                 @apply relative z-10 col-span-8;
 
