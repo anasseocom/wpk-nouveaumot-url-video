@@ -6,7 +6,7 @@
 @if($posts_on_top)
     <div id="slider-cards" class="max-w-screen-xl ml-4 xl:m-auto py-5 lg:py-8 relative">
         <div class="-ml-2 xl:-mx-2">
-            <div id="slider-cards--slider" class="slider-preview-mode flex overflow-x-auto scrolling-touch snap-type-mandatory">
+            <div id="slider-cards--slider" class="slider-preview-mode flex overflow-x-auto scrolling-touch snap-type-mandatory scrollbar-hidden">
                 @foreach( $posts_on_top as $post)
                     @php
                         setup_postdata($post);

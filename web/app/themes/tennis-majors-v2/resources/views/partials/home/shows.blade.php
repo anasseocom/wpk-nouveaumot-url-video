@@ -69,7 +69,7 @@
                             )
                         );
                     @endphp
-                    <div class="top-shows-slider flex overflow-x-auto scrolling-touch snap-type-mandatory">
+                    <div class="top-shows-slider flex overflow-x-auto scrolling-touch snap-type-mandatory scrollbar-hidden overscroll-y-none">
                         @posts($episodes)
                             <div class="snap-align-start">
                                 @include('partials.common.preview-video')
@@ -94,11 +94,11 @@
     @endphp
 
     <div class="flex flex-col items-center">
-    @if($my_current_lang =='fr')
-    <a href="{{ get_permalink( get_page_by_path( 'nos-videos' ) )}}" class="btn btn--white btn--arrow-right">{{ __('Discover all', 'sage') }}</a>
-                        @endif
-                        @if($my_current_lang =='en')
-                        <a href="{{ get_permalink( get_page_by_path( 'video-series' ) )}}" class="btn btn--white btn--arrow-right">{{ __('Discover all', 'sage') }}</a>
-                        @endif
+        @if($my_current_lang =='fr')
+            <a href="{{ get_permalink( get_page_by_path( 'nos-videos' ) )}}" class="btn btn--white btn--arrow-right">{{ __('Discover all', 'sage') }}</a>
+        @endif
+        @if($my_current_lang =='en')
+            <a href="{{ get_permalink( get_page_by_path( 'video-series' ) )}}" class="btn btn--white btn--arrow-right">{{ __('Discover all', 'sage') }}</a>
+        @endif
     </div>
 </div>

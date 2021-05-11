@@ -10,9 +10,20 @@
               @excerpt
             </div>
           </div>
-          <div class="mt-8 mb-4">
-              {{ the_post_thumbnail('16-9_md', array('class' => 'thumbnail')) }}
+          <div class="text-center w-full">
+            <div class="text-black opacity-60 text-sm">@published('j F Y')</div>
           </div>
+          @php
+          $users = get_users([
+            'connected_type' => 'multiple_authors',
+            'connected_items' => $post
+            ] );
+          @endphp
+          @if($users)
+            <div class="mt-8 mb-4">
+                {{ the_post_thumbnail('16-9_md', array('class' => 'thumbnail')) }}
+            </div>
+          @endif
         </div>
         <div class="mx-4">
           @include('partials.single.common.author-date')

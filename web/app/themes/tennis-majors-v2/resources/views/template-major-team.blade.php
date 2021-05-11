@@ -21,7 +21,7 @@
         </div>
     </div>
         <div class="ml-4">
-            <div id="major-team-slider" class="flex overflow-x-auto scrolling-touch snap-type-mandatory">
+            <div id="major-team-slider" class="flex overflow-x-auto scrolling-touch snap-type-mandatory scrollbar-hidden">
                 @foreach( $major_users as $user)
                     @php
                         $user_is_major = get_field('user_is_major', 'user_'. $user);
