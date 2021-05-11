@@ -36,7 +36,4 @@
 </article>
 @include('partials.single.common.more')
 
-@php
-  comments_template();
-@endphp
-
+@php(comments_template())
