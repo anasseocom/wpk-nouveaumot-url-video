@@ -1,5 +1,5 @@
 {{--
-  Title: Two level title
+  Title: Score Heading
   Category: formatting
   Icon: admin-post
   Keywords: title
@@ -13,5 +13,5 @@
 
 <div class="pb-2 pt-4">
     <h2 class="h2--two-level">@field('title')</h2>
-    <p class="h2--sub-title">@field('sub_title')</p>
+    <h2 class="h2--sub-title">@field('sub_title')</h2>
 </div>
