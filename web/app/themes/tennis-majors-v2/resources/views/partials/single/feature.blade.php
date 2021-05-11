@@ -20,10 +20,13 @@
             ] );
           @endphp
           @if($users)
-            <div class="mt-8 mb-4">
-                {{ the_post_thumbnail('16-9_md', array('class' => 'thumbnail')) }}
+            <div class="text-center w-full">
+              <div class="text-black opacity-60 text-sm">@published('j F Y')</div>
             </div>
           @endif
+          <div class="mt-8 mb-4">
+            {{ the_post_thumbnail('16-9_md', array('class' => 'thumbnail')) }}
+          </div>
         </div>
         <div class="mx-4">
           @include('partials.single.common.author-date')
