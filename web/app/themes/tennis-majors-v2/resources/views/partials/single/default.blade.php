@@ -35,9 +35,8 @@
   </div>
 </article>
 @include('partials.single.common.more')
+
 @php
-if ( comments_open() || get_comments_number() ) {
-    comments_template($post->ID);
-  }
+  comments_template();
 @endphp
 
