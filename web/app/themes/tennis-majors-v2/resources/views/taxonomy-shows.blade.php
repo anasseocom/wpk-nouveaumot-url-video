@@ -15,7 +15,7 @@
                 'terms'    => $term->slug,
             ),
         ),
-    'posts_per_page' => 4,
+    'posts_per_page' => 12,
     'paged'          => get_query_var( 'paged' ),
     );
     $query = new WP_Query( $args );
