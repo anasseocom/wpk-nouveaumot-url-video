@@ -12,7 +12,7 @@
 @endphp
 <div class="bg-black">
     <div class="max-w-screen-lg m-auto">
-        <h2 class="text-3xl md:text-5xl uppercase text-white text-center pt-14 md:pt-20 pb-10">Our <span class="font-bold">{{ __('Shows', 'sage') }}</span></h2>
+        <h2 class="text-3xl md:text-5xl uppercase text-white text-center pt-14 md:pt-20 pb-10">{{ __('Our', 'sage') }}<span class="font-bold">{{ __('Video Series', 'sage') }}</span></h2>
     </div>
     <div>
         <div id="shows-slider">

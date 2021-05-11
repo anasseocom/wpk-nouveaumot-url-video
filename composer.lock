@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f3f2dc380d9a205eee1046b14234df46",
+    "content-hash": "041f82d659619b9dfe525d8a2d34ed09",
     "packages": [
         {
             "name": "composer/installers",
@@ -1364,6 +1364,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/amp/"
+        },
+        {
+            "name": "wpackagist-plugin/bulk-move",
+            "version": "1.3.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/bulk-move/",
+                "reference": "tags/1.3.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/bulk-move.1.3.0.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/bulk-move/"
         },
         {
             "name": "wpackagist-plugin/co-authors-plus",

@@ -266,7 +266,7 @@ add_action('init', function () {
             'role' => array( 
                 'title' => 'Role',
                 'type' => 'select',
-                'values' => array( __('Writer', 'sage'), __('Co-writer', 'sage'), __('Editor', 'sage'), __('Photo', 'sage'), __('Translator', 'sage'), __('Curator', 'sage'), __('Author', 'sage'), __('Columnist', 'sage'), __('Expert', 'sage'), __('Video operator', 'sage'), __('Sound operator', 'sage'), __('Host', 'sage'), __('Guest', 'sage'))
+                'values' => array( __('Writer', 'sage'), __('Co-writer', 'sage'), __('Motion design', 'sage'), __('Studio', 'sage'), __('Producer', 'sage'), __('Editor', 'sage'), __('Photo', 'sage'), __('Translator', 'sage'), __('Curator', 'sage'), __('Author', 'sage'), __('Columnist', 'sage'), __('Expert', 'sage'), __('Video operator', 'sage'), __('Sound operator', 'sage'), __('Host', 'sage'), __('Guest', 'sage'))
             ),
         )
     ) );
