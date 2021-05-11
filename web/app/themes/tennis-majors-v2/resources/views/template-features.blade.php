@@ -27,21 +27,19 @@
         <h2 class="text-5xl uppercase text-black text-center my-10 lg:my-20">{{ __('Our ', 'sage') }} <span class="font-bold">{{ __('Features', 'sage') }}</span></h2>
     </div>
     <div id="slider-cards" class="max-w-screen-xl ml-4 xl:m-auto py-5 lg:py-8 relative">
-        <div id="slider-cards--arrow-left" class="absolute z-10 shadow-lg rounded-full cursor-pointer transform -translate-y-1/2 -translate-x-1/2 top-1/2 left-20">
-            @include('partials.images.slider-arrow-left')
-        </div>
-        <div id="slider-cards--arrow-right" class="absolute z-10 shadow-lg rounded-full cursor-pointer transform -translate-y-1/2 -translate-x-1/2 top-1/2 right-0">
-            @include('partials.images.slider-arrow-right')
-        </div>
-        <div id="slider-cards--slider" class="slider-preview-mode">
-            @posts($features)
-                @if($i < 5)
-                    @include('partials.common.preview-slider')
-                @endif
-                @php
-                    $i++;
-                @endphp
-            @endposts
+        <div class="-ml-2 xl:-mx-2">
+            <div id="slider-cards--slider" class="slider-preview-mode flex overflow-x-auto scrolling-touch snap-type-mandatory">
+                @posts($features)
+                    @if($i < 5)
+                        <div class="snap-align-start">
+                            @include('partials.common.preview-slider')
+                        </div>
+                    @endif
+                    @php
+                        $i++;
+                    @endphp
+                @endposts
+            </div>
         </div>
     </div>
     <div class="mx-4">
