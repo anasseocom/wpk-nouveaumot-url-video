@@ -9,7 +9,7 @@
                 </div>
                 <div class="col-span-12 md:col-span-8">
                     <div class="mt-6 mb:mt-14 mb-6">
-                        <div class="inline-block text-4xl uppercase text-black mr-4 font-bold">Last news</div>
+                        <div class="inline-block text-4xl uppercase text-black mr-4 font-bold">{{ __('Latest news', 'sage') }}</div>
                         <a href="{{ get_post_type_archive_link('post')}}" class="inline-block text-xs uppercase link--arrow link--arrow-right">{{ __('see all', 'sage')}}</a>
                     </div>
         
@@ -19,7 +19,7 @@
                         'post_type'      => 'post',
                         'post_status'    => 'publish',
                     ])
-                    
+
                     <div id="live-last-news-slider" class="grid gap-y-8 pb-36 sm:pb-0 sm:flex sm:overflow-x-auto sm:overscroll-y-none scrolling-touch snap-type-mandatory">
                         @posts
                             <div class="live-last-news--item relative snap-align-start md:pr-16">
