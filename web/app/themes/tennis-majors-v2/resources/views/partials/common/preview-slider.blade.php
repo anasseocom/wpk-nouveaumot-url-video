@@ -2,7 +2,7 @@
     {{ the_post_thumbnail('16-9_sm', array('class' => 'thumbnail')) }}
     <div class="gradient"></div>
     <div class="content h-full">
-        <div class="absolute top-0 text-xs">{{ the_time('j F Y') }}</div>
+        <div class="absolute top-0 text-xs">@include('partials.single.common.time-bilingue')</div>
         <div class="w-screen h-full"></div>
         <div class="absolute bottom-0">
             <h1 class="title">{{ the_title() }}</h1>

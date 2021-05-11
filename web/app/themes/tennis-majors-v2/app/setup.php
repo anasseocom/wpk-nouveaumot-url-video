@@ -223,6 +223,10 @@ add_action('widgets_init', function () {
     ] + $config);
 });
 
+add_action('after_setup_theme', function () {
+    load_theme_textdomain('sage', get_template_directory() . '/resources/lang');
+});
+
 add_action('init', function () {
     
     if (!function_exists('acf_add_options_page')) {

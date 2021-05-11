@@ -48,7 +48,6 @@
         @if($post_on_top)
             <div class="mt-10 max-w-screen-lg m-auto">
                 <a href="{{ the_permalink() }}">
-                    <h2 class="uppercase">{{ __('Recommended ', 'sage') }} <span class="font-bold">{{ __('by the writer', 'sage') }}</span></h2>
                     <div class="grid grid-cols-12 gap-8 mt-6">
                         @php
                             setup_postdata($post_on_top);
@@ -57,7 +56,7 @@
                             {{ the_post_thumbnail('16-9_md') }}
                         </div>
                         <div class="col-span-12 md:col-span-4">
-                            <div class="text-xs">{{ the_time('j F Y') }}</div>
+                            <div class="text-xs">@include('partials.single.common.time-bilingue')</div>
                             <h3 class="font-bold text-xl my-2">{{ the_title() }}</h3>
                             @if(has_excerpt())
                                 <div class="mb-5">{{ wp_trim_words( get_the_excerpt(), 13, '...' ) }}</div>

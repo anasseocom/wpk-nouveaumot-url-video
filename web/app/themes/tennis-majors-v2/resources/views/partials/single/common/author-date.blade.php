@@ -95,7 +95,7 @@
         </div>
         <div class="ml-4">
           <div class="font-bold">{{ $author_name }}</div>
-          <div class="text-black opacity-40 text-xs">@published('j F Y')</div>
+          <div class="text-black opacity-40 text-xs">@include('partials.single.common.time-bilingue')</div>
         </div>
       </div>
     </a>
