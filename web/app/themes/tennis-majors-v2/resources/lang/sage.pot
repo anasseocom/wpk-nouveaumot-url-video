@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-05-11T10:52:43+00:00\n"
+"POT-Creation-Date: 2021-05-11T15:44:44+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.5.0-alpha\n"
 
@@ -77,81 +77,81 @@ msgstr ""
 msgid "Footer"
 msgstr ""
 
-#: app/setup.php:233
-#: app/setup.php:234
+#: app/setup.php:237
+#: app/setup.php:238
 msgid "Home edition"
 msgstr ""
 
-#: app/setup.php:253
-#: app/setup.php:269
+#: app/setup.php:257
+#: app/setup.php:273
 msgid "Writer"
 msgstr ""
 
-#: app/setup.php:253
-#: app/setup.php:269
+#: app/setup.php:257
+#: app/setup.php:273
 msgid "Co-writer"
 msgstr ""
 
-#: app/setup.php:253
-#: app/setup.php:269
+#: app/setup.php:257
+#: app/setup.php:273
 msgid "Editor"
 msgstr ""
 
-#: app/setup.php:253
-#: app/setup.php:269
+#: app/setup.php:257
+#: app/setup.php:273
 msgid "Photo"
 msgstr ""
 
-#: app/setup.php:253
-#: app/setup.php:269
+#: app/setup.php:257
+#: app/setup.php:273
 msgid "Translator"
 msgstr ""
 
-#: app/setup.php:253
-#: app/setup.php:269
+#: app/setup.php:257
+#: app/setup.php:273
 msgid "Curator"
 msgstr ""
 
-#: app/setup.php:253
-#: app/setup.php:269
+#: app/setup.php:257
+#: app/setup.php:273
 msgid "Author"
 msgstr ""
 
-#: app/setup.php:253
-#: app/setup.php:269
+#: app/setup.php:257
+#: app/setup.php:273
 msgid "Columnist"
 msgstr ""
 
-#: app/setup.php:253
-#: app/setup.php:269
+#: app/setup.php:257
+#: app/setup.php:273
 msgid "Expert"
 msgstr ""
 
-#: app/setup.php:269
+#: app/setup.php:273
 msgid "Motion design"
 msgstr ""
 
-#: app/setup.php:269
+#: app/setup.php:273
 msgid "Studio"
 msgstr ""
 
-#: app/setup.php:269
+#: app/setup.php:273
 msgid "Producer"
 msgstr ""
 
-#: app/setup.php:269
+#: app/setup.php:273
 msgid "Video operator"
 msgstr ""
 
-#: app/setup.php:269
+#: app/setup.php:273
 msgid "Sound operator"
 msgstr ""
 
-#: app/setup.php:269
+#: app/setup.php:273
 msgid "Host"
 msgstr ""
 
-#: app/setup.php:269
+#: app/setup.php:273
 msgid "Guest"
 msgstr ""
 
@@ -277,6 +277,14 @@ msgstr ""
 msgid "figures"
 msgstr ""
 
+#: storage/framework/views/3fde2969e7bd692e9915dc89e19d44d10806e0c5.php:11
+msgid "More"
+msgstr ""
+
+#: storage/framework/views/3fde2969e7bd692e9915dc89e19d44d10806e0c5.php:11
+msgid "tennis news"
+msgstr ""
+
 #: storage/framework/views/6badd95620cfba933ce00d40ba767d7cbaf4fd49.php:9
 msgid "stories"
 msgstr ""
@@ -343,15 +351,7 @@ msgstr ""
 msgid "Video Series"
 msgstr ""
 
-#: storage/framework/views/685c386dfcaf98b8770ecb4d7d1988c7d7621af3.php:51
-msgid "Recommended "
-msgstr ""
-
-#: storage/framework/views/685c386dfcaf98b8770ecb4d7d1988c7d7621af3.php:51
-msgid "by the writer"
-msgstr ""
-
-#: storage/framework/views/685c386dfcaf98b8770ecb4d7d1988c7d7621af3.php:75
+#: storage/framework/views/685c386dfcaf98b8770ecb4d7d1988c7d7621af3.php:74
 msgid "Last"
 msgstr ""
 

@@ -4,16 +4,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tennis Majors Nuuk 1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/tennis-majors-v2\n"
+"POT-Creation-Date: 2021-05-11T15:44:44+00:00\n"
+"PO-Revision-Date: 2021-05-11 17:46+0200\n"
+"Last-Translator: \n"
 "Language-Team: \n"
+"Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-05-11T10:52:43+00:00\n"
-"PO-Revision-Date: 2021-05-11 16:08+0200\n"
 "X-Generator: Poedit 2.4.3\n"
-"Last-Translator: \n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"Language: fr_FR\n"
 
 #. Theme Name of the theme
 msgid "Tennis Majors Nuuk"
@@ -79,71 +79,71 @@ msgstr ""
 msgid "Footer"
 msgstr ""
 
-#: app/setup.php:233 app/setup.php:234
+#: app/setup.php:237 app/setup.php:238
 msgid "Home edition"
 msgstr "Edition Homepage"
 
-#: app/setup.php:253 app/setup.php:269
+#: app/setup.php:257 app/setup.php:273
 msgid "Writer"
 msgstr "Rédacteur"
 
-#: app/setup.php:253 app/setup.php:269
+#: app/setup.php:257 app/setup.php:273
 msgid "Co-writer"
 msgstr "Co-rédacteur"
 
-#: app/setup.php:253 app/setup.php:269
+#: app/setup.php:257 app/setup.php:273
 msgid "Editor"
 msgstr "Éditeur"
 
-#: app/setup.php:253 app/setup.php:269
+#: app/setup.php:257 app/setup.php:273
 msgid "Photo"
 msgstr "Photo"
 
-#: app/setup.php:253 app/setup.php:269
+#: app/setup.php:257 app/setup.php:273
 msgid "Translator"
 msgstr "Traducteur"
 
-#: app/setup.php:253 app/setup.php:269
+#: app/setup.php:257 app/setup.php:273
 msgid "Curator"
 msgstr "Une sélection de"
 
-#: app/setup.php:253 app/setup.php:269
+#: app/setup.php:257 app/setup.php:273
 msgid "Author"
 msgstr "Auteur"
 
-#: app/setup.php:253 app/setup.php:269
+#: app/setup.php:257 app/setup.php:273
 msgid "Columnist"
 msgstr "Éditorialiste"
 
-#: app/setup.php:253 app/setup.php:269
+#: app/setup.php:257 app/setup.php:273
 msgid "Expert"
 msgstr "Export"
 
-#: app/setup.php:269
+#: app/setup.php:273
 msgid "Motion design"
 msgstr "Motion design"
 
-#: app/setup.php:269
+#: app/setup.php:273
 msgid "Studio"
 msgstr "Studio"
 
-#: app/setup.php:269
+#: app/setup.php:273
 msgid "Producer"
 msgstr "Production"
 
-#: app/setup.php:269
+#: app/setup.php:273
 msgid "Video operator"
 msgstr "Vidéaste"
 
-#: app/setup.php:269
+#: app/setup.php:273
 msgid "Sound operator"
 msgstr "Réalisation"
 
-#: app/setup.php:269
+#: app/setup.php:273
 msgid "Host"
 msgstr "Hôte"
 
-#: app/setup.php:269
+#: app/setup.php:273
 msgid "Guest"
 msgstr "Invité"
 
@@ -269,6 +269,14 @@ msgstr "Les"
 msgid "figures"
 msgstr "experts"
 
+#: storage/framework/views/3fde2969e7bd692e9915dc89e19d44d10806e0c5.php:11
+msgid "More"
+msgstr "Plus"
+
+#: storage/framework/views/3fde2969e7bd692e9915dc89e19d44d10806e0c5.php:11
+msgid "tennis news"
+msgstr "d’infos tennis"
+
 #: storage/framework/views/6badd95620cfba933ce00d40ba767d7cbaf4fd49.php:9
 msgid "stories"
 msgstr "histoires"
@@ -300,13 +308,13 @@ msgstr "Tous les épisodes"
 
 #: storage/framework/views/55b44762e1524b0edd3783546ea95389e7b3178c.php:91
 msgid "Wanna see more"
-msgstr "Encore ? Par ici"
+msgstr "Vous voulez plus d’épisodes de"
 
 #: storage/framework/views/55b44762e1524b0edd3783546ea95389e7b3178c.php:91
 #: storage/framework/views/e9ea168c316573523c336ca1468a25338f73a7bc.php:51
 #: storage/framework/views/e9ea168c316573523c336ca1468a25338f73a7bc.php:74
 msgid "episodes"
-msgstr "épisodes"
+msgstr ""
 
 #: storage/framework/views/55b44762e1524b0edd3783546ea95389e7b3178c.php:92
 #: storage/framework/views/55b44762e1524b0edd3783546ea95389e7b3178c.php:107
@@ -316,7 +324,7 @@ msgstr "épisodes"
 #: storage/framework/views/e8d4f37a6b0d9d572e2101c73956a04ddc94352c.php:28
 #: storage/framework/views/e8d4f37a6b0d9d572e2101c73956a04ddc94352c.php:31
 msgid "Discover all"
-msgstr "Découvrir la collection"
+msgstr "C’est par ici"
 
 #: storage/framework/views/79dc6b10386ffdd64f27110cbc0d4a4353aaff21.php:12
 msgid "Latest news"
@@ -335,15 +343,7 @@ msgstr "Nos"
 msgid "Video Series"
 msgstr "séries en vidéo"
 
-#: storage/framework/views/685c386dfcaf98b8770ecb4d7d1988c7d7621af3.php:51
-msgid "Recommended "
-msgstr ""
-
-#: storage/framework/views/685c386dfcaf98b8770ecb4d7d1988c7d7621af3.php:51
-msgid "by the writer"
-msgstr ""
-
-#: storage/framework/views/685c386dfcaf98b8770ecb4d7d1988c7d7621af3.php:75
+#: storage/framework/views/685c386dfcaf98b8770ecb4d7d1988c7d7621af3.php:74
 msgid "Last"
 msgstr "Dernières"
 

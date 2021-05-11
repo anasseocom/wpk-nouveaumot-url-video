@@ -8,7 +8,7 @@
           'posts_per_page' => 6,
         ])
     <div class="max-w-screen-xl m-auto">
-        <h2 class="uppercase text-4xl mb-12">More</br> <span class="font-bold">tennis news</span></h2>
+        <h2 class="uppercase text-4xl mb-12">{{ __('More', 'sage') }}</br> <span class="font-bold">{{ __('tennis news', 'sage') }}</span></h2>
         <div class="grid gap-12 grid-rows-2 grid-cols-3">
             @posts
             @if(get_the_ID() != $current_post_id && $i < 5)
