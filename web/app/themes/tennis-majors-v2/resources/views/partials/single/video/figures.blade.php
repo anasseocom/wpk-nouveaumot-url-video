@@ -25,7 +25,7 @@
                 $role = p2p_get_meta( $user->p2p_id, 'role', true );
               @endphp
               @if($role == 'Host')
-                <div class="grid gap-4 grid-cols-12 p-2">
+                <a href="{{ get_author_posts_url(get_the_author_meta($user_id)) }}" class="grid gap-4 grid-cols-12 p-2">
                   <div class="col-span-3 relative">
                     <div class="w-full pb-1/1"></div>
                     <img class="rounded-full w-full h-full object-cover absolute top-0" loading="lazy" src="{{ $avatar_url }}">
@@ -36,7 +36,7 @@
                       <div class="uppercase text-xs">{{ $role }}</div>
                     </div>
                   </div>
-                </div>
+                </a>
               @endif
             @endforeach
             @foreach( $users as $user)
@@ -48,7 +48,7 @@
                 $role = p2p_get_meta( $user->p2p_id, 'role', true );
               @endphp
               @if($role == 'Guest')
-                <div class="grid gap-4 grid-cols-12 p-2">
+                <a href="{{ get_author_posts_url(get_the_author_meta($user_id)) }}" class="grid gap-4 grid-cols-12 p-2">
                   <div class="col-span-3 relative">
                     <div class="w-full pb-1/1"></div>
                     <img class="rounded-full w-full h-full object-cover absolute top-0" loading="lazy" src="{{ $avatar_url }}">
@@ -59,7 +59,7 @@
                       <div class="uppercase text-xs">{{ $role }}</div>
                     </div>
                   </div>
-                </div>
+                </a>
               @endif
             @endforeach
             </div>
@@ -77,7 +77,7 @@
             $first_name = get_the_author_meta( 'first_name' );
             $last_name = get_the_author_meta( 'last_name' );
           @endphp
-            <div class="grid gap-4 grid-cols-12 p-2">
+            <a href="{{ get_author_posts_url(get_the_author_meta('ID')) }}" class="grid gap-4 grid-cols-12 p-2">
               <div class="col-span-3 relative">
                 <div class="w-full pb-1/1"></div>
                 <img class="rounded-full w-full h-full object-cover absolute top-0" loading="lazy" src="{{ $avatar_url }}">
@@ -87,7 +87,7 @@
                   <div class="uppercase">{{ $first_name }} <span class="font-bold">{{ $last_name }}</span></div>
                 </div>
               </div>
-            </div>
+            </a>
         </div>
       </div>
     </div>
