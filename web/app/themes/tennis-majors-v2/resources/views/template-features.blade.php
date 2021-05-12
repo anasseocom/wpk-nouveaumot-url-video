@@ -13,6 +13,7 @@
         array(
             'post_type'=> 'post',
             'posts_per_page' => 9,
+            'paged'          => get_query_var( 'paged' ),
             'tax_query' => array(
                 array(
                     'taxonomy' => 'editorial-types',
