@@ -180,7 +180,9 @@ $(document).ready(() => {
       }
 
       if(liveLastNewsActive == "off") {
-        hideLiveLastNews()
+        hideLiveLastNews();
+        var dateOff = localStorage.getItem('lastUseToggleLiveLastNews');
+        console.log(dateOff);
       }
     } else {
       if(liveLastNewsActive == null) {
@@ -210,6 +212,12 @@ $(document).ready(() => {
         localStorage.setItem('lastUseToggleLiveLastNews', Date.now());
         activeLiveLastNews();
       }
+    });
+  }
+
+  if($('.slider-cards--arrow')) {
+    $( ".slider-cards--arrow" ).hover(function() {
+      $( "body" ).toggleClass("overflow-y-hidden h-100vh");
     });
   }
 

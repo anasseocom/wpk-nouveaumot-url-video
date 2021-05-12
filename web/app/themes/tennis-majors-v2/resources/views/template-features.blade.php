@@ -11,6 +11,7 @@
 
     $features = query_posts(
         array(
+            'post_type'=> 'post',
             'posts_per_page' => 9,
             'tax_query' => array(
                 array(

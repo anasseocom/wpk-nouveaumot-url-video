@@ -1,14 +1,21 @@
-.facetwp-facet {
-    @apply overflow-x-auto flex flex-wrap;
-    -webkit-overflow-scrolling: touch;
-    -webkit-overflow-scrolling: auto;
-    scroll-snap-type: x mandatory; 
-    width: -webkit-box;
+.facetwp-facet, .scroll-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    margin-bottom: 0px;
+    width: 100%;
+    overflow: scroll;
+    display: -webkit-box;
+    padding-right: .5rem;
+    align-items: flex-start;
 }
 
 .facetwp-radio {
-    @apply mx-1 my-0 px-6 py-2 border-white border uppercase font-bold text-xs rounded-3xl w-full max-w-max ;
-    display: ruby;
+    @apply mx-1 my-0 px-6 py-2 border-white border uppercase font-bold text-xs rounded-3xl;
     background-image: none !important;
 }
 
