@@ -6,13 +6,21 @@ $my_current_lang = apply_filters( 'wpml_current_language', NULL );
     'posts_per_page' => 6,
     'facetwp' => true,
     ])
+    
 
 <div class="pt-12 pb-12 lg:px-10 xl:px-20 relative bg-black text-white">
     <div class="max-w-screen-lg m-auto px-4">
         <h2 class="text-4xl uppercase pl-4 text-white pb-8">{{ __('Tennis', 'sage') }} <span class="font-bold">{{ __('news', 'sage') }}</span></h2>
     </div>
-    <div class="max-w-screen-lg m-auto pl-4">
-        @shortcode('[facetwp facet="category"]')
+    <div class="max-w-screen-lg m-auto pl-4 facet-container scroll-mobile">
+        @php
+         global $post;
+            $facet_1 = get_field('facet_1', 'option');
+            $facet_2 = get_field('facet_2', 'option');
+            $facet_3 = get_field('facet_3', 'option');
+            print_r($facet_1);
+        @endphp
+        @shortcode('[facetwp facet="category"]')  @shortcode('[facetwp facet="formats"]')
     </div>
     <div class="py-12 px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-14 md:gap-y-20 gap-x-12 lg:gap-x-10 xl:gap-x-32 max-w-screen-xxl m-auto">
         @posts

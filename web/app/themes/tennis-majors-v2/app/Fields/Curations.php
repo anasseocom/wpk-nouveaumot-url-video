@@ -23,6 +23,12 @@ class Curations extends Field
             ->addUrl('post_url', [
                 'label' => 'Post URL',
                 'required' => 1,
+            ])
+            ->addText('external_media_name', [
+                'label' => 'External media name',
+            ])
+            ->addImage('external_media_image', [
+                'label' => 'External media image',
             ]);
 
         return $curations->build();

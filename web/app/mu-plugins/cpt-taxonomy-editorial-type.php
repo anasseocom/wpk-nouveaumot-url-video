@@ -15,7 +15,7 @@ function create_editorial_types_taxonomy() {
     'menu_name' => __( 'Editorial types' ),
   );    
 
-  register_taxonomy('editorial-types',array('post'), array(
+  register_taxonomy('editorial-types',array('post', 'curations'), array(
     'hierarchical' => true,
     'labels' => $labels,
     'show_ui' => true,

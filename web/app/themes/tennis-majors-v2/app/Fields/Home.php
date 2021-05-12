@@ -77,19 +77,13 @@ class Home extends Field
                 'multiple' => 1,
                 'max' => 10,
                 'return_format' => 'id',
-            ]);
-        
-        $home
-             ->addRepeater('facet_title', [
-                'label' => 'Facet title',
-                'sub_fields' => [
-                ],
             ])
-                ->addText('slug', [
-                    'label' => 'Slugs',
-                    'sub_fields' => [
-                    ],
-                ]);
+
+            ->addText('facet_1')
+
+            ->addText('facet_2')
+            
+            ->addText('facet_3');
 
         return $home->build();
     }

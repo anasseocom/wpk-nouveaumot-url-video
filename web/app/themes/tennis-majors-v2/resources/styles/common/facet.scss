@@ -1,4 +1,4 @@
-.facetwp-facet, .scroll-mobile {
+.scroll-mobile {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -12,6 +12,10 @@
     display: -webkit-box;
     padding-right: .5rem;
     align-items: flex-start;
+}
+
+.facetwp-facet {
+    display: contents;
 }
 
 .facetwp-radio {
