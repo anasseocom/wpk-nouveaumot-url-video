@@ -90,7 +90,18 @@
                     </a>
                 @endforeach
             </div>
+            @php  wp_reset_query(); @endphp
         </div>
     </div>
-
+</div>
+<div class="mt-20 max-w-screen-xl m-auto">
+    <h2 class="uppercase">{{ __('Last', 'sage') }} <span class="font-bold">articles</span></h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-16 mt-6 mb-28">
+        @posts
+            @include('partials.common.preview-author')
+        @endposts
+    </div>
+    <div class="max-w-screen-xl m-auto">
+        <?php pagination(); ?>
+    <div>
 </div>
