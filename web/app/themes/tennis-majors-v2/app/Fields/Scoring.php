@@ -23,12 +23,10 @@ class Scoring extends Field
             ->addText('scoring_title', [
                 'label' => 'Title',
             ])
-            ->addImage('player_1_image', [
-                'label' => 'Player 1 Image',
-                'return_format' => 'url',
-            ])
-            ->addText('player_1_name', [
-                'label' => 'Name',
+            ->addTaxonomy('player_1', [
+                'label' => 'Player 1',
+                'taxonomy' => 'people',
+                'multiple' => 0,
             ])
             ->addText('player_1_rank', [
                 'label' => 'Rank',
@@ -48,12 +46,10 @@ class Scoring extends Field
             ->addText('player_1_set_5', [
                 'label' => 'Set 5',
             ])
-            ->addImage('player_2_image', [
-                'label' => 'Player 2 Image',
-                'return_format' => 'url',
-            ])
-            ->addText('player_2_name', [
-                'label' => 'Name',
+            ->addTaxonomy('player_2', [
+                'label' => 'Player 2',
+                'taxonomy' => 'people',
+                'multiple' => 0,
             ])
             ->addText('player_2_rank', [
                 'label' => 'Rank',

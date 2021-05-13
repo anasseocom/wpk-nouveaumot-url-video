@@ -13,7 +13,8 @@
 
 @php
   global $post;
-
+  $player_1 = get_term(get_field('player_1')[0]);
+  $player_2 = get_term(get_field('player_2')[0]);
 @endphp
 
 <div class="read-also pb-2 pt-4">
@@ -24,11 +25,13 @@
     <div class="grid grid-cols-12 gap-x-4">
       <div class="col-span-6 grid grid-cols-12 gap-x-4">
         <div class="col-span-4 sm:col-span-3 lg:col-span-2 flex items-center">
-          <img src="@field('player_1_image')" class="rounded-full overflow-hidden">
+          <div class="relative h-0 pb-1/1 rounded-full overflow-hidden w-full">
+            <img src="{{ the_field('image', $player_1)}}" class="image-player">
+          </div>
         </div>
         <div class="col-span-8 sm:col-span-9 lg:col-span-10  flex flex-row items-center">
           <div>
-            <div class="uppercase font-bold text-sm sm:text-base">@field('player_1_name')</div>
+            <div class="uppercase font-bold text-sm sm:text-base">{{ $player_1->name }}</div>
             <div class="uppercase text-sm font-bold">@field('player_1_rank')</div>
           </div>
         </div>
@@ -46,11 +49,13 @@
     <div class="grid grid-cols-12 gap-x-4">
       <div class="col-span-6 grid grid-cols-12 gap-x-4">
         <div class="col-span-4 sm:col-span-3 lg:col-span-2 flex items-center">
-          <img src="@field('player_2_image')" class="rounded-full overflow-hidden">
+          <div class="relative h-0 pb-1/1 rounded-full overflow-hidden w-full">
+            <img src="{{ the_field('image', $player_2)}}" class="image-player">
+          </div>
         </div>
         <div class="col-span-8 sm:col-span-9 lg:col-span-10 flex flex-row items-center">
           <div>
-            <div class="uppercase font-bold text-sm sm:text-base">@field('player_2_name')</div>
+            <div class="uppercase font-bold text-sm sm:text-base">{{ $player_2->name }}</div>
             <div class="uppercase text-sm font-bold">@field('player_2_rank')</div>
           </div>
         </div>

@@ -22,6 +22,10 @@
             }
         }
 
+        .image-player {
+            @apply absolute block object-cover w-full h-full pt-0 pb-0;
+        }
+
         ul {
             @apply list-disc text-xl ml-20;
         }
@@ -93,6 +97,10 @@
 
         img  {
             @apply m-auto pt-4 pb-8 md:pt-12 md:pb-14;
+
+            &.image-player {
+                @apply absolute block object-cover w-full h-full pt-0 pb-0;
+            }
         }
 
         .read-also {
@@ -234,6 +242,10 @@
 
         img  {
             @apply m-auto pt-4 pb-8 md:pt-12 md:pb-14;
+
+            &.image-player {
+                @apply absolute block object-cover w-full h-full pt-0 pb-0;
+            }
         }
 
         blockquote.wp-block-quote {

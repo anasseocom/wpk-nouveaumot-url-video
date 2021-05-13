@@ -29,6 +29,7 @@ class Curations extends Field
             ])
             ->addImage('external_media_image', [
                 'label' => 'External media image',
+                'return_format' => 'url',
             ]);
 
         return $curations->build();

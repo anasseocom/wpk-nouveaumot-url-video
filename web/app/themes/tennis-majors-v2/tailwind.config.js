@@ -17,6 +17,7 @@ module.exports = {
               },
       height: {
         'bgmajorcard': '85%',
+        '100vh': '100vh',
       },
       width: {
         'majoruser': '85%',
