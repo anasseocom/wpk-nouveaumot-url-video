@@ -36,7 +36,6 @@ $(document).ready(() => {
     window.addEventListener('resize', function () {
       if (window.innerWidth > 1310) {
         var leftMarginTopShow = ((window.innerWidth / 2) - 655);
-        console.log(leftMarginTopShow + "px")
         document.getElementById('top-shows-list').style.marginLeft = leftMarginTopShow + "px";
       }  else {
         document.getElementById('top-shows-list').style.marginLeft = "auto";
@@ -55,7 +54,6 @@ $(document).ready(() => {
     window.addEventListener('resize', function () {
       if (window.innerWidth > 1310) {
         var leftMarginTopStories = ((window.innerWidth / 2) - 655);
-        console.log(leftMarginTopStories + "px")
         document.getElementById('top-stories-slider').style.marginLeft = leftMarginTopStories+ "px";
       }  else {
         document.getElementById('top-stories-slider').style.marginLeft = "auto";
@@ -168,12 +166,12 @@ $(document).ready(() => {
     var liveLastNews = document.getElementById('live-last-news');
     var isHome = document.body.classList.contains('home');
     var liveLastNewsActive = localStorage.getItem('liveLastNewsActive');
+    var vw = (Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0));
 
     if(isHome) {
       if(liveLastNewsActive == "on" || liveLastNewsActive == null) {
         activeLiveLastNews()
         localStorage.setItem('liveLastNewsActive', 'on');
-        var vw = (Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0));
         if( vw < 640){
           hideLiveLastNews();
         }
@@ -181,12 +179,20 @@ $(document).ready(() => {
 
       if(liveLastNewsActive == "off") {
         hideLiveLastNews();
-        var dateOff = localStorage.getItem('lastUseToggleLiveLastNews');
-        console.log(dateOff);
+        var dateOff = new Date(parseInt(localStorage.getItem('lastUseToggleLiveLastNews')));
+        var dateNow = new Date(Date.now());
+        var hours = Math.abs(dateOff - dateNow) / 36e5;
+        if(hours >= 12) {
+          if( vw > 640){
+            localStorage.setItem('liveLastNewsActive', 'on');
+            localStorage.setItem('lastUseToggleLiveLastNews', null);
+            activeLiveLastNews();
+          }
+        }
       }
     } else {
       if(liveLastNewsActive == null) {
-        hideLiveLastNews()
+        hideLiveLastNews();
         localStorage.setItem('liveLastNewsActive', 'on');
       }
 
@@ -195,7 +201,7 @@ $(document).ready(() => {
       }
 
       if(liveLastNewsActive == "off") {
-        hideLiveLastNews()
+        hideLiveLastNews();
       }
     }
 
@@ -209,7 +215,7 @@ $(document).ready(() => {
       
       if(liveLastNewsActive == 'off') {
         localStorage.setItem('liveLastNewsActive', 'on');
-        localStorage.setItem('lastUseToggleLiveLastNews', Date.now());
+        localStorage.setItem('lastUseToggleLiveLastNews', null);
         activeLiveLastNews();
       }
     });

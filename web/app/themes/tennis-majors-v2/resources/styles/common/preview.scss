@@ -49,6 +49,10 @@
 
         .thumbnail {
             @apply absolute w-full h-full object-cover top-0 left-0;
+
+            &-slider-default {
+                @apply block;
+            }
         }
 
         .gradient {
@@ -189,7 +193,7 @@
             @apply max-w-little-card lg:max-w-cardfirst py-7 px-5 lg:px-10 lg:py-7;
 
             .title {
-                @apply uppercase font-bold text-2xl mb-5
+                @apply uppercase font-bold text-2xl mb-5;
             }
         }
     }
@@ -198,5 +202,32 @@
 .list-show {
     .preview--video {
         @apply max-w-full pb-16/9 mx-0;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .preview--slider {
+        .thumbnail {
+            @apply hidden w-full h-full object-cover top-0 left-0;
+
+            &-default {
+                @apply block;
+            }
+        }
+
+        &:first-child {
+            .thumbnail {
+                @apply hidden w-full h-full object-cover top-0 left-0;
+
+                &-slider-default {
+                    @apply hidden;
+                }
+
+                &-slider-first {
+                    @apply block;
+                }
+            }
+        }
     }
 }
