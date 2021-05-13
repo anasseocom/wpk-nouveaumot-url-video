@@ -10,8 +10,8 @@
     <div class="px-4 bg-gray-200">
       <div class="max-w-screen-lg m-auto">
         <div class="md:grid md:grid-cols-12 py-2 scroll-mobile">
-          <div class="col-span-2 mr-4 md:mr-0">
-            <div class="uppercase mt-5">
+          <div class="col-span-2 mr-4 md:mr-0 flex items-center">
+            <div class="uppercase ">
             {{ __('The', 'sage') }} <span class="font-bold">{{ __('figures', 'sage') }}</span>
             </div>
           </div>
@@ -26,9 +26,10 @@
               @endphp
               @if($role == 'Host')
                 <a href="{{ get_author_posts_url(get_the_author_meta($user_id)) }}" class="grid gap-4 grid-cols-12 p-2">
-                  <div class="col-span-3 relative">
-                    <div class="w-full pb-1/1"></div>
-                    <img class="rounded-full w-full h-full object-cover absolute top-0" loading="lazy" src="{{ $avatar_url }}">
+                  <div class="col-span-3 flex items-center">
+                    <div class="w-full pb-1/1 relative">
+                      <img class="rounded-full w-full h-full object-cover absolute top-0" loading="lazy" src="{{ $avatar_url }}">
+                    </div>
                   </div>
                   <div class="col-span-9 flex items-center">
                     <div>

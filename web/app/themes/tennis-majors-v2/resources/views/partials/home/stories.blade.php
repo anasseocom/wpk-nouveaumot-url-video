@@ -25,6 +25,20 @@
                                     </div>
                                 </div>     
                                 <h3 class="font-bold capitalize">{{ the_title() }}</h3>
+                                @if(get_post_type($post) == "curations")
+                                    <div class="flex mt-3">
+                                        <div class="flex w-8 items-center">
+                                            <div class="w-full pb-1/1 relative">
+                                              <img class="rounded-full w-full h-full object-cover absolute top-0" loading="lazy" src="{{ the_field('external_media_image')}}">
+                                            </div>
+                                          </div>
+                                        <div class="ml-2 flex items-center">
+                                            <div>
+                                                {{ the_field('external_media_name')}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                @endif
                             </a>
                         @php
                             $i++ 
