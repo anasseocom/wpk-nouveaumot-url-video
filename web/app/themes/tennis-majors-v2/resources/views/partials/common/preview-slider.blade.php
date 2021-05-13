@@ -1,5 +1,7 @@
 <a href="{{ the_permalink() }}" class="preview preview--slider">
-    {{ the_post_thumbnail('16-9_sm', array('class' => 'thumbnail')) }}
+    <div class="{{ the_post_thumbnail('16-9_sm', array('class' => 'thumbnail')) }}">
+
+    </div>
     <div class="gradient"></div>
     <div class="content h-full">
         <div class="absolute top-0 text-xs">@include('partials.single.common.time-bilingue')</div>
