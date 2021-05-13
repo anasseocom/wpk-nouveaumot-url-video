@@ -50,7 +50,9 @@
                 <a href="{{ the_permalink() }}">
                     <div class="grid grid-cols-12 gap-8 mt-6">
                         @php
-                            setup_postdata($post_on_top);
+                            global $post;
+                            $post = $post_on_top;
+                            setup_postdata($post);
                         @endphp
                         <div class="col-span-12 md:col-span-8">
                             {{ the_post_thumbnail('16-9_md') }}
