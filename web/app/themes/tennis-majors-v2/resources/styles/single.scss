@@ -248,6 +248,14 @@
             }
         }
 
+        ul {
+            @apply list-disc text-xl ml-20;
+        }
+
+        ol {
+            @apply list-decimal text-xl ml-20;
+        }
+
         blockquote.wp-block-quote {
             @apply mt-36 mb-10 md:mb-20 relative px-4 max-w-screen-lg m-auto;
         
