@@ -17,6 +17,7 @@
             ),
         'posts_per_page' => 12,
         'paged'          => get_query_var( 'paged' ),
+        'facetwp' => true,
         );
 
     $args_all_posts = array(

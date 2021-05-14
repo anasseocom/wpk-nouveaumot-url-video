@@ -14,16 +14,14 @@ $my_current_lang = apply_filters( 'wpml_current_language', NULL );
     </div>
     <div class="max-w-screen-lg m-auto pl-4 facet-container flex scroll-mobile">
         @php
-         global $post;
+            global $post;
             $facet_1 = get_field('facet_1', 'option');
             $facet_2 = get_field('facet_2', 'option');
             $facet_3 = get_field('facet_3', 'option');
         @endphp
-        
         <?php echo do_shortcode('[facetwp facet="'.$facet_1.'"]') ?>
         <?php echo do_shortcode('[facetwp facet="'.$facet_2.'"]') ?>
         <?php echo do_shortcode('[facetwp facet="'.$facet_3.'"]') ?>
-        
     </div>
     <div class="py-12 px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-14 md:gap-y-20 gap-x-12 lg:gap-x-10 xl:gap-x-32 max-w-screen-xxl m-auto">
         @posts
