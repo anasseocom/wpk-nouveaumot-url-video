@@ -9,8 +9,8 @@
 @endphp
   @if($users)
     <div class="max-w-screen-lg m-auto">
-      <div class="grid grid-cols-12 py-2">
-        <div class="col-span-12 grid grid-cols-3 gap-y-4 gap-x-10">
+      <div class="grid grid-cols-12 py-2 scroll-mobile">
+        <div class="col-span-12 md:grid md:grid-cols-3 md:gap-y-4 md:gap-x-10 scroll-mobile">
           @foreach( $users as $user)
             @php
               $user_id = $user->ID;
@@ -20,7 +20,7 @@
               $last_name = get_user_meta( $user_id, 'last_name', true );
               $role = p2p_get_meta( $user->p2p_id, 'role', true );
             @endphp
-            @if($role == 'Author')
+            @if($role == 'Author' || $role == 'Auteur')
               <a href="{{ $user_url }}" class="grid gap-4 grid-cols-12 p-2">
                 <div class="col-span-3 flex items-center">
                   <div class="w-full pb-1/1 relative">
@@ -45,7 +45,7 @@
               $last_name = get_user_meta( $user_id, 'last_name', true );
               $role = p2p_get_meta( $user->p2p_id, 'role', true );
             @endphp
-            @if($role == 'Writer')
+            @if($role == 'Writer' || $role == 'Rédacteur')
               <a href="{{ $user_url }}" class="grid gap-4 grid-cols-12 p-2">
                 <div class="col-span-3 flex items-center">
                   <div class="w-full pb-1/1 relative">
@@ -70,7 +70,7 @@
               $last_name = get_user_meta( $user_id, 'last_name', true );
               $role = p2p_get_meta( $user->p2p_id, 'role', true );
             @endphp
-            @if($role == 'Co-writer')
+            @if($role == 'Co-writer' || $role == 'Co-rédacteur')
               <a href="{{ $user_url }}" class="grid gap-4 grid-cols-12 p-2">
                 <div class="col-span-3 flex items-center">
                   <div class="w-full pb-1/1 relative">
