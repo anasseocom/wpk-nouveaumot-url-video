@@ -1,5 +1,9 @@
 .facetwp-facet {
     display: contents;
+
+    &.facetwp-facet-video_types {
+        @apply relative flex mb-0;
+    }
 }
 
 .facetwp-radio {

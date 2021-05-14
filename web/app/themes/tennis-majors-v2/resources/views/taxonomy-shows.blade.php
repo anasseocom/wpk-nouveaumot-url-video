@@ -23,10 +23,16 @@
     $args_all_posts = array(
         'post_type' => 'videos',
         'tax_query' => array(
+                'relation' => 'AND',
                 array(
                     'taxonomy' => 'shows',
                     'field'    => 'slug',
                     'terms'    => $term->slug,
+                ),
+                array(
+                'taxonomy' => 'video-types',
+                'field' => 'name',
+                'terms' => 'episodes'
                 ),
             ),
         'posts_per_page' => -1,
