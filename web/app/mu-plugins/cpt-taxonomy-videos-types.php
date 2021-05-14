@@ -2,7 +2,7 @@
 
 add_action( 'init', 'create_video_types_taxonomy', 0 );
  
-function create_video_types_taxonomy() {
+function create_videos_types_taxonomy() {
   $labels = array(
     'name' => _x( 'Types', 'Types' ),
     'singular_name' => _x( 'Type', 'Type' ),
