@@ -15,3 +15,4 @@
     </div>
   </div>
 </footer>
+@include('partials.footer.google_analytics')

@@ -23,6 +23,7 @@ function create_editorial_types_taxonomy() {
     'show_in_rest' => true,
     'query_var' => true,
     'public' => false,
+    'has_archive' => false,
     'rewrite' => array( 'slug' => 'editorial-types' ),
   ));
 }

@@ -18,13 +18,18 @@ class Readalso extends Field
 
         $readalso
             ->setLocation('block', '==', 'acf/readalso');
-
+            
         $readalso
-            ->addPostObject('read_also', [
+            ->addRelationship('read_also', [
                 'label' => 'Read also',
                 'post_type' => [0 => 'post', 1 => 'videos'],
-                'multiple' => 1,
+                'filters' => [
+                    0 => 'search',
+                    1 => 'post_type',
+                    2 => 'taxonomy',
+                ],
                 'max' => 10,
+                'elements' => 'Featured Image',
             ]);
 
         return $readalso->build();
