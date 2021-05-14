@@ -12,7 +12,7 @@
                     @php
                         setup_postdata($post);
                     @endphp
-                    <div class="snap-align-start transform origin-center scale-100 transition-transform duration-500" id="card-{{$i}}">
+                    <div class="snap-align-start transform origin-center scale-100 transition-transform duration-500 card-{{$i}}" id="card-{{$i}}">
                         @include('partials.common.preview-slider')
                     </div>
                     @php

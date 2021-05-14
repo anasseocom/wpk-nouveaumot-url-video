@@ -207,16 +207,32 @@
 
 
 @media only screen and (min-width: 768px) {
-    .preview--slider {
-        .thumbnail {
-            @apply hidden w-full h-full object-cover top-0 left-0;
+    .slider-preview-mode {
+        .preview--slider {
+            .thumbnail {
+                @apply hidden w-full h-full object-cover top-0 left-0;
 
-            &-default {
-                @apply block;
+                &-default {
+                    @apply block;
+                }
             }
         }
 
-        &:first-child {
+        .preview--slider { 
+            .thumbnail {
+            @apply hidden w-full h-full object-cover top-0 left-0;
+
+            &-slider-default {
+                @apply block;
+            }
+
+            &-slider-first {
+                @apply hidden;
+            }
+        }
+    }
+
+        .card-0 {
             .thumbnail {
                 @apply hidden w-full h-full object-cover top-0 left-0;
 
