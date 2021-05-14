@@ -10,6 +10,7 @@ add_image_size( '16-9_lg', 1920, 1000, true );
 add_image_size( '16-9_md', 1296, 675, true ); // Hard Crop Mode
 add_image_size( '16-9_sm', 960, 500, true ); // Hard Crop Mode
 add_image_size( '16-9_xs', 480, 250, true );
+add_image_size( '16-9_xxs', 342, 180, true );
 
 add_image_size( '5-6_lg', 500, 600, true );
 add_image_size( '5-6_md', 375, 450, true );
