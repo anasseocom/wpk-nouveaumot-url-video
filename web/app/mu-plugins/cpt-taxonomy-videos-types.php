@@ -1,6 +1,6 @@
 <?php
 
-add_action( 'init', 'create_video_types_taxonomy', 0 );
+add_action( 'init', 'create_videos_types_taxonomy', 0 );
  
 function create_videos_types_taxonomy() {
   $labels = array(
