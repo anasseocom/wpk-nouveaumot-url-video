@@ -85,7 +85,7 @@
                             {{ __('episodes', 'sage') }}
                             @endif
                         </div>
-                        @shortcode('[facetwp facet="video_types"]')
+                        <?php echo do_shortcode('[facetwp facet="video_types"]') ?>
                     </div>
                     <div>
                     <div class="list-show col-span-12 grid grid-cols-1 md:grid-cols-2 gap-3">
