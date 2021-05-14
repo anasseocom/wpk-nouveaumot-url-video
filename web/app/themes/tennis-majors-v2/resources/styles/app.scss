@@ -178,3 +178,21 @@
 .has-wimbledon--color {
     color: #00632A;
 }
+
+.user {
+    &--major {
+        .padding-major {
+            @apply pb-12/10;
+        }
+    }
+}
+
+.major-page {
+    .user {
+        &--major {
+            .padding-major {
+                @apply pb-16/9 md:pb-12/10;
+            }
+        }
+    }
+}
