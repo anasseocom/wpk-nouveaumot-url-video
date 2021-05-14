@@ -217,7 +217,21 @@
                 }
             }
         }
-        
+
+        .preview--slider { 
+            .thumbnail {
+            @apply hidden w-full h-full object-cover top-0 left-0;
+
+            &-slider-default {
+                @apply block;
+            }
+
+            &-slider-first {
+                @apply hidden;
+            }
+        }
+    }
+
         .card-0 {
             .thumbnail {
                 @apply hidden w-full h-full object-cover top-0 left-0;
@@ -228,20 +242,6 @@
 
                 &-slider-first {
                     @apply block;
-                }
-            }
-        }
-
-        :not(.card-0) {
-            .thumbnail {
-                @apply hidden w-full h-full object-cover top-0 left-0;
-
-                &-slider-default {
-                    @apply block;
-                }
-
-                &-slider-first {
-                    @apply hidden;
                 }
             }
         }

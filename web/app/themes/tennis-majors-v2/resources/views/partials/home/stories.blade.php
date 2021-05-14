@@ -19,7 +19,7 @@
                         @endif
                                 <div class="w-screen h-full"></div>
                                 <div class="rounded-md overflow-hidden relative pb-12/10 mb-6 w-full">
-                                {{ the_post_thumbnail('5-6_sm', array('class' => 'absolute w-full h-full object-cover top-0 left-0')) }}
+                                {{ the_post_thumbnail('5-6_sm', array('class' => 'absolute w-full h-full object-cover top-0 left-0 5-6_sm')) }}
                                     <div class="absolute bg-black  text-white w-24 h-24 bottom-0 left-0 leading-number-stories text-center text-5xl number-size-{{ $i + 1 }}">
                                         {{ $i + 1 }}
                                     </div>

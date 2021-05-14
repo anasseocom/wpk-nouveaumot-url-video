@@ -13,7 +13,7 @@
                 @foreach( $partners as $post)
                         <a href="{{ the_field('post_url')}}"  class="col-span-1 rounded-lg border-2 border-black overflow-hidden shadow-sm hover:shadow-lg transition-all ease">
                             <h3 class="text-z">{{ the_title() }}</h3>
-                            <img src="{{ the_post_thumbnail_url() }}">
+                            {{ the_post_thumbnail('16-9_xs', array('class' => '16-9_xs')) }}
                         </a>
                     @php wp_reset_postdata() @endphp
                     @php
