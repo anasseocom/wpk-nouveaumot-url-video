@@ -1,4 +1,5 @@
 <div class="flex">
+    @include('partials.header.nav.wpml')
     @include('partials.header.nav.flash')
     @include('partials.header.nav.burger')
     <div class="w-screen h-screen bg-black absolute left-0 top-0 px-4 hidden">
