@@ -8,7 +8,7 @@
   PostTypes: page post videos
   SupportsAlign: full
   SupportsMode: false
-  SupportsMultiple: false
+  SupportsMultiple: true
 --}}
 
 @php
