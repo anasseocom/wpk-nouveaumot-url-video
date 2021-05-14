@@ -207,40 +207,42 @@
 
 
 @media only screen and (min-width: 768px) {
-    .preview--slider {
-        .thumbnail {
-            @apply hidden w-full h-full object-cover top-0 left-0;
+    .slider-preview-mode {
+        .preview--slider {
+            .thumbnail {
+                @apply hidden w-full h-full object-cover top-0 left-0;
 
-            &-default {
-                @apply block;
+                &-default {
+                    @apply block;
+                }
             }
         }
-    }
-    
-    .card-0 {
-        .thumbnail {
-            @apply hidden w-full h-full object-cover top-0 left-0;
+        
+        .card-0 {
+            .thumbnail {
+                @apply hidden w-full h-full object-cover top-0 left-0;
 
-            &-slider-default {
-                @apply hidden;
-            }
+                &-slider-default {
+                    @apply hidden;
+                }
 
-            &-slider-first {
-                @apply block;
+                &-slider-first {
+                    @apply block;
+                }
             }
         }
-    }
 
-    :not(.card-0) {
-        .thumbnail {
-            @apply hidden w-full h-full object-cover top-0 left-0;
+        :not(.card-0) {
+            .thumbnail {
+                @apply hidden w-full h-full object-cover top-0 left-0;
 
-            &-slider-default {
-                @apply block;
-            }
+                &-slider-default {
+                    @apply block;
+                }
 
-            &-slider-first {
-                @apply hidden;
+                &-slider-first {
+                    @apply hidden;
+                }
             }
         }
     }
