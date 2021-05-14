@@ -32,17 +32,19 @@ function custom_post_type_curations() {
 		'description'         => __( 'Our curations'),
 		'labels'              => $labels,
 		// On définit les options disponibles dans l'éditeur de notre custom post type ( un titre, un auteur...)
-		'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+		'supports'            => array( 'title', 'editor', 'author', 'thumbnail', 'revisions', 'custom-fields', ),
 		/* 
 		* Différentes options supplémentaires
 		*/
 		'show_in_rest' => true,
 		'hierarchical'        => false,
 		'public'              => true,
-		'has_archive'         => true,
+		'has_archive'         => false,
+		'exclude_from_search' => true,
         'rewrite'			  => array( 'slug' => 'curations'),
         'menu_icon'           => 'dashicons-video-alt3 ',
         'menu_position'       => 4,
+		'publicly_queryable'  => false,
         'taxonomies' => array( 'category', 'post_tag' ),
 
 	);
