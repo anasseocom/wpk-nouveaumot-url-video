@@ -4,10 +4,10 @@ add_action( 'init', 'create_video_types_taxonomy', 0 );
  
 function create_videos_types_taxonomy() {
   $labels = array(
-    'name' => _x( 'Types', 'Types' ),
-    'singular_name' => _x( 'Type', 'Type' ),
-    'search_items' =>  __( 'Search a type' ),
-    'all_items' => __( 'All types' ),
+    'name' => _x( 'Video Types', 'Video Types' ),
+    'singular_name' => _x( 'Video Type', 'Video Type' ),
+    'search_items' =>  __( 'Search a video type' ),
+    'all_items' => __( 'All videos types' ),
     'edit_item' => __( 'Modify' ), 
     'update_item' => __( 'Update' ),
     'add_new_item' => __( 'Add a new  type' ),
