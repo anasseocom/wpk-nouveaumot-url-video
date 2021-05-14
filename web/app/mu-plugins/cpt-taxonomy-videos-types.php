@@ -12,7 +12,7 @@ function create_videos_types_taxonomy() {
     'update_item' => __( 'Update' ),
     'add_new_item' => __( 'Add a new  type' ),
     'new_item_name' => __( 'Name of the new type' ),
-    'menu_name' => __( 'Types' ),
+    'menu_name' => __( 'Video Types' ),
   );    
 
   register_taxonomy('video-types',array('videos'), array(
