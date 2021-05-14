@@ -215,18 +215,32 @@
                 @apply block;
             }
         }
+    }
+    
+    .card-0 {
+        .thumbnail {
+            @apply hidden w-full h-full object-cover top-0 left-0;
 
-        &:first-child {
-            .thumbnail {
-                @apply hidden w-full h-full object-cover top-0 left-0;
+            &-slider-default {
+                @apply hidden;
+            }
 
-                &-slider-default {
-                    @apply hidden;
-                }
+            &-slider-first {
+                @apply block;
+            }
+        }
+    }
 
-                &-slider-first {
-                    @apply block;
-                }
+    :not(.card-0) {
+        .thumbnail {
+            @apply hidden w-full h-full object-cover top-0 left-0;
+
+            &-slider-default {
+                @apply block;
+            }
+
+            &-slider-first {
+                @apply hidden;
             }
         }
     }
