@@ -83,7 +83,7 @@
 
 @endphp
 @if($my_current_lang =='fr')         
-<div class="uppercase font-bold text-center">Vous voulez plus d'épisodes de {{ $show->name }} ?</div>
+<div class="uppercase font-bold text-center">Vous voulez plus d'épisodes</br> de {{ $show->name }} ?</div>
 @endif
 @if($my_current_lang =='en')
 <div class="uppercase font-bold text-center">Wanna see more</br> {{ $show->name }} episodes?</div>
