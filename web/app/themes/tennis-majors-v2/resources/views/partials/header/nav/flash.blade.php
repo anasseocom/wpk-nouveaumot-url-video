@@ -1,4 +1,4 @@
-<button id="live-last-news--toggle" class="w-8 h-16 lg:h-20 flex flex-row flex-grow items-center relative hover:bg-gray-50 cursor-pointer live-last-news--toggle">
+<button id="live-last-news--toggle" aria-label="{{ __('Opens and Close Last News Menu', 'sage') }}" class="w-8 h-16 lg:h-20 flex flex-row flex-grow items-center relative hover:bg-gray-50 cursor-pointer live-last-news--toggle">
     <div class="flex flex-col flex-grow items-center">
         @include('partials.images.flash')
     </div>

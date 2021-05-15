@@ -28,7 +28,7 @@
                 <a href="{{ get_author_posts_url($user_id) }}" class="grid gap-4 grid-cols-12 p-2">
                   <div class="col-span-3 flex items-center">
                     <div class="w-full pb-1/1 relative">
-                      <img class="rounded-full w-full h-full object-cover absolute top-0" loading="lazy" src="{{ $avatar_url }}">
+                      <img class="rounded-full w-full h-full object-cover absolute top-0"alt="{{ __('Profile Picture of ', 'sage') }}{{ $last_name }}" loading="lazy"  loading="lazy" src="{{ $avatar_url }}">
                     </div>
                   </div>
                   <div class="col-span-9 flex items-center">
@@ -52,7 +52,7 @@
                 <a href="{{ get_author_posts_url($user_id) }}" class="grid gap-4 grid-cols-12 p-2">
                   <div class="col-span-3 flex items-center">
                     <div class="w-full pb-1/1 relative">
-                      <img class="rounded-full w-full h-full object-cover absolute top-0" loading="lazy" src="{{ $avatar_url }}">
+                      <img class="rounded-full w-full h-full object-cover absolute top-0" alt="{{ __('Profile Picture of ', 'sage') }}{{ $last_name }}" loading="lazy" src="{{ $avatar_url }}">
                     </div>
                   </div>
                   <div class="col-span-9 flex items-center">
@@ -82,7 +82,7 @@
             <a href="{{ get_author_posts_url(get_the_author_meta('ID')) }}" class="grid gap-4 grid-cols-12 p-2">
               <div class="col-span-3 flex items-center">
                 <div class="w-full pb-1/1 relative">
-                  <img class="rounded-full w-full h-full object-cover absolute top-0" loading="lazy" src="{{ $avatar_url }}">
+                  <img class="rounded-full w-full h-full object-cover absolute top-0" alt="{{ __('Profile Picture of ', 'sage') }}{{ $last_name }}" loading="lazy" src="{{ $avatar_url }}">
                 </div>
               </div>
               <div class="col-span-9 flex items-center">
