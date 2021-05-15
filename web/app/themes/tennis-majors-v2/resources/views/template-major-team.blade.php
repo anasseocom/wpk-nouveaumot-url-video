@@ -32,7 +32,7 @@
 
                     @if($user_is_major)
                         <div class="user user--major snap-align-start">
-                            <img src="{{ $image['url'] }}" class="absolute bottom-0 w-32 left-0">
+                            <img src="{{ $image['url'] }}" class="absolute bottom-0 h-full left-0">
                             <div class="w-screen pb-55/100">
                             </div>
                             <div class="bg-black rounded-lg absolute w-full h-bgmajorcard bottom-0 -z-1">
@@ -49,7 +49,7 @@
     <div class="mx-4">
         <div class="max-w-screen-xl m-auto">
             <div class="border-b-2 border-black mt-20 pb-4">
-                <div class="uppercase">{{ __('Meet', 'sage') }} <span class="font-bold">{{ __('The figures', 'sage') }}</span></div>
+                <div class="uppercase">{{ __('Their', 'sage') }} <span class="font-bold">{{ __('Articles', 'sage') }}</span></div>
             </div>
             <div class="grid grid-cols-4 gap-4 mt-4">
             @foreach( $author_users as $user)
