@@ -256,3 +256,15 @@
         box-shadow: 0 0 0 0 rgba(204,169,44, 0)
     }
 }
+
+.wpml-ls-current-language {
+    @apply font-bold;
+}
+
+.wpml-ls-item {
+    @apply text-xs;
+
+    a:hover {
+        @apply underline;
+    }
+}
