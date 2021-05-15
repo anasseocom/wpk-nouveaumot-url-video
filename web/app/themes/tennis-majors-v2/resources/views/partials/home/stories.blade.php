@@ -29,7 +29,7 @@
                                     <div class="flex mt-3">
                                         <div class="flex w-8 items-center">
                                             <div class="w-full pb-1/1 relative">
-                                              <img class="rounded-full w-full h-full object-cover absolute top-0" alt="{{ the_field('external_media_name')}}" loading="lazy" loading="lazy" src="{{ the_field('external_media_image')}}">
+                                              <img class="rounded-full w-full h-full object-cover absolute top-0" alt="{{ the_field('external_media_name')}}" loading="lazy" src="{{ the_field('external_media_image')}}">
                                             </div>
                                           </div>
                                         <div class="ml-2 flex items-center">
