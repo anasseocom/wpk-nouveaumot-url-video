@@ -85,11 +85,10 @@
                 <div class="col-span-12 md:col-span-9">
                     <div class="flex justify-between items-center mb-4">
                         <div class="uppercase text-xl font-bold">
-                            The
                             @if($count_episodes == 1)
-                            {{ __('episode', 'sage') }}
+                            {{ __('The video', 'sage') }}
                             @else
-                            {{ __('episodes', 'sage') }}
+                            {{ __('The videos', 'sage') }}
                             @endif
                         </div>
                         <?php echo do_shortcode('[facetwp facet="video_types"]') ?>
