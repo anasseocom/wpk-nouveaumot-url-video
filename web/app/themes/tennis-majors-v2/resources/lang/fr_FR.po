@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tennis Majors Nuuk 1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/tennis-majors-v2\n"
-"POT-Creation-Date: 2021-05-11T15:44:44+00:00\n"
-"PO-Revision-Date: 2021-05-11 17:55+0200\n"
+"POT-Creation-Date: 2021-05-15T15:15:38+00:00\n"
+"PO-Revision-Date: 2021-05-15 17:21+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -48,102 +48,106 @@ msgid "Primary Navigation"
 msgstr ""
 
 #: app/setup.php:68
+msgid "WPML Navigation"
+msgstr ""
+
+#: app/setup.php:69
 msgid "Footer Navigation"
 msgstr ""
 
-#: app/setup.php:77
+#: app/setup.php:78
 msgid "Roland-Garros"
 msgstr ""
 
-#: app/setup.php:82
+#: app/setup.php:83
 msgid "Classic Black"
 msgstr ""
 
-#: app/setup.php:87
+#: app/setup.php:88
 msgid "Australian Open"
 msgstr ""
 
-#: app/setup.php:92
+#: app/setup.php:93
 msgid "US Open"
 msgstr ""
 
-#: app/setup.php:97
+#: app/setup.php:98
 msgid "Wimbledon"
 msgstr ""
 
-#: app/setup.php:216
+#: app/setup.php:217
 msgid "Primary"
 msgstr ""
 
-#: app/setup.php:221
+#: app/setup.php:222
 msgid "Footer"
 msgstr ""
 
-#: app/setup.php:237 app/setup.php:238
+#: app/setup.php:238 app/setup.php:239
 msgid "Home edition"
 msgstr "Edition Homepage"
 
-#: app/setup.php:257 app/setup.php:273
+#: app/setup.php:258 app/setup.php:274
 msgid "Writer"
 msgstr "Rédacteur"
 
-#: app/setup.php:257 app/setup.php:273
+#: app/setup.php:258 app/setup.php:274
 msgid "Co-writer"
 msgstr "Co-rédacteur"
 
-#: app/setup.php:257 app/setup.php:273
+#: app/setup.php:258 app/setup.php:274
 msgid "Editor"
 msgstr "Éditeur"
 
-#: app/setup.php:257 app/setup.php:273
+#: app/setup.php:258 app/setup.php:274
 msgid "Photo"
 msgstr "Photo"
 
-#: app/setup.php:257 app/setup.php:273
+#: app/setup.php:258 app/setup.php:274
 msgid "Translator"
 msgstr "Traducteur"
 
-#: app/setup.php:257 app/setup.php:273
+#: app/setup.php:258 app/setup.php:274
 msgid "Curator"
 msgstr "Une sélection de"
 
-#: app/setup.php:257 app/setup.php:273
+#: app/setup.php:258 app/setup.php:274
 msgid "Author"
 msgstr "Auteur"
 
-#: app/setup.php:257 app/setup.php:273
+#: app/setup.php:258 app/setup.php:274
 msgid "Columnist"
 msgstr "Éditorialiste"
 
-#: app/setup.php:257 app/setup.php:273
+#: app/setup.php:258 app/setup.php:274
 msgid "Expert"
 msgstr "Export"
 
-#: app/setup.php:273
+#: app/setup.php:274
 msgid "Motion design"
 msgstr "Motion design"
 
-#: app/setup.php:273
+#: app/setup.php:274
 msgid "Studio"
 msgstr "Studio"
 
-#: app/setup.php:273
+#: app/setup.php:274
 msgid "Producer"
 msgstr "Production"
 
-#: app/setup.php:273
+#: app/setup.php:274
 msgid "Video operator"
 msgstr "Vidéaste"
 
-#: app/setup.php:273
+#: app/setup.php:274
 msgid "Sound operator"
 msgstr "Réalisation"
 
-#: app/setup.php:273
+#: app/setup.php:274
 msgid "Host"
 msgstr "Hôte"
 
-#: app/setup.php:273
+#: app/setup.php:274
 msgid "Guest"
 msgstr "Invité"
 
@@ -157,7 +161,7 @@ msgstr "Résultats pour %s"
 
 #: app/View/Composers/Post.php:60
 msgid "Not Found"
-msgstr "Nous n’avons rien trouvé."
+msgstr "Nous n’avons rien trouvé"
 
 #: bootstrap/app.php:32
 msgid "Error locating <code>%s</code> for inclusion."
@@ -168,7 +172,7 @@ msgid "Error locating autoloader. Please run <code>composer install</code>."
 msgstr ""
 
 #. Template Name of the theme
-#: storage/framework/views/007a2dee93dd14d78d4db80d3083e4a5d6575583.php:21
+#: storage/framework/views/007a2dee93dd14d78d4db80d3083e4a5d6575583.php:23
 #: storage/framework/views/888b86da8849dd7fede99fe58dbf70fdf2e33dbe.php:15
 #: storage/framework/views/888b86da8849dd7fede99fe58dbf70fdf2e33dbe.php:43
 msgid "Features"
@@ -192,7 +196,7 @@ msgstr "Partager "
 
 #: storage/framework/views/0b5a0a8c5c24a9f84c1ed8abaef4a4bf02aa031e.php:3
 msgid "this story"
-msgstr "Cette histoire"
+msgstr "cette histoire"
 
 #: storage/framework/views/0d422d8f171b8e38d28778df9f285aa56a867fa6.php:9
 msgid "Sorry, no results were found."
@@ -205,6 +209,11 @@ msgstr "Navré, nous n’avons rien trouvé."
 msgid "Back to the team"
 msgstr "Retour à la Dream Team"
 
+#: storage/framework/views/0db7c7eb7dcb67c5f7bb6af0c0577b5af523e138.php:101
+#: storage/framework/views/685c386dfcaf98b8770ecb4d7d1988c7d7621af3.php:76
+msgid "Last"
+msgstr "Dernières"
+
 #: storage/framework/views/0e8da3f1a070d15ad6088c44d378488bb0a69d14.php:8
 #: storage/framework/views/62df14e869a82c4e8e1097c275a2fe6ce5b0f467.php:9
 msgid "A major"
@@ -213,7 +222,7 @@ msgstr "La Dream"
 #: storage/framework/views/0e8da3f1a070d15ad6088c44d378488bb0a69d14.php:8
 #: storage/framework/views/62df14e869a82c4e8e1097c275a2fe6ce5b0f467.php:9
 msgid "team"
-msgstr "Team"
+msgstr "team"
 
 #: storage/framework/views/0e8da3f1a070d15ad6088c44d378488bb0a69d14.php:9
 #: storage/framework/views/62df14e869a82c4e8e1097c275a2fe6ce5b0f467.php:10
@@ -221,24 +230,30 @@ msgid "The best tennis writer and experts are there"
 msgstr "Une équipe de signatures et de passionnés"
 
 #: storage/framework/views/0e8da3f1a070d15ad6088c44d378488bb0a69d14.php:14
-#: storage/framework/views/0e8da3f1a070d15ad6088c44d378488bb0a69d14.php:46
 msgid "Meet"
 msgstr "Nos"
 
 #: storage/framework/views/0e8da3f1a070d15ad6088c44d378488bb0a69d14.php:14
-#: storage/framework/views/0e8da3f1a070d15ad6088c44d378488bb0a69d14.php:46
 msgid "The figures"
-msgstr "experts"
+msgstr "Les experts"
 
 #: storage/framework/views/0e8da3f1a070d15ad6088c44d378488bb0a69d14.php:35
 msgid "See content"
 msgstr "Accéder aux contenus"
 
+#: storage/framework/views/0e8da3f1a070d15ad6088c44d378488bb0a69d14.php:46
+msgid "Their"
+msgstr "Leurs"
+
+#: storage/framework/views/0e8da3f1a070d15ad6088c44d378488bb0a69d14.php:46
+msgid "Articles"
+msgstr "Articles"
+
 #: storage/framework/views/0e8da3f1a070d15ad6088c44d378488bb0a69d14.php:65
 msgid "Read articles"
 msgstr "Lire les articles"
 
-#: storage/framework/views/007a2dee93dd14d78d4db80d3083e4a5d6575583.php:21
+#: storage/framework/views/007a2dee93dd14d78d4db80d3083e4a5d6575583.php:23
 msgid "Our "
 msgstr "Nos "
 
@@ -269,6 +284,18 @@ msgstr "Les"
 msgid "figures"
 msgstr "experts"
 
+#: storage/framework/views/3bca83760d468c88940d52d13ce412b757280d81.php:31
+#: storage/framework/views/3bca83760d468c88940d52d13ce412b757280d81.php:55
+#: storage/framework/views/3bca83760d468c88940d52d13ce412b757280d81.php:85
+#: storage/framework/views/81e05fdba7bd04c804e166d9b1dc966a70eeee89.php:8
+#: storage/framework/views/84e89483334989d6600863f088075eeb76f1e2cf.php:8
+#: storage/framework/views/bc39c8aef010f32f9b91a0a4e953bf37a5ab03ae.php:27
+#: storage/framework/views/bc39c8aef010f32f9b91a0a4e953bf37a5ab03ae.php:52
+#: storage/framework/views/bc39c8aef010f32f9b91a0a4e953bf37a5ab03ae.php:77
+#: storage/framework/views/bc39c8aef010f32f9b91a0a4e953bf37a5ab03ae.php:97
+msgid "Profile Picture of "
+msgstr "Photo de profil de "
+
 #: storage/framework/views/3fde2969e7bd692e9915dc89e19d44d10806e0c5.php:11
 msgid "More"
 msgstr "Plus"
@@ -283,11 +310,26 @@ msgstr "histoires"
 
 #: storage/framework/views/6badd95620cfba933ce00d40ba767d7cbaf4fd49.php:9
 msgid "to read now"
-msgstr "Sélectionnées pour vous"
+msgstr "sélectionnées pour vous"
 
-#: storage/framework/views/9bc89283bf0338e28f592c5d5fec907f136f2d3f.php:3
+#: storage/framework/views/9bc89283bf0338e28f592c5d5fec907f136f2d3f.php:17
 msgid "Pages:"
 msgstr "Pages :"
+
+#: storage/framework/views/11b07e2758c3fa57cb8a5f5e7d4eb35d756fdef4.php:5
+#: storage/framework/views/82e5c8a7ff5b28b1cbf82e3a058049b43d30542c.php:5
+msgid "Link to our Facebook"
+msgstr "Lien vers notre Facebook"
+
+#: storage/framework/views/11b07e2758c3fa57cb8a5f5e7d4eb35d756fdef4.php:12
+#: storage/framework/views/82e5c8a7ff5b28b1cbf82e3a058049b43d30542c.php:12
+msgid "Link to our Twitter"
+msgstr "Lien vers notre Twitter"
+
+#: storage/framework/views/11b07e2758c3fa57cb8a5f5e7d4eb35d756fdef4.php:19
+#: storage/framework/views/82e5c8a7ff5b28b1cbf82e3a058049b43d30542c.php:19
+msgid "Link to our Instagram"
+msgstr "Lien vers notre Instagram"
 
 #: storage/framework/views/55b44762e1524b0edd3783546ea95389e7b3178c.php:10
 msgid "Latest"
@@ -300,7 +342,7 @@ msgstr "vidéos"
 #: storage/framework/views/55b44762e1524b0edd3783546ea95389e7b3178c.php:32
 #: storage/framework/views/91d87d7766fd58fa7d85c7511eff5b382838d0ad.php:27
 msgid "must see"
-msgstr "Immanquable"
+msgstr "immanquable"
 
 #: storage/framework/views/55b44762e1524b0edd3783546ea95389e7b3178c.php:54
 msgid "View all"
@@ -308,23 +350,27 @@ msgstr "Tous les épisodes"
 
 #: storage/framework/views/55b44762e1524b0edd3783546ea95389e7b3178c.php:91
 msgid "Wanna see more"
-msgstr "Vous voulez plus d’épisodes de"
+msgstr "Vous voulez plus"
 
 #: storage/framework/views/55b44762e1524b0edd3783546ea95389e7b3178c.php:91
-#: storage/framework/views/e9ea168c316573523c336ca1468a25338f73a7bc.php:51
-#: storage/framework/views/e9ea168c316573523c336ca1468a25338f73a7bc.php:74
+#: storage/framework/views/e9ea168c316573523c336ca1468a25338f73a7bc.php:71
+#: storage/framework/views/e9ea168c316573523c336ca1468a25338f73a7bc.php:94
 msgid "episodes"
-msgstr " "
+msgstr "épisodes"
 
 #: storage/framework/views/55b44762e1524b0edd3783546ea95389e7b3178c.php:92
 #: storage/framework/views/55b44762e1524b0edd3783546ea95389e7b3178c.php:107
 #: storage/framework/views/55b44762e1524b0edd3783546ea95389e7b3178c.php:110
 #: storage/framework/views/62df14e869a82c4e8e1097c275a2fe6ce5b0f467.php:19
 #: storage/framework/views/62df14e869a82c4e8e1097c275a2fe6ce5b0f467.php:22
-#: storage/framework/views/e8d4f37a6b0d9d572e2101c73956a04ddc94352c.php:28
-#: storage/framework/views/e8d4f37a6b0d9d572e2101c73956a04ddc94352c.php:31
+#: storage/framework/views/e8d4f37a6b0d9d572e2101c73956a04ddc94352c.php:37
+#: storage/framework/views/e8d4f37a6b0d9d572e2101c73956a04ddc94352c.php:40
 msgid "Discover all"
 msgstr "Voir tout"
+
+#: storage/framework/views/79dc6b10386ffdd64f27110cbc0d4a4353aaff21.php:7
+msgid "Playlist of our latest video and audio content"
+msgstr "Liste de lecture de nos derniers contenus audio et vidéo"
 
 #: storage/framework/views/79dc6b10386ffdd64f27110cbc0d4a4353aaff21.php:12
 msgid "Latest news"
@@ -332,7 +378,7 @@ msgstr "Dernières infos"
 
 #: storage/framework/views/79dc6b10386ffdd64f27110cbc0d4a4353aaff21.php:13
 msgid "see all"
-msgstr "Voir tout"
+msgstr "voir tout"
 
 #: storage/framework/views/91d87d7766fd58fa7d85c7511eff5b382838d0ad.php:9
 #: storage/framework/views/ecf2d7e9ccbfbcd3c8d62a0e01de5a219913dc53.php:9
@@ -341,11 +387,7 @@ msgstr "Nos"
 
 #: storage/framework/views/91d87d7766fd58fa7d85c7511eff5b382838d0ad.php:9
 msgid "Video Series"
-msgstr "séries en vidéo"
-
-#: storage/framework/views/685c386dfcaf98b8770ecb4d7d1988c7d7621af3.php:74
-msgid "Last"
-msgstr "Dernières"
+msgstr "Séries en vidéo"
 
 #: storage/framework/views/714f4048248145fe57ae289374f7074e27562230.php:9
 msgid "Sorry, but the page you are trying to view does not exist."
@@ -354,7 +396,7 @@ msgstr "Désolé, mais la page que vous essayez d'afficher n'existe pas."
 #: storage/framework/views/888b86da8849dd7fede99fe58dbf70fdf2e33dbe.php:8
 #: storage/framework/views/888b86da8849dd7fede99fe58dbf70fdf2e33dbe.php:36
 msgid "Videos"
-msgstr "vidéos"
+msgstr "Vidéos"
 
 #: storage/framework/views/888b86da8849dd7fede99fe58dbf70fdf2e33dbe.php:20
 #: storage/framework/views/888b86da8849dd7fede99fe58dbf70fdf2e33dbe.php:48
@@ -402,27 +444,39 @@ msgstr "Précédent"
 msgid "Next"
 msgstr "Suivant"
 
+#: storage/framework/views/a06fb567661af01080d4d3c2505f6fe980e85b49.php:1
+msgid "Opens and closes main menu"
+msgstr "Ouvre et ferme le menu principal"
+
 #: storage/framework/views/a95e1497d86b2e8320453627bbeceb8d7dc35538.php:4
-#: storage/framework/views/e8d4f37a6b0d9d572e2101c73956a04ddc94352c.php:12
+#: storage/framework/views/e8d4f37a6b0d9d572e2101c73956a04ddc94352c.php:13
 msgid "Tennis"
 msgstr "Actualité du"
 
-#: storage/framework/views/e8d4f37a6b0d9d572e2101c73956a04ddc94352c.php:12
+#: storage/framework/views/e8d4f37a6b0d9d572e2101c73956a04ddc94352c.php:13
 msgid "news"
-msgstr "Tennis"
+msgstr "tennis"
 
-#: storage/framework/views/e9ea168c316573523c336ca1468a25338f73a7bc.php:36
+#: storage/framework/views/e9ea168c316573523c336ca1468a25338f73a7bc.php:56
 msgid "Back to all the video series"
 msgstr "Retour à toutes les séries vidéo"
 
-#: storage/framework/views/e9ea168c316573523c336ca1468a25338f73a7bc.php:48
-#: storage/framework/views/e9ea168c316573523c336ca1468a25338f73a7bc.php:71
+#: storage/framework/views/e9ea168c316573523c336ca1468a25338f73a7bc.php:68
+#: storage/framework/views/e9ea168c316573523c336ca1468a25338f73a7bc.php:91
 msgid "episode"
 msgstr "épisode"
+
+#: storage/framework/views/ea220f04c376f57dc972824f36a6f41479adc86c.php:1
+msgid "Opens and Close Last News Menu"
+msgstr "Ouvre et ferme le menu des dernières actes"
 
 #: storage/framework/views/ecf2d7e9ccbfbcd3c8d62a0e01de5a219913dc53.php:9
 msgid "partners"
 msgstr "partenaires"
+
+#: storage/framework/views/ecf2d7e9ccbfbcd3c8d62a0e01de5a219913dc53.php:14
+msgid "Link to"
+msgstr "Lien vers"
 
 #: storage/framework/views/ff8fb580bdc139101479cd106b203d0ae9d7b168.php:10
 msgid "Subscribe"
@@ -434,4 +488,4 @@ msgstr "à la newsletter"
 
 #: storage/framework/views/ff8fb580bdc139101479cd106b203d0ae9d7b168.php:11
 msgid "Stay in touch with the latest news, right into your inbox!"
-msgstr "Les meilleurs histoires de Tennis Majors, directement dans votre boîte mail"
+msgstr "Les meilleurs histoires de Tennis Majors, directement dans votre boîte mail !"
