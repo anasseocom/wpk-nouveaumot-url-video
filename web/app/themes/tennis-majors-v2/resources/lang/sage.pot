@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-05-15T15:15:38+00:00\n"
+"POT-Creation-Date: 2021-05-15T15:40:22+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.5.0-alpha\n"
 
@@ -356,19 +356,9 @@ msgstr ""
 msgid "View all"
 msgstr ""
 
-#: storage/framework/views/55b44762e1524b0edd3783546ea95389e7b3178c.php:91
-msgid "Wanna see more"
-msgstr ""
-
-#: storage/framework/views/55b44762e1524b0edd3783546ea95389e7b3178c.php:91
-#: storage/framework/views/e9ea168c316573523c336ca1468a25338f73a7bc.php:71
-#: storage/framework/views/e9ea168c316573523c336ca1468a25338f73a7bc.php:94
-msgid "episodes"
-msgstr ""
-
-#: storage/framework/views/55b44762e1524b0edd3783546ea95389e7b3178c.php:92
-#: storage/framework/views/55b44762e1524b0edd3783546ea95389e7b3178c.php:107
-#: storage/framework/views/55b44762e1524b0edd3783546ea95389e7b3178c.php:110
+#: storage/framework/views/55b44762e1524b0edd3783546ea95389e7b3178c.php:100
+#: storage/framework/views/55b44762e1524b0edd3783546ea95389e7b3178c.php:115
+#: storage/framework/views/55b44762e1524b0edd3783546ea95389e7b3178c.php:118
 #: storage/framework/views/62df14e869a82c4e8e1097c275a2fe6ce5b0f467.php:19
 #: storage/framework/views/62df14e869a82c4e8e1097c275a2fe6ce5b0f467.php:22
 #: storage/framework/views/e8d4f37a6b0d9d572e2101c73956a04ddc94352c.php:37
@@ -470,8 +460,19 @@ msgid "Back to all the video series"
 msgstr ""
 
 #: storage/framework/views/e9ea168c316573523c336ca1468a25338f73a7bc.php:68
-#: storage/framework/views/e9ea168c316573523c336ca1468a25338f73a7bc.php:91
 msgid "episode"
+msgstr ""
+
+#: storage/framework/views/e9ea168c316573523c336ca1468a25338f73a7bc.php:71
+msgid "episodes"
+msgstr ""
+
+#: storage/framework/views/e9ea168c316573523c336ca1468a25338f73a7bc.php:90
+msgid "The video"
+msgstr ""
+
+#: storage/framework/views/e9ea168c316573523c336ca1468a25338f73a7bc.php:93
+msgid "The videos"
 msgstr ""
 
 #: storage/framework/views/ea220f04c376f57dc972824f36a6f41479adc86c.php:1
