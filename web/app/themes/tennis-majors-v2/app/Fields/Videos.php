@@ -27,13 +27,13 @@ class Videos extends Field
             ])
 
             ->addPostObject('video_previous', [
-                'label' => 'Previous',
+                'label' => __('Previous', 'sage'),
                 'post_type' => [0 => 'videos'],
                 'multiple' => 0,
             ])
 
             ->addPostObject('video_next', [
-                'label' => 'Next',
+                'label' => __('Next', 'sage'),
                 'post_type' => [0 => 'videos'],
                 'multiple' => 0,
             ])

@@ -15,8 +15,8 @@ if( !function_exists( 'pagination' ) ) {
 				'end_size'     => 1,
 				'mid_size'     => 2,
 			'type' => 'list',
-			'next_text' => 'next',
-			'prev_text' => 'previous'
+			'next_text' => __('Next', 'sage'),
+			'prev_text' => __('Previous', 'sage')
 		);
 		
 		if( $wp_rewrite->using_permalinks() )
