@@ -166,6 +166,7 @@ $(document).ready(() => {
     var liveLastNews = document.getElementById('live-last-news');
     var isHome = document.body.classList.contains('home');
     var liveLastNewsActive = localStorage.getItem('liveLastNewsActive');
+    var liveLastNewsExperienced = localStorage.getItem('liveLastNewsExperienced');
     var vw = (Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0));
 
     if(isHome) {
@@ -189,6 +190,12 @@ $(document).ready(() => {
             activeLiveLastNews();
           }
         }
+      }
+
+      if(liveLastNewsExperienced == "on") {
+        document.getElementById('live-last-news--toggle').classList.add('live-last-news--experienced');
+      } else {
+        document.getElementById('live-last-news--toggle').classList.add('live-last-news--not-experienced');
       }
     } else {
       if(liveLastNewsActive == null) {
@@ -218,6 +225,8 @@ $(document).ready(() => {
         localStorage.setItem('lastUseToggleLiveLastNews', null);
         activeLiveLastNews();
       }
+      localStorage.setItem('liveLastNewsExperienced', 'on');
+      document.getElementById('live-last-news--toggle').classList.add('live-last-news--experienced');
     });
   }
 

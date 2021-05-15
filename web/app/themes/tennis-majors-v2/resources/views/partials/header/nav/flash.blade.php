@@ -3,4 +3,5 @@
         @include('partials.images.flash')
     </div>
     <span class="live-last-news--toggle-border absolute h-2 bottom-0 left-0 bg-black transition-all ease-in-out duration-500"></span>
+    <div id="pulse" class="pulse"></div>
 </button>
