@@ -1,0 +1,23 @@
+version: 2
+registries:
+  git-github-com:
+    type: git
+    url: https://github.com
+    username: x-access-token
+    password: "${{secrets.GIT_GITHUB_COM_PASSWORD}}"
+  composer-repository-dev-nuuk-fr-satispress:
+    type: composer-repository
+    url: https://dev.nuuk.fr/satispress/
+    username: uVwUTdwSRKYrIp1yKZS4xha4tbeTQVvh
+    password: "${{secrets.COMPOSER_REPOSITORY_DEV_NUUK_FR_SATISPRESS_PASSWORD}}"
+
+updates:
+- package-ecosystem: composer
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  registries:
+  - composer-repository-dev-nuuk-fr-satispress
+  - git-github-com
