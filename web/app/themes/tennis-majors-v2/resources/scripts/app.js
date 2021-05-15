@@ -193,6 +193,7 @@ $(document).ready(() => {
       }
 
       if(liveLastNewsExperienced == "on") {
+        document.getElementById('live-last-news--toggle').classList.remove('live-last-news--not-experienced');
         document.getElementById('live-last-news--toggle').classList.add('live-last-news--experienced');
       } else {
         document.getElementById('live-last-news--toggle').classList.add('live-last-news--not-experienced');
@@ -226,6 +227,7 @@ $(document).ready(() => {
         activeLiveLastNews();
       }
       localStorage.setItem('liveLastNewsExperienced', 'on');
+      document.getElementById('live-last-news--toggle').classList.remove('live-last-news--not-experienced');
       document.getElementById('live-last-news--toggle').classList.add('live-last-news--experienced');
     });
   }
