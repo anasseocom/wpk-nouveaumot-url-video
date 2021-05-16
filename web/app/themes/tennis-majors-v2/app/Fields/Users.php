@@ -60,8 +60,13 @@ class Users extends Field
                     'post_type' => [0 => 'post', 1 => 'videos'],
                     'multiple' => 0,
                 ])
+                ->conditional('user_is_major', '==', '0')
+                ->addPostObject('user_post_on_top_fr', [
+                    'label' => 'Post on top FR',
+                    'post_type' => [0 => 'post', 1 => 'videos'],
+                    'multiple' => 0,
+                ])
                 ->conditional('user_is_major', '==', '0');
-
         return $users->build();
     }
 }
