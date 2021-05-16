@@ -62,6 +62,8 @@ $(document).ready(() => {
   }
 
   if ($('#major-team').length) {
+    var majorButtonLeft = document.getElementById('major-team--arrow-left');
+    var majorButtonRight = document.getElementById('major-team--arrow-right')
     $("#major-team-slider").slick({
       speed: 300,
       infinite: true,
@@ -70,8 +72,8 @@ $(document).ready(() => {
       autoplay: true,
       slidesToScroll: 2,
       swipeToSlide: true,
-      prevArrow: null,
-      nextArrow: null,
+      prevArrow: majorButtonLeft,
+      nextArrow: majorButtonRight,
       responsive: [
         {
           breakpoint: 1024,
@@ -87,6 +89,8 @@ $(document).ready(() => {
             slidesToShow: 1,
             infinite: true,
             centerPadding: '20vw',
+            prevArrow: majorButtonLeft,
+            nextArrow: majorButtonRight,
           },
         },
       ],
