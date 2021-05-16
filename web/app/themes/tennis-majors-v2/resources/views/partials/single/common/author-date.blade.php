@@ -90,11 +90,11 @@
       </div>
     </div>
 @else
-  <div class="max-w-screen-sm m-auto">
+  <div class="max-w-screen-sm m-auto pb-8">
     <a href="@authorurl" rel="author">
       <div class="flex flex-row items-center my-6">
         <div>
-            <img class="rounded-full w-14 flex" loading="lazy" src="{{ $author_avatar_url }}">
+            <img class="rounded-full w-10 md:w-14 flex" loading="lazy" src="{{ $author_avatar_url }}">
         </div>
         <div class="ml-4">
           <div class="font-bold">{{ $author_name }}</div>
