@@ -47,7 +47,7 @@ header {
         display: none;
     
         &-container {
-            height: calc(100vh - 160px);
+            height: calc(100vh - 64px);
         }
     
         &--active {
@@ -83,7 +83,7 @@ header {
             }
     
             ul.sub-menu {
-                @apply pl-6 pt-2 text-sm hidden sm:absolute sm:left-1/2 sm:top-0 sm:pl-40 sm:opacity-0 overflow-y-scroll h-full;
+                @apply pl-6 pt-2 text-sm w-full sm:w-auto hidden sm:absolute sm:left-1/2 sm:top-0 sm:pl-40 sm:opacity-0 sm:overflow-y-scroll pb-4 sm:pb-52;
     
                 li {
                     @apply text-xl sm:text-2xl capitalize mb-2;
@@ -92,6 +92,10 @@ header {
                         @apply uppercase font-normal mb-3;
                     }
                 }
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
             }
         }
     }
@@ -99,4 +103,14 @@ header {
 
 .burger-bar {
     transition: ease 0.2s;
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        .menu {
+            &-container {
+                height: calc(100vh - 160px);
+            }
+        }
+    }
 }

@@ -281,6 +281,31 @@ $(document).ready(() => {
         menuLinks[i].firstChild.removeAttribute('href');
       }
     }
+
+    var menuContainerHeight  = document.getElementById('menu').offsetHeight;
+    console.log(menuContainerHeight);
+    var menuHeight  = document.getElementById('menu-primary').offsetHeight;
+    console.log(menuHeight);
+    var distanceFromTop = null
+    if(menuContainerHeight > 670) {
+      distanceFromTop = ((menuContainerHeight - menuHeight) / 2) - 15;
+    } else {
+      distanceFromTop = 150;
+    }
+    var subMenus = document.getElementsByClassName("sub-menu");
+    for (var i = 0; i < subMenus.length; i++) {
+      if(window.innerWidth > 768) {
+        subMenus[i].style.height = 'calc(100vh - '+ distanceFromTop.toString() + 'px)';
+      }
+    }
+
+    window.addEventListener('resize', function () {
+      if(window.innerWidth < 768 && document.body.classList.contains('menu-is-active')) {
+        for (var i = 0; i < subMenus.length; i++) {
+          subMenus[i].style.height = 'auto';
+        }
+      }
+  });
   }
 
     document.getElementById("burger").addEventListener("click", function(){
@@ -288,6 +313,23 @@ $(document).ready(() => {
       $("body").toggleClass("menu-is-active");
       $('.menu__primary .menu__list > .menu-item > a').parent().removeClass("menu-item--not-active");
       $('.menu__primary .menu__list > .menu-item > a').parent().removeClass("menu-item--active");
+
+      var menuContainerHeight  = document.getElementById('menu').offsetHeight;
+      console.log(menuContainerHeight);
+      var menuHeight  = document.getElementById('menu-primary').offsetHeight;
+      console.log(menuHeight);
+      var distanceFromTop = null
+      if(menuContainerHeight > 670) {
+        distanceFromTop = ((menuContainerHeight - menuHeight) / 2);
+      } else {
+        distanceFromTop = 150;
+      }
+        var subMenus = document.getElementsByClassName("sub-menu");
+      for (var i = 0; i < subMenus.length; i++) {
+        if(window.innerWidth > 768) {
+          subMenus[i].style.height = 'calc(100vh - '+ distanceFromTop.toString() + 'px)';
+        }
+      }
     });
 
     /* avoid old iframe and perform video to play in content */
