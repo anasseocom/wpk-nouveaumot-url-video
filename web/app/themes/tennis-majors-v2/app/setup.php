@@ -55,8 +55,7 @@ add_action('after_setup_theme', function () {
     add_theme_support('soil', [
         'clean-up',
         'nav-walker',
-        'nice-search',
-        'relative-urls'
+        'nice-search'
     ]);
 
     /**
