@@ -28,8 +28,7 @@
         <div class="text-center flex-col flex items-center">
             <img class="rounded-full w-48 flex mt-3" loading="lazy" src="{{ $author_avatar_url }}">
             <h1 class="uppercase text-4xl lg:text-6xl inline-flex">
-                        <span class="block">{{ $first_name }}</span>
-                        <span class="font-bold block">{{ $last_name }}</span>
+                        <span class="block">{{ $first_name }} </span><span class="font-bold block">{{ $last_name }}</span>
                     </h1>
             <div  class="flex my-4">
                 @if ($twitter)
