@@ -27,3 +27,17 @@ ul.page-numbers {
         }
     }
 }
+
+.bg-black {
+    .facetwp-pager {
+        @apply flex -mx-1;
+    
+            .facetwp-page {
+                @apply mx-1 px-3 py-2 text-white uppercase text-xs;
+    
+                &.active {
+                    @apply bg-white rounded-full text-black;
+                }
+            }
+    }
+}
