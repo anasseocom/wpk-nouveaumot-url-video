@@ -5,7 +5,7 @@
 	//$legende_diapo = '';
 ?>
     <div class="view_all_articles">
-    	<a href="<?php echo $all_diaporama; ?>">{{ __('See all galeries', 'sage') }}</a>
+
     </div>
 	<div class='block_diapo'>
 		<div class='visu_block'>
