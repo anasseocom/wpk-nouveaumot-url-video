@@ -60,6 +60,10 @@ header {
             & > .menu-item {
                 @apply text-3xl sm:text-5xl font-bold my-2 uppercase transition-opacity duration-200 ease-in-out max-w-full sm:max-w-1/2;
                 width: max-content;
+
+                a {
+                    cursor: pointer;
+                }
     
                 &.menu-item--active {
                     @apply opacity-100;

@@ -274,6 +274,13 @@ $(document).ready(() => {
         }
       }
     });
+
+    var menuLinks = document.getElementsByClassName("menu-item");
+    for (var i = 0; i < menuLinks.length; i++) {
+      if(menuLinks[i].firstChild.getAttribute('href') == "#") {
+        menuLinks[i].firstChild.removeAttribute('href');
+      }
+    }
   }
 
     document.getElementById("burger").addEventListener("click", function(){
