@@ -1,5 +1,7 @@
 @php
     global $wp_query;
+    $wp_query->set('posts_per_page', 12);
+    $wp_query->query($wp_query->query_vars);
     $author = $wp_query->get_queried_object();
     $id = $author->ID;
     $author_is_major = get_field('user_is_major', 'user_'. $id);
