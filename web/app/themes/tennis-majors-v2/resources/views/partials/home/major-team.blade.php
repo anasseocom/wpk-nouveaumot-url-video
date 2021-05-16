@@ -9,10 +9,18 @@
             <h2 class="text-4xl uppercase text-black text-center pb-2">{{ __('A major', 'sage')}}  <span class="font-bold">{{ __('team', 'sage')}}</span></h2>
             <p class="text-center pb-8">{{ __('The best tennis writer and experts are there', 'sage')}}</p>
         </div>
-        <div id="major-team-slider">
-            @foreach( $major_team_on_top as $user_id)
-                @include('partials.common.author-major')
-            @endforeach
+        <div class="relative">
+            <div id="major-team--arrow-left" class="absolute z-10 shadow-lg rounded-full cursor-pointer transform -translate-y-1/2 top-1/2 w-16 left-4 cursor-pointer">
+                @include('partials.images.slider-arrow-left')
+            </div>
+            <div id="major-team--arrow-right" class="absolute z-10 shadow-lg rounded-full cursor-pointer transform -translate-y-1/2 top-1/2 w-16 right-4 cursor-pointer">
+                @include('partials.images.slider-arrow-right')
+            </div>
+            <div id="major-team-slider">
+                @foreach( $major_team_on_top as $user_id)
+                    @include('partials.common.author-major')
+                @endforeach
+            </div>
         </div>
         <div class="flex flex-col items-center mb-12">
             @if($my_current_lang =='fr')
