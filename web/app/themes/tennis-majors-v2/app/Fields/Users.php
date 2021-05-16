@@ -41,6 +41,15 @@ class Users extends Field
                 'return_format' => 'url',
             ])
 
+            ->addTextarea('bio_in_fr', [
+                'label' => 'Bio in French',
+                'instructions' => 'Your bio, but in French',
+                'required' => 0,
+                'maxlength' => '750',
+                'new_lines' => '', // Possible values are 'wpautop', 'br', or ''.
+            ])
+
+
             ->addImage('user_image', [
                 'label' => 'Major user image',
             ])

@@ -11,6 +11,7 @@
     $instagram = get_field('user_instagram', 'user_'. $id);
     $post_on_top = get_field('user_post_on_top', 'user_'. $id);
     $my_current_lang = apply_filters( 'wpml_current_language', NULL );
+    $bio_fr = get_field('bio_in_fr', 'user_'. $id);
 @endphp
 <div>
     <div class="px-4">
@@ -42,7 +43,15 @@
                 @endif
             </div>
             <div class="flex items-center max-w-screen-sm mb-3">
-                {{ $description }} 
+            @php
+@endphp
+@if($my_current_lang =='fr')         
+{{ $bio_fr }}
+@endif
+@if($my_current_lang =='en')
+{{ $description }} 
+@endif
+                
             </div>
         </div>
         @if($post_on_top)
