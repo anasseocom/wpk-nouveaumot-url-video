@@ -41,6 +41,15 @@ class Users extends Field
                 'return_format' => 'url',
             ])
 
+            ->addTextarea('bio_in_fr', [
+                'label' => 'Bio in French',
+                'instructions' => 'Your bio, but in French',
+                'required' => 0,
+                'maxlength' => '750',
+                'new_lines' => '', // Possible values are 'wpautop', 'br', or ''.
+            ])
+
+
             ->addImage('user_image', [
                 'label' => 'Major user image',
             ])
@@ -51,8 +60,13 @@ class Users extends Field
                     'post_type' => [0 => 'post', 1 => 'videos'],
                     'multiple' => 0,
                 ])
+                ->conditional('user_is_major', '==', '0')
+                ->addPostObject('user_post_on_top_fr', [
+                    'label' => 'Post on top FR',
+                    'post_type' => [0 => 'post', 1 => 'videos'],
+                    'multiple' => 0,
+                ])
                 ->conditional('user_is_major', '==', '0');
-
         return $users->build();
     }
 }

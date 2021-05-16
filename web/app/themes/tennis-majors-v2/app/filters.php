@@ -59,13 +59,3 @@ function my_convert_restrict($query) {
         }
     }
 }
-
-add_filter('acf/fields/post_object/query/key=field_609d643585ea9', 'my_acf_fields_post_object_query', 10, 3);
-function my_acf_fields_post_object_query( $args, $field, $post_id ) {
-
-    // Show 40 posts per AJAX call.
-    $args['orderby'] = 'relevance';
-    $args['order'] = 'DESC';
-
-    return $args;
-}

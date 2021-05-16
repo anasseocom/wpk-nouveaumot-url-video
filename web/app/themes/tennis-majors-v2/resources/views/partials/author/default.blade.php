@@ -10,7 +10,9 @@
     $twitter = get_field('user_twitter', 'user_'. $id);
     $instagram = get_field('user_instagram', 'user_'. $id);
     $post_on_top = get_field('user_post_on_top', 'user_'. $id);
+    $post_on_top_fr = get_field('user_post_on_top_fr', 'user_'. $id);
     $my_current_lang = apply_filters( 'wpml_current_language', NULL );
+    $bio_fr = get_field('bio_in_fr', 'user_'. $id);
 @endphp
 <div>
     <div class="px-4">
@@ -42,10 +44,45 @@
                 @endif
             </div>
             <div class="flex items-center max-w-screen-sm mb-3">
-                {{ $description }} 
+
+@if($my_current_lang =='fr')         
+{{ $bio_fr }}
+@endif
+@if($my_current_lang =='en')
+{{ $description }} 
+@endif
+                
             </div>
         </div>
-        @if($post_on_top)
+        @if($my_current_lang =='fr')         
+        @if($post_on_top_fr)
+            <div class="mt-10 max-w-screen-lg m-auto">
+                <a href="{{ the_permalink() }}">
+                    <div class="grid grid-cols-12 gap-8 mt-6">
+                        @php
+                            global $post;
+                            $post = $post_on_top_fr;
+                            setup_postdata($post);
+                        @endphp
+                        <div class="col-span-12 md:col-span-8">
+                            {{ the_post_thumbnail('16-9_md') }}
+                        </div>
+                        <div class="col-span-12 md:col-span-4">
+                            <div class="text-xs">@include('partials.single.common.time-bilingue')</div>
+                            <h3 class="font-bold text-xl my-2">{{ the_title() }}</h3>
+                            @if(has_excerpt())
+                                <div class="mb-5">{{ wp_trim_words( get_the_excerpt(), 13, '...' ) }}</div>
+                            @endif
+                            @include('partials.common.author')
+                        </div>
+                        @php wp_reset_postdata() @endphp
+                    </div>
+                </a>
+            </div>
+        @endif
+@endif
+@if($my_current_lang =='en')
+@if($post_on_top)
             <div class="mt-10 max-w-screen-lg m-auto">
                 <a href="{{ the_permalink() }}">
                     <div class="grid grid-cols-12 gap-8 mt-6">
@@ -70,6 +107,7 @@
                 </a>
             </div>
         @endif
+@endif
 
         <div class="mt-20 max-w-screen-lg m-auto">
             <h2 class="uppercase">{{ __('Last', 'sage') }} <span class="font-bold">articles</span></h2>

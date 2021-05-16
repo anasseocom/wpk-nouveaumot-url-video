@@ -67,6 +67,9 @@ $(document).ready(() => {
       infinite: true,
       slidesToShow: 5,
       centerMode: true,
+      autoplay: true,
+      slidesToScroll: 2,
+      swipeToSlide: true,
       prevArrow: null,
       nextArrow: null,
       responsive: [
