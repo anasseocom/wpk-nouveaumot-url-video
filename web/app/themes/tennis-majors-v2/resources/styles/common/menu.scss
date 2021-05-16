@@ -83,7 +83,7 @@ header {
             }
     
             ul.sub-menu {
-                @apply pl-6 pt-2 text-sm hidden sm:absolute sm:left-1/2 sm:top-0 sm:pl-40 sm:opacity-0;
+                @apply pl-6 pt-2 text-sm hidden sm:absolute sm:left-1/2 sm:top-0 sm:pl-40 sm:opacity-0 overflow-y-scroll h-full;
     
                 li {
                     @apply text-xl sm:text-2xl capitalize mb-2;
