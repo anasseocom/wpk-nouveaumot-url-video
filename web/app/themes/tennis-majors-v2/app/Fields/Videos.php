@@ -20,20 +20,21 @@ class Videos extends Field
             ->setLocation('post_type', '==', 'videos');
 
         $videos
-            ->addUrl('video_url', [
+
+            ->addOembed('video_url', [
                 'label' => 'Video URL',
-                'required' => 1,
-                'placeholder' => 'Exemple : https://www.dailymotion.com/embed/video/x806y40',
+                'instructions' => '',
+                'required' => 0,
             ])
 
             ->addPostObject('video_previous', [
-                'label' => 'Previous',
+                'label' => __('Previous', 'sage'),
                 'post_type' => [0 => 'videos'],
                 'multiple' => 0,
             ])
 
             ->addPostObject('video_next', [
-                'label' => 'Next',
+                'label' => __('Next', 'sage'),
                 'post_type' => [0 => 'videos'],
                 'multiple' => 0,
             ])

@@ -5,7 +5,7 @@
 
 <div class="flex flex-row items-center mt-4">
     <div>
-        <img class="rounded-full w-6 flex" loading="lazy" src="{{ $author_avatar_url }}">
+        <img class="rounded-full w-6 flex" alt="{{ __('Profile Picture of ', 'sage') }}{{ $author_name }}" loading="lazy" src="{{ $author_avatar_url }}">
     </div>
     <div class="ml-2 uppercase text-xs">{{ $author_name }}</div>
 </div>

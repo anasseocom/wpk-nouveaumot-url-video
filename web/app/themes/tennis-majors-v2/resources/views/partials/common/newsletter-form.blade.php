@@ -1,7 +1,7 @@
 <div id="newsletter" class="newsletter-form">
     <div class="newsletter-form-container">
         <div class="newsletter-form-image-box">
-               <img src="@asset('/images/phone-newsletter-home.png')" class="absolute bottom-0">
+               <img src="@asset('/images/phone-newsletter-home.png')" alt="Packshot Newsletter" class="absolute bottom-0">
                <div class="padding">
                </div>
         </div>

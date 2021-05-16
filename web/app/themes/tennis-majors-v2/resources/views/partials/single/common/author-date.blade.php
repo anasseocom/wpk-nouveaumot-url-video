@@ -24,7 +24,7 @@
               <a href="{{ $user_url }}" class="grid gap-4 grid-cols-12 p-2">
                 <div class="col-span-3 flex items-center">
                   <div class="w-full pb-1/1 relative">
-                    <img class="rounded-full w-full h-full object-cover absolute top-0" loading="lazy" src="{{ $avatar_url }}">
+                    <img class="rounded-full w-full h-full object-cover absolute top-0" alt="{{ __('Profile Picture of ', 'sage') }}{{ $last_name }}" loading="lazy" src="{{ $avatar_url }}">
                   </div>
                 </div>
                 <div class="col-span-9 flex items-center">
@@ -49,7 +49,7 @@
               <a href="{{ $user_url }}" class="grid gap-4 grid-cols-12 p-2">
                 <div class="col-span-3 flex items-center">
                   <div class="w-full pb-1/1 relative">
-                    <img class="rounded-full w-full h-full object-cover absolute top-0" loading="lazy" src="{{ $avatar_url }}">
+                    <img class="rounded-full w-full h-full object-cover absolute top-0" alt="{{ __('Profile Picture of ', 'sage') }}{{ $last_name }}" loading="lazy" src="{{ $avatar_url }}">
                   </div>
                 </div>
                 <div class="col-span-9 flex items-center">
@@ -74,7 +74,7 @@
               <a href="{{ $user_url }}" class="grid gap-4 grid-cols-12 p-2">
                 <div class="col-span-3 flex items-center">
                   <div class="w-full pb-1/1 relative">
-                    <img class="rounded-full w-full h-full object-cover absolute top-0" loading="lazy" src="{{ $avatar_url }}">
+                    <img class="rounded-full w-full h-full object-cover absolute top-0" alt="{{ __('Profile Picture of ', 'sage') }}{{ $last_name }}" loading="lazy" src="{{ $avatar_url }}">
                   </div>
                 </div>
                 <div class="col-span-9 flex items-center">
@@ -94,7 +94,7 @@
     <a href="@authorurl" rel="author">
       <div class="flex flex-row items-center my-6">
         <div>
-            <img class="rounded-full w-10 md:w-14 flex" loading="lazy" src="{{ $author_avatar_url }}">
+            <img class="rounded-full w-10 md:w-14 flex" alt="{{ __('Profile Picture of ', 'sage') }}{{ $author_name }}" loading="lazy" src="{{ $author_avatar_url }}">
         </div>
         <div class="ml-4">
           <div class="font-bold">{{ $author_name }}</div>
