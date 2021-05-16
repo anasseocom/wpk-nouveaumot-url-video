@@ -13,7 +13,16 @@
         </div>
         <div class="newsletter-form-form">
             <div class="">
-                form
+            @php
+$my_current_lang = apply_filters( 'wpml_current_language', NULL );
+@endphp
+@if($my_current_lang =='fr')         
+@shortcode('[ninja_form id=9]')
+@endif
+@if($my_current_lang =='en')
+@shortcode('[ninja_form id=10]')
+@endif
+            
             </div>
         </div>
     </div>
