@@ -14,7 +14,7 @@
                 @include('partials.common.author-major')
             @endforeach
         </div>
-        <div class="flex flex-col items-center my-8">
+        <div class="flex flex-col items-center mb-12">
             @if($my_current_lang =='fr')
                 <a href="{{ get_permalink( get_page_by_path( 'dream-team' ) )}}" class="btn btn--arrow-right">{{ __('Discover all', 'sage') }}</a>
             @endif
