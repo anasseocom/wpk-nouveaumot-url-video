@@ -83,8 +83,8 @@
         <div class="max-w-screen-lg m-auto">
             <div class="grid grid-cols-12 md:gap-x-8 py-12 mx-4">
                 <div class="col-span-12 md:col-span-9">
-                    <div class="flex justify-between items-center mb-4">
-                        <div class="uppercase text-xl font-bold">
+                    <div class="md:flex md:justify-between md:items-center md:mb-4 pb-3 mb:pb-0">
+                        <div class="uppercase text-xl font-bold pb-3 mb:pb-0">
                             The
                             @if($count_episodes == 1)
                             {{ __('episode', 'sage') }}
