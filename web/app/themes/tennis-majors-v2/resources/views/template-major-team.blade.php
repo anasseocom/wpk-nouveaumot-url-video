@@ -51,7 +51,7 @@
             <div class="border-b-2 border-black mt-20 pb-4">
                 <div class="uppercase">{{ __('Their', 'sage') }} <span class="font-bold">{{ __('Articles', 'sage') }}</span></div>
             </div>
-            <div class="grid grid-cols-4 gap-4 mt-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
             @foreach( $author_users as $user)
                 @php
                     $user_is_major = get_field('user_is_major', 'user_'. $user);
