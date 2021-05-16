@@ -20,8 +20,10 @@ class Home extends Field
             ->setLocation('options_page', '==', 'home-edition');
 
         $home
-            ->addUrl('live_video_url', [
-                'label' => 'Video live URL',
+            ->addOembed('live_video_url', [
+                'label' => 'Video Live URL',
+                'instructions' => '',
+                'required' => 0,
             ])
 
             ->addPostObject('posts_on_top', [

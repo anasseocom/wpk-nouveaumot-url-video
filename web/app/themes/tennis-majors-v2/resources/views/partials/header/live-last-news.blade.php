@@ -4,7 +4,32 @@
             <div class="grid grid-cols-12 md:gap-x-20">
                 <div class="col-span-12 md:col-span-4">
                     <div class="relative w-full h-0 overflow-hidden pb-16/9">
-                        <iframe class="w-full h-full absolute left-0 top-0 overflow-hidden" title="{{ __('Playlist of our latest video and audio content', 'sage') }}" frameborder="0" type="text/html" src="{{ the_field('live_video_url', 'option')}}?mute=1?autoplay=1" width="100%" height="100%" allowfullscreen allow="autoplay"> </iframe>
+                    @php
+        // Load value.
+$iframe = get_field('live_video_url');
+
+// Use preg_match to find iframe src.
+preg_match('/src="(.+?)"/', $iframe, $matches);
+$src = $matches[1];
+
+// Add extra parameters to src and replcae HTML.
+$params = array(
+    'controls'  => 1,
+    'hd'        => 1,
+    'autohide'  => 1,
+    'autoplay' =>1,
+    'mute' => 1,
+);
+$new_src = add_query_arg($params, $src);
+$iframe = str_replace($src, $new_src, $iframe);
+
+// Add extra attributes to iframe HTML.
+$attributes = 'class="w-full h-full absolute left-0 top-0 overflow-hidden" frameborder="0"';
+$iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
+
+// Display customized HTML.
+echo $iframe;
+@endphp
                     </div>
                 </div>
                 <div class="col-span-12 md:col-span-8">
