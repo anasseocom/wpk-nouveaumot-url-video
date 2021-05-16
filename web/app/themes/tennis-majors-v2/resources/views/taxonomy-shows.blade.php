@@ -16,7 +16,6 @@
                 ),
             ),
         'posts_per_page' => 12,
-        'paged'          => get_query_var( 'paged' ),
         'facetwp' => true,
         );
 
@@ -99,7 +98,7 @@
                             @include('partials.common.preview-video')
                         @endposts
                     </div>
-                    <?php pagination(); ?>
+                    <?php echo do_shortcode('[facetwp facet="pagination"]') ?>
                     <?php wp_reset_query(); ?>
                 </div>
                 <div class="col-span-3">
