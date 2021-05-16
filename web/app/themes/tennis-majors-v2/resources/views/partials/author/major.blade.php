@@ -10,6 +10,7 @@
     $instagram = get_field('user_instagram', 'user_'. $id);
     $image = get_field('user_image', 'user_'. $id);
     $my_current_lang = apply_filters( 'wpml_current_language', NULL );
+    $bio_fr = get_field('bio_in_fr', 'user_'. $id);
 @endphp
 <div class="bg-black text-white px-4">
     <div class="max-w-screen-xl m-auto pt-14 md:pt-20 relative">
@@ -50,7 +51,14 @@
                     </h1>
                 </div>
                 <div class="mt-7">
-                    {{ $description }} 
+                  
+@if($my_current_lang =='fr')         
+{{ $bio_fr }}
+@endif
+@if($my_current_lang =='en')
+{{ $description }} 
+@endif
+             
                 </div>
             </div>
         </div>
