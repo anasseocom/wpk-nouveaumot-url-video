@@ -5,7 +5,7 @@
 	//$legende_diapo = '';
 ?>
     <div class="view_all_articles">
-
+    	<a href="<?php echo $all_diaporama; ?>">SEE ALL</a>
     </div>
 	<div class='block_diapo'>
 		<div class='visu_block'>
