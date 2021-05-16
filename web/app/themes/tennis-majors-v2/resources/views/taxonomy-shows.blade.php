@@ -9,7 +9,7 @@ $args = array(
         array(
             'taxonomy' => 'video-types',
             'field'    => 'name',
-            'terms'    => 'test',
+            'terms'    => 'episodes',
         ),
     ),
 );
