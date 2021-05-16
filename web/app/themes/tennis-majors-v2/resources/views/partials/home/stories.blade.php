@@ -24,7 +24,7 @@
                                         {{ $i + 1 }}
                                     </div>
                                 </div>     
-                                <h3 class="font-bold capitalize">{{ the_title() }}</h3>
+                                <h3 class="font-bold">{{ the_title() }}</h3>
                                 @if(get_post_type($post) == "curations")
                                     <div class="flex mt-3">
                                         <div class="flex w-8 items-center">
