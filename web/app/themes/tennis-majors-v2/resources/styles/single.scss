@@ -280,3 +280,15 @@
 .videos .content .inherited-shortcode-iframe {
     display: none;
 }
+
+@media only screen and (max-width: 600px) {
+    .article-container,
+    .single-videos {
+        .content {
+            .instagram-media, .twitter-tweet {
+                margin: 2rem 1rem !important;
+                width: 100% !important;
+            }
+        }
+    }
+}
