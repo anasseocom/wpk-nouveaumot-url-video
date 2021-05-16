@@ -8,7 +8,31 @@
     @if(get_field('video_url'))
     <div class="max-w-screen-lg m-auto">
         <div id='player' class="relative h-0 overflow-hidden pb-16/9">
-        <iframe class="w-full h-full absolute left-0 top-0 overflow-hidden" frameborder="0" type="text/html" src="@field('video_url')?autoplay=1" width="100%" height="100%" allowfullscreen allow="autoplay"> </iframe>
+        @php
+        // Load value.
+$iframe = get_field('video_url');
+
+// Use preg_match to find iframe src.
+preg_match('/src="(.+?)"/', $iframe, $matches);
+$src = $matches[1];
+
+// Add extra parameters to src and replcae HTML.
+$params = array(
+    'controls'  => 1,
+    'hd'        => 1,
+    'autohide'  => 1,
+    'autoplay' =>1,
+);
+$new_src = add_query_arg($params, $src);
+$iframe = str_replace($src, $new_src, $iframe);
+
+// Add extra attributes to iframe HTML.
+$attributes = 'class="w-full h-full absolute left-0 top-0 overflow-hidden" frameborder="0" ';
+$iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
+
+// Display customized HTML.
+echo $iframe;
+@endphp
         </div>
     </div>
     @endif
