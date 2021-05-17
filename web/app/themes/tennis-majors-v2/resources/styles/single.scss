@@ -21,6 +21,10 @@
             }
         }
 
+        .wp-block-media-text {
+            @apply flex max-w-screen-sm mx-8 my-auto align-middle;
+        }
+
         .image-player {
             @apply absolute block object-cover w-full h-full pt-0 pb-0;
         }
