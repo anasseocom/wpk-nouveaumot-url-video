@@ -1,6 +1,6 @@
-<a href="{{ the_permalink() }}" class="preview preview--video block">
+<a href="{{ the_permalink() }}" class="preview preview--video block group">
     {{ the_post_thumbnail('16-9_xxs', array('class' => 'thumbnail 16-9_xxs')) }}
-    <div class="gradient"></div>
+    <div class="gradient opacity-90 group-hover:opacity-80 transition-opacity ease-in duration-200"></div>
     <div class="h-full">
         <div class="w-screen h-full"></div>
         <div class="p-4 h-full top-0 left-0">

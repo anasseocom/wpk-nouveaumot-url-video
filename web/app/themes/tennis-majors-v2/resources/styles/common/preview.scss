@@ -56,7 +56,8 @@
         }
 
         .gradient {
-            @apply absolute w-full h-full object-cover top-0 left-0 bg-gradient-to-t from-black to-transparent opacity-80;
+            @apply absolute w-full h-full object-cover top-0 left-0 bg-gradient-to-t from-black to-transparent;
+            transition: opacity 0.2s ease;
         }
 
         .content {
@@ -80,7 +81,7 @@
         }
 
         .gradient {
-            @apply absolute w-full h-full object-cover top-0 left-0 bg-gradient-to-t from-black to-transparent opacity-100;
+            @apply absolute w-full h-full object-cover top-0 left-0 bg-gradient-to-t from-black to-transparent;
         }
 
         .title {
