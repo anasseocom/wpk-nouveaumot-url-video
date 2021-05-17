@@ -15,7 +15,7 @@ function create_people_taxonomy() {
     'menu_name' => __( 'People' ),
   );    
 
-  register_taxonomy('people',array('post'), array(
+  register_taxonomy('people',array('post', 'videos', 'curations'), array(
     'hierarchical' => true,
     'labels' => $labels,
     'show_ui' => true,
