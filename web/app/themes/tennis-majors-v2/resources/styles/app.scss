@@ -270,3 +270,85 @@
         @apply underline;
     }
 }
+
+.nf-form {
+    .nf-form-cont {
+        form {
+            .nf-form-content {
+                padding: 0;
+            }
+
+            nf-field-wrap {
+                input.nf-element {
+
+                }
+            }
+
+            .nf-field-label label {
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.nf-form-content .list-select-wrap .nf-field-element > div, .nf-form-content input:not([type="button"]), .nf-form-content textarea {
+    background: black !important;
+    border: 2px solid white !important;
+}
+
+.checkbox-wrap .nf-field-element label::after, .checkbox-wrap .nf-field-label label::after, .listcheckbox-wrap .nf-field-element label::after, .listcheckbox-wrap .nf-field-label label::after {
+    background: black;
+    transition: all .5s;
+    border-radius: 100%;
+    border: 2px solid white !important;
+}
+
+.checkbox-wrap .nf-field-element label.nf-checked-label::before, .checkbox-wrap .nf-field-label label.nf-checked-label::before, .listcheckbox-wrap .nf-field-element label.nf-checked-label::before, .listcheckbox-wrap .nf-field-label label.nf-checked-label::before {
+    color: white;
+    opacity: 100;
+    transition: all .5s;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 100%;
+    position: absolute;
+    left: -24px;
+    top: 4px;
+}
+
+.checkbox-wrap .nf-field-element label::before, .checkbox-wrap .nf-field-label label::before, .listcheckbox-wrap .nf-field-element label::before, .listcheckbox-wrap .nf-field-label label::before {
+    color: #f7f7f7;
+    opacity: 0;
+    transition: all .5s;
+    content: "";
+    width: 0;
+    height: 0;
+    left: -19px;
+    position: absolute;
+    top: 9px;
+    cursor: pointer;
+}
+
+element {
+
+}
+.nf-form-content button, .nf-form-content input[type="button"], .nf-form-content input[type="submit"] {
+    transition: all .5s;
+    margin: 0 .25rem;
+    margin-bottom: 0px;
+    margin-bottom: 0px;
+    border-radius: 1.5rem;
+    border-width: 1px;
+    padding: .5rem 1.5rem;
+    padding-left: 1.5rem;
+    padding-left: 1.5rem;
+    font-size: .75rem;
+    line-height: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: white !important;
+    color: black !important;
+    height: auto;
+    cursor: pointer;
+}
