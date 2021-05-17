@@ -1,7 +1,7 @@
 <a href="{{ the_permalink() }}" class="preview preview--basic">
     @if(has_post_thumbnail())
         <div class="thumbnail">
-            {{ the_post_thumbnail('16-9_md') }}
+        {{ the_post_thumbnail('16-9_xxs') }}
         </div>
     @endif
     <div class="content mt-4">

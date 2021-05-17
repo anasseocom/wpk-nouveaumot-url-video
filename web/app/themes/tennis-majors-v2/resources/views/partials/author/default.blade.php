@@ -61,14 +61,15 @@
         </div>
         @if($my_current_lang =='fr')         
         @if($post_on_top_fr)
-            <div class="mt-10 max-w-screen-lg m-auto">
-                <a href="{{ the_permalink() }}">
-                    <div class="grid grid-cols-12 gap-8 mt-6">
-                        @php
+        @php
                             global $post;
                             $post = $post_on_top_fr;
                             setup_postdata($post);
                         @endphp
+            <div class="mt-10 max-w-screen-lg m-auto">
+                <a href="{{ the_permalink() }}">
+                    <div class="grid grid-cols-12 gap-8 mt-6">
+                        
                         <div class="col-span-12 md:col-span-8">
                             {{ the_post_thumbnail('16-9_md') }}
                         </div>
@@ -88,14 +89,15 @@
 @endif
 @if($my_current_lang =='en')
 @if($post_on_top)
-            <div class="mt-10 max-w-screen-lg m-auto">
-                <a href="{{ the_permalink() }}">
-                    <div class="grid grid-cols-12 gap-8 mt-6">
-                        @php
+@php
                             global $post;
                             $post = $post_on_top;
                             setup_postdata($post);
                         @endphp
+            <div class="mt-10 max-w-screen-lg m-auto">
+                <a href="{{ the_permalink() }}">
+                    <div class="grid grid-cols-12 gap-8 mt-6">
+                        
                         <div class="col-span-12 md:col-span-8">
                             {{ the_post_thumbnail('16-9_md') }}
                         </div>
