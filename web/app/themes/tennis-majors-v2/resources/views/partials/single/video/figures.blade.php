@@ -43,7 +43,7 @@
             @foreach( $users as $user)
               @php
                 $user_id = $user->ID;
-                $avatar_url = get_field('user_avatar', 'user_'. $user_id);
+                $avatar = get_field('user_avatar', 'user_'. $user_id);
                 $first_name = get_user_meta( $user_id, 'first_name', true );
                 $last_name = get_user_meta( $user_id, 'last_name', true );
                 $role = p2p_get_meta( $user->p2p_id, 'role', true );
