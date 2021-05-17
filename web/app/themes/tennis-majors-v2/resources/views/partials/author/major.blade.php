@@ -70,7 +70,7 @@
                     'from' => 'videos',
                     'connected_items' => $wp_query->get_queried_object(),
                     'connected_meta' => array(
-                        'role' => array( 'Guest', 'Host')
+                        'role' => array( __('Host', 'sage'), __('Guest', 'sage'))
                     ),
                     'nopaging' => true
                     ) );
