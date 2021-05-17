@@ -10,10 +10,10 @@
             <p class="text-center pb-8">{{ __('The best tennis writer and experts are there', 'sage')}}</p>
         </div>
         <div class="relative">
-            <div id="major-team--arrow-left" class="absolute z-10 shadow-lg rounded-full cursor-pointer transform -translate-y-1/2 top-1/2 w-16 left-4 cursor-pointer">
+            <div id="major-team--arrow-left" class="hidden sm:block absolute z-10 shadow-lg rounded-full cursor-pointer transform -translate-y-1/2 top-1/2 w-16 left-4 cursor-pointer">
                 @include('partials.images.slider-arrow-left')
             </div>
-            <div id="major-team--arrow-right" class="absolute z-10 shadow-lg rounded-full cursor-pointer transform -translate-y-1/2 top-1/2 w-16 right-4 cursor-pointer">
+            <div id="major-team--arrow-right" class="hidden sm:block absolute z-10 shadow-lg rounded-full cursor-pointer transform -translate-y-1/2 top-1/2 w-16 right-4 cursor-pointer">
                 @include('partials.images.slider-arrow-right')
             </div>
             <div id="major-team-slider">

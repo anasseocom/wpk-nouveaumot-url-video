@@ -72,6 +72,7 @@ $(document).ready(() => {
       autoplay: true,
       slidesToScroll: 2,
       swipeToSlide: true,
+      arrows: true,
       prevArrow: majorButtonLeft,
       nextArrow: majorButtonRight,
       responsive: [
@@ -81,6 +82,9 @@ $(document).ready(() => {
             slidesToShow: 3,
             infinite: true,
             centerPadding: '10vw',
+            arrows: true,
+            prevArrow: majorButtonLeft,
+            nextArrow: majorButtonRight,
           },
         },
         {
@@ -89,8 +93,7 @@ $(document).ready(() => {
             slidesToShow: 1,
             infinite: true,
             centerPadding: '20vw',
-            prevArrow: majorButtonLeft,
-            nextArrow: majorButtonRight,
+            arrows: false,
           },
         },
       ],
