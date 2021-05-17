@@ -38,7 +38,6 @@ class Users extends Field
 
             ->addImage('user_avatar', [
                 'label' => 'Avatar',
-                'return_format' => 'url',
             ])
 
             ->addTextarea('bio_in_fr', [

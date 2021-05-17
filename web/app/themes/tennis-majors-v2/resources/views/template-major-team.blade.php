@@ -63,7 +63,7 @@
                 <div>
                     <div class="flex flex-row items-center my-6">
                         <div>
-                            <img class="rounded-full w-20 flex" loading="lazy" src="{{ $author_avatar_url }}">
+                            <img class="rounded-full w-20 flex" loading="lazy" src="{{ $author_avatar_url['sizes']['1-1_sm'] }}">
                         </div>
                         <div class="ml-4">
                         <div class="uppercase">{{ $first_name}} <span class="font-bold">{{$last_name }}</span></div>
