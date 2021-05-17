@@ -6,7 +6,7 @@
 @if( $stories_on_top )
     <div id="top-stories" class="pt-20 pb-8 pl-4 relative">
         <div class="max-w-screen-lg m-auto">
-            <h2 class="text-4xl uppercase pl-4 text-black pb-8"><span class="font-bold">10</span> {{ __('stories', 'sage') }} <span class="font-bold">{{ __('to read now', 'sage') }}</span></h2>
+            <h2 class="text-4xl uppercase pl-4 text-black pb-8"><span class="font-bold">10</span> {{ __('stories', 'sage') }} <span class="font-bold">{{ __('to check out now', 'sage') }}</span></h2>
         </div>
         <div class="-ml-2">
             <div id="top-stories-slider" class="flex overflow-x-auto scrolling-touch snap-type-mandatory scrollbar-hidden">

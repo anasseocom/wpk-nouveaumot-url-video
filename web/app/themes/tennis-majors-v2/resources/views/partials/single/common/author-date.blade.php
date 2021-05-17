@@ -20,7 +20,7 @@
               $last_name = get_user_meta( $user_id, 'last_name', true );
               $role = p2p_get_meta( $user->p2p_id, 'role', true );
             @endphp
-            @if($role == 'Author' || $role == 'Auteur')
+            @if($role == 'Author' || $role == 'Auteur' || $role == __('Author', 'sage'))
               <a href="{{ $user_url }}" class="grid gap-4 grid-cols-12 p-2">
                 <div class="col-span-3 flex items-center">
                   <div class="w-full pb-1/1 relative">
@@ -45,7 +45,7 @@
               $last_name = get_user_meta( $user_id, 'last_name', true );
               $role = p2p_get_meta( $user->p2p_id, 'role', true );
             @endphp
-            @if($role == 'Writer' || $role == 'Rédacteur')
+            @if($role == 'Writer' || $role == 'Rédacteur' || $role == __('Writer', 'sage'))
               <a href="{{ $user_url }}" class="grid gap-4 grid-cols-12 p-2">
                 <div class="col-span-3 flex items-center">
                   <div class="w-full pb-1/1 relative">
@@ -70,7 +70,7 @@
               $last_name = get_user_meta( $user_id, 'last_name', true );
               $role = p2p_get_meta( $user->p2p_id, 'role', true );
             @endphp
-            @if($role == 'Co-writer' || $role == 'Co-rédacteur')
+            @if($role == 'Co-writer' || $role == 'Co-rédacteur' || $role == __('Co-writer', 'sage'))
               <a href="{{ $user_url }}" class="grid gap-4 grid-cols-12 p-2">
                 <div class="col-span-3 flex items-center">
                   <div class="w-full pb-1/1 relative">

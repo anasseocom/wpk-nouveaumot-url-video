@@ -28,9 +28,9 @@
                         @endif
         </div>
         <div class="text-center flex-col flex items-center">
-            <img class="rounded-full w-48 flex mt-3" loading="lazy" src="{{ $author_avatar_url['sizes']['1-1_sm'] }}">
+            <img class="rounded-full w-48 flex mt-3" loading="lazy" src="{{ $author_avatar_url['sizes']['1-1_md'] }}">
             <h1 class="uppercase text-4xl lg:text-6xl inline-flex">
-                        <span class="block">{{ $first_name }} </span><span class="font-bold block">{{ $last_name }}</span>
+                        <span class="block">{{ $first_name }}</span> <span class="font-bold block"> {{ $last_name }}</span>
                     </h1>
             <div  class="flex my-4">
                 @if ($twitter)
@@ -61,14 +61,15 @@
         </div>
         @if($my_current_lang =='fr')         
         @if($post_on_top_fr)
-            <div class="mt-10 max-w-screen-lg m-auto">
-                <a href="{{ the_permalink() }}">
-                    <div class="grid grid-cols-12 gap-8 mt-6">
-                        @php
+        @php
                             global $post;
                             $post = $post_on_top_fr;
                             setup_postdata($post);
                         @endphp
+            <div class="mt-10 max-w-screen-lg m-auto">
+                <a href="{{ the_permalink() }}">
+                    <div class="grid grid-cols-12 gap-8 mt-6">
+                        
                         <div class="col-span-12 md:col-span-8">
                             {{ the_post_thumbnail('16-9_md') }}
                         </div>
@@ -88,14 +89,15 @@
 @endif
 @if($my_current_lang =='en')
 @if($post_on_top)
-            <div class="mt-10 max-w-screen-lg m-auto">
-                <a href="{{ the_permalink() }}">
-                    <div class="grid grid-cols-12 gap-8 mt-6">
-                        @php
+@php
                             global $post;
                             $post = $post_on_top;
                             setup_postdata($post);
                         @endphp
+            <div class="mt-10 max-w-screen-lg m-auto">
+                <a href="{{ the_permalink() }}">
+                    <div class="grid grid-cols-12 gap-8 mt-6">
+                        
                         <div class="col-span-12 md:col-span-8">
                             {{ the_post_thumbnail('16-9_md') }}
                         </div>
@@ -115,7 +117,7 @@
 @endif
 
         <div class="mt-20 max-w-screen-lg m-auto">
-            <h2 class="uppercase">{{ __('Last', 'sage') }} <span class="font-bold">articles</span></h2>
+            <h2 class="uppercase">{{ __('Latest', 'sage') }} <span class="font-bold">articles</span></h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-16 mt-6 mb-28">
                 @posts
                     @include('partials.common.preview-author')

@@ -13,7 +13,11 @@
             }
         }
 
-        p {
+        .h3-question {
+            @apply mb-0;
+        }
+
+        p, .h3-question {
             @apply px-4 text-xl;
 
             &.h2--sub-title {
@@ -22,7 +26,15 @@
         }
 
         .wp-block-media-text {
-            @apply flex max-w-screen-sm mx-8 my-auto align-middle;
+            @apply flex max-w-screen-sm mb-8 mx-auto align-middle;
+        }
+
+        .wp-block-image, .wp-block-embed  {
+            @apply mb-8;
+        }
+
+        .wp-block-embed {
+            @apply h-full;
         }
 
         .image-player {
@@ -42,7 +54,10 @@
                 @apply underline text-gray-700 hover:text-black;
             }
         }
-
+        .wp-block-embed__wrapper {
+            max-width: 86% !important;
+            @apply m-auto;
+        }
         .instagram-media, .twitter-tweet {
             margin: 2rem auto !important;
             width: 100% !important;
@@ -95,7 +110,7 @@
             }
         }
 
-        p {
+        p, .h3-question {
             &.h2--sub-title {
                 @apply text-2xl;
             }
@@ -240,7 +255,7 @@
             }
         }
 
-        p {
+        p, .h3-question {
             &.h2--sub-title {
                 @apply text-2xl;
             }

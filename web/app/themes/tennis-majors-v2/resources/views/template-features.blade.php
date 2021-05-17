@@ -49,7 +49,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16 my-10 lg:my-20">
             @posts($features)
                 @if($j > 5)
-                    @include('partials.common.preview-basic')
+                    @include('partials.common.preview-features')
                 @endif
                 @php
                     $j++;

@@ -1,8 +1,8 @@
 {{--
-  Title: Score Heading
+  Title: Question
   Category: formatting
   Icon: admin-post
-  Keywords: title
+  Keywords: question, interview
   Mode: edit
   Align: left
   PostTypes: page post videos
@@ -11,7 +11,4 @@
   SupportsMultiple: true
 --}}
 
-<div class="pb-2 pt-4">
-    <h2 class="h2--sub-title">@field('title')</h2>
-    <h2 class="h2--two-level">@field('sub_title')</h2>
-</div>
+<h3 class="h3-question pb-2 pt-4 mb-0 font-bold">@field('question')</h3>
