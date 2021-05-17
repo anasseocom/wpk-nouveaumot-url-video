@@ -42,7 +42,9 @@
                 @apply underline text-gray-700 hover:text-black;
             }
         }
-
+        .wp-block-embed__wrapper {
+            max-width: 86% !important;
+        }
         .instagram-media, .twitter-tweet {
             margin: 2rem auto !important;
             width: 100% !important;
