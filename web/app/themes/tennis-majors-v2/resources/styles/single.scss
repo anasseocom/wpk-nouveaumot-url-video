@@ -33,6 +33,10 @@
             @apply mb-8;
         }
 
+        .wp-block-embed {
+            @apply h-full;
+        }
+
         .image-player {
             @apply absolute block object-cover w-full h-full pt-0 pb-0;
         }

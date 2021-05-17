@@ -18,7 +18,7 @@
                     $last_name = get_user_meta( $user_id, 'last_name', true );
                     $role = p2p_get_meta( $user->p2p_id, 'role', true );
                 @endphp
-                @if($role != 'Host' || $role != 'Guest')
+                @if($role != __('Host', 'sage') || $role != __('Guest', 'sage')|| $role != __('Expert', 'sage'))
                     <a href="{{ get_author_posts_url($user_id) }}" class="col-span-1 grid gap-2 grid-cols-12 gap-x-3 mr-4 md:mr-0">
                         <div class="col-span-12 flex items-center">
                             <div>
