@@ -26,3 +26,7 @@ add_image_size( '2-3_lg', 700, 1050, true );
 add_image_size( '2-3_md', 300, 450, true );
 add_image_size( '2-3_sm', 150, 225, true );
 add_image_size( '2-3_xs', 70, 105, true );
+
+add_image_size( '3-1_lg', 1200, 400, true );
+add_image_size( '3-1_md', 600, 200, true );
+add_image_size( '3-1_sm', 360, 120, true );
