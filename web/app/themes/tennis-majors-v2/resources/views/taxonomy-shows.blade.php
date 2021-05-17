@@ -35,7 +35,7 @@ $count_episodes = $query_count_episodes->post_count;
                         </a>
                     </div>
                     <div class="block md:hidden">
-                    <img src="{{ $image['url'] }}">
+                        <img src="{{ $image['url'] }}">
                     </div>
                     <div class="mt-12 mb-5">
                     <h1 class="uppercase text-5xl">{{ $term->name }}</h1>
@@ -51,6 +51,7 @@ $count_episodes = $query_count_episodes->post_count;
                     </div>
                 </div>
                 <div class="col-span-6 md:col-span-3 hidden md:block">
+                    <img src="{{ $image['url'] }}">
                 </div>
             </div>
         </div>
