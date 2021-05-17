@@ -12,7 +12,6 @@
                 padding-bottom: 0 !important;
             }
         }
-        
 
         p {
             @apply px-4 text-xl;
@@ -44,7 +43,10 @@
             margin: 2rem auto !important;
             width: 100% !important;
         }
-
+        
+        iframe {
+            margin: 2rem auto !important;
+        }
         .video-container {
             @apply  relative h-0 pb-16/9 mb-6;
 
@@ -105,7 +107,7 @@
 
         .read-also {
             img  {
-                @apply mt-0 mb-0 md:mt-0 md:mb-0;
+                @apply mt-0 mb-0 md:mt-0 md:mb-0 md:py-0;
             } 
         }
 
@@ -222,7 +224,7 @@
     .content {
         @apply mt-12;
 
-        h1, h2, h3, h4, h5, h6, p, ul, ol {
+        h1, h2, h3, h4, h5, h6, p, ul, ol, .read-also {
             @apply m-auto pb-4 max-w-screen-sm;
         }
 
@@ -248,6 +250,14 @@
             }
         }
 
+        &.alignwide {
+            @apply max-w-screen-xl m-auto;
+        }
+
+        &.alignfull {
+            @apply max-w-full m-auto;
+        }
+
         ul {
             @apply list-disc text-xl pl-20;
         }
@@ -271,6 +281,73 @@
         
             cite {
                 @apply not-italic;
+            }
+        }
+
+        .read-also {
+            img  {
+                @apply mt-0 mb-0 md:mt-0 md:mb-0 md:py-0;
+            } 
+        }
+
+        .wp-block-cover {
+            @apply relative my-12;
+
+            &::before {
+                @apply absolute w-full h-full top-0 left-0 bg-black opacity-50;
+                content: "";
+            }
+        
+            &__image-background {
+                @apply m-0 p-0 w-full;
+            }
+
+            &__inner-container {
+                p {
+                    @apply absolute top-1/2 left-1/2 text-6xl font-bold uppercase w-full max-w-screen-lg text-white transform -translate-x-1/2 -translate-y-1/2 text-center;
+                }
+            }
+        }
+
+        .wp-block-image {
+            @apply relative max-w-screen-sm m-auto pt-8 pb-12;
+        
+            img {
+                @apply w-full p-0;
+            }
+
+            &.alignwide {
+                @apply max-w-screen-xl m-auto;
+            }
+
+            &.alignfull {
+                @apply max-w-full m-auto;
+            }
+
+            figcaption {
+                @apply absolute bottom-16 right-4 bg-black text-white px-2 pb-1;
+            }
+        }
+
+        .wp-block-gallery {
+            @apply relative max-w-screen-xl m-auto;
+
+            .blocks-gallery-grid {
+                @apply list-none max-w-full grid grid-cols-3 gap-4;
+            }
+
+            .blocks-gallery-item {
+                figure {
+                    @apply relative;
+
+                    img {
+                        @apply p-0;
+                    }
+
+                    figcaption {
+                        @apply absolute bottom-3 right-3 bg-black text-white px-2 pb-1;
+                    }
+                }
             }
         }
     }

@@ -35,6 +35,10 @@ class Users extends Field
             ->addTrueFalse('user_is_major', [
                 'label' => 'Major user ?',
             ])
+            ->addTrueFalse('user_writes_too', [
+                'label' => 'This Major human also writes ?',
+            ])
+            ->conditional('user_is_major', '==', '1')
 
             ->addImage('user_avatar', [
                 'label' => 'Avatar',

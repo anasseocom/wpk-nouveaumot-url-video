@@ -3,6 +3,7 @@
     $author = $wp_query->get_queried_object();
     $id = $author->ID;
     $author_is_major = get_field('user_is_major', 'user_'. $id);
+    $major_is_writer = get_field('user_writes_too', 'user_'. $id);
     $first_name = get_user_meta( $id, 'first_name', true );
     $last_name = get_user_meta( $id, 'last_name', true );
     $description = get_user_meta($id, 'description', true);
@@ -102,7 +103,7 @@
         </div>
     </div>
 </div>
-
+@if($major_is_writer)
 @if(have_posts())
 <div class="px-4">
     <div class="mt-20 max-w-screen-xl m-auto">
@@ -118,3 +119,4 @@
     </div>
 </div>
 @endif
+    @endif

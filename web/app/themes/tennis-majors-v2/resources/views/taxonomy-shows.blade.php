@@ -1,49 +1,26 @@
-@extends('layouts.app')
-
-@section('content')
-
 @php
-    $term = get_queried_object();
-    $image = get_field('image_with_title', $term);
+$my_current_lang = apply_filters( 'wpml_current_language', NULL );
+$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); 
+$image = get_field('image_with_title', $term);
 
-    $args_posts_paged = array(
-        'post_type' => 'videos',
-        'tax_query' => array(
-                array(
-                    'taxonomy' => 'shows',
-                    'field'    => 'slug',
-                    'terms'    => $term->slug,
-                ),
-            ),
-        'posts_per_page' => 12,
-        'facetwp' => true,
-        );
+$args = array(
+    'post_type' => 'videos',
+    'tax_query' => array(
+        array(
+            'taxonomy' => 'video-types',
+            'field'    => 'name',
+            'terms'    => 'episodes',
+        ),
+    ),
+);
+$query_count_episodes = new WP_Query( $args );
 
-    $args_all_posts = array(
-        'post_type' => 'videos',
-        'tax_query' => array(
-                'relation' => 'AND',
-                array(
-                    'taxonomy' => 'shows',
-                    'field'    => 'slug',
-                    'terms'    => $term->slug,
-                ),
-                array(
-                'taxonomy' => 'video-types',
-                'field' => 'name',
-                'terms' => 'episodes'
-                ),
-            ),
-        'posts_per_page' => -1,
-        );
-    $posts_paged = new WP_Query( $args_posts_paged );
-    $all_posts = new WP_Query( $args_all_posts );
-    $count_episodes = $all_posts->post_count;
-    $my_current_lang = apply_filters( 'wpml_current_language', NULL );
-
+// Get the count
+$count_episodes = $query_count_episodes->post_count;
 @endphp
-
-    <div id="show" class="relative bg-black text-white">
+@extends('layouts.app')
+@section('content')
+<div id="show" class="relative bg-black text-white">
         <div class="max-w-screen-lg m-auto">
             <div class="grid grid-cols-6 gap-x-8 py-8 sm:py-12 mx-4">
                 <div class="col-span-6 md:col-span-3">
@@ -58,49 +35,41 @@
                         </a>
                     </div>
                     <div class="block md:hidden">
-                        <img src="{{ $image['url'] }}">
+                    <img src="{{ $image['url'] }}">
                     </div>
                     <div class="mt-12 mb-5">
-                        <h1 class="uppercase text-5xl">{{ single_cat_title() }}</h1>
+                    <h1 class="uppercase text-5xl">{{ $term->name }}</h1>
                     </div>
                     <div class="uppercase text-xl font-bold mb-5">
-                        @if($count_episodes == 1)
+                    @if($count_episodes == 1)
                             {{ $count_episodes }} {{ __('episode', 'sage') }}
                         @else
                             {{ $count_episodes }} {{ __('episodes', 'sage') }}
                         @endif
                     </div>
                     <div>
-                        @php echo term_description() @endphp
                     </div>
                 </div>
                 <div class="col-span-6 md:col-span-3 hidden md:block">
-                    <img src="{{ $image['url'] }}">
                 </div>
             </div>
         </div>
-        <div class="max-w-screen-lg m-auto">
+<div class="max-w-screen-lg m-auto">
             <div class="grid grid-cols-12 md:gap-x-8 py-12 mx-4">
                 <div class="col-span-12 md:col-span-9">
                     <div class="md:flex md:justify-between md:items-center md:mb-4 pb-3 mb:pb-0">
                         <div class="uppercase text-xl font-bold pb-3 mb:pb-0">
-                            @if($count_episodes == 1)
-                            {{ __('The video', 'sage') }}
-                            @else
                             {{ __('The videos', 'sage') }}
-                            @endif
                         </div>
-                        <?php echo do_shortcode('[facetwp facet="video_types"]') ?>
-                    </div>
+                        @shortcode('[facetwp facet="video_types"]')                    </div>
                     <div>
-                    <div class="list-show col-span-12 grid grid-cols-1 md:grid-cols-2 gap-3">
-                        @posts($posts_paged)
+<div class="list-show col-span-12 grid grid-cols-1 md:grid-cols-2 gap-3">
+                        @posts()
                             @include('partials.common.preview-video')
                         @endposts
-                    </div>
-                    <?php echo do_shortcode('[facetwp facet="pagination"]') ?>
-                    <?php wp_reset_query(); ?>
-                </div>
+                        </div>
+                        @shortcode('[facetwp facet="pagination"]') 
+                        </div>
                 <div class="col-span-3">
                     
                 </div>
