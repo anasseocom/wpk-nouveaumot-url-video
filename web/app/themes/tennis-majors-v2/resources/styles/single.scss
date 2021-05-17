@@ -44,6 +44,7 @@
         }
         .wp-block-embed__wrapper {
             max-width: 86% !important;
+            @apply m-auto;
         }
         .instagram-media, .twitter-tweet {
             margin: 2rem auto !important;
