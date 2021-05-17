@@ -352,3 +352,7 @@ element {
     height: auto;
     cursor: pointer;
 }
+
+.checkbox-wrap .nf-field-element label.nf-checked-label::after, .checkbox-wrap .nf-field-label label.nf-checked-label::after, .listcheckbox-wrap .nf-field-element label.nf-checked-label::after, .listcheckbox-wrap .nf-field-label label.nf-checked-label::after {
+    border-color: black !important;
+}
