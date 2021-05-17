@@ -5,7 +5,7 @@
     $author = $wp_query->get_queried_object();
     $id = $author->ID;
     $author_is_major = get_field('user_is_major', 'user_'. $id);
-    $author_avatar_url = get_field('user_avatar', 'user_'. get_the_author_meta('ID'));
+    $author_avatar = get_field('user_avatar', 'user_'. get_the_author_meta('ID'));
     $first_name = get_user_meta( $id, 'first_name', true );
     $last_name = get_user_meta( $id, 'last_name', true );
     $description = get_user_meta($id, 'description', true);
@@ -28,7 +28,7 @@
                         @endif
         </div>
         <div class="text-center flex-col flex items-center">
-            <img class="rounded-full w-48 flex mt-3" loading="lazy" src="{{ $author_avatar_url['sizes']['1-1_sm'] }}">
+            <img class="rounded-full w-48 flex mt-3" loading="lazy" src="{{ $author_avatar['sizes']['1-1_sm'] }}">
             <h1 class="uppercase text-4xl lg:text-6xl inline-flex">
                         <span class="block">{{ $first_name }} </span><span class="font-bold block">{{ $last_name }}</span>
                     </h1>
