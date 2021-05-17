@@ -38,44 +38,43 @@ $count_episodes = $query_count_episodes->post_count;
                         <img src="{{ $image['url'] }}">
                     </div>
                     <div class="mt-12 mb-5">
-                    <h1 class="uppercase text-5xl">{{ $term->name }}</h1>
+                        <h1 class="uppercase text-5xl">{{ $term->name }}</h1>
                     </div>
                     <div class="uppercase text-xl font-bold mb-5">
-                    @if($count_episodes == 1)
+                        @if($count_episodes == 1)
                             {{ $count_episodes }} {{ __('episode', 'sage') }}
                         @else
                             {{ $count_episodes }} {{ __('episodes', 'sage') }}
                         @endif
                     </div>
-                    <div>
-                    </div>
-                </div>
-                <div class="col-span-6 md:col-span-3 hidden md:block">
-                    <img src="{{ $image['url'] }}">
-                </div>
+                <div>
             </div>
         </div>
-<div class="max-w-screen-lg m-auto">
-            <div class="grid grid-cols-12 md:gap-x-8 py-12 mx-4">
-                <div class="col-span-12 md:col-span-9">
-                    <div class="md:flex md:justify-between md:items-center md:mb-4 pb-3 mb:pb-0">
-                        <div class="uppercase text-xl font-bold pb-3 mb:pb-0">
-                            {{ __('The videos', 'sage') }}
-                        </div>
-                        @shortcode('[facetwp facet="video_types"]')                    </div>
-                    <div>
-<div class="list-show col-span-12 grid grid-cols-1 md:grid-cols-2 gap-3">
-                        @posts()
-                            @include('partials.common.preview-video')
-                        @endposts
-                        </div>
-                        @shortcode('[facetwp facet="pagination"]') 
-                        </div>
-                <div class="col-span-3">
-                    
-                </div>
-            </div>
+        <div class="col-span-6 md:col-span-3 hidden md:block">
+            <img src="{{ $image['url'] }}">
         </div>
     </div>
+</div>
+<div class="max-w-screen-lg m-auto">
+    <div class="grid grid-cols-12 md:gap-x-8 py-12 mx-4">
+        <div class="col-span-12 md:col-span-9">
+            <div class="md:flex md:justify-between md:items-center md:mb-4 pb-3 mb:pb-0">
+                <div class="uppercase text-xl font-bold pb-3 mb:pb-0">
+                    {{ __('The videos', 'sage') }}
+                </div>
+                @shortcode('[facetwp facet="video_types"]')
+            </div>
+            <div>
+                <div class="list-show col-span-12 grid grid-cols-1 md:grid-cols-2 gap-3">
+                    @posts()
+                        @include('partials.common.preview-video')
+                    @endposts
+                </div>
+                @shortcode('[facetwp facet="pagination"]') 
+            </div>
+            <div class="col-span-3"></div>
+        </div>
+    </div>
+</div>
 
 @endsection

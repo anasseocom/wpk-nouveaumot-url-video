@@ -107,6 +107,10 @@
         max-height: 0;
         overflow: hidden;
     }
+
+    .scroll-mobile {
+        max-width: inherit !important;
+    }
 }
 
 .scroll-mobile {
