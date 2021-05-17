@@ -26,7 +26,11 @@
         }
 
         .wp-block-media-text {
-            @apply flex max-w-screen-sm mx-8 mx-auto align-middle;
+            @apply flex max-w-screen-sm mb-8 mx-auto align-middle;
+        }
+
+        .wp-block-image, .wp-block-embed  {
+            @apply mb-8;
         }
 
         .image-player {
