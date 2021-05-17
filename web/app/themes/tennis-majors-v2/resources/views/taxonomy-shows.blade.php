@@ -5,11 +5,15 @@ $image = get_field('image_with_title', $term);
 
 $args = array(
     'post_type' => 'videos',
-    'numberposts' => -1,
     'posts_per_page' => -1,
     'tax_query' => array(
+        'relation' => 'AND',
+                array(
+                    'taxonomy' => 'shows',
+                    'field'    => 'slug',
+                    'terms'    => $term->slug,
+                ),
         array(
-            'relation' => 'AND',
             'taxonomy' => 'video-types',
             'field'    => 'name',
             'terms'    => 'episodes',
