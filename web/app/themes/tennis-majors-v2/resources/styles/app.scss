@@ -110,6 +110,10 @@
 
     .scroll-mobile {
         max-width: inherit !important;
+
+        &.scroll-mobile-lg {
+            max-width: 1024px !important;
+        }
     }
 }
 

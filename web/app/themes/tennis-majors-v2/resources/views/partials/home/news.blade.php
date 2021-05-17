@@ -10,9 +10,9 @@ $my_current_lang = apply_filters( 'wpml_current_language', NULL );
 
 <div class="pt-12 pb-12 lg:px-10 xl:px-20 relative bg-black text-white">
     <div class="max-w-screen-lg m-auto px-4">
-        <h2 class="text-4xl uppercase pl-4 text-white pb-8">{{ __('Tennis', 'sage') }} <span class="font-bold">{{ __('news', 'sage') }}</span></h2>
+        <h2 class="text-4xl uppercase text-white pb-8">{{ __('Tennis', 'sage') }} <span class="font-bold">{{ __('news', 'sage') }}</span></h2>
     </div>
-    <div class="max-w-screen-lg m-auto pl-4 facet-container flex scroll-mobile">
+    <div class="max-w-screen-lg m-auto pl-4 facet-container flex scroll-mobile scroll-mobile-lg">
         @php
             global $post;
             $facet_1 = get_field('facet_1', 'option');
