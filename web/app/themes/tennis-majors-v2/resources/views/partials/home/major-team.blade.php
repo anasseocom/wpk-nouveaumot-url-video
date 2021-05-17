@@ -9,7 +9,7 @@
             <h2 class="text-4xl uppercase text-black text-center pb-2">{{ __('A major', 'sage')}}  <span class="font-bold">{{ __('team', 'sage')}}</span></h2>
             <p class="text-center pb-8">{{ __('The best tennis writer and experts are there', 'sage')}}</p>
         </div>
-        <div class="relative">
+        <div class="relative pt-2">
             <div id="major-team--arrow-left" class="hidden sm:block absolute z-10 shadow-lg rounded-full cursor-pointer transform -translate-y-1/2 top-1/2 w-16 left-4 cursor-pointer">
                 @include('partials.images.slider-arrow-left')
             </div>

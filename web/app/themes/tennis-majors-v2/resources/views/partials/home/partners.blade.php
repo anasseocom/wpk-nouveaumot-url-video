@@ -11,7 +11,7 @@
         <div id="top-stories-slider" class="max-w-screen-xl m-auto">
             <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
                 @foreach( $partners as $post)
-                        <a href="{{ the_field('partner_website_url')}}" title="{{ __('Link to', 'sage') }} {{ the_title() }}" rel="noreferrer" target="_blank"  class="col-span-1 rounded-lg border-2 border-black overflow-hidden shadow-sm hover:shadow-lg transition-all ease">
+                        <a href="{{ the_field('partner_website_url')}}" title="{{ __('Link to', 'sage') }} {{ the_title() }}" rel="noreferrer" target="_blank"  class="col-span-1 rounded-lg border-2 border-black overflow-hidden shadow-sm transform hover:-translate-y-1 hover:shadow-xl transition-all ease duration-400">
                             <h3 class="text-z">{{ the_title() }}</h3>
                             {{ the_post_thumbnail('16-9_xs', array('class' => '16-9_xs mx-auto')) }}
                         </a>

@@ -1,4 +1,4 @@
-<a href="{{ the_permalink() }}" class="preview preview--default-home">
+<a href="{{ the_permalink() }}" class="preview preview--default-home group">
     <div class="content">
         <div class="text-xs mb-2">{{ get_time_since_posted() }}</div>
         <h1 class="title">{{ the_title() }}</h1>
@@ -8,6 +8,7 @@
         @include('partials.common.author')
     </div>
     <div class="thumbnail">
+        <div class="absolute w-full h-full object-cover top-0 left-0 bg-gradient-to-t from-black to-transparent opacity-10 transition-all group-hover:opacity-0 duration-200 z-1"></div>
         {{ the_post_thumbnail('1-1_sm') }}
     </div>
 </a>

@@ -7,8 +7,13 @@
 }
 
 .facetwp-radio {
-    @apply mx-1 my-0 px-6 py-2 border-white border uppercase font-bold text-xs rounded-3xl;
+    @apply mx-1 my-0 px-6 py-2 border-white border uppercase font-bold text-xs rounded-3xl transition-all duration-200;
     background-image: none !important;
+
+    &:hover {
+        @apply text-black;
+        background-color: #f2f2f2;
+    }
 }
 
 .facetwp-radio.checked {
