@@ -24,7 +24,7 @@
                 $last_name = get_user_meta( $user_id, 'last_name', true );
                 $role = p2p_get_meta( $user->p2p_id, 'role', true );
               @endphp
-              @if($role == __('Host', 'sage') || $role == 'Host')
+              @if($role == __('Host', 'sage'))
                 <a href="{{ get_author_posts_url($user_id) }}" class="grid gap-4 grid-cols-12 p-2">
                   <div class="col-span-3 flex items-center">
                     <div class="w-full pb-1/1 relative">
@@ -48,7 +48,7 @@
                 $last_name = get_user_meta( $user_id, 'last_name', true );
                 $role = p2p_get_meta( $user->p2p_id, 'role', true );
               @endphp
-              @if($role == __('Guest', 'sage') || $role == 'Guest')
+              @if($role == __('Guest', 'sage'))
                 <a href="{{ get_author_posts_url($user_id) }}" class="grid gap-4 grid-cols-12 p-2">
                   <div class="col-span-3 flex items-center">
                     <div class="w-full pb-1/1 relative">
