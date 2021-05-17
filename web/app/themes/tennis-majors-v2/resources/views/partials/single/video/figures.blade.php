@@ -75,14 +75,14 @@
     <div class="grid grid-cols-12 py-2">
       <div class="col-span-12 grid grid-cols-3 gap-y-4 gap-x-10">
           @php
-            $avatar_url = get_field('user_avatar', 'user_'.get_the_author_meta('ID'));
+            $avatar = get_field('user_avatar', 'user_'.get_the_author_meta('ID'));
             $first_name = get_the_author_meta( 'first_name' );
             $last_name = get_the_author_meta( 'last_name' );
           @endphp
             <a href="{{ get_author_posts_url(get_the_author_meta('ID')) }}" class="grid gap-4 grid-cols-12 p-2">
               <div class="col-span-3 flex items-center">
                 <div class="w-full pb-1/1 relative">
-                  <img class="rounded-full w-full h-full object-cover absolute top-0" alt="{{ __('Profile Picture of ', 'sage') }}{{ $last_name }}" loading="lazy" src="{{ $avatars['sizes']['1-1_sm'] }}">
+                  <img class="rounded-full w-full h-full object-cover absolute top-0" alt="{{ __('Profile Picture of ', 'sage') }}{{ $last_name }}" loading="lazy" src="{{ $avatar['sizes']['1-1_sm'] }}">
                 </div>
               </div>
               <div class="col-span-9 flex items-center">
