@@ -30,3 +30,7 @@ add_image_size( '2-3_xs', 70, 105, true );
 add_image_size( '3-1_lg', 1200, 400, true );
 add_image_size( '3-1_md', 600, 200, true );
 add_image_size( '3-1_sm', 360, 120, true );
+
+add_image_size( '4-3_ms', 600, 450, true );
+add_image_size( '4-3_sm', 300, 225, true );
+add_image_size( '4-3_xs', 100, 75, true );

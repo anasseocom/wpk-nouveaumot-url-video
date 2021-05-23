@@ -20,7 +20,7 @@
 @if($posts_count > 1)
 <div class="read-also pb-2 pt-4">
   <div class="uppercase text-xs mb-6">
-    You might also like this
+  {{ __('You might also like this', 'sage') }}
   </div>
   <div class="grid grid-cols-1 gap-y-6 mb-6">
     @foreach( $posts as $post)
@@ -58,9 +58,9 @@
             </div>
             <div class="col-span-6 relative">
               @if( get_post_type($post) == "videos")
-                <div class="sm:absolute sm:top-0 uppercase text-xs">Watch also</div>
+                <div class="sm:absolute sm:top-0 uppercase text-xs">{{ __('Watch also', 'sage') }}</div>
               @else 
-                <div class="sm:absolute sm:top-0 uppercase text-xs">Read also</div>
+                <div class="sm:absolute sm:top-0 uppercase text-xs">{{ __('Read also', 'sage') }}</div>
               @endif
               <div class="mt-2 sm:mt-6 md:absolute top-0 font-bold md:text-lg text-black">@title</div>
               <div class="sm:absolute sm:bottom-0 uppercase text-xs mt-6">Tennis Majors</div>

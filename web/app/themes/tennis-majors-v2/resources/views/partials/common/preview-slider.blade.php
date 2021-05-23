@@ -1,5 +1,5 @@
 <a href="{{ the_permalink() }}" class="preview preview--slider group">
-    {{ the_post_thumbnail('16-9_sm', array('class' => 'thumbnail thumbnail-slider-first')) }}
+    {{ the_post_thumbnail('4-3_md', array('class' => 'thumbnail thumbnail-slider-first')) }}
     {{ the_post_thumbnail('5-6_sm', array('class' => 'thumbnail thumbnail-slider-default')) }}
     {{ the_post_thumbnail('5-6_xs', array('class' => 'thumbnail thumbnail-slider-mobile')) }}
     <div class="gradient opacity-80 group-hover:opacity-70"></div>

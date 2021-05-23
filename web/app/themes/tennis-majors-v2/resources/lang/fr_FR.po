@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tennis Majors Nuuk 1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/tennis-majors-v2\n"
-"POT-Creation-Date: 2021-05-17T06:15:15+00:00\n"
-"PO-Revision-Date: 2021-05-17 12:06+0200\n"
+"POT-Creation-Date: 2021-05-23T08:23:41+00:00\n"
+"PO-Revision-Date: 2021-05-23 10:26+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -98,10 +98,12 @@ msgid "Home edition"
 msgstr "Edition Homepage"
 
 #: app/setup.php:257 app/setup.php:273
+#: storage/framework/views/bc39c8aef010f32f9b91a0a4e953bf37a5ab03ae.php:48
 msgid "Writer"
 msgstr "Rédacteur"
 
 #: app/setup.php:257 app/setup.php:273
+#: storage/framework/views/bc39c8aef010f32f9b91a0a4e953bf37a5ab03ae.php:73
 msgid "Co-writer"
 msgstr "Co-rédacteur"
 
@@ -122,6 +124,7 @@ msgid "Curator"
 msgstr "Une sélection de"
 
 #: app/setup.php:257 app/setup.php:273
+#: storage/framework/views/bc39c8aef010f32f9b91a0a4e953bf37a5ab03ae.php:23
 msgid "Author"
 msgstr "Auteur"
 
@@ -130,6 +133,9 @@ msgid "Columnist"
 msgstr "Éditorialiste"
 
 #: app/setup.php:257 app/setup.php:273
+#: storage/framework/views/0db7c7eb7dcb67c5f7bb6af0c0577b5af523e138.php:74
+#: storage/framework/views/3bca83760d468c88940d52d13ce412b757280d81.php:75
+#: storage/framework/views/c9959f8ceba06d8f31eaba3c765939694b1d8660.php:21
 msgid "Expert"
 msgstr "Expert"
 
@@ -154,10 +160,17 @@ msgid "Sound operator"
 msgstr "Réalisation"
 
 #: app/setup.php:273
+#: storage/framework/views/0db7c7eb7dcb67c5f7bb6af0c0577b5af523e138.php:74
+#: storage/framework/views/3bca83760d468c88940d52d13ce412b757280d81.php:27
+#: storage/framework/views/7af9a89e72329ee236b20a39cf3d85a128cd411b.php:24
+#: storage/framework/views/c9959f8ceba06d8f31eaba3c765939694b1d8660.php:21
 msgid "Host"
 msgstr "Présentation"
 
 #: app/setup.php:273
+#: storage/framework/views/0db7c7eb7dcb67c5f7bb6af0c0577b5af523e138.php:74
+#: storage/framework/views/3bca83760d468c88940d52d13ce412b757280d81.php:51
+#: storage/framework/views/c9959f8ceba06d8f31eaba3c765939694b1d8660.php:21
 msgid "Guest"
 msgstr "Invité"
 
@@ -220,9 +233,10 @@ msgid "Back to the team"
 msgstr "Retour à la Dream Team"
 
 #: storage/framework/views/0db7c7eb7dcb67c5f7bb6af0c0577b5af523e138.php:112
+#: storage/framework/views/55b44762e1524b0edd3783546ea95389e7b3178c.php:10
 #: storage/framework/views/685c386dfcaf98b8770ecb4d7d1988c7d7621af3.php:123
-msgid "Last"
-msgstr "Dernières"
+msgid "Latest"
+msgstr "Derniers"
 
 #: storage/framework/views/0e8da3f1a070d15ad6088c44d378488bb0a69d14.php:8
 #: storage/framework/views/62df14e869a82c4e8e1097c275a2fe6ce5b0f467.php:9
@@ -292,7 +306,8 @@ msgstr "experts"
 
 #: storage/framework/views/3bca83760d468c88940d52d13ce412b757280d81.php:31
 #: storage/framework/views/3bca83760d468c88940d52d13ce412b757280d81.php:55
-#: storage/framework/views/3bca83760d468c88940d52d13ce412b757280d81.php:85
+#: storage/framework/views/3bca83760d468c88940d52d13ce412b757280d81.php:79
+#: storage/framework/views/3bca83760d468c88940d52d13ce412b757280d81.php:109
 #: storage/framework/views/81e05fdba7bd04c804e166d9b1dc966a70eeee89.php:9
 #: storage/framework/views/84e89483334989d6600863f088075eeb76f1e2cf.php:8
 #: storage/framework/views/bc39c8aef010f32f9b91a0a4e953bf37a5ab03ae.php:27
@@ -336,10 +351,6 @@ msgstr "Lien vers notre Twitter"
 #: storage/framework/views/82e5c8a7ff5b28b1cbf82e3a058049b43d30542c.php:19
 msgid "Link to our Instagram"
 msgstr "Lien vers notre Instagram"
-
-#: storage/framework/views/55b44762e1524b0edd3783546ea95389e7b3178c.php:10
-msgid "Latest"
-msgstr "Dernières"
 
 #: storage/framework/views/55b44762e1524b0edd3783546ea95389e7b3178c.php:10
 msgid "videos"
@@ -445,19 +456,19 @@ msgstr "Actualité du"
 msgid "news"
 msgstr "tennis"
 
-#: storage/framework/views/e9ea168c316573523c336ca1468a25338f73a7bc.php:34
+#: storage/framework/views/e9ea168c316573523c336ca1468a25338f73a7bc.php:41
 msgid "Back to all the video series"
 msgstr "Retour à toutes les séries vidéo"
 
-#: storage/framework/views/e9ea168c316573523c336ca1468a25338f73a7bc.php:46
+#: storage/framework/views/e9ea168c316573523c336ca1468a25338f73a7bc.php:53
 msgid "episode"
 msgstr "épisode"
 
-#: storage/framework/views/e9ea168c316573523c336ca1468a25338f73a7bc.php:49
+#: storage/framework/views/e9ea168c316573523c336ca1468a25338f73a7bc.php:56
 msgid "episodes"
 msgstr "épisodes"
 
-#: storage/framework/views/e9ea168c316573523c336ca1468a25338f73a7bc.php:66
+#: storage/framework/views/e9ea168c316573523c336ca1468a25338f73a7bc.php:73
 msgid "The videos"
 msgstr "Les vidéos"
 
@@ -473,6 +484,18 @@ msgstr "partenaires"
 msgid "Link to"
 msgstr "Lien vers"
 
+#: storage/framework/views/fd26d2b40f06a6cf636904cafbafb2ae407a10f2.php:12
+msgid "You might also like this"
+msgstr "Vous pourriez aussi aimer"
+
+#: storage/framework/views/fd26d2b40f06a6cf636904cafbafb2ae407a10f2.php:53
+msgid "Watch also"
+msgstr "Regardez aussi"
+
+#: storage/framework/views/fd26d2b40f06a6cf636904cafbafb2ae407a10f2.php:55
+msgid "Read also"
+msgstr "Lisez aussi"
+
 #: storage/framework/views/ff8fb580bdc139101479cd106b203d0ae9d7b168.php:10
 msgid "Subscribe"
 msgstr "Abonnez-vous"
@@ -484,6 +507,9 @@ msgstr "à la newsletter"
 #: storage/framework/views/ff8fb580bdc139101479cd106b203d0ae9d7b168.php:11
 msgid "Stay in touch with the latest news, right into your inbox!"
 msgstr "Les meilleurs histoires de Tennis Majors, directement dans votre boîte mail !"
+
+#~ msgid "Last"
+#~ msgstr "Dernières"
 
 #~ msgid "to read now"
 #~ msgstr "sélectionnées pour vous"
