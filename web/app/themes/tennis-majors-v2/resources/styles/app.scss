@@ -301,7 +301,7 @@
 }
 
 .checkbox-wrap .nf-field-element label::after, .checkbox-wrap .nf-field-label label::after, .listcheckbox-wrap .nf-field-element label::after, .listcheckbox-wrap .nf-field-label label::after {
-    background: #000 !important;
+    background: black;
     transition: all .5s;
     border-radius: 100%;
     border: 2px solid white !important;
