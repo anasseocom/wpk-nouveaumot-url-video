@@ -6,7 +6,6 @@ $my_current_lang = apply_filters( 'wpml_current_language', NULL );
     
 
 
-   // FR language
    @if($my_current_lang =='fr')     
           
          <!-- Content for FR language here -->
