@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4b95a5fbd530d975a546788e39d7a39a",
+    "content-hash": "ea8e4485dea94f5094e29b6ea8d4ecb8",
     "packages": [
         {
             "name": "composer/installers",
@@ -1456,22 +1456,22 @@
             "homepage": "https://wordpress.org/plugins/posts-to-posts/"
         },
         {
-            "name": "wpackagist-plugin/pre-publish-checklist",
-            "version": "1.1.1",
+            "name": "wpackagist-plugin/publishpress-checklists",
+            "version": "2.5.0",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/pre-publish-checklist/",
-                "reference": "tags/1.1.1"
+                "url": "https://plugins.svn.wordpress.org/publishpress-checklists/",
+                "reference": "tags/2.5.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/pre-publish-checklist.1.1.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/publishpress-checklists.2.5.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/pre-publish-checklist/"
+            "homepage": "https://wordpress.org/plugins/publishpress-checklists/"
         },
         {
             "name": "wpackagist-plugin/safe-svg",
