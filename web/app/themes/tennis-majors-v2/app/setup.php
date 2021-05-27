@@ -243,35 +243,3 @@ add_action('init', function () {
         'icon_url'      => 'dashicons-admin-generic'
     ]);
 });
-
-add_action('init', function () {
-    p2p_register_connection_type( array(
-        'name' => 'multiple_authors',
-        'title' => 'Author role',
-        'from' => 'user',
-        'to' => [0 => 'post'],
-        'fields' => array(
-            'role' => array( 
-                'title' => 'Role',
-                'type' => 'select',
-                'values' => array( __('Writer', 'sage'), __('Co-writer', 'sage'), __('Editor', 'sage'), __('Photo', 'sage'), __('Translator', 'sage'), __('Curator', 'sage'), __('Author', 'sage'), __('Columnist', 'sage'), __('Expert', 'sage'))
-            ),
-        )
-    ) );
-});
-
-add_action('init', function () {
-    p2p_register_connection_type( array(
-        'name' => 'multiple_authors_videos',
-        'title' => 'Author role on this video',
-        'from' => 'user',
-        'to' => [0 => 'videos'],
-        'fields' => array(
-            'role' => array( 
-                'title' => 'Role',
-                'type' => 'select',
-                'values' => array( __('Writer', 'sage'), __('Co-writer', 'sage'), __('Motion design', 'sage'), __('Studio', 'sage'), __('Producer', 'sage'), __('Editor', 'sage'), __('Photo', 'sage'), __('Translator', 'sage'), __('Curator', 'sage'), __('Author', 'sage'), __('Columnist', 'sage'), __('Expert', 'sage'), __('Video operator', 'sage'), __('Sound operator', 'sage'), __('Host', 'sage'), __('Guest', 'sage'))
-            ),
-        )
-    ) );
-});
