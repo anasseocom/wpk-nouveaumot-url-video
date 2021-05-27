@@ -28,7 +28,7 @@
                 <div id="slider-cards--slider" class="slider-preview-mode flex overflow-x-auto scrolling-touch snap-type-mandatory scrollbar-hidden">
                     @posts
                         @if($i < 5)
-                            <div class="snap-align-start">
+                            <div class="snap-align-start  transform origin-center scale-100 transition-transform duration-500 card-{{$i}}" id="card-{{$i}}">
                                 @include('partials.common.preview-slider')
                             </div>
                         @endif

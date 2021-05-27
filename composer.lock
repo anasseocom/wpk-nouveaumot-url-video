@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ea8e4485dea94f5094e29b6ea8d4ecb8",
+    "content-hash": "062d3fbf8a365ed07dbfaa2da6367eb7",
     "packages": [
         {
             "name": "composer/installers",
@@ -1526,6 +1526,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/xml-sitemap-feed/"
+        },
+        {
+            "name": "wpackagist-plugin/yoast-test-helper",
+            "version": "1.14",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/yoast-test-helper/",
+                "reference": "tags/1.14"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/yoast-test-helper.1.14.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/yoast-test-helper/"
         },
         {
             "name": "yoast/i18n-module",

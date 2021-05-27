@@ -60,32 +60,3 @@ function my_convert_restrict($query) {
     }
 }
 
-
-/**
- * CACHE
- */
-add_action( 'save_post', 'purge_articles', 10, 3 );
-
-/**
- * purge articles and home page after update post
- */
-function purge_articles( $post_id, $post, $update ) {
-    global $post;
-    purge_url(get_permalink($post->ID));
-}
-
-function purge_url( $url ){
-
-	$parse_url = parse_url($url) ;
-	$home_url = $parse_url['scheme'] .'://' .$parse_url['host'].'/' ;
-	$url_to_purge = str_replace($home_url, $home_url . 'purge/', $url ) ;
-
-	wp_remote_get($url_to_purge);
-	$ch = curl_init($url_to_purge);
-	curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en) AppleWebKit/420.1 (KHTML, like Gecko) Version/3.0 Mobile/3B48b Safari/419.3');
-	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-	curl_exec($ch);
-	curl_close($ch);
-}
-
-
