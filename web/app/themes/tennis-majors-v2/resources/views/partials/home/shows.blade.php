@@ -7,7 +7,16 @@
 
 <div id="top-shows" class="mt-8 lg:mt-20 pb-16 relative text-white">
     <div class="max-w-screen-lg m-auto">
-        <h2 class="text-3xl lg:text-4xl uppercase pl-4 text-black">{{ __('Latest', 'sage')}} <span class="font-bold">{{ __('videos', 'sage') }}</span></h2>
+
+    @if($my_current_lang =='fr')     
+    <h2 class="text-3xl lg:text-4xl uppercase pl-4 text-black">Dernières <span class="font-bold">vidéos</span></h2>
+
+          @endif
+          @if($my_current_lang =='en')
+          <h2 class="text-3xl lg:text-4xl uppercase pl-4 text-black">Latest<span class="font-bold"> Videos</span></h2>
+
+          
+           @endif
     </div>
     @if( $video_on_top )
         @php
