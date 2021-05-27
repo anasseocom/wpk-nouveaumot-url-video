@@ -17,7 +17,6 @@ $my_current_lang = apply_filters( 'wpml_current_language', NULL );
 
   gtag('config', 'UA-156196903-3');
 </script>
-envoie code fr
 
 @endif
 @if($my_current_lang =='en')
@@ -31,7 +30,6 @@ envoie code fr
   gtag('config', 'UA-156196903-2');
 </script>
 
-Envoie code EN
  @endif
 
  <!-- Global site tag (gtag.js) - Google Analytics -->
