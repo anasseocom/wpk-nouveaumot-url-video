@@ -1,6 +1,6 @@
 <?php
 /*
-* On utilise une fonction pour créer notre custom post type 'Produits'
+* On utilise une fonction pour créer notre custom post type 'Videos'
 */
 
 function custom_post_type_videos() {
