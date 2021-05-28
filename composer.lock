@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "062d3fbf8a365ed07dbfaa2da6367eb7",
+    "content-hash": "7d8ca1f1e110afb171b0d8c2e76d1a2d",
     "packages": [
         {
             "name": "composer/installers",
@@ -1364,6 +1364,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/amp/"
+        },
+        {
+            "name": "wpackagist-plugin/classic-editor",
+            "version": "1.6",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/classic-editor/",
+                "reference": "tags/1.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/classic-editor.1.6.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/classic-editor/"
         },
         {
             "name": "wpackagist-plugin/co-authors-plus",
