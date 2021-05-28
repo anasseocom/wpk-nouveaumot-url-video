@@ -70,7 +70,7 @@
         "wpackagist-plugin/amp": "^2.1.2",
         "wpackagist-plugin/publishpress-checklists": "^2.5.0",
         "wpackagist-plugin/yoast-test-helper": "^1.14",
-        "wpackagist-plugin/classic-editor": "^1.6"
+        "wpackagist-plugin/nginx-cache": "^1.0"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.5.8",
