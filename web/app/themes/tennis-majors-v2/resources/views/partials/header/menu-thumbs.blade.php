@@ -18,9 +18,9 @@ $my_current_lang = apply_filters( 'wpml_current_language', NULL );
             {{ __('News', 'sage')}}
                 @include('partials.images.thumbs.news')
             </a>
-            <a href="{{ get_permalink( get_page_by_path( 'directs' ) )}}" class="text-z flex flex-col items-center py-4">
-            {{ __('Lives', 'sage')}}
-                @include('partials.images.thumbs.lives')
+            <a href="/fr/roland-garros-actualite" class="text-z flex flex-col items-center py-4">
+            {{ __('Roland-Garros', 'sage')}}
+                @include('partials.images.thumbs.rg')
             </a>
         </div>
     </div>
@@ -42,9 +42,9 @@ $my_current_lang = apply_filters( 'wpml_current_language', NULL );
             {{ __('News', 'sage')}}
                 @include('partials.images.thumbs.news')
             </a>
-            <a href="{{ get_permalink( get_page_by_path( 'lives' ) )}}" class="text-z flex flex-col items-center py-4">
-            {{ __('Lives', 'sage')}}
-                @include('partials.images.thumbs.lives')
+            <a href="/roland-garros-news" class="text-z flex flex-col items-center py-4">
+            {{ __('The French', 'sage')}}
+                @include('partials.images.thumbs.rg')
             </a>
         </div>
     </div>
