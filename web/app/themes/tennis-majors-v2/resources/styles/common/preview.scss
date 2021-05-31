@@ -19,6 +19,10 @@
             .thumbnail {
                 @apply col-span-4 md:absolute md:w-full md:h-full md:object-cover md:top-0 md:left-0;
 
+                .gradient {
+                    @apply absolute w-full h-full object-cover top-0 left-0 from-black to-transparent bg-gradient-to-r opacity-80 z-1
+                }
+
                 img {
                     @apply md:object-cover md:h-full md:w-full;
                 }
@@ -37,6 +41,10 @@
 
         .thumbnail {
             @apply relative pb-1/1 h-0;
+
+            .gradient {
+                @apply absolute w-full h-full object-cover top-0 left-0 from-black to-transparent bg-gradient-to-t opacity-80 z-1
+            }
 
             img {
                 @apply absolute top-0 md:object-cover md:h-full md:w-full;
