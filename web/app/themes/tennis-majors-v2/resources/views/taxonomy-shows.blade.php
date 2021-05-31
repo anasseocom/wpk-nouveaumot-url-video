@@ -54,6 +54,9 @@ $count_episodes = $query_count_episodes->post_count;
                             {{ $count_episodes }} {{ __('episodes', 'sage') }}
                         @endif
                     </div>
+                    <div class="mb-5">
+                        <p class="text-lg">{{ $term->description }}</p>
+                    </div>
                 <div>
             </div>
         </div>
