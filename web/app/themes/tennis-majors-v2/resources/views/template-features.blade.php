@@ -59,7 +59,9 @@
             </div>
         </div>
         <div class="max-w-screen-xl m-auto">
-            <?php pagination(); ?>
+            <div class="mt-12 mb-6">
+                <?php pagination(); ?>
+            </div>
         <div>
     </div>
 </div>

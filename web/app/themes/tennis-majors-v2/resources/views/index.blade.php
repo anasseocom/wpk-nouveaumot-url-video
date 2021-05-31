@@ -14,7 +14,9 @@
                 @include('partials.common.preview-flash')
             @endif
         @endposts
-        <?php pagination(); ?>
+        <div class="mt-12 mb-6">
+            <?php pagination(); ?>
+        </div>
         </div>
     </div>
 </div>

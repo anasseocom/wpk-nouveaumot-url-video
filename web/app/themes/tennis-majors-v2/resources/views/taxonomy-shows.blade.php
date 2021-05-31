@@ -80,7 +80,9 @@ $count_episodes = $query_count_episodes->post_count;
                         @include('partials.common.preview-video')
                     @endposts
                 </div>
-                @shortcode('[facetwp facet="pagination"]') 
+                <div class="mt-12 mb-6">
+                    @shortcode('[facetwp facet="pagination"]') 
+                </div>
             </div>
             <div class="col-span-3"></div>
         </div>
