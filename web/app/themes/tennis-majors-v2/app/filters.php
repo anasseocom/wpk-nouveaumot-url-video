@@ -59,7 +59,3 @@ function my_convert_restrict($query) {
         }
     }
 }
-
-
-
-add_filter( 'acf/settings/show_admin', '__return_false' );
