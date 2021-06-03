@@ -14,6 +14,5 @@
     @else
       @include('partials.single.default')
     @endif
-    @php(comments_template())
   @endposts
 @endsection
