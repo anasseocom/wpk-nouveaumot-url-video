@@ -24,7 +24,7 @@ add_action('wp_enqueue_scripts', function () {
     }
 
     if( is_singular('podcast-episodes') ) {
-        wp_enqueue_script('art19 scripts', 'https://web-player.art19.com/assets/current.js', false, null);
+        wp_enqueue_script('art19 scripts', 'https://web-player.art19.com/assets/current.js', null, true);
         wp_enqueue_style('art19 styles', 'https://web-player.art19.com/assets/current.css', false, null);
     }
 
