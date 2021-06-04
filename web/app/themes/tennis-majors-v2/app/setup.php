@@ -22,9 +22,16 @@ add_action('wp_enqueue_scripts', function () {
     if (is_single() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
     }
+
+    if( is_singular('podcast-episodes') ) {
+        wp_enqueue_script('art19 scripts', 'https://web-player.art19.com/assets/current.js', false, null);
+        wp_enqueue_style('art19 styles', 'https://web-player.art19.com/assets/current.css', false, null);
+    }
+
     wp_enqueue_style('adobe fonts', 'https://use.typekit.net/yvr8obr.css', false, null);
     wp_enqueue_style('sage/app.css', asset('styles/app.css')->uri(), false, null);
 }, 100);
+
 
 /**
  * Register the theme assets with the block editor.
@@ -265,7 +272,7 @@ add_action('init', function () {
         'name' => 'multiple_authors_videos',
         'title' => 'Author role on this video',
         'from' => 'user',
-        'to' => [0 => 'videos'],
+        'to' => [0 => 'videos', 1 => 'podcast-episodes',],
         'fields' => array(
             'role' => array( 
                 'title' => 'Role',

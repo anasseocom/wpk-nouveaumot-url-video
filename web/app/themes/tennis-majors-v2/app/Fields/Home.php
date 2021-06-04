@@ -26,7 +26,7 @@ class Home extends Field
 
             ->addPostObject('posts_on_top', [
                 'label' => 'Content on top',
-                'post_type' => [0 => 'post', 1 => 'videos'],
+                'post_type' => [0 => 'post', 1 => 'videos', 2 => 'podcast-episodes'],
                 'multiple' => 1,
                 'max' => 10,
             ])
@@ -47,7 +47,7 @@ class Home extends Field
                     'class' => '',
                     'id' => '',
                 ],
-                'taxonomy' => 'shows',
+                'taxonomy' => [0 => 'shows', 1 => 'podcasts_shows'],
                 'field_type' => 'multi_select',
                 'allow_null' => 0,
                 'add_term' => 1,
@@ -58,7 +58,7 @@ class Home extends Field
 
             ->addPostObject('stories_on_top', [
                 'label' => 'Stories on top',
-                'post_type' => [0 => 'post', 1 => 'curations', 2 => 'videos'],
+                'post_type' => [0 => 'post', 1 => 'curations', 2 => 'videos', 3 => 'podcast-episodes'],
                 'multiple' => 1,
                 'max' => 10,
             ])

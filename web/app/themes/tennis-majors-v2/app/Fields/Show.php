@@ -17,7 +17,7 @@ class Show extends Field
         $show = new FieldsBuilder('shows');
 
         $show
-            ->setLocation('taxonomy', '==', 'shows');
+            ->setLocation('taxonomy', '==', 'shows', 'podcasts_shows');
 
         $show
             ->addText('first_line_title', [
