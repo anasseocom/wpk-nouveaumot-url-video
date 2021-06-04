@@ -5,7 +5,7 @@
   Keywords: read  also
   Mode: edit
   Align: left
-  PostTypes: page post videos
+  PostTypes: page post videos podcast-episodes
   SupportsAlign: full
   SupportsMode: false
   SupportsMultiple: true
