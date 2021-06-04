@@ -47,7 +47,7 @@ class Home extends Field
                     'class' => '',
                     'id' => '',
                 ],
-                'taxonomy' => [0 => 'shows', 1 => 'podcasts_shows'],
+                'taxonomy' => 'shows',
                 'field_type' => 'multi_select',
                 'allow_null' => 0,
                 'add_term' => 1,

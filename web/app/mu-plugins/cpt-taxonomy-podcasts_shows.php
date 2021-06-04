@@ -15,7 +15,7 @@ function create_podcasts_shows_taxonomy() {
     'menu_name' => __( 'Podcasts Shows' ),
   );    
 
-  register_taxonomy('podcasts_shows',array('podcast-episodes'), array(
+  register_taxonomy('podcasts-shows',array('podcast-episodes'), array(
     'hierarchical' => true,
     'labels' => $labels,
     'show_ui' => true,
@@ -24,6 +24,6 @@ function create_podcasts_shows_taxonomy() {
     'query_var' => true,
     'public' => true,
     'has_archive' => true,
-    'rewrite' => array( 'slug' => 'audio-series' ),
+    'rewrite' => array( 'slug' => 'podcasts' ),
   ));
 }

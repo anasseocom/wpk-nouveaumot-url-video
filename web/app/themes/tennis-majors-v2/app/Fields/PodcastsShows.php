@@ -22,13 +22,13 @@ class PodcastsShows extends Field
         $podcasts_shows
             ->addPostObject('podcasts_on_top', [
                 'label' => 'Podcasts on top',
-                'post_type' => [0 => 'podcasts_episodes'],
+                'post_type' => [0 => 'podcasts-episodes'],
                 'multiple' => 1,
                 'max' => 3,
             ])
             ->addTaxonomy('podcasts_shows_ordered', [
                 'label' => 'Podcasts ordered',
-                'taxonomy' => 'podcasts_shows',
+                'taxonomy' => 'podcasts-shows',
                 'field_type' => 'multi_select',
                 'return_format' => 'object',
                 'multiple' => 1,
