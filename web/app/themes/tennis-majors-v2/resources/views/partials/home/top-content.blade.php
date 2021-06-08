@@ -24,6 +24,18 @@
             </div>
         </div>
     </div>
-    @include('partials.single.common.pub')
 @endif
-
+@if($my_current_lang =='fr')         
+<a href="https://www.tenniswarehouse-europe.com/catpage-LACFSJUNE.html?from=kicker&vat=fr&lang=fr" rel="nofollow sponsored" target="_blank">
+    <figure class="w-full h-full">
+        <img src="./../../../images/ope-june/hp-fr.jpg" alt="">
+    </figure>
+</a>
+@endif
+@if($my_current_lang =='en')
+<a href="https://www.tenniswarehouse-europe.com/catpage-LACFSJUNE.html?from=kicker&lang=en" rel="nofollow sponsored" target="_blank">
+    <figure class="w-full h-full">
+        <img src="./../../../images/ope-june/hp-en.jpg" alt="">
+    </figure>
+</a>
+@endif
