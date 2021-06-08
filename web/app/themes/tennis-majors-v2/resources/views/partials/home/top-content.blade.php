@@ -2,6 +2,7 @@
     global $post;
     $posts_on_top = get_field('posts_on_top', 'option');
     $i = 0;
+    $my_current_lang = apply_filters( 'wpml_current_language', NULL );
 @endphp
 
 @if($posts_on_top)
@@ -24,3 +25,4 @@
         </div>
     </div>
 @endif
+

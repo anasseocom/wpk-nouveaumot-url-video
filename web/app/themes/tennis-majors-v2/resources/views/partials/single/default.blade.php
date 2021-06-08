@@ -26,6 +26,7 @@
             </div>
           </div>
           <div class="hidden md:block md:col-span-4">
+            @include('partials.pub.column')
             @include('partials.common.newsletter-form')
           </div>
         </div>

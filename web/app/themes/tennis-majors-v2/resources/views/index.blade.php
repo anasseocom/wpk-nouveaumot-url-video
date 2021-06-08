@@ -1,3 +1,6 @@
+@php
+$j = 0;
+@endphp
 @extends('layouts.app')
 
 @section('content')
@@ -8,12 +11,24 @@
     <div class="max-w-screen-sm m-auto">
         <div class="grid gap-x-8 gap-y-16 my-10 md:my-20 mx-4">
         @posts
-            @if(has_post_thumbnail())
-                @include('partials.common.preview-default')
-            @else
-                @include('partials.common.preview-flash')
+            @if($j == 0)
+                @if(has_post_thumbnail())
+                    @include('partials.common.preview-default')
+                @else
+                    @include('partials.common.preview-flash')
+                @endif
+                @include('partials.pub.archive')
+            @elseif($j > 0)
+                @if(has_post_thumbnail())
+                    @include('partials.common.preview-default')
+                @else
+                    @include('partials.common.preview-flash')
+                @endif
             @endif
-        @endposts
+            @php
+            $j++;
+            @endphp
+    @endposts
         <div class="mt-12 mb-6">
             <?php pagination(); ?>
         </div>
