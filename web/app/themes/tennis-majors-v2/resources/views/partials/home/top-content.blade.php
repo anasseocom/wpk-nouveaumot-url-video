@@ -24,6 +24,5 @@
             </div>
         </div>
     </div>
-    @include('partials.single.common.pub')
 @endif
 
