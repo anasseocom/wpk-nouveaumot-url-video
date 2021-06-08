@@ -65,7 +65,7 @@
                     @php
                         $episodes = new WP_Query(
                             array(
-                                'posts_per_page' => 8,
+                                'posts_per_page' => 4,
                                 'post_type' => 'videos',
                                 'facetwp' => false,
                                 'tax_query' => array(
