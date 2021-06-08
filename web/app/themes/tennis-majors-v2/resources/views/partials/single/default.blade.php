@@ -2,7 +2,6 @@
   <div class="mt-8 sm:mt-12">
     <div class="article-container article-container--default max-w-screen-xl m-auto flex flex-col items-end">
       <div class="md:max-w-article-default">
-        @include('partials.single.common.pub')
         <h1 class="font-bold text-3xl md:text-5xl max-w-screen-lg px-4">
           @title
         </h1>
@@ -27,7 +26,6 @@
             </div>
           </div>
           <div class="hidden md:block md:col-span-4">
-            @include('partials.single.pub')
             @include('partials.common.newsletter-form')
           </div>
         </div>
