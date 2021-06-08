@@ -2,7 +2,6 @@
     <div class="article-container article-container--feature">
       <article @php post_class() @endphp >
         <div class="max-w-screen-lg m-auto">
-          @include('partials.pub.banner')
           <div class="mx-4">
             <h1 class="font-bold text-3xl lg:text-5xl text-center">
               @title
