@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-  @while(have_posts()) @php(the_post())
-      @include('partials.single.podcast')
-  @endwhile
+  @posts
+    @include('partials.single.podcast')
+    @php(comments_template())  
+  @endposts
 @endsection
