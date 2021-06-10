@@ -2,6 +2,7 @@
   global $post;
   $pattern = get_shortcode_regex(['mot_video']);
   $shortcode = '';
+  $post_id=$post->ID;
 @endphp
   
 @if(preg_match("#".$pattern."#s", $post->post_content, $matches))
@@ -16,7 +17,7 @@
           <h1 class="font-bold text-3xl md:text-5xl max-w-screen-lg px-4 text-center text-white">@title</h1>
           <div class="font-bold mt-8 mb-4 text-lg max-w-screen-md m-auto text-center text-white px-4">@excerpt</div>
           <div class="text-white text-sm text-center mb-8">@include('partials.single.common.time-bilingue')</div>
-        </div>
+        </div> 
         @include('partials.single.video.player')
         @include('partials.single.video.previous-next')
       </div>

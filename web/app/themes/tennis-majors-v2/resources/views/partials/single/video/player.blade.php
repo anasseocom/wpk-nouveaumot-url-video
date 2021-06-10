@@ -16,6 +16,17 @@ $iframe = get_field('video_url');
 preg_match('/src="(.+?)"/', $iframe, $matches);
 $src = $matches[1];
 
+
+
+
+$check_url=get_post_meta( $post_id,'video_perform_url');
+
+if(count($check_url)==0){
+    add_post_meta($post_id,'video_perform_url',$src);
+}
+
+
+
 // Add extra parameters to src and replcae HTML.
 $params = array(
     'controls'  => 1,
