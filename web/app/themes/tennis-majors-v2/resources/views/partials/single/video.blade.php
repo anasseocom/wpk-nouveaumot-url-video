@@ -1,7 +1,7 @@
 @php
   global $post;
   $pattern = get_shortcode_regex(['mot_video']);
-  $shortcode = '';
+  $shortcode = ''; 
   $post_id=$post->ID;
 @endphp
   

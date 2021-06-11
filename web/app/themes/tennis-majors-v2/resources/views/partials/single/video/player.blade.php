@@ -1,4 +1,4 @@
-@if(!empty($shortcode))
+@if(!empty($shortcode)) 
     <div class="max-w-screen-lg m-auto">
         <div id='player' class="relative h-0 overflow-hidden pb-16/9">
         @php echo do_shortcode( $shortcode ); @endphp
