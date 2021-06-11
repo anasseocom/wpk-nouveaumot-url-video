@@ -2,7 +2,7 @@
   global $post;
   $pattern = get_shortcode_regex(['mot_video']);
   $shortcode = ''; 
-  $post_id=$post->ID;
+  $post_id=$post->ID; 
 @endphp
   
 @if(preg_match("#".$pattern."#s", $post->post_content, $matches))

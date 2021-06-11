@@ -19,11 +19,21 @@ $src = $matches[1];
 
 
 
+
+
+
 $check_url=get_post_meta( $post_id,'video_perform_url');
 
-if(count($check_url)==0){
+if(! isset($check_url[0])){
     add_post_meta($post_id,'video_perform_url',$src);
 }
+
+
+
+
+
+
+
 
 
 
