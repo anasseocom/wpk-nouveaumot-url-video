@@ -1,4 +1,4 @@
-@if(!empty($shortcode))
+@if(!empty($shortcode)) 
     <div class="max-w-screen-lg m-auto">
         <div id='player' class="relative h-0 overflow-hidden pb-16/9">
         @php echo do_shortcode( $shortcode ); @endphp
@@ -19,11 +19,21 @@ $src = $matches[1];
 
 
 
+
+
+
 $check_url=get_post_meta( $post_id,'video_perform_url');
 
-if(count($check_url)==0){
+if(! isset($check_url[0])){ 
     add_post_meta($post_id,'video_perform_url',$src);
 }
+
+
+
+
+
+
+
 
 
 
